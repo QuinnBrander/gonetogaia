@@ -3464,6 +3464,8 @@ function renderElementPickModal(host: HTMLDivElement, router: Router): void {
       ? `${getEquipment(entry.source.cardId).name} - gained`
       : entry.source.kind === "townsfolk"
         ? `${entry.source.name} - Assault on Bird's Nest`
+      : entry.source.kind === "enemy-kill"
+        ? `${entry.source.enemyName} - defeated`
       : entry.source.kind === "weapon"
         ? `${getEquipment(entry.source.cardId).name} - hit a minion`
         : `${getEquipment(entry.source.cardId).name} - end of wave`;

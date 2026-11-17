@@ -2948,3 +2948,36 @@ wave is set up). They replace the old fixed bonus (e.g. "gain 3 elements").
 - No quest draws Scenario Cards any more (Ch3+ `scenarioCardDraw` removed) and
   nothing seeds the deck. Ch3–4 quests each gained a Key-Item bonus continue
   option; Key Item #12 Dahlia is Free opens Quest #4 (replacing Scenario D).
+
+## Lieutenants and the storybook Lieutenant challenge (2026-11-17, state v66)
+
+- **Lieutenant enemies** (`kind: "lieutenant"`, ids `lieutenant-l<level><a|b>`,
+  cards #143-151): two printed cards per level for Lvl 1-4, one for Lvl 5.
+  A = parting shot "N damage to nearest delver" + XP on death; B = all-delvers
+  parting shot + "Gain 3 elements" (each living delver picks 3,
+  `onDeath.gainElementChoice`). Both drop 2 minion parts. Not bosses: no suit
+  condition, no boss card back, War Mace treats them as non-minions.
+- **Aggressive** (every Lieutenant): after attempting to counterattack, a
+  surviving one moves 1 tile closer to the attacker; if it can't, it turns so
+  a blue (common) arrow targets the attacker. Ties are the players' choice at
+  the table; the prototype takes the first free tile in board order, or the
+  shortest turn (`engine/combat.ts > applyAggressiveAbility`).
+- **Lieutenants Spawn Cards #19-24**: 1 boss, 7 minions, 2 Lieutenant tiles,
+  2 delver spawns. Lieutenants are placed at the wave boss's level. They are
+  never in the base deck.
+- **The challenge** ("Challenge the Lieutenant"): one more continue option at
+  every Quest #4+ continue moment that leads into Wave 3 or later (fixed
+  placement, no "only if"). It keeps the moment's continue reward, adds a
+  Level card and a boss part of the next wave's level for each delver, and
+  runs `lieutenant-challenge`: the next Lieutenants Spawn Card not yet in the
+  campaign deck joins `state.lieutenantSpawnDeck` and goes on top
+  (`state.lieutenantSpawnOnTop`), so the next wave uses it. Once all six are
+  in, one of them (random) goes on top instead. Campaign Lieutenant cards are
+  never consumed: every later spawn-deck draw shuffles them in with the base
+  cards (owned Friendly cards still sit on top). Listed before the Key Item
+  bonus.
+- **Dahlia Detractor / Nemesis**: every wave has at least 1 / 2
+  Lieutenants. A wave that would have fewer (e.g. a base spawn card) gets the
+  missing ones at the boss's level, on the free tile nearest the boss (ties:
+  board order); delver spawn, Witness and token tiles are never used. "Tile of
+  your choice" at the table. Instance ids `dahlia-lieutenant-N`.

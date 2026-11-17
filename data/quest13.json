@@ -166,6 +166,32 @@
             ]
           },
           {
+            "label": "A - Continue: Challenge the Lieutenant: put the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign), each delver gains a Level 3 boss part, gain a LEVEL UP card, and both delvers heal 3 HP",
+            "pageId": "q13_w2_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 3
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "lieutenant-challenge"
+              },
+              {
+                "kind": "grant-boss-parts",
+                "level": 3,
+                "amount": 1,
+                "to": "all-delvers"
+              }
+            ]
+          },
+          {
             "label": "B - Retreat",
             "pageId": "q13_w2_retreat",
             "then": "end-quest"
@@ -231,6 +257,28 @@
               {
                 "kind": "grant-level-up-card",
                 "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Challenge the Lieutenant: put the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign), each delver gains a Level 4 boss part, and gain 2 LEVEL UP cards",
+            "pageId": "q13_w3_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 2
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "lieutenant-challenge"
+              },
+              {
+                "kind": "grant-boss-parts",
+                "level": 4,
+                "amount": 1,
+                "to": "all-delvers"
               }
             ]
           },
@@ -318,7 +366,9 @@
     "q13_w1_continue_c": "You knew the hatch was there, but no one imagined what lay beneath it - a basement that survived the blaze, crawling with creatures that shouldn't be able to exist in open air. The walls are scorched but intact, the air thick and wrong, carrying a faint chemical sting beneath the smoke. These things aren't wild.\n\nA rusted pipe juts from the scorched wall, spilling black sludge into a drain. The pipe runs up through the ceiling - toward Bird's Nest.\n\nIt isn't your mission - not today.\n\nYou tighten your grip on your weapon and push deeper into the dark. Whatever happened here wasn't an accident - and you're about to find out why.\n\nBoth delvers gain 3 ELEMENTS of their choice.",
     "q13_w2_continue_a": "The flytrap's movements linger in your mind - it didn't thrash or lash out blindly, but struck with precision, almost... trained. Even now, you can't shake the feeling that it was following some unseen command. Creatures of the Tide don't behave like that. You press onward, unease settling deep in your chest.\n\nMoss creeps out from under a side door, bright with the telltale signs of Tidebloom. The door opens onto a narrow storeroom.\n\nInside, under a tarp crusted with bloom, sits an old operating system - still wired for a delversuit.\n\nAdd Shop Product #37 Ancient OS to your Purchasable Products. Both delvers heal 3 HP.",
     "q13_w2_continue_b": "The flytrap's movements linger in your mind - it didn't thrash or lash out blindly, but struck with precision, almost... trained. Even now, you can't shake the feeling that it was following some unseen command. Creatures of the Tide don't behave like that. You press onward, unease settling deep in your chest.\n\nMoss creeps out from under a side door, bright with the telltale signs of Tidebloom. The door opens onto a narrow storeroom.\n\nCollecting the sample gives you a needed moment of respite.\n\nBoth delvers heal 4 HP.",
+    "q13_w2_continue_c": "The flytrap's movements linger in your mind - it didn't thrash or lash out blindly, but struck with precision, almost... trained. Even now, you can't shake the feeling that it was following some unseen command. Creatures of the Tide don't behave like that. You press onward, unease settling deep in your chest.\n\nMoss creeps out from under a side door, bright with the telltale signs of Tidebloom. The door opens onto a narrow storeroom.\n\nWord of your victories has spread. A Lieutenant steps out of the mist and raises its weapon in challenge. You accept.\n\nPut the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign). Each delver gains a Level 3 boss part. Gain a LEVEL UP card. Both delvers heal 3 HP.",
     "q13_w3_continue_a": "That Ape had needles falling out of its flesh when it first came running towards you. Someone's been running experiments, but to what end?\n\nOn a steel bench lie a dozen loaded syringes beside a ledger of neat handwritten notes.\n\nThe liquid inside is a paralytic. It could come in handy.\n\nAs you reach the lowest floor, you gaze on rows upon rows of creatures immersed in pods filled with yellow liquid, neat handwritten labels beneath each. In the center of the room is the corpse of a human suspended in the air, monster parts forcibly grafted in - the metal connections clearly visible. You retch involuntarily. The corpse opens its eyes and glares at you. It reaches a clawed hand to sever the connections holding it to the ceiling, and scuttles toward you.\n\nOne delver gains 1 BLOCK COUNTERATTACK token. Gain a LEVEL UP card.",
-    "q13_w3_continue_b": "That Ape had needles falling out of its flesh when it first came running towards you. Someone's been running experiments, but to what end?\n\nOn a steel bench lie a dozen loaded syringes beside a ledger of neat handwritten notes.\n\nDates, doses, creature numbers. Whoever wrote this has done it many times before.\n\nAs you reach the lowest floor, you gaze on rows upon rows of creatures immersed in pods filled with yellow liquid, neat handwritten labels beneath each. In the center of the room is the corpse of a human suspended in the air, monster parts forcibly grafted in - the metal connections clearly visible. You retch involuntarily. The corpse opens its eyes and glares at you. It reaches a clawed hand to sever the connections holding it to the ceiling, and scuttles toward you.\n\nGain 2 XP. Gain a LEVEL UP card."
+    "q13_w3_continue_b": "That Ape had needles falling out of its flesh when it first came running towards you. Someone's been running experiments, but to what end?\n\nOn a steel bench lie a dozen loaded syringes beside a ledger of neat handwritten notes.\n\nDates, doses, creature numbers. Whoever wrote this has done it many times before.\n\nAs you reach the lowest floor, you gaze on rows upon rows of creatures immersed in pods filled with yellow liquid, neat handwritten labels beneath each. In the center of the room is the corpse of a human suspended in the air, monster parts forcibly grafted in - the metal connections clearly visible. You retch involuntarily. The corpse opens its eyes and glares at you. It reaches a clawed hand to sever the connections holding it to the ceiling, and scuttles toward you.\n\nGain 2 XP. Gain a LEVEL UP card.",
+    "q13_w3_continue_c": "That Ape had needles falling out of its flesh when it first came running towards you. Someone's been running experiments, but to what end?\n\nOn a steel bench lie a dozen loaded syringes beside a ledger of neat handwritten notes.\n\nWord of your victories has spread. A Lieutenant steps out of the mist and raises its weapon in challenge. You accept.\n\nAs you reach the lowest floor, you gaze on rows upon rows of creatures immersed in pods filled with yellow liquid, neat handwritten labels beneath each. In the center of the room is the corpse of a human suspended in the air, monster parts forcibly grafted in - the metal connections clearly visible. You retch involuntarily. The corpse opens its eyes and glares at you. It reaches a clawed hand to sever the connections holding it to the ceiling, and scuttles toward you.\n\nPut the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign). Each delver gains a Level 4 boss part. Gain 2 LEVEL UP cards."
   }
 }

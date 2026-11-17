@@ -137,7 +137,7 @@ export function getSpawnCard(number: number): SpawnCard { const c = SPAWN_CARDS.
 /** * Return a freshly shuffled list of spawn-card numbers (the "draw * pile"). Uses an injected RNG so the caller — typically the * encounter-setup engine — controls determinism (seeded RNG for * tests / replays, `Math.random` for live play). The returned * array is a fresh copy; mutating it is safe. * * The pile is the full base deck (`SPAWN_CARDS`'s numbers). When * the campaign starts adding quest-specific cards, the caller can * filter the catalog before shuffling — keep this helper * deck-agnostic. */
 export function shuffleSpawnDeck(rng: () => number = Math.random): number[] {
     const pile = SPAWN_CARDS
-        .filter((c) => !FRIENDLY_SPAWN_CARD_NUMBERS.includes(c.number))
+        .filter((c) => isBaseSpawnCardNumber(c.number))
         .map((c) => c.number);
     for (let i = pile.length - 1; i > 0; i--) {
         const j = Math.floor(rng() * (i + 1));
@@ -339,6 +339,20 @@ export function shuffleSpawnDeck(rng: () => number = Math.random): number[] {
         export const FRIENDLY_SPAWN_CARD_NUMBERS: readonly number[] = Object.freeze([13, 14]);
         /** True iff `cardNumber` is one of the printed Friendly Spawn Cards. */
         export function isFriendlySpawnCardNumber(cardNumber: number): boolean { return FRIENDLY_SPAWN_CARD_NUMBERS.includes(cardNumber); }
+        /** Printed Lieutenants Spawn Card numbers (2 Lieutenant tiles each).
+         *  Added to the campaign deck by storybook Lieutenant challenges
+         *  (`state.lieutenantSpawnDeck`) and never consumed. */
+        export const LIEUTENANT_SPAWN_CARD_NUMBERS: readonly number[] = Object.freeze([19, 20, 21, 22, 23, 24]);
+        export function isLieutenantSpawnCardNumber(cardNumber: number): boolean { return LIEUTENANT_SPAWN_CARD_NUMBERS.includes(cardNumber); }
+        /** Base deck = every printed spawn card that isn't Friendly or Lieutenants. */
+        export function isBaseSpawnCardNumber(cardNumber: number): boolean { return !isFriendlySpawnCardNumber(cardNumber) && !isLieutenantSpawnCardNumber(cardNumber); }
+        /** Lieutenant enemy card id for a slot on a Lieutenants Spawn Card.
+         *  Slot 0 = the "A" card, slot 1 = "B"; Lvl 5 prints one card. */
+        export function lieutenantEnemyIdFor(level: number, slot: number): string {
+            const id = level === 5 ? "lieutenant-l5a" : `lieutenant-l${level}${slot === 0 ? "a" : "b"}`;
+            getEnemy(id);
+            return id;
+        }
         /** * Pick the next Friendly Spawn Card number to grant. Walks * `FRIENDLY_SPAWN_CARD_NUMBERS` in printed order and returns the * first entry not yet in `ownedNumbers`. Returns `null` when the * campaign already owns every printed friendly spawn card (today * that means both #13 and #14 are already in * `state.friendlySpawnDeck`). * * Order is deterministic (not random) so a fresh campaign always * grants #13 first, then #14 — keeps the chapter-1 grant * predictable for tests and so the player's first friendly card * is the same across saves. */
         export function nextFriendlySpawnCardNumber(ownedNumbers: readonly number[]): number | null { for (const n of FRIENDLY_SPAWN_CARD_NUMBERS) {
             if (!ownedNumbers.includes(n))
@@ -364,7 +378,7 @@ export function shuffleSpawnDeck(rng: () => number = Math.random): number[] {
         } const idx = Math.floor(rng() * FRIENDLY_ENCOUNTER_CARDS.length); return FRIENDLY_ENCOUNTER_CARDS[idx]!.number; }
         /** * Shuffle the spawn deck the engine will draw from, INCLUDING any * friendly spawn cards the campaign currently owns. Wraps * `shuffleSpawnDeck` and merges in `friendlyOwned` before the * Fisher-Yates so every entry (base + friendly) has equal draw * probability. * * Returns a freshly shuffled array; mutating it is safe. */
         export function shuffleSpawnDeckWithFriendly(friendlyOwned: readonly number[], rng: () => number = Math.random): number[] {
-            const base = SPAWN_CARDS.filter((c) => !FRIENDLY_SPAWN_CARD_NUMBERS.includes(c.number)).map((c) => c.number);
+            const base = SPAWN_CARDS.filter((c) => isBaseSpawnCardNumber(c.number)).map((c) => c.number);
             for (let i = base.length - 1; i > 0; i--) {
                 const j = Math.floor(rng() * (i + 1));
                 const tmp = base[i]!;

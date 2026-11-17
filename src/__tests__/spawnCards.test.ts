@@ -38,10 +38,10 @@ import {
 } from "../data";
 
 describe("Spawn Deck catalog", () => {
-  it("ships 12 base cards (1..12) + 2 friendly spawn cards (13, 14)", () => {
-    expect(SPAWN_CARDS).toHaveLength(14);
+  it("ships 12 base cards (1..12) + 2 friendly (13, 14) + 6 Lieutenants spawn cards (19-24)", () => {
+    expect(SPAWN_CARDS).toHaveLength(20);
     const numbers = SPAWN_CARDS.map((c) => c.number);
-    expect(numbers).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
+    expect(numbers).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23, 24]);
     expect(FRIENDLY_SPAWN_CARD_NUMBERS).toEqual([13, 14]);
   });
 

@@ -18,3 +18,6 @@ from the source `Rising Tide - Chapters 3-4 (Revised).docx`. See
    `pagemap2.ps1 -Src <docx> -OutFile pages.txt`, then `python -I spreadcheck.py pages.txt`.
    `exportpages.ps1 -Src <docx> -From N -To M -Out x.pdf` renders a page range for
    a visual check.
+6. `python -I lieutenant_doc.py <document.xml> <out document.xml>`: add the
+   "Challenge the Lieutenant" row to the Quest #4+ boxes that lead into Wave 3+
+   (SCENARIO_STORYBOOK_SPEC.md §8e). Runs on the current booklet; idempotent.

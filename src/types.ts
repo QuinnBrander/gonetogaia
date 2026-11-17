@@ -572,7 +572,10 @@ export type EquipmentEffect =
 
 // --- Enemies --------------------------------------------------------------
 
-export type EnemyKind = "minion" | "boss-lvl-1" | "boss-lvl-2" | "boss-lvl-3" | "boss-lvl-4" | "boss-lvl-5";
+/** `lieutenant`: Lieutenant - Lvl N cards, placed by the Lieutenants Spawn
+ *  Cards (#19-24) at the wave's level. Not a boss (no suit condition,
+ *  no boss card back). */
+export type EnemyKind = "minion" | "boss-lvl-1" | "boss-lvl-2" | "boss-lvl-3" | "boss-lvl-4" | "boss-lvl-5" | "lieutenant";
 
 export interface EnemyOnDeath {
   /** Token IDs dropped on the enemy's tile (collected by walking onto it). */
@@ -591,6 +594,9 @@ export interface EnemyOnDeath {
   gainXpDice?: number;
   /** Element tokens both delvers immediately gain. */
   gainElements?: Element[];
+  /** "Gain N elements" (Lieutenant B cards): each living delver picks N
+   *  elements of their choice (queued on `pendingElementChoices`). */
+  gainElementChoice?: number;
   /** "Gain a LEVEL UP card" (printed on every quest boss). Bumps the
    *  `levelUpCardsOwed` bookkeeping counter AND enqueues one
    *  interactive LevelUpModal draw per delver per card — see
@@ -822,7 +828,12 @@ export type EnemyAbility =
   | { kind: "soul-sap" }
   | { kind: "brawler" }
   | { kind: "corruption" }
-  | { kind: "shell" };
+  | { kind: "shell" }
+  /** Lieutenants: "After attempting to counterattack, it moves one tile
+   *  closer to its assailant. If it can't move closer, it rotates so that
+   *  one of its blue arrows is targeting the attacking hero." Players
+   *  decide ties; the prototype picks the first option in board order. */
+  | { kind: "aggressive" };
 
 // --- Heroes ---------------------------------------------------------------
 
@@ -897,6 +908,9 @@ export interface SpawnCard {
    * and `engine/witness.ts > stepWitness`).
    */
   friendlyEncounters?: SpawnEntry[];
+  /** Lieutenant tiles - populated on the Lieutenants Spawn Cards (#19-24).
+   *  Each places a Lieutenant matching the wave's boss level. */
+  lieutenants?: SpawnEntry[];
 }
 
 // --- Quests ---------------------------------------------------------------
@@ -1448,6 +1462,14 @@ export type TownVisitAction =
    */
   | { kind: "grant-friendly-spawn-card" }
   /**
+   * Storybook Lieutenant challenge (Quests #4+, continue into Wave 3+):
+   * place the next Lieutenants Spawn Card not yet in the campaign deck on
+   * top of the Spawn Deck. It is fought next wave and stays in the deck
+   * for the rest of the campaign. Once all six are in, one of those is
+   * placed on top instead.
+   */
+  | { kind: "lieutenant-challenge" }
+  /**
    * Conditional block (Ch3+). Runs `then` when `cond` holds, else
    * `otherwise`. Keeps branching data-driven instead of adding a
    * bespoke action per printed "If you have…" clause.
@@ -1888,6 +1910,17 @@ export type RewardEvent =
       kind: "friendly-spawn-card-gained";
       cardNumber: number;
       image: string;
+      deckSize: number;
+    }
+  | {
+      /** A Lieutenant challenge put Lieutenants Spawn Card `cardNumber`
+       *  on top of the Spawn Deck. `added` is false when it was already in
+       *  the campaign deck (all six in). `deckSize` = Lieutenant cards in
+       *  the deck after the challenge. */
+      kind: "lieutenant-spawn-card-on-top";
+      cardNumber: number;
+      image: string;
+      added: boolean;
       deckSize: number;
     }
   | {

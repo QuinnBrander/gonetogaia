@@ -188,6 +188,10 @@ const ABILITY_RULE_TEXT: Record<EnemyAbility["kind"], { label: string; text: str
     label: "Flees",
     text: "After attempting to counterattack, if the enemy isn't dead, they move 2 tiles away from the attacking delver if possible. (The prototype moves each one to the free tile farthest from the attacker.)",
   },
+  "aggressive": {
+    label: "Aggressive",
+    text: "After attempting to counterattack, it moves one tile closer to its assailant. If it can't move closer, it rotates so that one of its blue arrows is targeting the attacking hero. When there are multiple options, players decide. (The prototype takes the first free tile, or the shortest turn.)",
+  },
   "soothsayer": {
     label: "Soothsayer",
     text: "This boss kills both delvers if not defeated by the end of the wave.",

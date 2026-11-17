@@ -760,6 +760,17 @@ function renderRewardCard(event: RewardEvent): string {
         </article>
       `;
     }
+    case "lieutenant-spawn-card-on-top": {
+      // Storybook Lieutenant challenge: the card is on top of the Spawn
+      // Deck (fought next wave) and stays in the deck afterwards.
+      return `
+        <article class="reward-card reward-card--friendly-spawn">
+          <div class="reward-card-eyebrow small muted">${event.added ? "Lieutenants Spawn Card Added" : "Lieutenants Spawn Card on Top"}</div>
+          <img class="reward-card-friendly-spawn-art" src="/spawn-cards/${escapeHtml(event.image)}" alt="Lieutenants Spawn Card #${event.cardNumber}" draggable="false" />
+          <div class="reward-card-name"><strong>Lieutenants Spawn Card #${event.cardNumber}</strong> &middot; next wave, then in the Spawn Deck for the rest of the campaign (${event.deckSize}/6)</div>
+        </article>
+      `;
+    }
     case "friendly-encounter-resolved": {
       // Headline "Friendly Encounter resolved" card emitted by
       // `engine/friendlyEncounter.ts > resolveFriendlyEncounter`.

@@ -19,8 +19,9 @@ abilities="auto" parses the workbook's Abilities cell (see AUTO_ABILITIES).
 "Hard" variants in the PDF are not supported by the game and not imported.
 
 Usage:
-  python -I scripts/importEnemiesFromWorkbook.py <G2G root> <workbook.xlsx> <materials outdir>
-Re-running replaces the entries listed in SPEC (matched by id).
+  python -I scripts/importEnemiesFromWorkbook.py <G2G root> <workbook.xlsx> <materials outdir> [id prefix]
+Re-running replaces the entries listed in SPEC (matched by id). The optional
+id prefix limits the run to matching SPEC ids (e.g. "lieutenant-").
 """
 import json
 import re
@@ -126,6 +127,16 @@ SPEC = [
          kind="boss-lvl-4", name="Incomplete Revenant", cardNumber=135, art="revenantbossB", abilities="auto"),
     *[dict(id=f"experiment-{136 + i:03d}", sheet="Enemy Minion Front", old="Experiment", row=i,
            kind="minion", name="Experiment", cardNumber=136 + i, art=f"oriteB{i + 1}", abilities="auto") for i in range(7)],
+    # Lieutenants (2026-11-17): placed by the Lieutenants Spawn Cards #19-24
+    # at the wave's level. Two printed cards per level (A = "to nearest
+    # delver" parting shot + XP, B = all-delvers shot + 3 elements); Lvl 5
+    # has one card. Ids are lieutenant-l<level><a|b>.
+    *[dict(id=f"lieutenant-l{lvl}{ab}", sheet="Enemy Boss Lieutenant Front", old=f"Lieutenant - Lvl {lvl}", row=r,
+           kind="lieutenant", name=f"Lieutenant - Lvl {lvl}", cardNumber=143 + 2 * (lvl - 1) + r, card=card,
+           abilities=[{"kind": "aggressive"}])
+      for lvl, ab, r, card in [(1, "a", 0, (31, 22)), (1, "b", 1, (31, 23)), (2, "a", 0, (33, 13)), (2, "b", 1, (33, 14)),
+                               (3, "a", 0, (35, 6)), (3, "b", 1, (35, 7)), (4, "a", 0, (35, 13)), (4, "b", 1, (35, 14)),
+                               (5, "a", 0, (35, 16))]],
 ]
 
 
@@ -229,6 +240,8 @@ def parse_death(e1, e2):
         out["drops"].append(f"boss-part-lvl-{m.group(1)}")
     elif e1 == "drops minion part":
         out["drops"].append("minion-part")
+    elif re.fullmatch(r"drops (\d+) minion parts", e1):
+        out["drops"].extend(["minion-part"] * int(re.fullmatch(r"drops (\d+) minion parts", e1).group(1)))
     elif e1 == "read quest index":
         # Story bosses (e.g. Carnatia): the quest entry grants the reward.
         return out
@@ -239,6 +252,9 @@ def parse_death(e1, e2):
         out["gainLevelUpCards"] = 1
     elif re.fullmatch(r"gain (\d+) xp", e2):
         out["gainXp"] = int(re.fullmatch(r"gain (\d+) xp", e2).group(1))
+    elif re.fullmatch(r"gain (\d+) elements", e2):
+        # Lieutenant B cards: "Gain 3 elements" = each delver picks.
+        out["gainElementChoice"] = int(re.fullmatch(r"gain (\d+) elements", e2).group(1))
     elif e2 == "gain 1d6 xp":
         out["gainXpDice"] = 1
     elif e2.startswith("gain {various/"):
@@ -255,7 +271,10 @@ def main():
     enemies_path = ROOT / "data" / "enemies.json"
     enemies = json.loads(enemies_path.read_text(encoding="utf8"))
     by_id = {e["id"]: e for e in enemies}
+    only = sys.argv[4] if len(sys.argv) > 4 else ""
     for spec in SPEC:
+        if not spec["id"].startswith(only):
+            continue
         ws = wb[spec["sheet"]]
         hdr = [c.value for c in ws[1]]
         rows = [dict(zip(hdr, r)) for r in ws.iter_rows(min_row=2, values_only=True) if r[0] == spec["old"]]

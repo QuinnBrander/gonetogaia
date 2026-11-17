@@ -25,7 +25,7 @@ import {
 const STORAGE_KEY = "g2g.campaign.v20";
 // Exported (intentionally) so unit tests can build minimal v(N-1)
 // fixtures and assert the migration bumps the marker correctly.
-export const SCHEMA_VERSION = 65;
+export const SCHEMA_VERSION = 66;
 
 /**
  * Per-delver in-encounter loadout: which equipment cards sit in which weapon
@@ -1147,7 +1147,9 @@ export interface PendingElementChoice {
     /** War Mace: "If a minion, ... gain 1 element." */
     | { kind: "weapon"; cardId: string }
     /** Ch4 Assault on Bird's Nest: a townsfolk assisting with combat. */
-    | { kind: "townsfolk"; name: string };
+    | { kind: "townsfolk"; name: string }
+    /** On-death "Gain N elements" (Lieutenant B cards). */
+    | { kind: "enemy-kill"; enemyName: string };
 }
 
 /**
@@ -1434,6 +1436,16 @@ export interface CampaignState {
    * future chapters can re-use the same action).
    */
   friendlySpawnDeck: number[];
+  /**
+   * Lieutenants Spawn Cards (#19-24) added to the campaign Spawn Deck by
+   * storybook Lieutenant challenges. Unlike friendly cards they are never
+   * consumed: every later spawn-deck shuffle includes them (the challenge
+   * ramp for the rest of the campaign).
+   */
+  lieutenantSpawnDeck: number[];
+  /** Lieutenants Spawn Card placed on top of the Spawn Deck by a challenge:
+   *  the next spawn-deck wave uses it, then this clears. */
+  lieutenantSpawnOnTop: number | null;
   /**
    * Friendly Encounter card numbers drawn (from the printed
    * Friendly Encounter deck — today only card #01 Flambé) but not
@@ -2328,6 +2340,8 @@ export function newCampaign(): CampaignState {
     scenarioCardsResolved: [],
     currentScenarioCard: null,
     friendlySpawnDeck: [],
+    lieutenantSpawnDeck: [],
+    lieutenantSpawnOnTop: null,
     pendingFriendlyEncounters: [],
     quest1Completed: false,
     currentQuestId: "quest1",
@@ -2620,6 +2634,11 @@ export function loadCampaign(): CampaignState {
     }
     if ((working as { version?: number } | null)?.version === 64) {
       const next = migrateV64ToV65(working);
+      if (!next) return newCampaign();
+      working = next;
+    }
+    if ((working as { version?: number } | null)?.version === 65) {
+      const next = migrateV65ToV66(working);
       if (!next) return newCampaign();
       working = next;
     }
@@ -4031,6 +4050,17 @@ export function migrateV64ToV65(parsed: unknown): CampaignState | null {
     }
   }
   s.version = 65;
+  return s;
+}
+
+/** v65 -> v66: Lieutenant challenge deck (`lieutenantSpawnDeck`, empty)
+ *  and the on-top slot (`lieutenantSpawnOnTop`, null). */
+export function migrateV65ToV66(parsed: unknown): CampaignState | null {
+  const s = parsed as CampaignState;
+  if (!s || typeof s !== "object") return null;
+  s.lieutenantSpawnDeck = [];
+  s.lieutenantSpawnOnTop = null;
+  s.version = 66;
   return s;
 }
 

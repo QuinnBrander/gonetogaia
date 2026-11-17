@@ -134,7 +134,7 @@ The effects were updated to match the Nov 15 prototype PDF. The art for these ca
   - **Memory Chips:** every gain goes through `gainMemoryChips`; Elias Nemesis blocks them. Elias Detractor loses 1 chip the moment it's taken. Elias Ally / Confidant: Shop favor, pay 3 minion parts for 1 chip.
   - **Arlen:** Detractor / Nemesis cap Ally + Confidant cards at 2 / 1 - a card over the cap isn't taken (rewards modal says so). Confidant: Academy donations always resolve at the best tier; Ally: the next one does, then it's discarded. ("Best equipment result" is read as the top donation tier.)
   - **Confidant one-shots:** Elayna (Med Kit), Rodrigo (Elemental Kit) and Samantha (Popular) Confidant cards print the same effect as their Ally cards and use the same buttons / shield.
-- **Not in the prototype yet:** Dahlia Detractor / Nemesis add Lieutenants to every wave; there are no Lieutenant enemies in the game, so the Campaign Sheet marks them "apply at the table". The "Go on a date (Dating Sim Expansion)" option on Confidant cards isn't offered.
+- **Every wave:** Dahlia Detractor / Nemesis - each wave has at least 1 / 2 Lieutenants. Missing ones are added on the free tile nearest the boss (not a delver spawn, Witness or token tile), matching the boss level (`engine/encounter.ts > topUpLieutenants`).
 
 ### "Did any delver die?" pages pick the branch themselves
 
@@ -198,6 +198,11 @@ The last Town Visit page of Chapters 1-3 (`kind: "end-town-visit"`) offers two b
   - `all-claw`: on a roll of 1 this enemy fires both arrow sets. `counterOffsetsFor` accepts "miss" for this, and every miss guard checks `anyAllClaw`.
   - `death-heal`: an enemy killed in an attack fully heals its 8-adjacent survivors, except those that died in the same attack. It's applied in `finalizeAttackSession`.
 - `scripts/buildChapter3.py` generates `data/chapter3.json`. Edit the script, not the JSON.
+
+### Lieutenants (state v66)
+- **Enemies:** `python -I scripts/importEnemiesFromWorkbook.py . <workbook.xlsx> <extractGameMaterials outdir> lieutenant-` imports the 9 Lieutenant cards (the last argument limits the run to those SPEC ids).
+- **Spawn cards #19-24:** `python -I scripts/importLieutenantSpawnCards.py . <workbook.xlsx> <extractGameMaterials outdir>` reads the Spawn Fronts sheet and copies the art (PDF crops `p43_00`-`p43_05`).
+- **Storybook challenge:** see DESIGN.md "Lieutenants and the storybook Lieutenant challenge" and SCENARIO_STORYBOOK_SPEC.md §8e. Tests: `lieutenants.test.ts`.
 
 ### Equipment upgrades (Machinist, Shop #33-45)
 

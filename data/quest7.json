@@ -152,6 +152,32 @@
             ]
           },
           {
+            "label": "A - Continue: Challenge the Lieutenant: put the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign), each delver gains a Level 3 boss part, gain a LEVEL UP card, and both delvers heal 3 HP",
+            "pageId": "q7_w2_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 3
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "lieutenant-challenge"
+              },
+              {
+                "kind": "grant-boss-parts",
+                "level": 3,
+                "amount": 1,
+                "to": "all-delvers"
+              }
+            ]
+          },
+          {
             "label": "B - Retreat",
             "pageId": "q7_w2_retreat",
             "then": "end-quest"
@@ -223,6 +249,7 @@
     "q7_w1_continue_a": "The road to High Nest is wide and full of potholes, with many lanes littered with long-abandoned vehicles.\n\nXavier is your co-pilot today. \"Do you see that mound off in the distance? A friend of mine lives there - you should pop in and say hello for me.\"\n\nIt appears Xavier's friend is a massive creature of the Tide. Luckily, this one is friendly.\n\nYou scavenge some material that could come in handy.\n\nAdd a Friendly Spawn card to the Spawn deck. Gain a LEVEL UP card.",
     "q7_w1_continue_b": "The road to High Nest is wide and full of potholes, with many lanes littered with long-abandoned vehicles.\n\nXavier is your co-pilot today. \"Do you see that mound off in the distance? A friend of mine lives there - you should pop in and say hello for me.\"\n\nYour search of the abandoned cars pays off.\n\nYou scavenge some material that could come in handy.\n\nGain 2 LEVEL UP cards.",
     "q7_w2_continue_a": "As you begin ascending again, you think back on your history lessons. High Nest was the largest of the seven nests established after the Great Calamity, and the first to fall. Back then it was called First Nest, but almost no one uses that name anymore.\n\nSamantha is guiding you through the comms, but she's backseat driving. \"Careful with that suspension hook - always lift from the ventrical. And your flick capacitor is a bit overactive today, so easy on the release valve. Oh, and...\" It's constant.\n\nShe takes it well and focuses on offering useful advice.\n\nGain a LEVEL UP card. Both delvers heal 3 HP.",
-    "q7_w2_continue_b": "As you begin ascending again, you think back on your history lessons. High Nest was the largest of the seven nests established after the Great Calamity, and the first to fall. Back then it was called First Nest, but almost no one uses that name anymore.\n\nSamantha is guiding you through the comms, but she's backseat driving. \"Careful with that suspension hook - always lift from the ventrical. And your flick capacitor is a bit overactive today, so easy on the release valve. Oh, and...\" It's constant.\n\nHer advice is convoluted, but she's trying so hard. She promises to make it up to you.\n\nIncrease Samantha's opinion. Both delvers heal 3 HP."
+    "q7_w2_continue_b": "As you begin ascending again, you think back on your history lessons. High Nest was the largest of the seven nests established after the Great Calamity, and the first to fall. Back then it was called First Nest, but almost no one uses that name anymore.\n\nSamantha is guiding you through the comms, but she's backseat driving. \"Careful with that suspension hook - always lift from the ventrical. And your flick capacitor is a bit overactive today, so easy on the release valve. Oh, and...\" It's constant.\n\nHer advice is convoluted, but she's trying so hard. She promises to make it up to you.\n\nIncrease Samantha's opinion. Both delvers heal 3 HP.",
+    "q7_w2_continue_c": "As you begin ascending again, you think back on your history lessons. High Nest was the largest of the seven nests established after the Great Calamity, and the first to fall. Back then it was called First Nest, but almost no one uses that name anymore.\n\nSamantha is guiding you through the comms, but she's backseat driving. \"Careful with that suspension hook - always lift from the ventrical. And your flick capacitor is a bit overactive today, so easy on the release valve. Oh, and...\" It's constant.\n\nWord of your victories has spread. A Lieutenant steps out of the mist and raises its weapon in challenge. You accept.\n\nPut the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign). Each delver gains a Level 3 boss part. Gain a LEVEL UP card. Both delvers heal 3 HP."
   }
 }

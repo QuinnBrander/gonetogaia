@@ -526,6 +526,26 @@ facing **odd (right)** page.
   - Check the same thing for any later chapter that depends on a quest having
     been played.
 
+## 8e. Lieutenant challenge (owner, 2026-11-17)
+
+The six Lieutenants Spawn Cards had no way into the deck once Scenario 9's
+"dangerous road" (a downside) was dropped. Owner decisions:
+- **Where:** every Quest #4+ continue moment that leads into Wave 3 or later
+  (8 game moments, 8 booklet-only). `lieutenant_eligible()` in
+  `scripts/storybookChoices.py`; the option is appended by `option_list()`,
+  so the game builders and the booklet both get it.
+- **What:** the next Lieutenants Spawn Card goes on top of the Spawn Deck and
+  stays in the deck for the rest of the campaign (once all six are in, one of
+  them goes on top). Reward: the moment's continue reward + a Level card + a
+  boss part of the next wave's level for each delver.
+- **Booklet:** `tools/booklet/lieutenant_doc.py` adds the row to the existing
+  boxes (before the Key Item row, re-lettering it), highlighted **cyan**. It
+  wrote `Quests 3+ - storybook choices + Lieutenants.docx`; the original copy
+  is unchanged.
+- **Layout (Word):** with the row, entry 4.5 (four options) spills onto a
+  second page. The prose was shortened once to fix 6.5. 4.5 still needs a
+  trim, to be checked in Google Docs.
+
 ## 9. Open questions for the owner
 
 - **Q7 – Vera's fate (owner: fix later).** Quest #14's 14.4 calls the Revenant

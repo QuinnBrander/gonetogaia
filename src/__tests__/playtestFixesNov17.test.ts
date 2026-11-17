@@ -176,12 +176,13 @@ describe("Chapter 3-4 Scenario Cards folded into the continue choices", () => {
   const QUESTS = [QUEST3, QUEST4, QUEST5, QUEST6, QUEST7, QUEST13];
   const negative = new Set(["reduce-max-hp-both", "lose-hp-both-floor-at-one", "lose-hp-one-delver-floor-at-one", "lose-all-elements-both"]);
 
-  it("every wave that leads on to another wave offers 2-3 continue choices (plus any Key Item bonus)", () => {
+  it("every wave that leads on to another wave offers 2-3 continue choices (plus any Lieutenant challenge and Key Item bonus)", () => {
     for (const q of QUESTS) {
       for (const w of q.waves) {
         const cont = (w.eow?.victory ?? []).filter((c) => c.then === "next-wave");
         if (cont.length === 0) continue;
-        const plain = cont.filter((c) => c.requireKeyItem === undefined);
+        const plain = cont.filter((c) => c.requireKeyItem === undefined
+          && !(c.rewards ?? []).some((r) => r.kind === "lieutenant-challenge"));
         expect(plain.length, `${q.id} W${w.number}`).toBeGreaterThanOrEqual(2);
         expect(plain.length, `${q.id} W${w.number}`).toBeLessThanOrEqual(3);
         for (const c of cont) {

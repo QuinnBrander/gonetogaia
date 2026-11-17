@@ -29,6 +29,7 @@ import { getEffectiveEquipmentRanks, getEquipmentCardFor } from "../state";
 import type { EnemyCard, Element, EquipmentType } from "../types";
 import { resolvePendingLevelUps } from "../xp";
 import { enqueueLevelUpDraws } from "./levelUp";
+import { enqueueElementChoice } from "./os";
 import { getDelverBoard, getEquipmentByTypeSuit, getEquipmentByTypeSuitRank, getHero, getQuestData } from "../data";
 import { runTownVisitAction } from "./townVisit";
 import { logEvent } from "../debug/sessionLog";
@@ -381,6 +382,14 @@ export function applyKill(
   for (const element of (enemy.onDeath.gainElements ?? [])) {
     for (const heroId of heroIds) {
       elementGrants.push(grantElementToDelver(state, heroId, element));
+    }
+  }
+
+  // 3b. "Gain N elements" (Lieutenant B cards): each living delver picks
+  // N elements of their choice, through the shared element-choice queue.
+  for (let i = 0; i < (enemy.onDeath.gainElementChoice ?? 0); i++) {
+    for (const heroId of heroIds) {
+      enqueueElementChoice(state, { heroId, source: { kind: "enemy-kill", enemyName: enemy.name } });
     }
   }
 
