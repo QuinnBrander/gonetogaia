@@ -1,0 +1,102 @@
+[
+  {
+    "suit": "mind",
+    "background": "/suits/mind.png",
+    "hpTrack":       { "x0": 35.7, "x1": 96.6, "y": 11.2, "cells": 22 },
+    "movementTrack": { "x0": 80.2, "x1": 97.4, "y": 22.0, "cells": 6  },
+    "damageLight":   { "baseX": 58.5, "shopBonusX": 61.5, "upgradedX": 64.5, "y": 40.3 },
+    "damageMedium":  { "baseX": 74.5, "shopBonusX": 77.5, "upgradedX": 80.5, "y": 40.5 },
+    "damageHeavy":   { "baseX": 91.0, "shopBonusX": 94.0, "upgradedX": 97.0, "y": 41.0 },
+    "weaponSlots": [
+      {
+        "rect": { "x": 2.75,  "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "radiance",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  Deal LIGHT damage to any enemy.",
+        "slotAbility": { "kind": "damage-any-enemy", "damageType": "light" }
+      },
+      {
+        "rect": { "x": 18.94, "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "void",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  Choose a delver to gain: EARTH element.",
+        "slotAbility": { "kind": "gain-element", "element": "earth" }
+      },
+      {
+        "rect": { "x": 35.19, "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "earth",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  +1 to MOVEMENT this turn.",
+        "slotAbility": { "kind": "bonus-movement-this-turn", "amount": 1 }
+      },
+      {
+        "rect": { "x": 51.38, "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "fire",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  REFRESH 1 AP.",
+        "slotAbility": { "kind": "refresh-ap", "amount": 1 }
+      },
+      {
+        "rect": { "x": 67.56, "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "wind",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  Choose a delver to gain: FIRE element.",
+        "slotAbility": { "kind": "gain-element", "element": "fire" }
+      },
+      {
+        "rect": { "x": 83.75, "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "water",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  Choose a delver to gain: RADIANCE element.",
+        "slotAbility": { "kind": "gain-element", "element": "radiance" }
+      }
+    ],
+    "available": { "x": 2.75, "y": 29.05, "w": 25.87, "h": 18.32 },
+    "spent":     { "x": 22.63, "y": 29.05, "w": 26.13, "h": 18.32 },
+    "apTokens":  { "x": 15.66, "y": 38.16, "max": 6 }
+  },
+  {
+    "suit": "body",
+    "background": "/suits/body.png",
+    "hpTrack":       { "x0": 35.7, "x1": 96.6, "y": 11.2, "cells": 22 },
+    "movementTrack": { "x0": 80.2, "x1": 97.4, "y": 22.0, "cells": 6  },
+    "damageLight":   { "baseX": 58.5, "shopBonusX": 61.5, "upgradedX": 64.5, "y": 40.3 },
+    "damageMedium":  { "baseX": 74.5, "shopBonusX": 77.5, "upgradedX": 80.5, "y": 40.5 },
+    "damageHeavy":   { "baseX": 91.0, "shopBonusX": 94.0, "upgradedX": 97.0, "y": 41.0 },
+    "weaponSlots": [
+      {
+        "rect": { "x": 2.75,  "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "radiance",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  Choose a delver to gain: VOID element.",
+        "slotAbility": { "kind": "gain-element", "element": "void" }
+      },
+      {
+        "rect": { "x": 18.94, "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "void",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  Suffer 1 damage and deal MEDIUM damage to any enemy.",
+        "slotAbility": { "kind": "damage-any-enemy", "damageType": "medium", "selfSuffer": 1 }
+      },
+      {
+        "rect": { "x": 35.19, "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "earth",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  Choose a delver to gain: WIND element.",
+        "slotAbility": { "kind": "gain-element", "element": "wind" }
+      },
+      {
+        "rect": { "x": 51.38, "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "fire",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  Choose a delver to gain: WATER element.",
+        "slotAbility": { "kind": "gain-element", "element": "water" }
+      },
+      {
+        "rect": { "x": 67.56, "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "wind",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  +1 to MOVEMENT this turn.",
+        "slotAbility": { "kind": "bonus-movement-this-turn", "amount": 1 }
+      },
+      {
+        "rect": { "x": 83.75, "y": 66.04, "w": 13.56, "h": 37.21 },
+        "element": "water",
+        "slotAbilityText": "USE WEAPON ABILITY  OR  REFRESH 1 AP.",
+        "slotAbility": { "kind": "refresh-ap", "amount": 1 }
+      }
+    ],
+    "available": { "x": 2.81, "y": 29.05, "w": 25.81, "h": 18.21 },
+    "spent":     { "x": 22.63, "y": 29.05, "w": 26.13, "h": 18.32 },
+    "apTokens":  { "x": 15.69, "y": 38.10, "max": 6 }
+  }
+]

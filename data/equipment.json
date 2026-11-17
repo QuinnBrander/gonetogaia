@@ -1,0 +1,4084 @@
+[
+  {
+    "id": "mind-gauntlet-r1",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Surge Claw",
+    "cardNumber": 71,
+    "image": "card_mind_gauntlet_r1.jpg",
+    "damageType": "light",
+    "damageMultiplier": 1,
+    "abilityText": "LIGHT damage to a chain of connected enemies, if the OTHER delver is adjacent to at least one of those enemies. Collect 1 CREATURE PART from any tile.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "other"
+    },
+    "effects": [
+      {
+        "kind": "collect-creature-part",
+        "count": 1,
+        "from": "any-tile"
+      }
+    ]
+  },
+  {
+    "id": "mind-gauntlet-r2",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Surge Claw",
+    "cardNumber": 72,
+    "image": "card_mind_gauntlet_r2.jpg",
+    "damageType": "light",
+    "damageMultiplier": 2,
+    "abilityText": "2x LIGHT damage to a chain of connected enemies, if the OTHER delver is adjacent to at least one of those enemies. Collect 2 CREATURE PARTS from any tiles.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "other"
+    },
+    "effects": [
+      {
+        "kind": "collect-creature-part",
+        "count": 2,
+        "from": "any-tile"
+      }
+    ]
+  },
+  {
+    "id": "mind-gauntlet-r3",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Surge Claw",
+    "cardNumber": 73,
+    "image": "card_mind_gauntlet_r3.jpg",
+    "damageType": "light",
+    "damageMultiplier": 3,
+    "abilityText": "3x LIGHT damage to a chain of connected enemies, if the OTHER delver is adjacent to at least one of those enemies. Collect 2 CREATURE PARTS from any tiles.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "other"
+    },
+    "effects": [
+      {
+        "kind": "collect-creature-part",
+        "count": 2,
+        "from": "any-tile"
+      }
+    ]
+  },
+  {
+    "id": "mind-gauntlet-r4",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Surge Claw",
+    "cardNumber": 74,
+    "image": "card_mind_gauntlet_r4.jpg",
+    "damageType": "light",
+    "damageMultiplier": 4,
+    "abilityText": "4x LIGHT damage to a chain of connected enemies, if the OTHER delver is adjacent to at least one of those enemies. Collect 2 CREATURE PARTS from any tiles.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "other"
+    },
+    "effects": [
+      {
+        "kind": "collect-creature-part",
+        "count": 2,
+        "from": "any-tile"
+      }
+    ]
+  },
+  {
+    "id": "mind-gauntlet-r5",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Surge Claw",
+    "cardNumber": 75,
+    "image": "card_mind_gauntlet_r5.jpg",
+    "damageType": "light",
+    "damageMultiplier": 5,
+    "abilityText": "5x LIGHT damage to a chain of connected enemies, if the OTHER delver is adjacent to at least one of those enemies. Collect 2 CREATURE PARTS from any tiles.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "other"
+    },
+    "effects": [
+      {
+        "kind": "collect-creature-part",
+        "count": 2,
+        "from": "any-tile"
+      }
+    ]
+  },
+  {
+    "id": "mind-hammer-r1",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Crash Hammer",
+    "cardNumber": 76,
+    "image": "card_mind_hammer_r1.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 1,
+    "abilityText": "HEAVY damage to 1 tile. Roll a die: on 1-3 hits tile WEST, on 4-6 hits tile EAST. You may suffer 1 Damage to change the die result.",
+    "range": {
+      "kind": "die-roll-fixed",
+      "rolls": [
+        {
+          "min": 1,
+          "max": 3,
+          "tiles": [
+            {
+              "dx": -1,
+              "dy": 0
+            }
+          ]
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "tiles": [
+            {
+              "dx": 1,
+              "dy": 0
+            }
+          ]
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "may-reroll-by-suffering",
+        "suffer": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-hammer-r2",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Crash Hammer",
+    "cardNumber": 77,
+    "image": "card_mind_hammer_r2.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 1,
+    "abilityText": "HEAVY damage to 3 tiles in a line. Choose 1: WEST or EAST of the attacker.",
+    "range": {
+      "kind": "die-roll-fixed",
+      "rolls": [
+        {
+          "min": 1,
+          "max": 3,
+          "tiles": [
+            {
+              "dx": -1,
+              "dy": 0
+            },
+            {
+              "dx": -2,
+              "dy": 0
+            },
+            {
+              "dx": -3,
+              "dy": 0
+            }
+          ]
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "tiles": [
+            {
+              "dx": 1,
+              "dy": 0
+            },
+            {
+              "dx": 2,
+              "dy": 0
+            },
+            {
+              "dx": 3,
+              "dy": 0
+            }
+          ]
+        }
+      ]
+    },
+    "effects": []
+  },
+  {
+    "id": "mind-hammer-r3",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Crash Hammer",
+    "cardNumber": 78,
+    "image": "card_mind_hammer_r3.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 2,
+    "abilityText": "2x HEAVY damage to 3 tiles in a line. Choose 1: WEST or EAST of the attacker.",
+    "range": {
+      "kind": "die-roll-fixed",
+      "rolls": [
+        {
+          "min": 1,
+          "max": 3,
+          "tiles": [
+            {
+              "dx": -1,
+              "dy": 0
+            },
+            {
+              "dx": -2,
+              "dy": 0
+            },
+            {
+              "dx": -3,
+              "dy": 0
+            }
+          ]
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "tiles": [
+            {
+              "dx": 1,
+              "dy": 0
+            },
+            {
+              "dx": 2,
+              "dy": 0
+            },
+            {
+              "dx": 3,
+              "dy": 0
+            }
+          ]
+        }
+      ]
+    },
+    "effects": []
+  },
+  {
+    "id": "mind-hammer-r4",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Crash Hammer",
+    "cardNumber": 79,
+    "image": "card_mind_hammer_r4.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 3,
+    "abilityText": "3x HEAVY damage to 3 tiles in a line. Choose 1: WEST or EAST of the attacker.",
+    "range": {
+      "kind": "die-roll-fixed",
+      "rolls": [
+        {
+          "min": 1,
+          "max": 3,
+          "tiles": [
+            {
+              "dx": -1,
+              "dy": 0
+            },
+            {
+              "dx": -2,
+              "dy": 0
+            },
+            {
+              "dx": -3,
+              "dy": 0
+            }
+          ]
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "tiles": [
+            {
+              "dx": 1,
+              "dy": 0
+            },
+            {
+              "dx": 2,
+              "dy": 0
+            },
+            {
+              "dx": 3,
+              "dy": 0
+            }
+          ]
+        }
+      ]
+    },
+    "effects": []
+  },
+  {
+    "id": "mind-hammer-r5",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Crash Hammer",
+    "cardNumber": 80,
+    "image": "card_mind_hammer_r5.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 4,
+    "abilityText": "4x HEAVY damage to 3 tiles in a line. Choose 1: WEST or EAST of the attacker.",
+    "range": {
+      "kind": "die-roll-fixed",
+      "rolls": [
+        {
+          "min": 1,
+          "max": 3,
+          "tiles": [
+            {
+              "dx": -1,
+              "dy": 0
+            },
+            {
+              "dx": -2,
+              "dy": 0
+            },
+            {
+              "dx": -3,
+              "dy": 0
+            }
+          ]
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "tiles": [
+            {
+              "dx": 1,
+              "dy": 0
+            },
+            {
+              "dx": 2,
+              "dy": 0
+            },
+            {
+              "dx": 3,
+              "dy": 0
+            }
+          ]
+        }
+      ]
+    },
+    "effects": []
+  },
+  {
+    "id": "mind-beam-r1",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Ion Cannon Beam",
+    "cardNumber": 81,
+    "image": "card_mind_beam_r1.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "MEDIUM damage to the first target in any straight line (including diagonals).",
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": true
+    }
+  },
+  {
+    "id": "mind-beam-r2",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Ion Cannon Beam",
+    "cardNumber": 82,
+    "image": "card_mind_beam_r2.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 2,
+    "abilityText": "2x MEDIUM damage to the first target in any straight line (including diagonals).",
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": true
+    },
+    "effects": null
+  },
+  {
+    "id": "mind-beam-r3",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Ion Cannon Beam",
+    "cardNumber": 83,
+    "image": "card_mind_beam_r3.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 3,
+    "abilityText": "3x MEDIUM damage to the first target in any straight line (including diagonals).",
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": true
+    },
+    "effects": null
+  },
+  {
+    "id": "mind-beam-r4",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Ion Cannon Beam",
+    "cardNumber": 84,
+    "image": "card_mind_beam_r4.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 4,
+    "abilityText": "4x MEDIUM damage to the first target in any straight line (including diagonals).",
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": true
+    },
+    "effects": null
+  },
+  {
+    "id": "mind-beam-r5",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Ion Cannon Beam",
+    "cardNumber": 85,
+    "image": "card_mind_beam_r5.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 5,
+    "abilityText": "5x MEDIUM damage to the first target in any straight line (including diagonals).",
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": true
+    },
+    "effects": null
+  },
+  {
+    "id": "mind-trident-r1",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Golden Trident",
+    "cardNumber": 86,
+    "image": "card_mind_trident_r1.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "May move an adjacent enemy 1 tile. MEDIUM damage. Block 1 damage from 1 counterattack.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 2,
+          "dy": -2
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "pre-attack-may-move-adjacent",
+        "range": 1
+      },
+      {
+        "kind": "weapon-counter-block",
+        "amount": 1,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-trident-r2",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Golden Trident",
+    "cardNumber": 87,
+    "image": "card_mind_trident_r2.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "May move an adjacent enemy 1 tile. MEDIUM damage. Block 2 damage from 1 counterattack.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 2,
+          "dy": -2
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -2,
+          "dy": 2
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "pre-attack-may-move-adjacent",
+        "range": 1
+      },
+      {
+        "kind": "weapon-counter-block",
+        "amount": 2,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-trident-r3",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Golden Trident",
+    "cardNumber": 88,
+    "image": "card_mind_trident_r3.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 2,
+    "abilityText": "May move an adjacent enemy 1 tile. 2x MEDIUM damage. Block 3 damage from 1 counterattack.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 2,
+          "dy": -2
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -2,
+          "dy": 2
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "pre-attack-may-move-adjacent",
+        "range": 1
+      },
+      {
+        "kind": "weapon-counter-block",
+        "amount": 3,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-trident-r4",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Golden Trident",
+    "cardNumber": 89,
+    "image": "card_mind_trident_r4.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 3,
+    "abilityText": "May move an adjacent enemy 1 tile. 3x MEDIUM damage. Block 4 damage from 1 counterattack.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 2,
+          "dy": -2
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -2,
+          "dy": 2
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "pre-attack-may-move-adjacent",
+        "range": 1
+      },
+      {
+        "kind": "weapon-counter-block",
+        "amount": 4,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-trident-r5",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Golden Trident",
+    "cardNumber": 90,
+    "image": "card_mind_trident_r5.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 4,
+    "abilityText": "May move an adjacent enemy 1 tile. 4x MEDIUM damage. Block 5 damage from 1 counterattack.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 2,
+          "dy": -2
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -2,
+          "dy": 2
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "pre-attack-may-move-adjacent",
+        "range": 1
+      },
+      {
+        "kind": "weapon-counter-block",
+        "amount": 5,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-sword-r1",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Flicker Blade Sword",
+    "cardNumber": 91,
+    "image": "card_mind_sword_r1.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "MEDIUM damage to an adjacent enemy. Additional LIGHT damage if delvers are adjacent to each other or sharing a tile.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "additional-damage-if-delvers-adjacent",
+        "damageType": "light",
+        "multiplier": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-sword-r2",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Flicker Blade Sword",
+    "cardNumber": 92,
+    "image": "card_mind_sword_r2.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 2,
+    "abilityText": "2x MEDIUM damage to an adjacent enemy. Additional 2x LIGHT damage if delvers are adjacent to each other or sharing a tile.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "additional-damage-if-delvers-adjacent",
+        "damageType": "light",
+        "multiplier": 2
+      }
+    ]
+  },
+  {
+    "id": "mind-sword-r3",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Flicker Blade Sword",
+    "cardNumber": 93,
+    "image": "card_mind_sword_r3.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 3,
+    "abilityText": "3x MEDIUM damage to an adjacent enemy. Additional 3x LIGHT damage if delvers are adjacent to each other or sharing a tile.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "additional-damage-if-delvers-adjacent",
+        "damageType": "light",
+        "multiplier": 3
+      }
+    ]
+  },
+  {
+    "id": "mind-sword-r4",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Flicker Blade Sword",
+    "cardNumber": 94,
+    "image": "card_mind_sword_r4.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 4,
+    "abilityText": "4x MEDIUM damage to an adjacent enemy. Additional 4x LIGHT damage if delvers are adjacent to each other or sharing a tile.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "additional-damage-if-delvers-adjacent",
+        "damageType": "light",
+        "multiplier": 4
+      }
+    ]
+  },
+  {
+    "id": "mind-sword-r5",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Flicker Blade Sword",
+    "cardNumber": 95,
+    "image": "card_mind_sword_r5.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 5,
+    "abilityText": "5x MEDIUM damage to an adjacent enemy. Additional 5x LIGHT damage if delvers are adjacent to each other or sharing a tile.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "additional-damage-if-delvers-adjacent",
+        "damageType": "light",
+        "multiplier": 5
+      }
+    ]
+  },
+  {
+    "id": "mind-mace-r1",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Pulse Maul Mace",
+    "cardNumber": 96,
+    "image": "card_mind_mace_r1.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 1,
+    "abilityText": "HEAVY damage to an adjacent UNDAMAGED enemy. OR Spend an element to deal HEAVY to an adjacent enemy.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "target-filter-or-spend-element",
+        "filter": "undamaged"
+      }
+    ]
+  },
+  {
+    "id": "mind-mace-r2",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Pulse Maul Mace",
+    "cardNumber": 97,
+    "image": "card_mind_mace_r2.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 2,
+    "abilityText": "2x HEAVY damage to an adjacent UNDAMAGED enemy. OR Spend an element to deal 2x HEAVY to an adjacent enemy.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "target-filter-or-spend-element",
+        "filter": "undamaged"
+      }
+    ]
+  },
+  {
+    "id": "mind-mace-r3",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Pulse Maul Mace",
+    "cardNumber": 98,
+    "image": "card_mind_mace_r3.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 3,
+    "abilityText": "3x HEAVY damage to an adjacent UNDAMAGED enemy. OR Spend an element to deal 3x HEAVY to an adjacent enemy.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "target-filter-or-spend-element",
+        "filter": "undamaged"
+      }
+    ]
+  },
+  {
+    "id": "mind-mace-r4",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Pulse Maul Mace",
+    "cardNumber": 99,
+    "image": "card_mind_mace_r4.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 4,
+    "abilityText": "4x HEAVY damage to an adjacent UNDAMAGED enemy. OR Spend an element to deal 4x HEAVY to an adjacent enemy.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "target-filter-or-spend-element",
+        "filter": "undamaged"
+      }
+    ]
+  },
+  {
+    "id": "mind-mace-r5",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Pulse Maul Mace",
+    "cardNumber": 100,
+    "image": "card_mind_mace_r5.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 5,
+    "abilityText": "5x HEAVY damage to an adjacent UNDAMAGED enemy. OR Spend an element to deal 5x HEAVY to an adjacent enemy.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "target-filter-or-spend-element",
+        "filter": "undamaged"
+      }
+    ]
+  },
+  {
+    "id": "mind-shockwave-r1",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "mind",
+    "name": "North Web Shockwave",
+    "cardNumber": 101,
+    "image": "card_mind_shockwave_r1.jpg",
+    "damageType": "light",
+    "damageMultiplier": 1,
+    "abilityText": "LIGHT damage. Block 1 damage from 2 counterattacks.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": 0,
+          "dy": -1
+        },
+        {
+          "dx": 0,
+          "dy": -2
+        },
+        {
+          "dx": 0,
+          "dy": -3
+        },
+        {
+          "dx": 1,
+          "dy": 0
+        },
+        {
+          "dx": 2,
+          "dy": 0
+        },
+        {
+          "dx": 3,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        },
+        {
+          "dx": 0,
+          "dy": 2
+        },
+        {
+          "dx": 0,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": -2,
+          "dy": 0
+        },
+        {
+          "dx": -3,
+          "dy": 0
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "weapon-counter-block",
+        "amount": 1,
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "mind-shockwave-r2",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "mind",
+    "name": "North Web Shockwave",
+    "cardNumber": 102,
+    "image": "card_mind_shockwave_r2.jpg",
+    "damageType": "light",
+    "damageMultiplier": 2,
+    "abilityText": "2x LIGHT damage. Block 2 damage from 2 counterattacks.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": 0,
+          "dy": -1
+        },
+        {
+          "dx": 0,
+          "dy": -2
+        },
+        {
+          "dx": 0,
+          "dy": -3
+        },
+        {
+          "dx": 1,
+          "dy": 0
+        },
+        {
+          "dx": 2,
+          "dy": 0
+        },
+        {
+          "dx": 3,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        },
+        {
+          "dx": 0,
+          "dy": 2
+        },
+        {
+          "dx": 0,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": -2,
+          "dy": 0
+        },
+        {
+          "dx": -3,
+          "dy": 0
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "weapon-counter-block",
+        "amount": 2,
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "mind-shockwave-r3",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "mind",
+    "name": "North Web Shockwave",
+    "cardNumber": 103,
+    "image": "card_mind_shockwave_r3.jpg",
+    "damageType": "light",
+    "damageMultiplier": 3,
+    "abilityText": "3x LIGHT damage. Block 3 damage from 2 counterattacks.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": 0,
+          "dy": -1
+        },
+        {
+          "dx": 0,
+          "dy": -2
+        },
+        {
+          "dx": 0,
+          "dy": -3
+        },
+        {
+          "dx": 1,
+          "dy": 0
+        },
+        {
+          "dx": 2,
+          "dy": 0
+        },
+        {
+          "dx": 3,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        },
+        {
+          "dx": 0,
+          "dy": 2
+        },
+        {
+          "dx": 0,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": -2,
+          "dy": 0
+        },
+        {
+          "dx": -3,
+          "dy": 0
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "weapon-counter-block",
+        "amount": 3,
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "mind-shockwave-r4",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "mind",
+    "name": "North Web Shockwave",
+    "cardNumber": 104,
+    "image": "card_mind_shockwave_r4.jpg",
+    "damageType": "light",
+    "damageMultiplier": 4,
+    "abilityText": "4x LIGHT damage. Block 4 damage from 2 counterattacks.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": 0,
+          "dy": -1
+        },
+        {
+          "dx": 0,
+          "dy": -2
+        },
+        {
+          "dx": 0,
+          "dy": -3
+        },
+        {
+          "dx": 1,
+          "dy": 0
+        },
+        {
+          "dx": 2,
+          "dy": 0
+        },
+        {
+          "dx": 3,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        },
+        {
+          "dx": 0,
+          "dy": 2
+        },
+        {
+          "dx": 0,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": -2,
+          "dy": 0
+        },
+        {
+          "dx": -3,
+          "dy": 0
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "weapon-counter-block",
+        "amount": 4,
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "mind-shockwave-r5",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "mind",
+    "name": "North Web Shockwave",
+    "cardNumber": 105,
+    "image": "card_mind_shockwave_r5.jpg",
+    "damageType": "light",
+    "damageMultiplier": 5,
+    "abilityText": "5x LIGHT damage. Block 5 damage from 2 counterattacks.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": 0,
+          "dy": -1
+        },
+        {
+          "dx": 0,
+          "dy": -2
+        },
+        {
+          "dx": 0,
+          "dy": -3
+        },
+        {
+          "dx": 1,
+          "dy": 0
+        },
+        {
+          "dx": 2,
+          "dy": 0
+        },
+        {
+          "dx": 3,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        },
+        {
+          "dx": 0,
+          "dy": 2
+        },
+        {
+          "dx": 0,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": -2,
+          "dy": 0
+        },
+        {
+          "dx": -3,
+          "dy": 0
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "weapon-counter-block",
+        "amount": 5,
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "mind-os-r1",
+    "type": "OS",
+    "category": "passive",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Providence OS",
+    "cardNumber": 106,
+    "image": "card_mind_os_r1.jpg",
+    "abilityText": "ONGOING: Enemies that grant XP grant 1 additional XP.",
+    "effects": [
+      {
+        "kind": "bonus-xp-on-kill",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-os-r2",
+    "type": "OS",
+    "category": "passive",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Providence OS",
+    "cardNumber": 107,
+    "image": "card_mind_os_r2.jpg",
+    "abilityText": "ONGOING: Enemies that grant XP grant 2 additional XP.",
+    "effects": [
+      {
+        "kind": "bonus-xp-on-kill",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "mind-os-r3",
+    "type": "OS",
+    "category": "passive",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Providence OS",
+    "cardNumber": 108,
+    "image": "card_mind_os_r3.jpg",
+    "abilityText": "ONGOING: Enemies that grant XP grant 3 additional XP.",
+    "effects": [
+      {
+        "kind": "bonus-xp-on-kill",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "id": "mind-os-r4",
+    "type": "OS",
+    "category": "passive",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Providence OS",
+    "cardNumber": 109,
+    "image": "card_mind_os_r4.jpg",
+    "abilityText": "ONGOING: Enemies that grant XP grant 4 additional XP.",
+    "effects": [
+      {
+        "kind": "bonus-xp-on-kill",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "id": "mind-os-r5",
+    "type": "OS",
+    "category": "passive",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Providence OS",
+    "cardNumber": 110,
+    "image": "card_mind_os_r5.jpg",
+    "abilityText": "ONGOING: Enemies that grant XP grant 5 additional XP.",
+    "effects": [
+      {
+        "kind": "bonus-xp-on-kill",
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "id": "mind-shield-r1",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Sol Shield",
+    "cardNumber": 111,
+    "image": "card_mind_shield_r1.jpg",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have delvers on your tile block 1 damage from a single source, or block 2 if you spend a Radiance. Heal 1 HP for each overblocked damage.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 1,
+        "bonusElement": "radiance",
+        "bonusBlock": 2,
+        "healPerOverblock": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-shield-r2",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Sol Shield",
+    "cardNumber": 112,
+    "image": "card_mind_shield_r2.jpg",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have delvers on your tile block 2 damage from a single source, or block 3 if you spend a Radiance. Heal 1 HP for each overblocked damage.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 2,
+        "bonusElement": "radiance",
+        "bonusBlock": 3,
+        "healPerOverblock": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-shield-r3",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Sol Shield",
+    "cardNumber": 113,
+    "image": "card_mind_shield_r3.jpg",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have delvers on your tile block 3 damage from a single source, or block 4 if you spend a Radiance. Heal 1 HP for each overblocked damage.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 3,
+        "bonusElement": "radiance",
+        "bonusBlock": 4,
+        "healPerOverblock": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-shield-r4",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Sol Shield",
+    "cardNumber": 114,
+    "image": "card_mind_shield_r4.jpg",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have delvers on your tile block 4 damage from a single source, or block 5 if you spend a Radiance. Heal 1 HP for each overblocked damage.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 4,
+        "bonusElement": "radiance",
+        "bonusBlock": 5,
+        "healPerOverblock": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-shield-r5",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Sol Shield",
+    "cardNumber": 115,
+    "image": "card_mind_shield_r5.jpg",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have delvers on your tile block 5 damage from a single source, or block 6 if you spend a Radiance. Heal 1 HP for each overblocked damage.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 5,
+        "bonusElement": "radiance",
+        "bonusBlock": 6,
+        "healPerOverblock": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-boots-r1",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Slip Strider Boots",
+    "cardNumber": 116,
+    "image": "card_mind_boots_r1.jpg",
+    "abilityText": "IMMEDIATELY: Set your movement to 2. ONGOING: You may spend 2 movement to rotate an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "mind-boots-r2",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Slip Strider Boots",
+    "cardNumber": 117,
+    "image": "card_mind_boots_r2.jpg",
+    "abilityText": "IMMEDIATELY: Set your movement to 3. ONGOING: You may spend 2 movement to rotate an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "mind-boots-r3",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Slip Strider Boots",
+    "cardNumber": 118,
+    "image": "card_mind_boots_r3.jpg",
+    "abilityText": "IMMEDIATELY: Set your movement to 4. ONGOING: You may spend 2 movement to rotate an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "mind-boots-r4",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Slip Strider Boots",
+    "cardNumber": 119,
+    "image": "card_mind_boots_r4.jpg",
+    "abilityText": "IMMEDIATELY: Set your movement to 5. ONGOING: You may spend 2 movement to rotate an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "mind-boots-r5",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Slip Strider Boots",
+    "cardNumber": 120,
+    "image": "card_mind_boots_r5.jpg",
+    "abilityText": "IMMEDIATELY: Set your movement to 6. ONGOING: You may spend 2 movement to rotate an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "mind-supercharger-r1",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Reflex Supercharger",
+    "cardNumber": 121,
+    "image": "card_mind_supercharger_r1.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1: 2x LIGHT damage tokens. 2: 2x MEDIUM. 3: 2x HEAVY. 4: one of each. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "mind-supercharger-r2",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Reflex Supercharger",
+    "cardNumber": 122,
+    "image": "card_mind_supercharger_r2.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1: 2x LIGHT damage tokens. 2: 2x MEDIUM. 3: 2x HEAVY. 4: one of each. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "mind-supercharger-r3",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Reflex Supercharger",
+    "cardNumber": 123,
+    "image": "card_mind_supercharger_r3.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1: 2x LIGHT damage tokens. 2: 2x MEDIUM. 3: 2x HEAVY. 4: one of each. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "mind-supercharger-r4",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Reflex Supercharger",
+    "cardNumber": 124,
+    "image": "card_mind_supercharger_r4.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1: 2x LIGHT damage tokens. 2: 2x MEDIUM. 3: 2x HEAVY. 4: one of each. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "mind-supercharger-r5",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Reflex Supercharger",
+    "cardNumber": 125,
+    "image": "card_mind_supercharger_r5.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1: 2x LIGHT damage tokens. 2: 2x MEDIUM. 3: 2x HEAVY. 4: one of each. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "mind-armor-r1",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Lunar Skin Armor",
+    "cardNumber": 126,
+    "image": "card_mind_armor_r1.jpg",
+    "abilityText": "IMMEDIATELY: Increase max HP to 9 and current HP by 3. ONGOING: Heal 1 HP at the end of each wave.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 9
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "mind-armor-r2",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Lunar Skin Armor",
+    "cardNumber": 127,
+    "image": "card_mind_armor_r2.jpg",
+    "abilityText": "IMMEDIATELY: Increase max HP to 12 and current HP by 3. ONGOING: Heal 2 HP at the end of each wave.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 12
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "mind-armor-r3",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Lunar Skin Armor",
+    "cardNumber": 128,
+    "image": "card_mind_armor_r3.jpg",
+    "abilityText": "IMMEDIATELY: Increase max HP to 15 and current HP by 3. ONGOING: Heal 3 HP at the end of each wave.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 15
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "id": "mind-armor-r4",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Lunar Skin Armor",
+    "cardNumber": 129,
+    "image": "card_mind_armor_r4.jpg",
+    "abilityText": "IMMEDIATELY: Increase max HP to 18 and current HP by 3. ONGOING: Heal 4 HP at the end of each wave.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 18
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "id": "mind-armor-r5",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Lunar Skin Armor",
+    "cardNumber": 130,
+    "image": "card_mind_armor_r5.jpg",
+    "abilityText": "IMMEDIATELY: Increase max HP to 21 and current HP by 3. ONGOING: Heal 5 HP at the end of each wave.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 21
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "id": "mind-harvester-r1",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Dragonfly Model Harvester",
+    "cardNumber": 131,
+    "image": "card_mind_harvester_r1.jpg",
+    "abilityText": "ONGOING: You gain 2 MINION PART tokens at the end of each wave (taken from supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "creature-part",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "mind-harvester-r2",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Dragonfly Model Harvester",
+    "cardNumber": 132,
+    "image": "card_mind_harvester_r2.jpg",
+    "abilityText": "ONGOING: You gain 4 MINION PART tokens at the end of each wave (taken from supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "creature-part",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "id": "mind-harvester-r3",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Dragonfly Model Harvester",
+    "cardNumber": 133,
+    "image": "card_mind_harvester_r3.jpg",
+    "abilityText": "ONGOING: You gain 6 MINION PART tokens at the end of each wave (taken from supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "creature-part",
+        "amount": 6
+      }
+    ]
+  },
+  {
+    "id": "mind-harvester-r4",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Dragonfly Model Harvester",
+    "cardNumber": 134,
+    "image": "card_mind_harvester_r4.jpg",
+    "abilityText": "ONGOING: You gain 8 MINION PART tokens at the end of each wave (taken from supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "creature-part",
+        "amount": 8
+      }
+    ]
+  },
+  {
+    "id": "mind-harvester-r5",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Dragonfly Model Harvester",
+    "cardNumber": 135,
+    "image": "card_mind_harvester_r5.jpg",
+    "abilityText": "ONGOING: You gain 10 MINION PART tokens at the end of each wave (taken from supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "creature-part",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "id": "mind-battery-r1",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 1,
+    "suit": "mind",
+    "name": "Core Booster Battery",
+    "cardNumber": 136,
+    "image": "card_mind_battery_r1.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1-2: gain 1 AP token. 3-4: gain 1 BLOCK COUNTERATTACK token. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "mind-battery-r2",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 2,
+    "suit": "mind",
+    "name": "Core Booster Battery",
+    "cardNumber": 137,
+    "image": "card_mind_battery_r2.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1-2: gain 1 AP token. 3-4: gain 1 BLOCK COUNTERATTACK token. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "mind-battery-r3",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 3,
+    "suit": "mind",
+    "name": "Core Booster Battery",
+    "cardNumber": 138,
+    "image": "card_mind_battery_r3.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1-2: gain 1 AP token. 3-4: gain 1 BLOCK COUNTERATTACK token. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "mind-battery-r4",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 4,
+    "suit": "mind",
+    "name": "Core Booster Battery",
+    "cardNumber": 139,
+    "image": "card_mind_battery_r4.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1-2: gain 1 AP token. 3-4: gain 1 BLOCK COUNTERATTACK token. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "mind-battery-r5",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 5,
+    "suit": "mind",
+    "name": "Core Booster Battery",
+    "cardNumber": 140,
+    "image": "card_mind_battery_r5.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1-2: gain 1 AP token. 3-4: gain 1 BLOCK COUNTERATTACK token. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "body-gauntlet-r1",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "body",
+    "name": "Chain Gauntlet",
+    "cardNumber": 1,
+    "image": "card_body_gauntlet_r1.jpg",
+    "damageType": "light",
+    "damageMultiplier": 1,
+    "abilityText": "LIGHT damage to an adjacent chain of connected enemies, if you are adjacent to at least one of those enemies.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "self"
+    }
+  },
+  {
+    "id": "body-gauntlet-r2",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "body",
+    "name": "Chain Gauntlet",
+    "cardNumber": 2,
+    "image": "card_body_gauntlet_r2.jpg",
+    "damageType": "light",
+    "damageMultiplier": 2,
+    "abilityText": "2x LIGHT damage to an adjacent chain of connected enemies, if you are adjacent to at least one of those enemies. Collect 1 CREATURE PART from any tile.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "self"
+    },
+    "effects": [
+      {
+        "kind": "collect-creature-part",
+        "count": 1,
+        "from": "any-tile"
+      }
+    ]
+  },
+  {
+    "id": "body-gauntlet-r3",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "body",
+    "name": "Chain Gauntlet",
+    "cardNumber": 3,
+    "image": "card_body_gauntlet_r3.jpg",
+    "damageType": "light",
+    "damageMultiplier": 3,
+    "abilityText": "3x LIGHT damage to an adjacent chain of connected enemies, if you are adjacent to at least one of those enemies. Collect 1 CREATURE PART from any tile.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "self"
+    },
+    "effects": [
+      {
+        "kind": "collect-creature-part",
+        "count": 1,
+        "from": "any-tile"
+      }
+    ]
+  },
+  {
+    "id": "body-gauntlet-r4",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "body",
+    "name": "Chain Gauntlet",
+    "cardNumber": 4,
+    "image": "card_body_gauntlet_r4.jpg",
+    "damageType": "light",
+    "damageMultiplier": 4,
+    "abilityText": "4x LIGHT damage to an adjacent chain of connected enemies, if you are adjacent to at least one of those enemies. Collect 1 CREATURE PART from any tile.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "self"
+    },
+    "effects": [
+      {
+        "kind": "collect-creature-part",
+        "count": 1,
+        "from": "any-tile"
+      }
+    ]
+  },
+  {
+    "id": "body-gauntlet-r5",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "body",
+    "name": "Chain Gauntlet",
+    "cardNumber": 5,
+    "image": "card_body_gauntlet_r5.jpg",
+    "damageType": "light",
+    "damageMultiplier": 5,
+    "abilityText": "5x LIGHT damage to an adjacent chain of connected enemies, if you are adjacent to at least one of those enemies. Collect 1 CREATURE PART from any tile.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "self"
+    },
+    "effects": [
+      {
+        "kind": "collect-creature-part",
+        "count": 1,
+        "from": "any-tile"
+      }
+    ]
+  },
+  {
+    "id": "body-hammer-r1",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "body",
+    "name": "Anchor Hammer",
+    "cardNumber": 6,
+    "image": "card_body_hammer_r1.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 1,
+    "abilityText": "HEAVY damage to 1 tile. Roll a die: on 1-3 hits tile NORTH, on 4-6 hits tile SOUTH. You may suffer 1 Damage to change the die result.",
+    "range": {
+      "kind": "die-roll-fixed",
+      "rolls": [
+        {
+          "min": 1,
+          "max": 3,
+          "tiles": [
+            {
+              "dx": 0,
+              "dy": -1
+            }
+          ]
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "tiles": [
+            {
+              "dx": 0,
+              "dy": 1
+            }
+          ]
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "may-reroll-by-suffering",
+        "suffer": 1
+      }
+    ]
+  },
+  {
+    "id": "body-hammer-r2",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "body",
+    "name": "Anchor Hammer",
+    "cardNumber": 7,
+    "image": "card_body_hammer_r2.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 1,
+    "abilityText": "HEAVY damage to 3 tiles in a line. Choose 1: NORTH or SOUTH of the attacker.",
+    "range": {
+      "kind": "die-roll-fixed",
+      "rolls": [
+        {
+          "min": 1,
+          "max": 3,
+          "tiles": [
+            {
+              "dx": 0,
+              "dy": -1
+            },
+            {
+              "dx": 0,
+              "dy": -2
+            },
+            {
+              "dx": 0,
+              "dy": -3
+            }
+          ]
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "tiles": [
+            {
+              "dx": 0,
+              "dy": 1
+            },
+            {
+              "dx": 0,
+              "dy": 2
+            },
+            {
+              "dx": 0,
+              "dy": 3
+            }
+          ]
+        }
+      ]
+    },
+    "effects": []
+  },
+  {
+    "id": "body-hammer-r3",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "body",
+    "name": "Anchor Hammer",
+    "cardNumber": 8,
+    "image": "card_body_hammer_r3.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 2,
+    "abilityText": "2x HEAVY damage to 3 tiles in a line. Choose 1: NORTH or SOUTH of the attacker.",
+    "range": {
+      "kind": "die-roll-fixed",
+      "rolls": [
+        {
+          "min": 1,
+          "max": 3,
+          "tiles": [
+            {
+              "dx": 0,
+              "dy": -1
+            },
+            {
+              "dx": 0,
+              "dy": -2
+            },
+            {
+              "dx": 0,
+              "dy": -3
+            }
+          ]
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "tiles": [
+            {
+              "dx": 0,
+              "dy": 1
+            },
+            {
+              "dx": 0,
+              "dy": 2
+            },
+            {
+              "dx": 0,
+              "dy": 3
+            }
+          ]
+        }
+      ]
+    },
+    "effects": []
+  },
+  {
+    "id": "body-hammer-r4",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "body",
+    "name": "Anchor Hammer",
+    "cardNumber": 9,
+    "image": "card_body_hammer_r4.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 3,
+    "abilityText": "3x HEAVY damage to 3 tiles in a line. Choose 1: NORTH or SOUTH of the attacker.",
+    "range": {
+      "kind": "die-roll-fixed",
+      "rolls": [
+        {
+          "min": 1,
+          "max": 3,
+          "tiles": [
+            {
+              "dx": 0,
+              "dy": -1
+            },
+            {
+              "dx": 0,
+              "dy": -2
+            },
+            {
+              "dx": 0,
+              "dy": -3
+            }
+          ]
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "tiles": [
+            {
+              "dx": 0,
+              "dy": 1
+            },
+            {
+              "dx": 0,
+              "dy": 2
+            },
+            {
+              "dx": 0,
+              "dy": 3
+            }
+          ]
+        }
+      ]
+    },
+    "effects": []
+  },
+  {
+    "id": "body-hammer-r5",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "body",
+    "name": "Anchor Hammer",
+    "cardNumber": 10,
+    "image": "card_body_hammer_r5.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 4,
+    "abilityText": "4x HEAVY damage to 3 tiles in a line. Choose 1: NORTH or SOUTH of the attacker.",
+    "range": {
+      "kind": "die-roll-fixed",
+      "rolls": [
+        {
+          "min": 1,
+          "max": 3,
+          "tiles": [
+            {
+              "dx": 0,
+              "dy": -1
+            },
+            {
+              "dx": 0,
+              "dy": -2
+            },
+            {
+              "dx": 0,
+              "dy": -3
+            }
+          ]
+        },
+        {
+          "min": 4,
+          "max": 6,
+          "tiles": [
+            {
+              "dx": 0,
+              "dy": 1
+            },
+            {
+              "dx": 0,
+              "dy": 2
+            },
+            {
+              "dx": 0,
+              "dy": 3
+            }
+          ]
+        }
+      ]
+    },
+    "effects": []
+  },
+  {
+    "id": "body-beam-r1",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "body",
+    "name": "Scorchline Beam",
+    "cardNumber": 11,
+    "image": "card_body_beam_r1.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "MEDIUM damage to the first target in any straight line (including diagonals).",
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": true
+    }
+  },
+  {
+    "id": "body-beam-r2",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "body",
+    "name": "Scorchline Beam",
+    "cardNumber": 12,
+    "image": "card_body_beam_r2.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "MEDIUM damage to the first target in any straight line (including diagonals). Repeat once. (Can be a different straight line.)",
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": true
+    },
+    "effects": [
+      {
+        "kind": "repeat-attack",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "body-beam-r3",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "body",
+    "name": "Scorchline Beam",
+    "cardNumber": 13,
+    "image": "card_body_beam_r3.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "MEDIUM damage to the first target in any straight line (including diagonals). Repeat 2 times. (Can be a different straight line.)",
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": true
+    },
+    "effects": [
+      {
+        "kind": "repeat-attack",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "body-beam-r4",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "body",
+    "name": "Scorchline Beam",
+    "cardNumber": 14,
+    "image": "card_body_beam_r4.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "MEDIUM damage to the first target in any straight line (including diagonals). Repeat 3 times. (Can be a different straight line.)",
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": true
+    },
+    "effects": [
+      {
+        "kind": "repeat-attack",
+        "count": 3
+      }
+    ]
+  },
+  {
+    "id": "body-beam-r5",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "body",
+    "name": "Scorchline Beam",
+    "cardNumber": 15,
+    "image": "card_body_beam_r5.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "MEDIUM damage to the first target in any straight line (including diagonals). Repeat 4 times. (Can be a different straight line.)",
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": true
+    },
+    "effects": [
+      {
+        "kind": "repeat-attack",
+        "count": 4
+      }
+    ]
+  },
+  {
+    "id": "body-trident-r1",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "body",
+    "name": "Shift Trident",
+    "cardNumber": 16,
+    "image": "card_body_trident_r1.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "May move an adjacent enemy 1 tile. MEDIUM damage. Block 1 damage from 1 counterattack.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": -2,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "pre-attack-may-move-adjacent",
+        "range": 1
+      },
+      {
+        "kind": "weapon-counter-block",
+        "amount": 1,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "body-trident-r2",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "body",
+    "name": "Shift Trident",
+    "cardNumber": 17,
+    "image": "card_body_trident_r2.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "May move an adjacent enemy 1 tile. MEDIUM damage. Block 2 damage from 1 counterattack.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": -2,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "pre-attack-may-move-adjacent",
+        "range": 1
+      },
+      {
+        "kind": "weapon-counter-block",
+        "amount": 2,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "body-trident-r3",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "body",
+    "name": "Shift Trident",
+    "cardNumber": 18,
+    "image": "card_body_trident_r3.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 2,
+    "abilityText": "May move an adjacent enemy 1 tile. 2x MEDIUM damage. Block 3 damage from 1 counterattack.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": -2,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "pre-attack-may-move-adjacent",
+        "range": 1
+      },
+      {
+        "kind": "weapon-counter-block",
+        "amount": 3,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "body-trident-r4",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "body",
+    "name": "Shift Trident",
+    "cardNumber": 19,
+    "image": "card_body_trident_r4.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 3,
+    "abilityText": "May move an adjacent enemy 1 tile. 3x MEDIUM damage. Block 4 damage from 1 counterattack.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": -2,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "pre-attack-may-move-adjacent",
+        "range": 1
+      },
+      {
+        "kind": "weapon-counter-block",
+        "amount": 4,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "body-trident-r5",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "body",
+    "name": "Shift Trident",
+    "cardNumber": 20,
+    "image": "card_body_trident_r5.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 4,
+    "abilityText": "May move an adjacent enemy 1 tile. 4x MEDIUM damage. Block 5 damage from 1 counterattack.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": -2,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "pre-attack-may-move-adjacent",
+        "range": 1
+      },
+      {
+        "kind": "weapon-counter-block",
+        "amount": 5,
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "body-sword-r1",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "body",
+    "name": "Soulshift Sword",
+    "cardNumber": 21,
+    "image": "card_body_sword_r1.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "abilityText": "MEDIUM damage to an adjacent enemy. If the target dies, roll a die. On a result of 4-6, repeat if able.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "repeat-on-kill",
+        "rollMin": 4,
+        "rollMax": 6
+      }
+    ]
+  },
+  {
+    "id": "body-sword-r2",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "body",
+    "name": "Soulshift Sword",
+    "cardNumber": 22,
+    "image": "card_body_sword_r2.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 2,
+    "abilityText": "2x MEDIUM damage to an adjacent enemy. If the target dies, roll a die. On a result of 4-6, repeat if able.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "repeat-on-kill",
+        "rollMin": 4,
+        "rollMax": 6
+      }
+    ]
+  },
+  {
+    "id": "body-sword-r3",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "body",
+    "name": "Soulshift Sword",
+    "cardNumber": 23,
+    "image": "card_body_sword_r3.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 3,
+    "abilityText": "3x MEDIUM damage to an adjacent enemy. If the target dies, roll a die. On a result of 4-6, repeat if able.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "repeat-on-kill",
+        "rollMin": 4,
+        "rollMax": 6
+      }
+    ]
+  },
+  {
+    "id": "body-sword-r4",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "body",
+    "name": "Soulshift Sword",
+    "cardNumber": 24,
+    "image": "card_body_sword_r4.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 4,
+    "abilityText": "4x MEDIUM damage to an adjacent enemy. If the target dies, roll a die. On a result of 4-6, repeat if able.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "repeat-on-kill",
+        "rollMin": 4,
+        "rollMax": 6
+      }
+    ]
+  },
+  {
+    "id": "body-sword-r5",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "body",
+    "name": "Soulshift Sword",
+    "cardNumber": 25,
+    "image": "card_body_sword_r5.jpg",
+    "damageType": "medium",
+    "damageMultiplier": 5,
+    "abilityText": "5x MEDIUM damage to an adjacent enemy. If the target dies, roll a die. On a result of 4-6, repeat if able.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "repeat-on-kill",
+        "rollMin": 4,
+        "rollMax": 6
+      }
+    ]
+  },
+  {
+    "id": "body-mace-r1",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "body",
+    "name": "Geoshade Mace",
+    "cardNumber": 26,
+    "image": "card_body_mace_r1.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 1,
+    "abilityText": "HEAVY damage to an adjacent DAMAGED enemy. OR Spend an element to deal HEAVY to an adjacent enemy.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "target-filter-or-spend-element",
+        "filter": "damaged"
+      }
+    ]
+  },
+  {
+    "id": "body-mace-r2",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "body",
+    "name": "Geoshade Mace",
+    "cardNumber": 27,
+    "image": "card_body_mace_r2.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 2,
+    "abilityText": "2x HEAVY damage to an adjacent DAMAGED enemy. OR Spend an element to deal 2x HEAVY to an adjacent enemy.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "target-filter-or-spend-element",
+        "filter": "damaged"
+      }
+    ]
+  },
+  {
+    "id": "body-mace-r3",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "body",
+    "name": "Geoshade Mace",
+    "cardNumber": 28,
+    "image": "card_body_mace_r3.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 3,
+    "abilityText": "3x HEAVY damage to an adjacent DAMAGED enemy. OR Spend an element to deal 3x HEAVY to an adjacent enemy.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "target-filter-or-spend-element",
+        "filter": "damaged"
+      }
+    ]
+  },
+  {
+    "id": "body-mace-r4",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "body",
+    "name": "Geoshade Mace",
+    "cardNumber": 29,
+    "image": "card_body_mace_r4.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 4,
+    "abilityText": "4x HEAVY damage to an adjacent DAMAGED enemy. OR Spend an element to deal 4x HEAVY to an adjacent enemy.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "target-filter-or-spend-element",
+        "filter": "damaged"
+      }
+    ]
+  },
+  {
+    "id": "body-mace-r5",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "body",
+    "name": "Geoshade Mace",
+    "cardNumber": 30,
+    "image": "card_body_mace_r5.jpg",
+    "damageType": "heavy",
+    "damageMultiplier": 5,
+    "abilityText": "5x HEAVY damage to an adjacent DAMAGED enemy. OR Spend an element to deal 5x HEAVY to an adjacent enemy.",
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "effects": [
+      {
+        "kind": "target-filter-or-spend-element",
+        "filter": "damaged"
+      }
+    ]
+  },
+  {
+    "id": "body-shockwave-r1",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 1,
+    "suit": "body",
+    "name": "North Overload Shockwave",
+    "cardNumber": 31,
+    "image": "card_body_shockwave_r1.jpg",
+    "damageType": "light",
+    "damageMultiplier": 1,
+    "abilityText": "LIGHT damage. Block 1 damage from 2 counterattacks.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": 0,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 2,
+          "dy": -2
+        },
+        {
+          "dx": 3,
+          "dy": -3
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": 2,
+          "dy": 2
+        },
+        {
+          "dx": 3,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -2,
+          "dy": 2
+        },
+        {
+          "dx": -3,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": -2,
+          "dy": -2
+        },
+        {
+          "dx": -3,
+          "dy": -3
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "weapon-counter-block",
+        "amount": 1,
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "body-shockwave-r2",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 2,
+    "suit": "body",
+    "name": "North Overload Shockwave",
+    "cardNumber": 32,
+    "image": "card_body_shockwave_r2.jpg",
+    "damageType": "light",
+    "damageMultiplier": 2,
+    "abilityText": "2x LIGHT damage. Block 2 damage from 2 counterattacks.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": 0,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 2,
+          "dy": -2
+        },
+        {
+          "dx": 3,
+          "dy": -3
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": 2,
+          "dy": 2
+        },
+        {
+          "dx": 3,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -2,
+          "dy": 2
+        },
+        {
+          "dx": -3,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": -2,
+          "dy": -2
+        },
+        {
+          "dx": -3,
+          "dy": -3
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "weapon-counter-block",
+        "amount": 2,
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "body-shockwave-r3",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 3,
+    "suit": "body",
+    "name": "North Overload Shockwave",
+    "cardNumber": 33,
+    "image": "card_body_shockwave_r3.jpg",
+    "damageType": "light",
+    "damageMultiplier": 3,
+    "abilityText": "3x LIGHT damage. Block 3 damage from 2 counterattacks.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": 0,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 2,
+          "dy": -2
+        },
+        {
+          "dx": 3,
+          "dy": -3
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": 2,
+          "dy": 2
+        },
+        {
+          "dx": 3,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -2,
+          "dy": 2
+        },
+        {
+          "dx": -3,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": -2,
+          "dy": -2
+        },
+        {
+          "dx": -3,
+          "dy": -3
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "weapon-counter-block",
+        "amount": 3,
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "body-shockwave-r4",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 4,
+    "suit": "body",
+    "name": "North Overload Shockwave",
+    "cardNumber": 34,
+    "image": "card_body_shockwave_r4.jpg",
+    "damageType": "light",
+    "damageMultiplier": 4,
+    "abilityText": "4x LIGHT damage. Block 4 damage from 2 counterattacks.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": 0,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 2,
+          "dy": -2
+        },
+        {
+          "dx": 3,
+          "dy": -3
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": 2,
+          "dy": 2
+        },
+        {
+          "dx": 3,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -2,
+          "dy": 2
+        },
+        {
+          "dx": -3,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": -2,
+          "dy": -2
+        },
+        {
+          "dx": -3,
+          "dy": -3
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "weapon-counter-block",
+        "amount": 4,
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "body-shockwave-r5",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 5,
+    "suit": "body",
+    "name": "North Overload Shockwave",
+    "cardNumber": 35,
+    "image": "card_body_shockwave_r5.jpg",
+    "damageType": "light",
+    "damageMultiplier": 5,
+    "abilityText": "5x LIGHT damage. Block 5 damage from 2 counterattacks.",
+    "range": {
+      "kind": "fixed-pattern",
+      "tiles": [
+        {
+          "dx": 0,
+          "dy": -1
+        },
+        {
+          "dx": 1,
+          "dy": 0
+        },
+        {
+          "dx": 0,
+          "dy": 1
+        },
+        {
+          "dx": -1,
+          "dy": 0
+        },
+        {
+          "dx": 1,
+          "dy": -1
+        },
+        {
+          "dx": 2,
+          "dy": -2
+        },
+        {
+          "dx": 3,
+          "dy": -3
+        },
+        {
+          "dx": 1,
+          "dy": 1
+        },
+        {
+          "dx": 2,
+          "dy": 2
+        },
+        {
+          "dx": 3,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": 1
+        },
+        {
+          "dx": -2,
+          "dy": 2
+        },
+        {
+          "dx": -3,
+          "dy": 3
+        },
+        {
+          "dx": -1,
+          "dy": -1
+        },
+        {
+          "dx": -2,
+          "dy": -2
+        },
+        {
+          "dx": -3,
+          "dy": -3
+        }
+      ]
+    },
+    "effects": [
+      {
+        "kind": "weapon-counter-block",
+        "amount": 5,
+        "count": 2
+      }
+    ]
+  },
+  {
+    "id": "body-os-r1",
+    "type": "OS",
+    "category": "passive",
+    "rank": 1,
+    "suit": "body",
+    "name": "Elemental OS",
+    "cardNumber": 36,
+    "image": "card_body_os_r1.jpg",
+    "abilityText": "IMMEDIATELY: Gain 1 ELEMENT. ONGOING: Both delvers gain 1 ELEMENT at the end of each wave.",
+    "effects": [
+      {
+        "kind": "gain-element-on-acquire",
+        "amount": 1
+      },
+      {
+        "kind": "gain-element-at-end-of-wave",
+        "amount": 1,
+        "recipient": "all-delvers"
+      }
+    ]
+  },
+  {
+    "id": "body-os-r2",
+    "type": "OS",
+    "category": "passive",
+    "rank": 2,
+    "suit": "body",
+    "name": "Elemental OS",
+    "cardNumber": 37,
+    "image": "card_body_os_r2.jpg",
+    "abilityText": "IMMEDIATELY: Gain 1 ELEMENT. ONGOING: Both delvers gain 2 ELEMENTS at the end of each wave.",
+    "effects": [
+      {
+        "kind": "gain-element-on-acquire",
+        "amount": 1
+      },
+      {
+        "kind": "gain-element-at-end-of-wave",
+        "amount": 2,
+        "recipient": "all-delvers"
+      }
+    ]
+  },
+  {
+    "id": "body-os-r3",
+    "type": "OS",
+    "category": "passive",
+    "rank": 3,
+    "suit": "body",
+    "name": "Elemental OS",
+    "cardNumber": 38,
+    "image": "card_body_os_r3.jpg",
+    "abilityText": "IMMEDIATELY: Gain 1 ELEMENT. ONGOING: Both delvers gain 3 ELEMENTS at the end of each wave.",
+    "effects": [
+      {
+        "kind": "gain-element-on-acquire",
+        "amount": 1
+      },
+      {
+        "kind": "gain-element-at-end-of-wave",
+        "amount": 3,
+        "recipient": "all-delvers"
+      }
+    ]
+  },
+  {
+    "id": "body-os-r4",
+    "type": "OS",
+    "category": "passive",
+    "rank": 4,
+    "suit": "body",
+    "name": "Elemental OS",
+    "cardNumber": 39,
+    "image": "card_body_os_r4.jpg",
+    "abilityText": "IMMEDIATELY: Gain 1 ELEMENT. ONGOING: Both delvers gain 4 ELEMENTS at the end of each wave.",
+    "effects": [
+      {
+        "kind": "gain-element-on-acquire",
+        "amount": 1
+      },
+      {
+        "kind": "gain-element-at-end-of-wave",
+        "amount": 4,
+        "recipient": "all-delvers"
+      }
+    ]
+  },
+  {
+    "id": "body-os-r5",
+    "type": "OS",
+    "category": "passive",
+    "rank": 5,
+    "suit": "body",
+    "name": "Elemental OS",
+    "cardNumber": 40,
+    "image": "card_body_os_r5.jpg",
+    "abilityText": "IMMEDIATELY: Gain 1 ELEMENT. ONGOING: Both delvers gain 5 ELEMENTS at the end of each wave.",
+    "effects": [
+      {
+        "kind": "gain-element-on-acquire",
+        "amount": 1
+      },
+      {
+        "kind": "gain-element-at-end-of-wave",
+        "amount": 5,
+        "recipient": "all-delvers"
+      }
+    ]
+  },
+  {
+    "id": "body-shield-r1",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 1,
+    "suit": "body",
+    "name": "Lunar Shield",
+    "cardNumber": 41,
+    "image": "card_body_shield_r1.jpg",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have delvers on your tile block 1 damage from a single source, or block 2 if you spend a Void. Heal 1 HP for each overblocked damage.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 1,
+        "bonusElement": "void",
+        "bonusBlock": 2,
+        "healPerOverblock": 1
+      }
+    ]
+  },
+  {
+    "id": "body-shield-r2",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 2,
+    "suit": "body",
+    "name": "Lunar Shield",
+    "cardNumber": 42,
+    "image": "card_body_shield_r2.jpg",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have delvers on your tile block 2 damage from a single source, or block 3 if you spend a Void. Heal 1 HP for each overblocked damage.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 2,
+        "bonusElement": "void",
+        "bonusBlock": 3,
+        "healPerOverblock": 1
+      }
+    ]
+  },
+  {
+    "id": "body-shield-r3",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 3,
+    "suit": "body",
+    "name": "Lunar Shield",
+    "cardNumber": 43,
+    "image": "card_body_shield_r3.jpg",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have delvers on your tile block 3 damage from a single source, or block 4 if you spend a Void. Heal 1 HP for each overblocked damage.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 3,
+        "bonusElement": "void",
+        "bonusBlock": 4,
+        "healPerOverblock": 1
+      }
+    ]
+  },
+  {
+    "id": "body-shield-r4",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 4,
+    "suit": "body",
+    "name": "Lunar Shield",
+    "cardNumber": 44,
+    "image": "card_body_shield_r4.jpg",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have delvers on your tile block 4 damage from a single source, or block 5 if you spend a Void. Heal 1 HP for each overblocked damage.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 4,
+        "bonusElement": "void",
+        "bonusBlock": 5,
+        "healPerOverblock": 1
+      }
+    ]
+  },
+  {
+    "id": "body-shield-r5",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 5,
+    "suit": "body",
+    "name": "Lunar Shield",
+    "cardNumber": 45,
+    "image": "card_body_shield_r5.jpg",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have delvers on your tile block 5 damage from a single source, or block 6 if you spend a Void. Heal 1 HP for each overblocked damage.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 5,
+        "bonusElement": "void",
+        "bonusBlock": 6,
+        "healPerOverblock": 1
+      }
+    ]
+  },
+  {
+    "id": "body-boots-r1",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 1,
+    "suit": "body",
+    "name": "Strider Boots",
+    "cardNumber": 46,
+    "image": "card_body_boots_r1.jpg",
+    "abilityText": "IMMEDIATELY: Set your movement to 2. ONGOING: You may spend 2 movement to move an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "body-boots-r2",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 2,
+    "suit": "body",
+    "name": "Strider Boots",
+    "cardNumber": 47,
+    "image": "card_body_boots_r2.jpg",
+    "abilityText": "IMMEDIATELY: Set your movement to 3. ONGOING: You may spend 2 movement to move an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "body-boots-r3",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 3,
+    "suit": "body",
+    "name": "Strider Boots",
+    "cardNumber": 48,
+    "image": "card_body_boots_r3.jpg",
+    "abilityText": "IMMEDIATELY: Set your movement to 4. ONGOING: You may spend 2 movement to move an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "body-boots-r4",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 4,
+    "suit": "body",
+    "name": "Strider Boots",
+    "cardNumber": 49,
+    "image": "card_body_boots_r4.jpg",
+    "abilityText": "IMMEDIATELY: Set your movement to 5. ONGOING: You may spend 2 movement to move an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "body-boots-r5",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 5,
+    "suit": "body",
+    "name": "Strider Boots",
+    "cardNumber": 50,
+    "image": "card_body_boots_r5.jpg",
+    "abilityText": "IMMEDIATELY: Set your movement to 6. ONGOING: You may spend 2 movement to move an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "body-supercharger-r1",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 1,
+    "suit": "body",
+    "name": "Spinejack Supercharger",
+    "cardNumber": 51,
+    "image": "card_body_supercharger_r1.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1: 2x LIGHT damage tokens. 2: 2x MEDIUM. 3: 2x HEAVY. 4: one of each. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "body-supercharger-r2",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 2,
+    "suit": "body",
+    "name": "Spinejack Supercharger",
+    "cardNumber": 52,
+    "image": "card_body_supercharger_r2.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1: 2x LIGHT damage tokens. 2: 2x MEDIUM. 3: 2x HEAVY. 4: one of each. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "body-supercharger-r3",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 3,
+    "suit": "body",
+    "name": "Spinejack Supercharger",
+    "cardNumber": 53,
+    "image": "card_body_supercharger_r3.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1: 2x LIGHT damage tokens. 2: 2x MEDIUM. 3: 2x HEAVY. 4: one of each. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "body-supercharger-r4",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 4,
+    "suit": "body",
+    "name": "Spinejack Supercharger",
+    "cardNumber": 54,
+    "image": "card_body_supercharger_r4.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1: 2x LIGHT damage tokens. 2: 2x MEDIUM. 3: 2x HEAVY. 4: one of each. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "body-supercharger-r5",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 5,
+    "suit": "body",
+    "name": "Spinejack Supercharger",
+    "cardNumber": 55,
+    "image": "card_body_supercharger_r5.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1: 2x LIGHT damage tokens. 2: 2x MEDIUM. 3: 2x HEAVY. 4: one of each. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "body-armor-r1",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 1,
+    "suit": "body",
+    "name": "Exoframe Armor",
+    "cardNumber": 56,
+    "image": "card_body_armor_r1.jpg",
+    "abilityText": "IMMEDIATELY: Increase max HP to 9 and current HP by 3. ONGOING: Heal 1 HP at the end of each wave.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 9
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "body-armor-r2",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 2,
+    "suit": "body",
+    "name": "Exoframe Armor",
+    "cardNumber": 57,
+    "image": "card_body_armor_r2.jpg",
+    "abilityText": "IMMEDIATELY: Increase max HP to 12 and current HP by 3. ONGOING: Heal 2 HP at the end of each wave.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 12
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "body-armor-r3",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 3,
+    "suit": "body",
+    "name": "Exoframe Armor",
+    "cardNumber": 58,
+    "image": "card_body_armor_r3.jpg",
+    "abilityText": "IMMEDIATELY: Increase max HP to 15 and current HP by 3. ONGOING: Heal 3 HP at the end of each wave.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 15
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "id": "body-armor-r4",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 4,
+    "suit": "body",
+    "name": "Exoframe Armor",
+    "cardNumber": 59,
+    "image": "card_body_armor_r4.jpg",
+    "abilityText": "IMMEDIATELY: Increase max HP to 18 and current HP by 3. ONGOING: Heal 4 HP at the end of each wave.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 18
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "id": "body-armor-r5",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 5,
+    "suit": "body",
+    "name": "Exoframe Armor",
+    "cardNumber": 60,
+    "image": "card_body_armor_r5.jpg",
+    "abilityText": "IMMEDIATELY: Increase max HP to 21 and current HP by 3. ONGOING: Heal 5 HP at the end of each wave.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 21
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "id": "body-harvester-r1",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 1,
+    "suit": "body",
+    "name": "Beetle Model Harvester",
+    "cardNumber": 61,
+    "image": "card_body_harvester_r1.jpg",
+    "abilityText": "ONGOING: You gain 2 MINION PART tokens at the end of each wave (taken from supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "creature-part",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "body-harvester-r2",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 2,
+    "suit": "body",
+    "name": "Beetle Model Harvester",
+    "cardNumber": 62,
+    "image": "card_body_harvester_r2.jpg",
+    "abilityText": "ONGOING: You gain 4 MINION PART tokens at the end of each wave (taken from supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "creature-part",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "id": "body-harvester-r3",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 3,
+    "suit": "body",
+    "name": "Beetle Model Harvester",
+    "cardNumber": 63,
+    "image": "card_body_harvester_r3.jpg",
+    "abilityText": "ONGOING: You gain 6 MINION PART tokens at the end of each wave (taken from supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "creature-part",
+        "amount": 6
+      }
+    ]
+  },
+  {
+    "id": "body-harvester-r4",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 4,
+    "suit": "body",
+    "name": "Beetle Model Harvester",
+    "cardNumber": 64,
+    "image": "card_body_harvester_r4.jpg",
+    "abilityText": "ONGOING: You gain 8 MINION PART tokens at the end of each wave (taken from supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "creature-part",
+        "amount": 8
+      }
+    ]
+  },
+  {
+    "id": "body-harvester-r5",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 5,
+    "suit": "body",
+    "name": "Beetle Model Harvester",
+    "cardNumber": 65,
+    "image": "card_body_harvester_r5.jpg",
+    "abilityText": "ONGOING: You gain 10 MINION PART tokens at the end of each wave (taken from supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "creature-part",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "id": "body-battery-r1",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 1,
+    "suit": "body",
+    "name": "Lucky Battery",
+    "cardNumber": 66,
+    "image": "card_body_battery_r1.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1-2: gain 1 AP token. 3-4: gain 2 REROLL tokens. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "body-battery-r2",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 2,
+    "suit": "body",
+    "name": "Lucky Battery",
+    "cardNumber": 67,
+    "image": "card_body_battery_r2.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1-2: gain 1 AP token. 3-4: gain 2 REROLL tokens. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "body-battery-r3",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 3,
+    "suit": "body",
+    "name": "Lucky Battery",
+    "cardNumber": 68,
+    "image": "card_body_battery_r3.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1-2: gain 1 AP token. 3-4: gain 2 REROLL tokens. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "body-battery-r4",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 4,
+    "suit": "body",
+    "name": "Lucky Battery",
+    "cardNumber": 69,
+    "image": "card_body_battery_r4.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1-2: gain 1 AP token. 3-4: gain 2 REROLL tokens. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "body-battery-r5",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 5,
+    "suit": "body",
+    "name": "Lucky Battery",
+    "cardNumber": 70,
+    "image": "card_body_battery_r5.jpg",
+    "abilityText": "IMMEDIATELY: Roll a die. 1-2: gain 1 AP token. 3-4: gain 2 REROLL tokens. 5-6: choice.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  }
+]

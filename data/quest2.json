@@ -1,0 +1,184 @@
+{
+  "id": "quest2",
+  "name": "The Surveillance Device",
+  "goal": "Reach the end of Wave 2.",
+  "primaryGoalWaveNumber": 2,
+  "bonusGoal": "Bonus: reach the end of Wave 3.",
+  "intro": [
+    "When you arrive at the meeting point, you find Father Flores giving a sermon to a group of children. They're far too young to take the delving aptitude test, so you wonder why they're so close to the shore. Curious, you listen in.\n\n“My children, do you see that beautiful light in the distance? That is Gaia.” A boy raises his hand. “Father, what is Gaia?”\n\n“What a wonderful question! Gaia is a manifestation of the Earth. She came to us in a time of need to guide us towards salvation. Someday, one of you may have the honor of becoming a delver. If it is your fate, Gaia will guide you to her.” The children are spellbound, absorbing every word.",
+    "You hear footsteps behind you and turn to see Master Bram. At his side floats a peculiar robot. Father Flores quickly wraps up his sermon and his two attendants corral the attendees away.\n\n“They get younger and younger every year,” Bram murmurs. Father Flores watches as the children return to town. “With the way things have gone lately, it's best to prepare them early.” Bram nods.\n\nFlores hands you a pair of binoculars and directs your eyeline to the outer perimeter. “Delvers, do you see anything unusual?” After a few minutes, you find it - a gap in the net of surveillance cameras floating just above the canopy.",
+    "“One of my disciples at the watchtower recently detected a disturbance at this location, and as you can see, we've lost a surveillance device. Recovering the camera would allow us to review its hard drive and potentially discover what brought it down. With luck, we may even be able to repair it. I appreciate your help with this vital mission.”\n\n“Delvers,” Master Bram says, his voice steady. “The path ahead takes you deeper into the Tide, where great perils lurk. From now on, you won't go alone.” He draws your attention to the squat, humming machine at his side. “This is Witness. He's useless in a fight, but he'll haul your gear for you. And should you fall in the mist, he'll bring your bodies home.”",
+    "The name stirs a memory - you learned about Witness during your studies at the Academy. It's said that no delver has ever reached Gaia without his help. Witness greets you by way of a soft whirr. He's oddly expressive.\n\n“Chin up, delvers,” Master Bram adds, with a grin. “And remember, if things get dicey, there's no shame in turning back.” You don your delversuits and descend into the mist. Witness follows behind in silence - your new companion on the long road ahead."
+  ],
+  "waves": [
+    {
+      "number": 1,
+      "goal": "Reach the end of Wave 1.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "goldmonger-002",
+      "minionEnemyIds": [
+        "venena-008",
+        "venena-009",
+        "venena-010",
+        "venena-011",
+        "venena-012",
+        "venena-013",
+        "venena-014"
+      ],
+      "endOfWave": {
+        "bothSurvive": "page2_3",
+        "anyDie": "page2_1"
+      },
+      "continueChoices": [
+        {
+          "label": "A - Leave the entity alone: both delvers heal 3 HP and gain 2 ELEMENTS of their choice",
+          "pageId": "page2_3_A",
+          "carryEffects": [
+            {
+              "kind": "heal-both-delvers",
+              "amount": 3
+            },
+            {
+              "kind": "grant-element-choice-each",
+              "amount": 2
+            }
+          ],
+          "then": "next-wave"
+        },
+        {
+          "label": "B - Follow it: gain a LEVEL UP card, and both delvers gain 1 ELEMENT of their choice",
+          "pageId": "page2_3_C",
+          "carryEffects": [
+            {
+              "kind": "grant-level-up-card",
+              "amount": 1
+            },
+            {
+              "kind": "grant-element-choice-each",
+              "amount": 1
+            }
+          ],
+          "then": "next-wave"
+        },
+        {
+          "label": "C - Follow Woo's directions: both delvers heal to full HP and gain 4 ELEMENTS of their choice",
+          "pageId": "page2_3_D",
+          "requireKeyItem": 3,
+          "carryEffects": [
+            {
+              "kind": "heal-both-delvers-full"
+            },
+            {
+              "kind": "grant-element-choice-each",
+              "amount": 4
+            }
+          ],
+          "then": "next-wave"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "goal": "Reach the end of Wave 2.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "hundredeyes-003",
+      "minionEnemyIds": [
+        "ophidian-015",
+        "ophidian-016",
+        "ophidian-017",
+        "ophidian-018",
+        "ophidian-019",
+        "ophidian-020",
+        "ophidian-021"
+      ],
+      "endOfWave": {
+        "bothSurvive": "page2_5",
+        "anyDie": "page2_4"
+      },
+      "continueChoices": [
+        {
+          "label": "B - Warm up in the lodge, then follow the shouts: both delvers heal 4 HP",
+          "pageId": "page2_5_A",
+          "carryEffects": [
+            {
+              "kind": "heal-both-delvers",
+              "amount": 4
+            }
+          ],
+          "then": "next-wave"
+        },
+        {
+          "label": "C - Search the lodge, then follow the shouts: gain a LEVEL UP card",
+          "pageId": "page2_5_B",
+          "carryEffects": [
+            {
+              "kind": "grant-level-up-card",
+              "amount": 1
+            }
+          ],
+          "then": "next-wave"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "goal": "Reach the end of Wave 3.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "deathcap-004",
+      "minionEnemyIds": [
+        "sporecloud-022",
+        "sporecloud-023",
+        "sporecloud-024",
+        "sporecloud-025",
+        "sporecloud-026",
+        "sporecloud-027",
+        "sporecloud-028"
+      ],
+      "endOfWave": {
+        "bothSurvive": "page2_7",
+        "anyDie": "page2_6"
+      }
+    }
+  ],
+  "pages": {
+    "wave1_intro": "At first, your descent is easier than expected. Until the buzzing begins. Then, all at once, you hear a pained roar and a vast creature leaps forward to maul you. Neither bear, nor insect - the creature appears maddened by a nest of stinging Venena fused to its back.",
+    "wave1_intro_ability_name": "Fatal Flaw",
+    "wave1_intro_ability_rules": "Enemies with “Fatal Flaw” can only be killed in the order specified next to this ability. Enemies labelled “Fatal Flaw: 1” must die first, then those with “Fatal Flaw: 2”, and so on. Enemies with sequential numbers can be killed in the same turn. They can still suffer damage in any order - only the final point of damage is gated.",
+    "page2_1": "DELVER FALLEN\n\nThe creatures pin you down and you can barely catch your breath. You and your fellow delver share a look - do you fall back to town, or push on through the mist?",
+    "page2_1_retreat": "Your fight has left you exhausted and bloody. The surveillance device is close by, but you can't risk running into more monsters in this condition, so you head back to shore.\n\nBram is waiting by the docks, and he looks confused. “You're back already? Wait, where is the surveillance device?” He realizes you don't have it. “That won't do, delvers. We need that device.”\n\nDr Ira quickly patches you up - both delvers heal to full HP (even if one delver died). “Now get back out there and retrieve the device.”",
+    "page2_1_continue": "The creatures swarm you, and everything goes black.\n\n[Try again from the start of the Quest. Both players refresh any spent Consumables, are at full health, and return all exhausted Weapon Cards to their hand.]",
+    "page2_3": "You descend down a hill, your boots sinking into lilac-colored snow. A sudden gust swirls snow into the night air - it glimmers like dancing lanternbugs. The glimmer floats past you and you swear you can hear faint giggling.",
+    "page2_4": "The creatures swarm you and everything goes black. The robot Witness quietly collects the surveillance device while the Hundredeyes and its brood are distracted.\n\nAdd Key Item #1 to your Key Items. Your Quest is complete!",
+    "page2_5": "After many hours of slow, cautious travel, you reach the perimeter. The downed surveillance device is rotating like normal, but winged marmosets glide around it, entranced by its light. Before you can attack the creatures, the robot Witness emits a loud beep and hovers towards them. He circles the creatures, reaching out his hand and gently guiding them away. He then detaches the contraption, inserts it into an available socket, and floats back down. Witness whirs as if pleased with himself.",
+    "page2_5_after_reward": "You notice an abandoned lodge in the distance and catch the faintest murmur of what sounds like frustrated shouting in the distance. You pause and listen intently for a quiet minute, but nothing else reaches you. Perhaps you imagined it.",
+    "page2_6": "The creatures swarm you, and everything goes black. Don't worry - you did great.",
+    "page2_7": "As you draw closer, the mist grows darker and denser. Your visibility is affected, but you still catch a glimpse of two silhouettes in the distance by the remnants of a fallen tree. One of the figures is lit by small blue lights dotting their face. When you draw closer, the two figures make a run for it. You approach the tree and notice how the dark purple mist coils ominously around the area. The bark has been blackened and corroded, and small, diseased looking holes dot its surface.\n\nIn their haste, the two strangers dropped a syringe - you collect it as evidence.\n\nAdd Key Item #2 to your Key Items.",
+    "simple_town_visit_stub": "SIMPLE TOWN VISIT (rulebook p208)\n\nYou retreat to town for a brief respite. Nurse Elayna patches you up and you take stock of your equipment before heading back out. (Full Simple Town Visit flow is queued for a follow-up patch.)",
+    "page2_3_A": "The giggling is too ominous, best to leave it alone. You find a sheltered hollow out of the wind and rest a while - the suit's power hums through you as you catch your breath.",
+    "page2_3_C": "You follow the entity to a clearing where the glimmer coalesces into the shape of a pixie. All at once, the little creature rushes toward you! Panicked, you flail backwards. Quickly rising, the figure is gone - but where it stood lies the gear of a delver who followed it long ago, and your suits are filled with new power.",
+    "page2_3_D": "Margaret Woo's diary mentions this very hillside - a delver camp dug into the snow, \"two hundred paces past the lilac drifts.\" You count your steps, and there it is: a sealed hatch, bedrolls, and a heat lamp still holding a charge. You rest until your wounds close, and the lamp's crystals top up your suits before you move on.",
+    "page2_5_A": "You find an old shag rug in front of a fireplace. You throw a log on the fire and catch your bearings before following the shouts.",
+    "page2_5_B": "You give the ski lodge a thorough search, eventually uncovering a stash of equipment left by a previous delver. Then you head after the shouts."
+  }
+}

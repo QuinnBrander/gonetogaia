@@ -1,0 +1,215 @@
+{
+  "id": "ch1",
+  "name": "Town Visit",
+  "startPageId": "page6",
+  "pages": {
+    "page6": {
+      "title": "CHAPTER 1 - TOWN VISIT",
+      "subtitle": "New Recruits",
+      "image": "/story/dr-ira.png",
+      "pageBackground": "/story/town-intro-decoration.png",
+      "text": "With bodies aching, you ascend the slopes of Bird's Nest. A well-worn path guides you up through the craggy mountain upon which the town sits. The Tide has corroded even the hard stone beneath your feet, making it brittle and precarious to navigate. As you step out of the mist and onto the docks, you see Dr Ira, a well-known figure among the people of Bird's Nest.\n\n\"You made it,\" she smiles. \"I had no doubts you would. There's something special about this year's batch of graduates. But still, you could've returned a little less banged up.\"\n\nShe begins treating your wounds, her hands skillfully working.\n\nYou've always admired Dr. Ira from afar but this is the first time you've ever had the honor to be treated by her. After Dr. Ira finishes patching you up, you are summoned to Master Bram's office. As you approach, you notice some of the other graduates. It looks like you aren't the only ones who survived your first mission.",
+      "onEnter": [
+        { "kind": "unlock-hero-cards", "cardNumbers": [3, 4] },
+        { "kind": "record-decision", "key": "ch1.dr-ira.heroes-3-4-unlocked" }
+      ],
+      "next": "page7"
+    },
+    "page7": {
+      "title": "CHAPTER 1 - TOWN VISIT",
+      "subtitle": "Bram's Office",
+      "pageBackground": "/story/bram-office.png",
+      "layoutBackground": "/story/birds-nest-locations.png",
+      "layout": "image-choices",
+      "text": "You knock politely and a tired voice says \"Come in and have a seat.\" He nods approvingly at the delver tags hanging around your neck.\n\n\"Congratulations, not everyone survives their first foray. The Tide is an unforgiving place at the best of times, but these last few years, the creatures out there have been especially frenzied. If we only knew what's been provoking them, things might not be so dire.\n\nYou've more than earned the night off - take a tour around town and try to relax, if you can.\"",
+      "onEnter": [
+        { "kind": "grant-minion-parts", "amount": 4, "to": "all-delvers" }
+      ],
+      "choices": [
+        { "label": "Check out the Misty Eagle Pub", "decisionKey": "ch1.bram.A.pub", "next": "page9" },
+        { "label": "Study at the Library",         "decisionKey": "ch1.bram.B.library", "next": "page11" }
+      ]
+    },
+
+    "page9": {
+      "title": "CHAPTER 1 - TOWN VISIT",
+      "subtitle": "The Misty Eagle",
+      "pageBackground": "/story/misty-eagle.png",
+      "text": "As you enter the Misty Eagle, the air is thick with conversation and the clatter of mugs. There's music playing, though the speakers are crackling, distorting the sound. It's a nearly full house, but there are some open seats at the bar.\n\nYou notice a spot next to a young man with one brown eye and one bright turquoise eye sipping milk. He's writing something and there's a bag of gizmos next to him.\n\nNear the center seat, you spot Vera Brass, an accomplished delver, talking with her brother Elias. She notices you and excitedly waves you over.\n\nOn the right-hand side, a woman with grease-streaked hands is messing with the sound system, beer in hand, while the bartender gives her a concerned look.",
+      "choices": [
+        { "label": "Strike up a conversation with the young man",  "decisionKey": "ch1.pub.A.xavier",   "hint": "Affects Favor", "next": "page10-A" },
+        { "label": "Join Vera Brass and her brother",              "decisionKey": "ch1.pub.B.vera",     "hint": "Affects Favor", "next": "page10-B" },
+        { "label": "Give the woman a hand with the sound system",  "decisionKey": "ch1.pub.C.samantha", "hint": "Affects Favor", "next": "page10-C" }
+      ]
+    },
+
+    "page10-A": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Conversation with Xavier",
+      "pageBackground": "/story/misty-eagle.png",
+      "text": "You introduce yourself and ask his name. He barely glances at you, but when he notices your delver tag, he perks up. \"Wait, I recognize you. You're the new graduates from the Delving Academy. Name's Xavier - pleased to meet you.\"",
+      "choices": [
+        { "label": "Ask Xavier why his eyes are different colors",     "decisionKey": "ch1.pub.A.1.xavier-eyes",   "next": "page10-A1" },
+        { "label": "Ask Xavier what he's writing about",                "decisionKey": "ch1.pub.A.2.xavier-writing","next": "page10-A2" },
+        { "label": "Create a distraction and pilfer one of the gizmos", "decisionKey": "ch1.pub.A.3.xavier-pilfer", "next": "page10-A3" }
+      ]
+    },
+    "page10-A1": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Xavier - Different Eyes",
+      "pageBackground": "/story/misty-eagle.png",
+      "text": "Xavier turns beet red. \"That's really none of your business.\"",
+      "footnote": "Decrease Xavier's opinion. Gain the Xavier Detractor opinion card.",
+      "onEnter": [
+        { "kind": "shift-favour", "characterId": "xavier", "characterName": "Xavier", "delta": -1 },
+        { "kind": "record-decision", "key": "ch1.opinion.xavier.detractor" }
+      ],
+      "next": "page13"
+    },
+    "page10-A2": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Xavier - His Research",
+      "pageBackground": "/story/misty-eagle.png",
+      "text": "Xavier looks pleased by your question. \"I conduct research on the Tide, specifically the creatures that inhabit it. I just started teaching at the academy. If you ever see anything out of the ordinary in the mist, I'd love to hear about it.\" Before you can ask him anything, his watch glows red. He quickly excuses himself and leaves in a hurry.",
+      "footnote": "Increase Xavier's opinion. Gain the Xavier Ally opinion card.",
+      "onEnter": [
+        { "kind": "shift-favour", "characterId": "xavier", "characterName": "Xavier", "delta": 1 },
+        { "kind": "record-decision", "key": "ch1.opinion.xavier.ally" }
+      ],
+      "next": "page13"
+    },
+    "page10-A3": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Xavier - Pilfered Gizmo",
+      "pageBackground": "/story/misty-eagle.png",
+      "text": "You pretend to get bumped and 'accidentally' knock over his glass of milk, which shatters all over the floor. He immediately grabs some napkins and starts mopping up the mess as you apologize profusely. Xavier doesn't even notice your hand reach into his bag to grab a gizmo.",
+      "footnote": "Gain a Memory Chip Token.",
+      "onEnter": [
+        { "kind": "record-decision", "key": "ch1.pub.xavier.pilfered-gizmo" },
+        { "kind": "grant-memory-chip", "amount": 1 }
+      ],
+      "next": "page13"
+    },
+
+    "page10-B": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Vera Brass and Her Brother",
+      "pageBackground": "/story/misty-eagle.png",
+      "text": "Vera stands from her stool, arms open wide, and exclaims in a booming voice. \"Attention, people of Bird's Nest! These fine folk are our newest delvers. Just today, they've proven their worth by seizing their delver tags from the clutches of the vicious Crystanids!\" The bar cheers loudly. Next thing you know, you're dancing on the bar, drinking the night away with one of your heroes.",
+      "footnote": "Increase Vera's opinion. Gain the Vera Ally opinion card.",
+      "onEnter": [
+        { "kind": "shift-favour", "characterId": "vera", "characterName": "Vera Brass", "delta": 1 },
+        { "kind": "record-decision", "key": "ch1.opinion.vera.ally" }
+      ],
+      "next": "page13"
+    },
+
+    "page10-C": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "The Sound System",
+      "pageBackground": "/story/misty-eagle.png",
+      "text": "You ask the woman if she needs a hand. Without turning her attention from the sound system, she gestures at her empty beer mug. \"You can top me up if you like.\" She twists a screwdriver and the music cuts out completely.",
+      "choices": [
+        { "label": "Clarify that you were offering a hand with the sound system", "decisionKey": "ch1.pub.C.1.samantha-clarify", "next": "page10-C1" },
+        { "label": "Buy her a drink (Cost: 1 minion part)",                       "decisionKey": "ch1.pub.C.2.samantha-drink",   "next": "page10-C2", "prePay": { "kind": "minion-parts", "amount": 1 } }
+      ]
+    },
+    "page10-C1": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Samantha - Clarification",
+      "pageBackground": "/story/misty-eagle.png",
+      "text": "\"HA! Offering technical help to a technician, that's bold of you.\" She twists the screwdriver once more and the music returns, clear and sweet this time. She pats you on the cheek with an oily hand. \"Best stick to delving.\"",
+      "footnote": "Decrease Samantha's opinion. Gain the Samantha Detractor opinion card.",
+      "onEnter": [
+        { "kind": "shift-favour", "characterId": "samantha", "characterName": "Samantha", "delta": -1 },
+        { "kind": "record-decision", "key": "ch1.opinion.samantha.detractor" }
+      ],
+      "next": "page13"
+    },
+    "page10-C2": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Samantha - The Drink",
+      "pageBackground": "/story/misty-eagle.png",
+      "text": "When you return with her drink, the music is back online. \"You're a sweet one. You NEED to come by my shop sometime. I'm Sam.\"",
+      "footnote": "One delver loses 1 minion part. Increase Samantha's opinion. Gain the Samantha Ally opinion card.",
+      "onEnter": [
+        { "kind": "lose-minion-parts", "amount": 1, "to": "active-delver" },
+        { "kind": "shift-favour", "characterId": "samantha", "characterName": "Samantha", "delta": 1 },
+        { "kind": "record-decision", "key": "ch1.opinion.samantha.ally" }
+      ],
+      "next": "page13"
+    },
+
+    "page11": {
+      "title": "CHAPTER 1 - TOWN VISIT",
+      "subtitle": "The Library",
+      "pageBackground": "/story/library.png",
+      "text": "The library - one of the largest and oldest buildings in Bird's Nest - is extravagant to the point of gaudiness. Vast marble columns support vaulted ceilings decorated with delicate, hand carved mosaics. All around you are more books than you could read in a lifetime.\n\nAs you enter, the librarian Rodrigo rushes towards you and plucks the delver tag from your chest.\n\n\"WELL, would you look at that! Finally a delver, just like you always dreamed of. Now I don't have to keep kicking you out of the restricted section!\"\n\nHe smiles and pats you on the back, almost knocking you over.\n\n\"Now that you've graduated, you have full access to the archives! Come on, I'll give you some pointers.\"",
+      "choices": [
+        { "label": "Search the Creature Archives", "decisionKey": "ch1.library.A.creature", "hint": "Grants Wisdom",    "next": "page12-A" },
+        { "label": "Search the Delver Archives",   "decisionKey": "ch1.library.B.delver",   "hint": "Grants Knowledge", "next": "page12-B" },
+        { "label": "Search the Atlas Archives",    "decisionKey": "ch1.library.C.atlas",    "hint": "Grants Wisdom",    "next": "page12-C" }
+      ]
+    },
+    "page12-A": {
+      "title": "THE LIBRARY",
+      "subtitle": "Creature Archives",
+      "pageBackground": "/story/library.png",
+      "text": "You find an audio recording dating back over 800 years.\n\n\"Researching the creatures of the Tide has been fascinating. At first, I tried simple experiments: breaking them down, analyzing their parts. And then... I saw it. The bone wasn't disintegrating. It was adapting. I could reforge them, change them, weave them into things that no one could ever imagine. Things that shouldn't be possible. Some parts could even conduct energy. Think about it: a battery! Not just a power source, but a living power source! The world may be ending, but this could help us hold on just long enough...\"",
+      "onEnter": [
+        { "kind": "grant-ultra-level-cards", "amount": 2 },
+        { "kind": "record-decision", "key": "ch1.library.creature-archives.ultra-cards" }
+      ],
+      "next": "page13"
+    },
+    "page12-B": {
+      "title": "THE LIBRARY",
+      "subtitle": "Delver Archives",
+      "pageBackground": "/story/library.png",
+      "text": "You find a handwritten diary by a delver named Margaret Woo. Her last entry sticks with you.\n\n\"I'm exhausted but I can't sleep. This is the closest we've ever been. If all goes well we should reach Gaia tomorrow, but what comes after? Where will Gaia take us? Everyone pretends they know the answer, but 'salvation' isn't an answer.\"",
+      "footnote": "Add Key Item #3 (Woo's Diary) to your Key Items.",
+      "onEnter": [
+        { "kind": "gain-key-item", "number": 3, "name": "Woo's Diary" },
+        { "kind": "record-decision", "key": "ch1.library.delver-archives.key-item-3" }
+      ],
+      "next": "page13"
+    },
+    "page12-C": {
+      "title": "THE LIBRARY",
+      "subtitle": "Atlas Archives",
+      "pageBackground": "/story/library.png",
+      "text": "A book with the title \"Navigating the Abyss\" catches your eye. As you turn to Chapter 1 - \"Good Shark, Bad Shark\" - you can't help but overhear voices nearby.\n\n\"Vera, will you wake up? You promised to help me.\" A sleepy voice responds, annoyed. \"I told you, that place is nothing but a ruin. We're not going to find what you're looking for, Egghead.\"\n\nThey continue arguing back and forth like this, making it hard to concentrate. You decide to find a quieter section of the library to learn more about Good Sharks.",
+      "footnote": "Add a Friendly Spawn Card to the Spawn Deck.",
+      "onEnter": [
+        { "kind": "grant-friendly-spawn-card" },
+        { "kind": "record-decision", "key": "ch1.library.atlas-archives.friendly-spawn" }
+      ],
+      "next": "page13"
+    },
+
+    "page13": {
+      "title": "Town Center",
+      "subtitle": "Visit the Shops",
+      "text": "Shop Products #1-7 are now available. Each player may purchase products using their minion and/or boss parts. There is only one of each product. You may trade creature parts between players freely. At any time, you may convert a Boss part into minion parts at the rate of 3 minion parts per level of the Boss part.",
+      "postRewardsText": "When you are done shopping, click Continue.",
+      "footnote": "Tip: it's generally better to spend your creature parts rather than save them.",
+      "kind": "shop",
+      "onEnter": [
+        { "kind": "add-shop-products", "products": [1, 2, 3, 4, 5, 6, 7] }
+      ],
+      "next": "page14"
+    },
+    "page14": {
+      "title": "END OF CHAPTER 1",
+      "subtitle": "A Message from Father Flores",
+      "image": "/story/father-flores.png",
+      "text": "Your comms device lights up and a message from Father Flores comes through:\n\n\"Apologies, delvers, but I need your help. I would have preferred to seek out more experienced delvers with this critical mission, but Master Bram informed me you're the only ones he has to spare at the moment. Let's rendezvous at the docks at high noon.\"",
+      "kind": "end-town-visit",
+      "onEnter": [
+        { "kind": "reveal-quest", "number": 2, "name": "The Surveillance Device" },
+        { "kind": "record-decision", "key": "ch1.quest2.unlocked" },
+        { "kind": "record-decision", "key": "ch1.completed" }
+      ]
+    }
+  }
+}

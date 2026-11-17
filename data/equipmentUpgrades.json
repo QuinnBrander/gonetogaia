@@ -1,0 +1,1642 @@
+[
+  {
+    "id": "upgrade-shock-gauntlet-r1",
+    "family": "shock-gauntlet",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 1,
+    "name": "Shock Gauntlet",
+    "cardNumber": 141,
+    "image": "equipment-upgrade-141.png",
+    "damageType": "light",
+    "damageMultiplier": 1,
+    "abilityText": "LIGHT damage to a connected chain of enemies, if you are adjacent to at least one of those enemies. If you're at or below 50% HP, deal additional MEDIUM damage to that chain.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "self"
+    },
+    "effects": [
+      {
+        "kind": "additional-damage-if-low-hp",
+        "damageType": "medium",
+        "multiplier": 1,
+        "thresholdPercent": 50
+      }
+    ]
+  },
+  {
+    "id": "upgrade-shock-gauntlet-r2",
+    "family": "shock-gauntlet",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 2,
+    "name": "Shock Gauntlet",
+    "cardNumber": 142,
+    "image": "equipment-upgrade-142.png",
+    "damageType": "light",
+    "damageMultiplier": 2,
+    "abilityText": "2 x LIGHT damage to a connected chain of enemies, if you are adjacent to at least one of those enemies. If you're at or below 50% HP, deal additional 2 x MEDIUM damage to that chain.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "self"
+    },
+    "effects": [
+      {
+        "kind": "additional-damage-if-low-hp",
+        "damageType": "medium",
+        "multiplier": 2,
+        "thresholdPercent": 50
+      }
+    ]
+  },
+  {
+    "id": "upgrade-shock-gauntlet-r3",
+    "family": "shock-gauntlet",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 3,
+    "name": "Shock Gauntlet",
+    "cardNumber": 143,
+    "image": "equipment-upgrade-143.png",
+    "damageType": "light",
+    "damageMultiplier": 3,
+    "abilityText": "3 x LIGHT damage to a connected chain of enemies, if you are adjacent to at least one of those enemies. If you're at or below 50% HP, deal additional 3 x MEDIUM damage to that chain.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "self"
+    },
+    "effects": [
+      {
+        "kind": "additional-damage-if-low-hp",
+        "damageType": "medium",
+        "multiplier": 3,
+        "thresholdPercent": 50
+      }
+    ]
+  },
+  {
+    "id": "upgrade-shock-gauntlet-r4",
+    "family": "shock-gauntlet",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 4,
+    "name": "Shock Gauntlet",
+    "cardNumber": 144,
+    "image": "equipment-upgrade-144.png",
+    "damageType": "light",
+    "damageMultiplier": 4,
+    "abilityText": "4 x LIGHT damage to a connected chain of enemies, if you are adjacent to at least one of those enemies. If you're at or below 50% HP, deal additional 4 x MEDIUM damage to that chain.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "self"
+    },
+    "effects": [
+      {
+        "kind": "additional-damage-if-low-hp",
+        "damageType": "medium",
+        "multiplier": 4,
+        "thresholdPercent": 50
+      }
+    ]
+  },
+  {
+    "id": "upgrade-shock-gauntlet-r5",
+    "family": "shock-gauntlet",
+    "type": "Gauntlet",
+    "category": "weapon",
+    "rank": 5,
+    "name": "Shock Gauntlet",
+    "cardNumber": 145,
+    "image": "equipment-upgrade-145.png",
+    "damageType": "light",
+    "damageMultiplier": 5,
+    "abilityText": "5 x LIGHT damage to a connected chain of enemies, if you are adjacent to at least one of those enemies. If you're at or below 50% HP, deal additional 5 x MEDIUM damage to that chain.",
+    "range": {
+      "kind": "chain",
+      "requiresAdjacentTo": "self"
+    },
+    "effects": [
+      {
+        "kind": "additional-damage-if-low-hp",
+        "damageType": "medium",
+        "multiplier": 5,
+        "thresholdPercent": 50
+      }
+    ]
+  },
+  {
+    "id": "upgrade-cyclone-boots-r1",
+    "family": "cyclone-boots",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 1,
+    "name": "Cyclone Boots",
+    "cardNumber": 146,
+    "image": "equipment-upgrade-146.png",
+    "abilityText": "IMMEDIATELY: Set your movement to 2. ONGOING: You may spend 1 movement to move or rotate an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 2
+      },
+      {
+        "kind": "boots-ongoing-override",
+        "cost": 1,
+        "canMove": true,
+        "canRotate": true
+      }
+    ]
+  },
+  {
+    "id": "upgrade-cyclone-boots-r2",
+    "family": "cyclone-boots",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 2,
+    "name": "Cyclone Boots",
+    "cardNumber": 147,
+    "image": "equipment-upgrade-147.png",
+    "abilityText": "IMMEDIATELY: Set your movement to 3. ONGOING: You may spend 1 movement to move or rotate an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 3
+      },
+      {
+        "kind": "boots-ongoing-override",
+        "cost": 1,
+        "canMove": true,
+        "canRotate": true
+      }
+    ]
+  },
+  {
+    "id": "upgrade-cyclone-boots-r3",
+    "family": "cyclone-boots",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 3,
+    "name": "Cyclone Boots",
+    "cardNumber": 148,
+    "image": "equipment-upgrade-148.png",
+    "abilityText": "IMMEDIATELY: Set your movement to 4. ONGOING: You may spend 1 movement to move or rotate an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 4
+      },
+      {
+        "kind": "boots-ongoing-override",
+        "cost": 1,
+        "canMove": true,
+        "canRotate": true
+      }
+    ]
+  },
+  {
+    "id": "upgrade-cyclone-boots-r4",
+    "family": "cyclone-boots",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 4,
+    "name": "Cyclone Boots",
+    "cardNumber": 149,
+    "image": "equipment-upgrade-149.png",
+    "abilityText": "IMMEDIATELY: Set your movement to 5. ONGOING: You may spend 1 movement to move or rotate an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 5
+      },
+      {
+        "kind": "boots-ongoing-override",
+        "cost": 1,
+        "canMove": true,
+        "canRotate": true
+      }
+    ]
+  },
+  {
+    "id": "upgrade-cyclone-boots-r5",
+    "family": "cyclone-boots",
+    "type": "Boots",
+    "category": "passive",
+    "rank": 5,
+    "name": "Cyclone Boots",
+    "cardNumber": 150,
+    "image": "equipment-upgrade-150.png",
+    "abilityText": "IMMEDIATELY: Set your movement to 6. ONGOING: You may spend 1 movement to move or rotate an adjacent enemy.",
+    "effects": [
+      {
+        "kind": "set-base-movement",
+        "value": 6
+      },
+      {
+        "kind": "boots-ongoing-override",
+        "cost": 1,
+        "canMove": true,
+        "canRotate": true
+      }
+    ]
+  },
+  {
+    "id": "upgrade-earths-embrace-shield-r1",
+    "family": "earths-embrace-shield",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 1,
+    "name": "Earth's Embrace Shield",
+    "cardNumber": 151,
+    "image": "equipment-upgrade-151.png",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have a hero on your tile suffer 2 less damage from a single damage source. Additionally heal 2 HP if you spent: Earth.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 2,
+        "bonusElement": "earth",
+        "bonusBlock": 2,
+        "healPerOverblock": 0,
+        "healOnBonusElementSpend": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-earths-embrace-shield-r2",
+    "family": "earths-embrace-shield",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 2,
+    "name": "Earth's Embrace Shield",
+    "cardNumber": 152,
+    "image": "equipment-upgrade-152.png",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have a hero on your tile suffer 3 less damage from a single damage source. Additionally heal 3 HP if you spent: Earth.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 3,
+        "bonusElement": "earth",
+        "bonusBlock": 3,
+        "healPerOverblock": 0,
+        "healOnBonusElementSpend": 3
+      }
+    ]
+  },
+  {
+    "id": "upgrade-earths-embrace-shield-r3",
+    "family": "earths-embrace-shield",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 3,
+    "name": "Earth's Embrace Shield",
+    "cardNumber": 153,
+    "image": "equipment-upgrade-153.png",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have a hero on your tile suffer 4 less damage from a single damage source. Additionally heal 4 HP if you spent: Earth.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 4,
+        "bonusElement": "earth",
+        "bonusBlock": 4,
+        "healPerOverblock": 0,
+        "healOnBonusElementSpend": 4
+      }
+    ]
+  },
+  {
+    "id": "upgrade-earths-embrace-shield-r4",
+    "family": "earths-embrace-shield",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 4,
+    "name": "Earth's Embrace Shield",
+    "cardNumber": 154,
+    "image": "equipment-upgrade-154.png",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have a hero on your tile suffer 5 less damage from a single damage source. Additionally heal 5 HP if you spent: Earth.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 5,
+        "bonusElement": "earth",
+        "bonusBlock": 5,
+        "healPerOverblock": 0,
+        "healOnBonusElementSpend": 5
+      }
+    ]
+  },
+  {
+    "id": "upgrade-earths-embrace-shield-r5",
+    "family": "earths-embrace-shield",
+    "type": "Shield",
+    "category": "passive",
+    "rank": 5,
+    "name": "Earth's Embrace Shield",
+    "cardNumber": 155,
+    "image": "equipment-upgrade-155.png",
+    "abilityText": "ONGOING: You may spend 1 ELEMENT to have a hero on your tile suffer 6 less damage from a single damage source. Additionally heal 6 HP if you spent: Earth.",
+    "effects": [
+      {
+        "kind": "block-on-tile",
+        "baseBlock": 6,
+        "bonusElement": "earth",
+        "bonusBlock": 6,
+        "healPerOverblock": 0,
+        "healOnBonusElementSpend": 6
+      }
+    ]
+  },
+  {
+    "id": "upgrade-living-armor-r1",
+    "family": "living-armor",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 1,
+    "name": "Living Armor",
+    "cardNumber": 156,
+    "image": "equipment-upgrade-156.png",
+    "abilityText": "IMMEDIATELY: Increase max HP to 9 and current HP by 3. ONGOING: Heal 1 HP at the end of each Wave. When you earn a Level card, delvers on your tile heal 1 HP.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 9
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 1
+      },
+      {
+        "kind": "heal-tile-on-level-card",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-living-armor-r2",
+    "family": "living-armor",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 2,
+    "name": "Living Armor",
+    "cardNumber": 157,
+    "image": "equipment-upgrade-157.png",
+    "abilityText": "IMMEDIATELY: Increase max HP to 12 and current HP by 3. ONGOING: Heal 2 HP at the end of each Wave. When you earn a Level card, delvers on your tile heal 2 HP.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 12
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 2
+      },
+      {
+        "kind": "heal-tile-on-level-card",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-living-armor-r3",
+    "family": "living-armor",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 3,
+    "name": "Living Armor",
+    "cardNumber": 158,
+    "image": "equipment-upgrade-158.png",
+    "abilityText": "IMMEDIATELY: Increase max HP to 15 and current HP by 3. ONGOING: Heal 3 HP at the end of each Wave. When you earn a Level card, delvers on your tile heal 3 HP.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 15
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 3
+      },
+      {
+        "kind": "heal-tile-on-level-card",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "id": "upgrade-living-armor-r4",
+    "family": "living-armor",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 4,
+    "name": "Living Armor",
+    "cardNumber": 159,
+    "image": "equipment-upgrade-159.png",
+    "abilityText": "IMMEDIATELY: Increase max HP to 18 and current HP by 3. ONGOING: Heal 4 HP at the end of each Wave. When you earn a Level card, delvers on your tile heal 4 HP.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 18
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 4
+      },
+      {
+        "kind": "heal-tile-on-level-card",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "id": "upgrade-living-armor-r5",
+    "family": "living-armor",
+    "type": "Armor",
+    "category": "passive",
+    "rank": 5,
+    "name": "Living Armor",
+    "cardNumber": 160,
+    "image": "equipment-upgrade-160.png",
+    "abilityText": "IMMEDIATELY: Increase max HP to 21 and current HP by 3. ONGOING: Heal 5 HP at the end of each Wave. When you earn a Level card, delvers on your tile heal 5 HP.",
+    "effects": [
+      {
+        "kind": "set-max-hp",
+        "value": 21
+      },
+      {
+        "kind": "modify-current-hp",
+        "delta": 3
+      },
+      {
+        "kind": "heal-at-end-of-wave",
+        "amount": 5
+      },
+      {
+        "kind": "heal-tile-on-level-card",
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "id": "upgrade-ion-battery-r1",
+    "family": "ion-battery",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 1,
+    "name": "Ion Battery",
+    "cardNumber": 161,
+    "image": "equipment-upgrade-161.png",
+    "abilityText": "IMMEDIATELY: choose 1 listed reward: Gain 2 AP tokens / Gain 1 AP & 2 Reroll tokens / Gain 1 AP & 1 Block 1 Counterattack token.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-ion-battery-r2",
+    "family": "ion-battery",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 2,
+    "name": "Ion Battery",
+    "cardNumber": 162,
+    "image": "equipment-upgrade-162.png",
+    "abilityText": "IMMEDIATELY: choose 1 listed reward: Gain 2 AP tokens / Gain 1 AP & 2 Reroll tokens / Gain 1 AP & 1 Block 1 Counterattack token.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-ion-battery-r3",
+    "family": "ion-battery",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 3,
+    "name": "Ion Battery",
+    "cardNumber": 163,
+    "image": "equipment-upgrade-163.png",
+    "abilityText": "IMMEDIATELY: choose 1 listed reward: Gain 2 AP tokens / Gain 1 AP & 2 Reroll tokens / Gain 1 AP & 1 Block 1 Counterattack token.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-ion-battery-r4",
+    "family": "ion-battery",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 4,
+    "name": "Ion Battery",
+    "cardNumber": 164,
+    "image": "equipment-upgrade-164.png",
+    "abilityText": "IMMEDIATELY: choose 1 listed reward: Gain 2 AP tokens / Gain 1 AP & 2 Reroll tokens / Gain 1 AP & 1 Block 1 Counterattack token.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-ion-battery-r5",
+    "family": "ion-battery",
+    "type": "Battery",
+    "category": "passive",
+    "rank": 5,
+    "name": "Ion Battery",
+    "cardNumber": 165,
+    "image": "equipment-upgrade-165.png",
+    "abilityText": "IMMEDIATELY: choose 1 listed reward: Gain 2 AP tokens / Gain 1 AP & 2 Reroll tokens / Gain 1 AP & 1 Block 1 Counterattack token.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-new-harvester-r1",
+    "family": "new-harvester",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 1,
+    "name": "New Harvester",
+    "cardNumber": 166,
+    "image": "equipment-upgrade-166.png",
+    "abilityText": "ONGOING: You gain a Level 1 boss part token at the end of each Wave (taken from the supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "boss-part",
+        "amount": 1,
+        "bossLevel": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-new-harvester-r2",
+    "family": "new-harvester",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 2,
+    "name": "New Harvester",
+    "cardNumber": 167,
+    "image": "equipment-upgrade-167.png",
+    "abilityText": "ONGOING: You gain a Level 2 boss part token at the end of each Wave (taken from the supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "boss-part",
+        "amount": 1,
+        "bossLevel": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-new-harvester-r3",
+    "family": "new-harvester",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 3,
+    "name": "New Harvester",
+    "cardNumber": 168,
+    "image": "equipment-upgrade-168.png",
+    "abilityText": "ONGOING: You gain a Level 3 boss part token at the end of each Wave (taken from the supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "boss-part",
+        "amount": 1,
+        "bossLevel": 3
+      }
+    ]
+  },
+  {
+    "id": "upgrade-new-harvester-r4",
+    "family": "new-harvester",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 4,
+    "name": "New Harvester",
+    "cardNumber": 169,
+    "image": "equipment-upgrade-169.png",
+    "abilityText": "ONGOING: You gain a Level 4 boss part token at the end of each Wave (taken from the supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "boss-part",
+        "amount": 1,
+        "bossLevel": 4
+      }
+    ]
+  },
+  {
+    "id": "upgrade-new-harvester-r5",
+    "family": "new-harvester",
+    "type": "Harvester",
+    "category": "passive",
+    "rank": 5,
+    "name": "New Harvester",
+    "cardNumber": 170,
+    "image": "equipment-upgrade-170.png",
+    "abilityText": "ONGOING: You gain a Level 5 boss part token at the end of each Wave (taken from the supply).",
+    "effects": [
+      {
+        "kind": "gain-tokens-at-end-of-wave",
+        "token": "boss-part",
+        "amount": 1,
+        "bossLevel": 5
+      }
+    ]
+  },
+  {
+    "id": "upgrade-ancient-os-r1",
+    "family": "ancient-os",
+    "type": "OS",
+    "category": "passive",
+    "rank": 1,
+    "name": "Ancient OS",
+    "cardNumber": 171,
+    "image": "equipment-upgrade-171.png",
+    "abilityText": "ONGOING: Enemies that grant XP grant 1 additional XP. Both delvers gain 1 element at the end of each Wave.",
+    "effects": [
+      {
+        "kind": "bonus-xp-on-kill",
+        "amount": 1
+      },
+      {
+        "kind": "gain-element-at-end-of-wave",
+        "amount": 1,
+        "recipient": "all-delvers"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-ancient-os-r2",
+    "family": "ancient-os",
+    "type": "OS",
+    "category": "passive",
+    "rank": 2,
+    "name": "Ancient OS",
+    "cardNumber": 172,
+    "image": "equipment-upgrade-172.png",
+    "abilityText": "ONGOING: Enemies that grant XP grant 2 additional XP. Both delvers gain 2 elements at the end of each Wave.",
+    "effects": [
+      {
+        "kind": "bonus-xp-on-kill",
+        "amount": 2
+      },
+      {
+        "kind": "gain-element-at-end-of-wave",
+        "amount": 2,
+        "recipient": "all-delvers"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-ancient-os-r3",
+    "family": "ancient-os",
+    "type": "OS",
+    "category": "passive",
+    "rank": 3,
+    "name": "Ancient OS",
+    "cardNumber": 173,
+    "image": "equipment-upgrade-173.png",
+    "abilityText": "ONGOING: Enemies that grant XP grant 3 additional XP. Both delvers gain 3 elements at the end of each Wave.",
+    "effects": [
+      {
+        "kind": "bonus-xp-on-kill",
+        "amount": 3
+      },
+      {
+        "kind": "gain-element-at-end-of-wave",
+        "amount": 3,
+        "recipient": "all-delvers"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-ancient-os-r4",
+    "family": "ancient-os",
+    "type": "OS",
+    "category": "passive",
+    "rank": 4,
+    "name": "Ancient OS",
+    "cardNumber": 174,
+    "image": "equipment-upgrade-174.png",
+    "abilityText": "ONGOING: Enemies that grant XP grant 4 additional XP. Both delvers gain 4 elements at the end of each Wave.",
+    "effects": [
+      {
+        "kind": "bonus-xp-on-kill",
+        "amount": 4
+      },
+      {
+        "kind": "gain-element-at-end-of-wave",
+        "amount": 4,
+        "recipient": "all-delvers"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-ancient-os-r5",
+    "family": "ancient-os",
+    "type": "OS",
+    "category": "passive",
+    "rank": 5,
+    "name": "Ancient OS",
+    "cardNumber": 175,
+    "image": "equipment-upgrade-175.png",
+    "abilityText": "ONGOING: Enemies that grant XP grant 5 additional XP. Both delvers gain 5 elements at the end of each Wave.",
+    "effects": [
+      {
+        "kind": "bonus-xp-on-kill",
+        "amount": 5
+      },
+      {
+        "kind": "gain-element-at-end-of-wave",
+        "amount": 5,
+        "recipient": "all-delvers"
+      }
+    ]
+  },
+  {
+    "id": "upgrade-overcharger-r1",
+    "family": "overcharger",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 1,
+    "name": "Overcharger",
+    "cardNumber": 176,
+    "image": "equipment-upgrade-176.png",
+    "abilityText": "IMMEDIATELY: Gain two 2x LIGHT, 2x MEDIUM or 2x HEAVY damage tokens. ONGOING: You may spend 2 Water to increase your base LIGHT, MEDIUM or HEAVY damage.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      },
+      {
+        "kind": "overcharge-damage",
+        "element": "water",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-overcharger-r2",
+    "family": "overcharger",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 2,
+    "name": "Overcharger",
+    "cardNumber": 177,
+    "image": "equipment-upgrade-177.png",
+    "abilityText": "IMMEDIATELY: Gain two 2x LIGHT, 2x MEDIUM or 2x HEAVY damage tokens. ONGOING: You may spend 2 Water to increase your base LIGHT, MEDIUM or HEAVY damage.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      },
+      {
+        "kind": "overcharge-damage",
+        "element": "water",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-overcharger-r3",
+    "family": "overcharger",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 3,
+    "name": "Overcharger",
+    "cardNumber": 178,
+    "image": "equipment-upgrade-178.png",
+    "abilityText": "IMMEDIATELY: Gain two 2x LIGHT, 2x MEDIUM or 2x HEAVY damage tokens. ONGOING: You may spend 2 Water to increase your base LIGHT, MEDIUM or HEAVY damage.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      },
+      {
+        "kind": "overcharge-damage",
+        "element": "water",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-overcharger-r4",
+    "family": "overcharger",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 4,
+    "name": "Overcharger",
+    "cardNumber": 179,
+    "image": "equipment-upgrade-179.png",
+    "abilityText": "IMMEDIATELY: Gain two 2x LIGHT, 2x MEDIUM or 2x HEAVY damage tokens. ONGOING: You may spend 2 Water to increase your base LIGHT, MEDIUM or HEAVY damage.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      },
+      {
+        "kind": "overcharge-damage",
+        "element": "water",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-overcharger-r5",
+    "family": "overcharger",
+    "type": "Supercharger",
+    "category": "passive",
+    "rank": 5,
+    "name": "Overcharger",
+    "cardNumber": 180,
+    "image": "equipment-upgrade-180.png",
+    "abilityText": "IMMEDIATELY: Gain two 2x LIGHT, 2x MEDIUM or 2x HEAVY damage tokens. ONGOING: You may spend 2 Water to increase your base LIGHT, MEDIUM or HEAVY damage.",
+    "effects": [
+      {
+        "kind": "immediately-equipment-roll"
+      },
+      {
+        "kind": "overcharge-damage",
+        "element": "water",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-engulfing-beam-r1",
+    "family": "engulfing-beam",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 1,
+    "name": "Engulfing Beam",
+    "cardNumber": 181,
+    "image": "equipment-upgrade-181.png",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": false
+    },
+    "abilityText": "MEDIUM damage to all targets in any straight line (including diagonals). Spend 1 Fire: LIGHT damage to all enemies. Spend 1 Fire: Block counterattacks.",
+    "effects": [
+      {
+        "kind": "spend-element-damage-all-enemies",
+        "element": "fire",
+        "cost": 1,
+        "damageType": "light",
+        "multiplier": 1
+      },
+      {
+        "kind": "spend-element-block-counterattacks",
+        "element": "fire",
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-engulfing-beam-r2",
+    "family": "engulfing-beam",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 2,
+    "name": "Engulfing Beam",
+    "cardNumber": 182,
+    "image": "equipment-upgrade-182.png",
+    "damageType": "medium",
+    "damageMultiplier": 2,
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": false
+    },
+    "abilityText": "2x MEDIUM damage to all targets in any straight line (including diagonals). Spend 1 Fire: 2x LIGHT damage to all enemies. Spend 1 Fire: Block counterattacks.",
+    "effects": [
+      {
+        "kind": "spend-element-damage-all-enemies",
+        "element": "fire",
+        "cost": 1,
+        "damageType": "light",
+        "multiplier": 2
+      },
+      {
+        "kind": "spend-element-block-counterattacks",
+        "element": "fire",
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-engulfing-beam-r3",
+    "family": "engulfing-beam",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 3,
+    "name": "Engulfing Beam",
+    "cardNumber": 183,
+    "image": "equipment-upgrade-183.png",
+    "damageType": "medium",
+    "damageMultiplier": 3,
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": false
+    },
+    "abilityText": "3x MEDIUM damage to all targets in any straight line (including diagonals). Spend 1 Fire: 3x LIGHT damage to all enemies. Spend 1 Fire: Block counterattacks.",
+    "effects": [
+      {
+        "kind": "spend-element-damage-all-enemies",
+        "element": "fire",
+        "cost": 1,
+        "damageType": "light",
+        "multiplier": 3
+      },
+      {
+        "kind": "spend-element-block-counterattacks",
+        "element": "fire",
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-engulfing-beam-r4",
+    "family": "engulfing-beam",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 4,
+    "name": "Engulfing Beam",
+    "cardNumber": 184,
+    "image": "equipment-upgrade-184.png",
+    "damageType": "medium",
+    "damageMultiplier": 4,
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": false
+    },
+    "abilityText": "4x MEDIUM damage to all targets in any straight line (including diagonals). Spend 1 Fire: 4x LIGHT damage to all enemies. Spend 1 Fire: Block counterattacks.",
+    "effects": [
+      {
+        "kind": "spend-element-damage-all-enemies",
+        "element": "fire",
+        "cost": 1,
+        "damageType": "light",
+        "multiplier": 4
+      },
+      {
+        "kind": "spend-element-block-counterattacks",
+        "element": "fire",
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-engulfing-beam-r5",
+    "family": "engulfing-beam",
+    "type": "Beam",
+    "category": "weapon",
+    "rank": 5,
+    "name": "Engulfing Beam",
+    "cardNumber": 185,
+    "image": "equipment-upgrade-185.png",
+    "damageType": "medium",
+    "damageMultiplier": 5,
+    "range": {
+      "kind": "straight-line",
+      "includeDiagonals": true,
+      "firstTargetOnly": false
+    },
+    "abilityText": "5x MEDIUM damage to all targets in any straight line (including diagonals). Spend 1 Fire: 5x LIGHT damage to all enemies. Spend 1 Fire: Block counterattacks.",
+    "effects": [
+      {
+        "kind": "spend-element-damage-all-enemies",
+        "element": "fire",
+        "cost": 1,
+        "damageType": "light",
+        "multiplier": 5
+      },
+      {
+        "kind": "spend-element-block-counterattacks",
+        "element": "fire",
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-precise-shockwave-r1",
+    "family": "precise-shockwave",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 1,
+    "name": "Precise Shockwave",
+    "cardNumber": 186,
+    "image": "equipment-upgrade-186.png",
+    "damageType": "light",
+    "damageMultiplier": 1,
+    "range": {
+      "kind": "choose-targets",
+      "maxDistance": 2
+    },
+    "abilityText": "LIGHT damage to targets of your choice within 2 tiles. Spend 1 Radiance: Additional HEAVY damage to 1 adjacent target.",
+    "effects": [
+      {
+        "kind": "spend-element-extra-adjacent-damage",
+        "element": "radiance",
+        "cost": 1,
+        "damageType": "heavy",
+        "multiplier": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-precise-shockwave-r2",
+    "family": "precise-shockwave",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 2,
+    "name": "Precise Shockwave",
+    "cardNumber": 187,
+    "image": "equipment-upgrade-187.png",
+    "damageType": "light",
+    "damageMultiplier": 2,
+    "range": {
+      "kind": "choose-targets",
+      "maxDistance": 2
+    },
+    "abilityText": "2x LIGHT damage to targets of your choice within 2 tiles. Spend 1 Radiance: Additional 2x HEAVY damage to 1 adjacent target.",
+    "effects": [
+      {
+        "kind": "spend-element-extra-adjacent-damage",
+        "element": "radiance",
+        "cost": 1,
+        "damageType": "heavy",
+        "multiplier": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-precise-shockwave-r3",
+    "family": "precise-shockwave",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 3,
+    "name": "Precise Shockwave",
+    "cardNumber": 188,
+    "image": "equipment-upgrade-188.png",
+    "damageType": "light",
+    "damageMultiplier": 3,
+    "range": {
+      "kind": "choose-targets",
+      "maxDistance": 2
+    },
+    "abilityText": "3x LIGHT damage to targets of your choice within 2 tiles. Spend 1 Radiance: Additional 3x HEAVY damage to 1 adjacent target.",
+    "effects": [
+      {
+        "kind": "spend-element-extra-adjacent-damage",
+        "element": "radiance",
+        "cost": 1,
+        "damageType": "heavy",
+        "multiplier": 3
+      }
+    ]
+  },
+  {
+    "id": "upgrade-precise-shockwave-r4",
+    "family": "precise-shockwave",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 4,
+    "name": "Precise Shockwave",
+    "cardNumber": 189,
+    "image": "equipment-upgrade-189.png",
+    "damageType": "light",
+    "damageMultiplier": 4,
+    "range": {
+      "kind": "choose-targets",
+      "maxDistance": 2
+    },
+    "abilityText": "4x LIGHT damage to targets of your choice within 2 tiles. Spend 1 Radiance: Additional 4x HEAVY damage to 1 adjacent target.",
+    "effects": [
+      {
+        "kind": "spend-element-extra-adjacent-damage",
+        "element": "radiance",
+        "cost": 1,
+        "damageType": "heavy",
+        "multiplier": 4
+      }
+    ]
+  },
+  {
+    "id": "upgrade-precise-shockwave-r5",
+    "family": "precise-shockwave",
+    "type": "Shockwave",
+    "category": "weapon",
+    "rank": 5,
+    "name": "Precise Shockwave",
+    "cardNumber": 190,
+    "image": "equipment-upgrade-190.png",
+    "damageType": "light",
+    "damageMultiplier": 5,
+    "range": {
+      "kind": "choose-targets",
+      "maxDistance": 2
+    },
+    "abilityText": "5x LIGHT damage to targets of your choice within 2 tiles. Spend 1 Radiance: Additional 5x HEAVY damage to 1 adjacent target.",
+    "effects": [
+      {
+        "kind": "spend-element-extra-adjacent-damage",
+        "element": "radiance",
+        "cost": 1,
+        "damageType": "heavy",
+        "multiplier": 5
+      }
+    ]
+  },
+  {
+    "id": "upgrade-fabled-hammer-r1",
+    "family": "fabled-hammer",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 1,
+    "name": "Fabled Hammer",
+    "cardNumber": 191,
+    "image": "equipment-upgrade-191.png",
+    "damageType": "heavy",
+    "damageMultiplier": 1,
+    "range": {
+      "kind": "between-delvers"
+    },
+    "abilityText": "HEAVY damage to enemies between the two delvers. Only useable if delvers are in a straight line to each other.",
+    "effects": []
+  },
+  {
+    "id": "upgrade-fabled-hammer-r2",
+    "family": "fabled-hammer",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 2,
+    "name": "Fabled Hammer",
+    "cardNumber": 192,
+    "image": "equipment-upgrade-192.png",
+    "damageType": "heavy",
+    "damageMultiplier": 2,
+    "range": {
+      "kind": "between-delvers"
+    },
+    "abilityText": "2x HEAVY damage to enemies between the two delvers. Only useable if delvers are in a straight line to each other.",
+    "effects": []
+  },
+  {
+    "id": "upgrade-fabled-hammer-r3",
+    "family": "fabled-hammer",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 3,
+    "name": "Fabled Hammer",
+    "cardNumber": 193,
+    "image": "equipment-upgrade-193.png",
+    "damageType": "heavy",
+    "damageMultiplier": 3,
+    "range": {
+      "kind": "between-delvers"
+    },
+    "abilityText": "3x HEAVY damage to enemies between the two delvers. Only useable if delvers are in a straight line to each other.",
+    "effects": []
+  },
+  {
+    "id": "upgrade-fabled-hammer-r4",
+    "family": "fabled-hammer",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 4,
+    "name": "Fabled Hammer",
+    "cardNumber": 194,
+    "image": "equipment-upgrade-194.png",
+    "damageType": "heavy",
+    "damageMultiplier": 4,
+    "range": {
+      "kind": "between-delvers"
+    },
+    "abilityText": "4x HEAVY damage to enemies between the two delvers. Only useable if delvers are in a straight line to each other.",
+    "effects": []
+  },
+  {
+    "id": "upgrade-fabled-hammer-r5",
+    "family": "fabled-hammer",
+    "type": "Hammer",
+    "category": "weapon",
+    "rank": 5,
+    "name": "Fabled Hammer",
+    "cardNumber": 195,
+    "image": "equipment-upgrade-195.png",
+    "damageType": "heavy",
+    "damageMultiplier": 5,
+    "range": {
+      "kind": "between-delvers"
+    },
+    "abilityText": "5x HEAVY damage to enemies between the two delvers. Only useable if delvers are in a straight line to each other.",
+    "effects": []
+  },
+  {
+    "id": "upgrade-sword-of-ruin-r1",
+    "family": "sword-of-ruin",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 1,
+    "name": "Sword of Ruin",
+    "cardNumber": 196,
+    "image": "equipment-upgrade-196.png",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "MEDIUM damage to an adjacent target. If target dies, gain 1 Wind. Spend 2 Wind: Additional HEAVY damage.",
+    "effects": [
+      {
+        "kind": "gain-element-on-kill",
+        "element": "wind",
+        "amount": 1
+      },
+      {
+        "kind": "spend-element-bonus-damage",
+        "element": "wind",
+        "cost": 2,
+        "damageType": "heavy",
+        "multiplier": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-sword-of-ruin-r2",
+    "family": "sword-of-ruin",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 2,
+    "name": "Sword of Ruin",
+    "cardNumber": 197,
+    "image": "equipment-upgrade-197.png",
+    "damageType": "medium",
+    "damageMultiplier": 2,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "2x MEDIUM damage to an adjacent target. If target dies, gain 1 Wind. Spend 2 Wind: Additional 2x HEAVY damage.",
+    "effects": [
+      {
+        "kind": "gain-element-on-kill",
+        "element": "wind",
+        "amount": 1
+      },
+      {
+        "kind": "spend-element-bonus-damage",
+        "element": "wind",
+        "cost": 2,
+        "damageType": "heavy",
+        "multiplier": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-sword-of-ruin-r3",
+    "family": "sword-of-ruin",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 3,
+    "name": "Sword of Ruin",
+    "cardNumber": 198,
+    "image": "equipment-upgrade-198.png",
+    "damageType": "medium",
+    "damageMultiplier": 3,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "3x MEDIUM damage to an adjacent target. If target dies, gain 1 Wind. Spend 2 Wind: Additional 3x HEAVY damage.",
+    "effects": [
+      {
+        "kind": "gain-element-on-kill",
+        "element": "wind",
+        "amount": 1
+      },
+      {
+        "kind": "spend-element-bonus-damage",
+        "element": "wind",
+        "cost": 2,
+        "damageType": "heavy",
+        "multiplier": 3
+      }
+    ]
+  },
+  {
+    "id": "upgrade-sword-of-ruin-r4",
+    "family": "sword-of-ruin",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 4,
+    "name": "Sword of Ruin",
+    "cardNumber": 199,
+    "image": "equipment-upgrade-199.png",
+    "damageType": "medium",
+    "damageMultiplier": 4,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "4x MEDIUM damage to an adjacent target. If target dies, gain 1 Wind. Spend 2 Wind: Additional 4x HEAVY damage.",
+    "effects": [
+      {
+        "kind": "gain-element-on-kill",
+        "element": "wind",
+        "amount": 1
+      },
+      {
+        "kind": "spend-element-bonus-damage",
+        "element": "wind",
+        "cost": 2,
+        "damageType": "heavy",
+        "multiplier": 4
+      }
+    ]
+  },
+  {
+    "id": "upgrade-sword-of-ruin-r5",
+    "family": "sword-of-ruin",
+    "type": "Sword",
+    "category": "weapon",
+    "rank": 5,
+    "name": "Sword of Ruin",
+    "cardNumber": 200,
+    "image": "equipment-upgrade-200.png",
+    "damageType": "medium",
+    "damageMultiplier": 5,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "5x MEDIUM damage to an adjacent target. If target dies, gain 1 Wind. Spend 2 Wind: Additional 5x HEAVY damage.",
+    "effects": [
+      {
+        "kind": "gain-element-on-kill",
+        "element": "wind",
+        "amount": 1
+      },
+      {
+        "kind": "spend-element-bonus-damage",
+        "element": "wind",
+        "cost": 2,
+        "damageType": "heavy",
+        "multiplier": 5
+      }
+    ]
+  },
+  {
+    "id": "upgrade-war-mace-r1",
+    "family": "war-mace",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 1,
+    "name": "War Mace",
+    "cardNumber": 201,
+    "image": "equipment-upgrade-201.png",
+    "damageType": "heavy",
+    "damageMultiplier": 1,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "Target an adjacent enemy. If a boss, deal HEAVY damage. If a minion, deal LIGHT damage and gain 1 element.",
+    "effects": [
+      {
+        "kind": "minion-damage-override",
+        "damageType": "light",
+        "multiplier": 1,
+        "gainElementChoice": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-war-mace-r2",
+    "family": "war-mace",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 2,
+    "name": "War Mace",
+    "cardNumber": 202,
+    "image": "equipment-upgrade-202.png",
+    "damageType": "heavy",
+    "damageMultiplier": 2,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "Target an adjacent enemy. If a boss, deal 2x HEAVY damage. If a minion, deal 2x LIGHT damage and gain 1 element.",
+    "effects": [
+      {
+        "kind": "minion-damage-override",
+        "damageType": "light",
+        "multiplier": 2,
+        "gainElementChoice": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-war-mace-r3",
+    "family": "war-mace",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 3,
+    "name": "War Mace",
+    "cardNumber": 203,
+    "image": "equipment-upgrade-203.png",
+    "damageType": "heavy",
+    "damageMultiplier": 3,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "Target an adjacent enemy. If a boss, deal 3x HEAVY damage. If a minion, deal 3x LIGHT damage and gain 1 element.",
+    "effects": [
+      {
+        "kind": "minion-damage-override",
+        "damageType": "light",
+        "multiplier": 3,
+        "gainElementChoice": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-war-mace-r4",
+    "family": "war-mace",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 4,
+    "name": "War Mace",
+    "cardNumber": 204,
+    "image": "equipment-upgrade-204.png",
+    "damageType": "heavy",
+    "damageMultiplier": 4,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "Target an adjacent enemy. If a boss, deal 4x HEAVY damage. If a minion, deal 4x LIGHT damage and gain 1 element.",
+    "effects": [
+      {
+        "kind": "minion-damage-override",
+        "damageType": "light",
+        "multiplier": 4,
+        "gainElementChoice": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-war-mace-r5",
+    "family": "war-mace",
+    "type": "Mace",
+    "category": "weapon",
+    "rank": 5,
+    "name": "War Mace",
+    "cardNumber": 205,
+    "image": "equipment-upgrade-205.png",
+    "damageType": "heavy",
+    "damageMultiplier": 5,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "Target an adjacent enemy. If a boss, deal 5x HEAVY damage. If a minion, deal 5x LIGHT damage and gain 1 element.",
+    "effects": [
+      {
+        "kind": "minion-damage-override",
+        "damageType": "light",
+        "multiplier": 5,
+        "gainElementChoice": 1
+      }
+    ]
+  },
+  {
+    "id": "upgrade-lunar-trident-r1",
+    "family": "lunar-trident",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 1,
+    "name": "Lunar Trident",
+    "cardNumber": 206,
+    "image": "equipment-upgrade-206.png",
+    "damageType": "medium",
+    "damageMultiplier": 1,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "MEDIUM damage to an adjacent target. Spend 2 Void: roll a die and multiply damage by the result.",
+    "effects": [
+      {
+        "kind": "spend-element-die-multiplier",
+        "element": "void",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-lunar-trident-r2",
+    "family": "lunar-trident",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 2,
+    "name": "Lunar Trident",
+    "cardNumber": 207,
+    "image": "equipment-upgrade-207.png",
+    "damageType": "medium",
+    "damageMultiplier": 2,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "2x MEDIUM damage to an adjacent target. Spend 2 Void: roll a die and multiply damage by the result.",
+    "effects": [
+      {
+        "kind": "spend-element-die-multiplier",
+        "element": "void",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-lunar-trident-r3",
+    "family": "lunar-trident",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 3,
+    "name": "Lunar Trident",
+    "cardNumber": 208,
+    "image": "equipment-upgrade-208.png",
+    "damageType": "medium",
+    "damageMultiplier": 3,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "3x MEDIUM damage to an adjacent target. Spend 2 Void: roll a die and multiply damage by the result.",
+    "effects": [
+      {
+        "kind": "spend-element-die-multiplier",
+        "element": "void",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-lunar-trident-r4",
+    "family": "lunar-trident",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 4,
+    "name": "Lunar Trident",
+    "cardNumber": 209,
+    "image": "equipment-upgrade-209.png",
+    "damageType": "medium",
+    "damageMultiplier": 4,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "4x MEDIUM damage to an adjacent target. Spend 2 Void: roll a die and multiply damage by the result.",
+    "effects": [
+      {
+        "kind": "spend-element-die-multiplier",
+        "element": "void",
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "upgrade-lunar-trident-r5",
+    "family": "lunar-trident",
+    "type": "Trident",
+    "category": "weapon",
+    "rank": 5,
+    "name": "Lunar Trident",
+    "cardNumber": 210,
+    "image": "equipment-upgrade-210.png",
+    "damageType": "medium",
+    "damageMultiplier": 5,
+    "range": {
+      "kind": "single-adjacent"
+    },
+    "abilityText": "5x MEDIUM damage to an adjacent target. Spend 2 Void: roll a die and multiply damage by the result.",
+    "effects": [
+      {
+        "kind": "spend-element-die-multiplier",
+        "element": "void",
+        "cost": 2
+      }
+    ]
+  }
+]

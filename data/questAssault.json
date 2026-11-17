@@ -1,0 +1,73 @@
+{
+  "id": "assault",
+  "name": "Assault on Bird's Nest",
+  "goal": "Defeat all enemies",
+  "primaryGoalWaveNumber": 1,
+  "intro": [],
+  "waves": [
+    {
+      "number": 1,
+      "goal": "Defeat all enemies.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "mistspawn-104",
+      "minionEnemyIds": [
+        "infestation-105",
+        "infestation-106",
+        "infestation-107",
+        "infestation-108",
+        "infestation-109",
+        "infestation-110",
+        "infestation-111"
+      ],
+      "endOfWave": {
+        "bothSurvive": "assault_end",
+        "anyDie": "assault_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "assault_defeat",
+          "rewards": [
+            {
+              "kind": "record-decision",
+              "key": "ch4.assault.lost"
+            },
+            {
+              "kind": "clear-combat-only-grants"
+            }
+          ]
+        },
+        "victory": [
+          {
+            "label": "Continue",
+            "pageId": "assault_victory",
+            "rewards": [
+              {
+                "kind": "record-decision",
+                "key": "ch4.assault.won"
+              },
+              {
+                "kind": "clear-combat-only-grants"
+              }
+            ],
+            "then": "end-quest"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": {
+    "wave1_intro": "The Mistspawn rears over the burning square, its Infestation swarming between the houses. Townsfolk scatter behind you. There's nowhere left to fall back to.",
+    "wave1_intro_ability_name": "Omen, Rebirth",
+    "wave1_intro_ability_rules": "Omen (Boss and Minions): When a hero is damaged by an enemy with this ability, afterwards, place a monster token on their Delversuit board. Each time they take damage from now on, they take 1 extra damage for each monster token they have for the remainder of the Wave. Clear these monster tokens at the end of the Wave.\n\nRebirth (Boss and Minions): When the enemy dies, place 3 monster tokens on its tile. After each hero turn where no enemies died, remove 1 monster token from all tiles. Once a tile has its last monster token removed, respawn one of these dead enemies on this tile with 50% health.",
+    "assault_end": "The last creature falls. For a moment the square is silent but for the crackle of fire.",
+    "assault_victory": "Bird's Nest still stands. Go to X.1.",
+    "assault_defeat": "The creatures swarm you. Go to X.2."
+  }
+}

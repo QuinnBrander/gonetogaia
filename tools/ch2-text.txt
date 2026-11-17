@@ -1,0 +1,892 @@
+Chapter 2 storybook  24 pages
+
+
+======== PAGE 1 ========
+
+Chapter 2
+
+
+======== PAGE 2 ========
+
+14
+
+
+======== PAGE 3 ========
+
+When you arrive at the meeting point, you find Father 
+Flores giving a sermon to a group of children. They’re far too 
+young to take the delving aptitude test, so you wonder why 
+they’re so close to the shore. Curious, you listen in. 
+“My children, do you see that beautiful light in the distance? 
+That is Gaia.” A boy raises his hand. “Father, what is Gaia?”
+“What a wonderful question! Gaia is a manifestation of the 
+Earth. She came to us in a time of need to guide us towards 
+salvation. Someday, one of you may have the honor of 
+becoming a delver. If it is your fate, Gaia will guide you to 
+her.” The children are spellbound, absorbing every word.
+You hear footsteps behind you and turn to see Master Bram. 
+At his side floats a peculiar robot. Father Flores quickly 
+wraps up his sermon and his two attendants corral the 
+attendees away.
+“They get younger and younger every year,” Bram murmurs. 
+Father Flores watches as the children return to town. “With 
+the way things have gone lately, it’s best to prepare them 
+early”. Bram nods.
+Flores hands you a pair of binoculars and directs your 
+eyeline to the outer perimeter. “Delvers, do you see 
+anything unusual?” After a few minutes, you find it - a 
+gap in the net of surveillance cameras floating just above 
+the canopy.
+“One of my disciples at the watchtower recently detected a 
+disturbance at this location, and as you can see, we’ve lost 
+a surveillance device. Recovering the camera would allow 
+us to review its hard drive and potentially discover what 
+brought it down. With luck, we may even be able to repair it. 
+I appreciate your help with this vital mission.”
+“Delvers,” Master Bram says, his voice steady. “The path 
+ahead takes you deeper into the Tide, where great perils 
+lurk. From now on, you won’t go alone.” He draws your 
+attention to the squat, humming machine at his side. “This 
+is Witness. He’s useless in a fight, but he’ll haul your gear 
+for you. And should you fall in the mist, he’ll bring your 
+bodies home.”
+The name stirs a memory - you learned about Witness 
+during your studies at the Academy. It’s said that no delver 
+has ever reached Gaia without his help. Witness greets you 
+by way of a soft whirr. He’s oddly expressive.
+“Chin up, delvers,” Master Bram adds, with a grin. “And 
+remember, if things get dicey, there’s no shame in turning 
+back.” You don your delversuits and descend into the mist. 
+Witness follows behind in silence - your new companion on 
+the long road ahead.
+ Collectively gain the card Witness Reference Card as 
+well as the Witness the robot mini.
+Witness
+The Children of Gaia
+The Tide
+15
+
+
+======== PAGE 4 ========
+
+IF ONE OR BOTH DELVERS DIE
+Go to entry 2.1 on the right
+End of wave
+Fatal Flaw (Boss and Minions)
+GOAL
+Reach the end of Wave 2
+MINION 008/028
+3
+1
+Venena
+Fatal Flaw: 1
+ 1 Damage.
+On Death
+Drops MINION PART. Gain .
+BOSS - LVL 1 002/004
+16
+2
+Goldmonger
+ 2 Damage & lose ALL XP on hand.
+On Death
+Fatal Flaw: 3
+Drops LVL 1 BOSS PART. Gain a LEVEL UP card.
+MINION: Venena (7 Cards)
+BOSS: Goldmonger (1 Card)
+Wave 1
+At first, your descent is easier than expected. Until the buzzing 
+begins. Then, all at once, you hear a pained roar and a vast 
+creature leaps forward to maul you. Neither bear, nor insect - 
+the creature appears maddened by a nest of stinging Venena 
+fused to its back.
+These enemies can only be killed in the order specified next 
+to this ability. For example, the enemies with the label “Fatal 
+Flaw: 1” must be killed first, then the enemies with “Fatal 
+Flaw: 2”. Enemies with sequential numbers can be killed at the 
+same time. They can still suffer damage in any order - only the 
+final point of damage remains.
+QUEST #02
+The Surveillance Device
+Enemy Abilities
+CHOSE 1 OPTION:
+RETREAT
+Go to entry 2.2 on the right
+CONTINUE
+Go to entry 2.3 on the right
+16
+
+
+======== PAGE 5 ========
+
+Your fight has left you exhausted and bloody. The 
+surveillance device is close by, but you can’t risk running 
+into more monsters in this condition, so you head back 
+to shore.
+Bram is waiting by the docks, and he looks confused. 
+“You’re back already? Wait, where is the surveillance 
+device?” He realizes you don’t have it. “That won’t do, 
+delvers. We need that device.”
+ Dr Ira quickly patches you up - both delvers heal to full 
+HP (even if one delver died). 
+“Now get back out there and retrieve the device.”
+As you descend deeper into the Tide, the mist continues to 
+thicken. The suit’s power is palpable- you feel it coursing 
+through every part of your body.
+ Delvers gain 3 elements (your choice)
+ Continue on to Wave 2 on page 18.
+The creatures swarm you, and everything goes black. 
+ Try again from the start of the Quest. Both players 
+refresh any spent Consumables, are at full health, and 
+return all exhausted Weapon Cards to their hand.
+2.2
+2.3
+2.1
+The
+As you descend deeper into the Tide, the mist continues Docks
+to thicken. You can sense your suit reacting to it – your 
+movements feel faster, more receptive.
+ Delvers gain 2 elements (your choice)
+ Continue on to Wave 2 on page 18.
+DO YOU STILL WANT TO RETREAT?
+If so, perform a Simple Town Visit on page 
+208 and then retry the quest from Wave 1. 
+Otherwise, keep reading
+17
+
+
+======== PAGE 6 ========
+
+IF ONE OR BOTH DELVERS DIE
+Go to entry 2.4 on the right
+End of wave
+Rotates (Boss and Minions)
+MINION 015/028
+6
+2
+Ophidian
+Rotates
+ 2 Damage.
+Drops MINION PART. Gain 1 XP.
+On Death
+BOSS - LVL 2 003/004
+24
+3
+Hundredeyes
+Rotates
+ 3 Damage & lose ALL Elements.
+On Death
+Drops LVL 2 BOSS PART. Gain a LEVEL UP card.
+MINION: Ophidians (7 Cards)
+BOSS: HUNDREDEYES (1 Card)
+Wave 2
+These enemies rotate their card 90 degrees clockwise after 
+attempting to counterattack.
+QUEST #02
+The Surveillance Device
+Enemy Abilities
+IF BOTH DELVERS SURVIVE
+Go to entry 2.5 on the right
+Resolve Scenario Card #01 GOAL
+Reach the end of Wave 2
+18
+
+
+======== PAGE 7 ========
+
+After many hours of slow, cautious travel, you reach the 
+perimeter. The downed surveillance device is rotating like 
+normal, but winged marmosets glide around it, entranced 
+by its light. Before you can attack the creatures, the robot 
+Witness emits a loud beep and hovers towards them. He 
+circles the creatures, reaching out his hand and gently 
+guiding them away. He then detaches the contraption, 
+inserts it into an available socket, and floats back down. 
+Witness whirs as if pleased with himself. Your Quest 
+is complete!
+ Add Key Item #1 to your Key Items.
+As you begin to head back, you catch the faintest murmur 
+of what sounds like frustrated shouting in the distance. You 
+pause and listen intently for a quiet minute, but nothing 
+else reaches you. Perhaps you imagined it.
+The creatures swarm you and everything goes black. The 
+robot Witness quietly collects the surveillance device while 
+the Hundredeyes and its brood are distracted.
+ Add Key Item #1 to your Key Items.
+Your Quest is complete! On your Campaign Sheet, record the 
+number of minion and boss parts you’ve each collected, as 
+well as the # of the Quest you’ve completed, then continue 
+from page 22.
+2.5
+2.4
+A RETURN TO TOWN
+CHOOSE 1 OPTION:
+On your Campaign Sheet, record the 
+number of minion and boss parts you’ve 
+each collected, record that you’ve completed 
+Quest #2, then continue from page 22.
+As you head towards the direction of the 
+voices, the mist begins to change hues. 
+Flecks of white hang in the air and you smell 
+something sweet and putrid.
+Delvers heal 2 HP.
+Continue to Wave 3 on page 20.
+A
+B
+FOLLOW THE SHOUTS B Continue on to Wave 3
+19
+
+
+======== PAGE 8 ========
+
+IF ONE OR BOTH DELVERS DIE
+Go to entry 2.6 on the right
+End of wave
+Teleports (Boss)
+Primordial (Boss and Minions)
+MINION 022/028
+12
+3
+SporeCloud
+Primordial: 
+ 2 Damage.
+On Death
+Drops MINION PART. Gain 1 XP.
+BOSS - LVL 3 004/004
+50
+4
+Death Cap
+Teleports | Primordial: 
+ 4 Damage & Discard 1 Consummable.
+On Death
+Drops LVL 3 BOSS PART. Gain a LEVEL UP card.
+MINION: Sporecloud (7 Cards)
+BOSS: DEATH CAP (1 Card)
+Wave 3
+After attempting to counterattack, this boss switches places 
+with the closest minion. If there are multiple closest minions, 
+players decide.
+These enemies can only be damaged by weapons that are 
+exhausted onto weapon slots matching one of the indicated 
+elements next to the ability. These weapon slots do not need 
+to have any element token at this time.
+QUEST #02
+The Surveillance Device
+Enemy Abilities
+IF BOTH DELVERS SURVIVE
+Go to entry 2.7 on the right
+GOAL
+Reach the end of Wave 3
+Resolve Scenario Card #02
+20
+
+
+======== PAGE 9 ========
+
+As you draw closer, the mist grows darker and denser. Your 
+visibility is affected, but you still catch a glimpse of two 
+silhouettes in the distance by the remnants of a fallen tree. 
+One of the figures is lit by small blue lights dotting their 
+face. When you draw closer, the two figures make a run for 
+it. You approach the tree and notice how the dark purple 
+mist coils ominously around the area. The bark has been 
+blackened and corroded, and small, diseased looking holes 
+dot its surface. 
+In their haste, the two strangers dropped a syringe - you 
+collect it as evidence.
+ Add Key Item #2 to your Key Items.
+On your Campaign Sheet, record the number of minion and 
+boss parts you’ve each collected, as well as the # of the 
+Quest you’ve completed, then continue from page 22.
+The creatures swarm you, and everything goes black. Don’t 
+worry - you did great.
+On your Campaign Sheet, record the number of minion and 
+boss parts you’ve each collected, as well as the # of the 
+Quest you’ve completed, then continue from page 22.
+2.7
+2.6
+???
+21
+
+
+======== PAGE 10 ========
+
+CHAPTER 2
+Town Visit
+Nurse Elayna
+REMEMBER TO RECORD THE CREATURE 
+PARTS YOU EARNED ON YOUR CAMPAIGN 
+SHEET. THEN READ THE RELEVANT ENTRY 
+BASED ON YOUR PERFORMANCE IN THE 
+PREVIOUS QUEST.
+As you step up onto the docks, you nearly stumble from 
+fatigue but Nurse Elayna catches your arm.
+“Thank Gaia you’re alive!” Elayna exclaims, fumbling with 
+her first aid kit. “I’m here to patch you up.” You wonder 
+where Dr Ira is, but seeing the strained look on Elayna’s 
+face, you decide not to mention it. As if reading your mind, 
+she says “sorry, you’ll have to make do with me this time. 
+Now, stay still. Oh no… I did it again!”
+While enduring Elayna’s subpar treatment, you notice 
+smoke rising behind a collection of rickety shacks.
+Suddenly, a cry rings out in the early morning air. A startled 
+Nurse Elayna drops her supplies, and you look into the 
+distance. The Delver’s Watchtower is completely engulfed 
+in flames. Without another thought, you rush toward the 
+fire as screams fill the air.
+For each delver that died:
+ Discard that Hero card into the discard bag.
+ In the Graveyard section on the back of your Campaign 
+Sheet, write their name along with some imagined 
+final words. 
+ Blood seeps into the crevices of your Delversuit, filling 
+it with new power. Add Rank 1 of any one Equipment 
+to an Equipment Slot of your choice on your Suit 
+Condition sheet.
+It’s early morning when you are awakened by a comm from 
+Master Bram. 
+“Delvers, I have some unfortunate news - less than an hour 
+ago, some of your colleagues perished in the Tide. Their 
+delversuits and mantle are now yours to bear - you’ll need 
+to clean and collect them from the docks ASAP. Witness the 
+robot has been reassigned to you - he has a surveillance 
+device in his position that you’re expected to deliver to 
+Father Flores later today. That’s all for now - Bram out.”
+When you arrive at the docks to start cleaning your new 
+suits, you notice smoke rising behind a collection of rickety 
+shacks. The Delver’s Watchtower is completely engulfed in 
+flames. Without another thought, you rush toward the fire 
+as screams fill the air.
+If both Delvers survived
+If One or both Delvers Died
+22
+
+
+======== PAGE 11 ========
+
+ONCE YOU COMPLETE THE RELEVANT 
+ENTRY ON THE PREVIOUS PAGE, 
+CONTINUE PROGRESSING THROUGH 
+THE BOOKLET UNTIL YOU SEE 
+“END OF CHAPTER 2” OR YOU’RE 
+INSTRUCTED OTHERWISE.
+As you hurry towards the Delver’s Watchtower, you pass a 
+couple of fresh recruits on their way to breakfast.
+ player: gain HERO #5.
+ player: gain HERO #6.
+These heroes will be available for you to select at the start 
+of future quests.
+Meet the New Recruits
+23
+
+
+======== PAGE 12 ========
+
+The Burned Watchtower
+As you approach the crowd that has grown around the 
+watchtower, intense flames burst out and the old structure 
+begins to crumble into itself. It is clear the fire had started 
+burning inside the tower long before the alarms were set 
+off. The crowd scatters and watches solemnly as the tower 
+comes down, pieces flying off the cliff and disappearing 
+into the mist. You quickly join the townsfolk in putting out 
+the fire. Hours later, you spot Master Bram surveying the 
+damage and join him.
+“Thank Gaia that Dr Ira was awake to sound the alarm. 
+This could have been so much worse. Only two people are 
+unaccounted for - the Brass siblings. Vera was on guard 
+duty, and we assume her brother Elias was up late doing 
+research. I have to believe they’re still alive. Here is a photo 
+of them. If you manage to find anything - any clues as to 
+what may have caused this, I’d appreciate the help.” He 
+hands you the photo.
+ Add Key Item #6 to your Key Items.
+You begin to survey the area. Nearby, you watch as Dr Ira 
+and her attendants set up triage for the injured. Not far 
+off, you notice Father Flores surrounded by his followers, 
+heads bowed in prayer. Concerned townsfolk approach 
+him to receive his blessings. He attends each one before 
+approaching you with a pained smile.
+“What a grim way to start your journey, delvers. Yet you 
+must remain strong in moments like this. The people of 
+Bird’s Nest depend on the delvers in more ways than you 
+can imagine.”
+You tell Father Flores that you’ve been tasked with finding 
+any clues on what caused the fire. At this, he frowns slightly, 
+but quickly replaces it with a kind smile. “But of course, my 
+child. I fear the fire may have consumed everything, but I 
+have full faith that if there’s anything to be found, you will 
+do so.”
+You begin your search of the watchtower ruins, still warm 
+from the heat of the fire.
+24
+
+
+======== PAGE 13 ========
+
+RESOLUTION ON NEXT PAGE
+WATCHTOWER
+YOU SEE A GLINT OF SOMETHING 
+REFLECTIVE OFF IN THE 
+DISTANCE AND DECIDE TO 
+INVESTIGATE THE RUBBLE 
+STREWN ABOUT THE PERIMETER.
+Grants Wisdom
+A
+YOU SMELL SOMETHING ACRID 
+ORIGINATING NEAR THE BASE 
+OF THE TOWER AND DECIDE TO 
+IDENTIFY ITS SOURCE.
+Grants Knowledge
+B
+TALK TO DR IRA. C Grants Knowledge
+CHOOSE 1 OPTION:
+25
+
+
+======== PAGE 14 ========
+
+The burned watchtower — Resolution
+Exhausted, you take the rest of the day off to recover. The 
+following morning, you decide to take a tour around town.
+Collectively gain 2 Story tokens - these represent the total 
+number of locations you can visit this Chapter. The book will 
+tell you when to spend them.
+The collapsing tower blew rock and material in all directions. A scan of the outer perimeter reveals a 
+delversuit maintenance kit, which you pocket.
+Shuffle 2 Ultra Level Cards into the Level Deck.
+Using a shovel, you dig through the hot rubble until you find what looks to be a mostly intact human 
+femur. There’s something off about it...
+Add Key Item #4 to your Key Items.
+Dr Ira is applying a bandage to a burned arm when you approach her. Her hair is disheveled and her 
+clothing is ripped in various places. When she sees you, she runs a hand through her matted hair as if 
+trying to make herself more presentable. 
+You thank her for being the first to sound the alarm and ask her why she was awake at such a late hour.
+“I… I normally wouldn’t have been,” she replies. “I had made some late night comms, and I decided to take 
+a walk. I heard a scream near the tower, and two figures were running towards the shore. I--” she trails off, 
+perhaps still shaken up. She takes a deep breath and continues. “I wanted to follow them, but then I saw the 
+smoke billowing out and decided to raise the alarm instead.”
+Add Key Item #5 to your Key Items.
+A
+B
+C
+VISIT THE ACADEMY. A Continue from page 27
+CHECK OUT THE LIBRARY. B Continue from page 29
+HEAD TO THE MACHINIST. C Continue from page 31
+CHOOSE 1 OPTION:
+26
+
+
+======== PAGE 15 ========
+
+Academy Campus
+The Delving Academy stands resolutely against the 
+shoreline. As you enter the stone hall, the bustle and 
+chatter of students greets you. As you review the bulletin 
+board displaying today’s lectures, a voice calls out to you.
+“Delvers, this is a surprise! Surely you don’t miss your 
+academy days that much. What brings you to our hallowed 
+grounds?” Headmistress Arlen’s arms are crossed but 
+there’s a slight smile on her lips. 
+You explain that you’re searching for an explanation for the 
+recent increase in tidal creature aggression. 
+“Hm, I see. Yes, you may be able to glean some knowledge 
+from these old books and the minds of our instructors.”
+She leans in close and whispers “Bram told me about the 
+downed surveillance device. The robot is carrying it for you, 
+right? I could help you review the footage directly, if you 
+like.”
+You explain that Father Flores is expecting the device but 
+she waves that away. “What he doesn’t know can’t hurt him. 
+Besides, as a delver, you ought to have access to unfiltered 
+information if you mean to succeed in your investigations.”
+HAND OVER THE 
+SURVEILLANCE DEVICE TO 
+HEADMISTRESS ARLEN.
+Grants Knowledge
+A
+POLITELY DECLINE AND ATTEND 
+THE LECTURE “THE EVOLVING 
+TIDE”, LECTURER: XAVIER 
+MORALES INSTEAD.
+Grants Wisdom, bonus effect 
+if you own Key Item #2
+B
+CHOOSE 1 OPTION:
+RESOLUTION ON NEXT PAGE
+27
+
+
+======== PAGE 16 ========
+
+Academy Campus — Resolution
+You hand over the surveillance device to 
+Headmistress Arlen and she motions for 
+you to follow her to the research wing. Without a 
+word, she delicately attempts to extract and copy 
+the footage, her slender fingers clacking away at 
+the keyboard.
+“That should do it! Come, delvers, and see the 
+fruits of your labor.”
+The footage shows Vera Brass’s colorful 
+delversuit stumbling through the mist in a state 
+of panic. A group of small creatures resembling 
+koalas are in hot pursuit. The delver trips in their 
+haste to escape before leaving the frame.
+“Strange, tidehuggers are quite docile. You take 
+one out, and the rest scatter. Vera is our best 
+delver… she would know that. Regardless, this is 
+certainly pertinent to your investigation.”
+Headmistress Arlen returns the 
+surveillance device.
+Add Quest #05 - “The Rogue Delver” - to your 
+Open Quests.
+Increase Headmistress Arlen’s opinion – record 
+this on the back of your Campaign Sheet.
+Gain the Arlen Ally opinion card.
+Arlen looks disappointed. “Hm. Fine, you 
+try to have a little fun around here…”
+She walks away, muttering. Xavier, the young 
+instructor, is in the middle of his lecture when 
+you enter the hall.
+“As future delvers, you are sure to encounter 
+flora and fauna that have been transformed 
+by the Tide. The creatures down there have all 
+adapted, and many in miraculous ways. Fauna 
+that were once on the brink of extinction are 
+flourishing. Nature, as always, has carved a path, 
+as a river carves the earth. It begs the question: 
+if the lamb and the lion have adapted, why not 
+humans? What is the missing piece?”
+A murmur ripples through the lecture hall. You 
+contemplate this question and listen intently to 
+the rest of Xavier’s lesson.
+Add a Friendly Spawn Card to the top of the 
+Spawn Deck.
+You realize with a jolt that one of the figures you 
+saw in the mist must have been Xavier. After the 
+lecture, you pull Xavier aside and show him the 
+syringe you found.
+“You’re right, that was me. My… assistant 
+and I have been studying a troubling disease 
+spreading through the Tide for months. I call 
+it the Tidebloom - I’ve been trying to alert the 
+town, but it seems no one is concerned.” There’s 
+a hint of bitterness in Xavier’s voice. He takes 
+the syringe from your hand and looks down at 
+the swirling dark mist inside. “I think I’ve found 
+the source of the corruption, but the infected 
+creatures there are dangerous - will you help me 
+collect a sample?”
+Add Quest #03 - “Xavier’s Request” - to your 
+Open Quests
+A B
+IF YOU OWN KEY ITEM #2:
+AFTER RESOLVING YOUR CHOSEN 
+OPTION, DISCARD 1 STORY TOKEN.
+ 
+IF YOU HAVE STORY TOKENS 
+REMAINING, RETURN TO PAGE 26 
+AND VISIT A DIFFERENT LOCATION.
+IF YOU HAVE NO REMAINING STORY 
+TOKENS, CONTINUE ON FROM 
+PAGE 33.
+28
+
+
+======== PAGE 17 ========
+
+Library
+As you enter, you find Dr Ira and the librarian Rodrigo in 
+conversation. Not wanting to interrupt, you hang back. “And 
+the painkillers - are they helping your father?” Dr Ira asks. 
+“It’s helping him manage the pain” he responds. “Thank 
+Gaia you were there to treat him.”
+Dr Ira grimaces and shakes her head. “He always was one 
+to throw caution to the wind.”
+“That’s my pops - always first on the scene. As soon as he 
+heard the sirens, he was out the door. Oh - before I forget, 
+here are the books you asked for.” It’s then he notices you. 
+“Welcome, delvers - I’ll be right with you.”
+You catch a glimpse of the titles: Hidden Helix: The 
+Secrets in our DNA and Ancient Eugenics. Dr Ira observes 
+your glance. “I heard your search through the rubble 
+proved fruitful. Any lead on the cause of the fire, or the 
+whereabouts of the Brass siblings?” When you shake 
+your head in response, Dr Ira sighs. “Occum’s razor would 
+suggest it was an accident caused by the Brass siblings, 
+who then fled the scene.” 
+Rodrigo adds, his voice catching. “I heard there were bones 
+found in the rubble. I hope Elias made it out ok.”
+Dr Ira puts a hand on his shoulder. “A plan beats hope any 
+day. Let’s hope Elias had one.” She bids goodbye. 
+Rodrigo turns to you and asks “So, how can I help you?”
+ASK ABOUT THE BOOKS DR. IRA 
+CHECKED OUT.
+Affects Favor
+B
+CHOOSE 1 OPTION:
+RESOLUTION ON NEXT PAGE
+ASK ABOUT ELIAS BRASS. A Grants Knowledge
+ASK ABOUT HIS FATHER. C Grants Knowledge
+29
+
+
+======== PAGE 18 ========
+
+Library — Resolution
+You ask Rodrigo if he knew Elias Brass. 
+“Course I do, he’s one of my best friends. 
+Spends most of his time holed up in the 
+watchtower, searching through the Tide with 
+telescopes and tinkering with his radios. Lately, 
+he’s been especially obsessed with this delver 
+named Margaret Woo that disappeared 20 years 
+ago. He claims to have received a distress signal 
+from her - he told Woo’s sister Elayna about it… 
+it made her pretty angry.”
+Add Key Item #22 to your Key Items.
+You ask Rodrigo about the books he gave 
+to Dr Ira. “It’s all I could find on DNA with 
+such short notice. Her interests are geared 
+towards experimental research - mutation, 
+genetic engineering, that kind of thing. Oh, shoot, 
+I forgot to give her this one! Would you do me a 
+big favor and deliver it to her? I really shouldn’t 
+leave my post.” He thanks you profusely and 
+hands over Nature’s Mutations and Where to 
+Find Them.
+Increase Rodrigo’s opinion – record this on the 
+back of your Campaign Sheet.
+Gain the Rodrigo Ally opinion card.
+You catch up to Dr Ira and hand over the book. 
+“Thank you, delvers - I’ve been searching all over 
+for this title. Knowledge is power, after all.”
+You ask Rodrigo how his dad is doing. “He 
+was injured pretty badly by the watchtower 
+when it collapsed - Dr Ira had to amputate an 
+arm and leg. Even if he pulls through, he won’t be 
+able to return to delving after this.” He’s quiet for 
+a while.
+“My pops is pretty amazing - half the town’s best 
+artifacts were found by him, you know. Actually, 
+maybe you should take this since he won’t need it 
+anymore - it’s his map to Second Nest. According 
+to him, the ruin is still loaded with loot.”
+Add Quest #06 - “The Forgotten Vault” - to your 
+Open Quests.
+A
+B
+C
+AFTER RESOLVING YOUR CHOSEN 
+OPTION, DISCARD 1 STORY TOKEN.
+ 
+IF YOU HAVE STORY TOKENS 
+REMAINING, RETURN TO PAGE 26 
+AND VISIT A DIFFERENT LOCATION.
+IF YOU HAVE NO REMAINING STORY 
+TOKENS, CONTINUE ON FROM 
+PAGE 33.
+30
+
+
+======== PAGE 19 ========
+
+Machinist
+As you enter the ramshackle workshop, you hear an 
+unbroken string of expletives but can’t see who is producing 
+them. The plaque on the desk reads Samantha Rodriguez, 
+Machinist. You call out “Samantha?” and a greasy woman 
+pokes her head out from under a large whirring machine.
+“Hey” she says with barely a glance. She seems to have 
+her hands full, brow furrowed as she works on the large 
+machine that is now steaming ominously. “Bram rang- I’m 
+trying to put something together for your delversuits, but 
+this DAMN RUST BUCKET won’t turn off!” She gives the 
+machine a solid kick and it stops vibrating. “Huh. Didn’t 
+think that would work.”
+Her toned arms crossed, Samantha’s eyes dart past you 
+and zone in on Witness as he glides around the workshop. 
+“You brought Witness... I’ve seen that robot around Bird’s 
+Nest for as long as I can remember. Always around to help 
+the delvers. He’s extraordinarily lifelike, don’t you think?” 
+She looks at you with a glint in her brown eyes. 
+“Let’s make a deal - I’ll help improve your delversuit, if 
+you help me uncover the engineering that animates 
+that amazing machine.” Beside you, Witness lets out a 
+concerned beep, looking from you to Samantha. “Don’t 
+worry, little guy, I won’t hurt you much.” Not one to miss out 
+on better gear, you accept her deal.
+GIVE ME SOMETHING 
+WITH FINESSE.
+Grants Equipment
+B
+CHOOSE 1 OPTION:
+RESOLUTION ON NEXT PAGE
+“Right on!” she says triumphantly. She leans on one of the 
+workshop tables and asks, “So… how can we make your 
+delversuit better?”
+I WANT TO SMASH THINGS! A Grants Equipment
+I LIKE NOT DYING. C Grants Equipment
+31
+
+
+======== PAGE 20 ========
+
+Machinist — Resolution
+Samantha crafts a remarkable pair 
+of Gauntlets.
+Add Shop Product #41 to your 
+Purchasable Products.
+Samantha crafts an elegant set of Boots. 
+Add Shop Product #34 to your 
+Purchasable Products.
+Samantha crafts an ingenious Shield.
+Add Shop Product #32 to your 
+Purchasable Products.
+A
+B
+C
+Samantha pops open a compartment in Witness’ chest, 
+revealing a complex web of circuits and wires. As she 
+furiously scribbles notes and diagrams, you notice 
+several blackened circuits. What would happen if you 
+replaced them, you wonder?
+Samantha
+AFTER RESOLVING YOUR CHOSEN 
+OPTION, DISCARD 1 STORY TOKEN.
+ 
+IF YOU HAVE STORY TOKENS 
+REMAINING, RETURN TO PAGE 26 
+AND VISIT A DIFFERENT LOCATION.
+IF YOU HAVE NO REMAINING STORY 
+TOKENS, CONTINUE ON FROM 
+PAGE 33.
+Witness’ eyes blaze with light, projecting an image on the 
+wall. “Whoa, what the heck is that?” Samantha exclaims. 
+Thinking quickly, you snap a photo.
+ Spend your Memory Chip Tokens, then draw that 
+many cards from the top of the Memory card deck. 
+If you have any circuit tokens
+32
+
+
+======== PAGE 21 ========
+
+~1
+~4
+~7
+~11
+Headmistress
+Arlen
+Town Center
+“Delvers, we have two promising students graduating, but 
+due to a funding shortfall, we can’t afford to get them 
+the training and equipment they need to reach their full 
+potential. Can I count on you to give the next generation of 
+delvers the leg up they deserve, like Vera Brass once did 
+for you?”
+Before deciding how many minion parts to collectively 
+donate to the Delving Academy, continue onto the Visit the 
+Shops section to consider the other ways you can spend 
+your minion parts. Once you’ve decided how you want to 
+spend them, mark how many you’ve decided to donate 
+to the Delving Academy on the designated area of your 
+Campaign Sheet. You won’t find out the impact of this 
+decision until after you’ve donated. (see hints on right). “You’re a kick-the-ladder-out-fromunder-you type, I see.”
+“Thank you. With this, we’ll be able to 
+arm our new recruits with more than 
+just the standard issue equipment.”
+“That’s very generous. Our new 
+students are going to be well armed 
+for their first foray into the Tide, 
+thanks to you. ”
+“This… this is incredible! Now we can 
+equip the new students with our 
+most state-of-the-art equipment!”
+ Add Shop Products #8-12 to your 
+Purchasable Products.
+ If you have 2-3 total icons in your owned Key 
+Items, also add Shop Product #13.
+ If you have 4+ total icons in your owned Key Items, 
+also add Shop Product #14.
+ If either player is in possession of less than 10 minion 
+parts, increase their count to 10 minion parts.
+If either player is in possession of less than 10 minion parts, 
+increase their count to 10 minion parts.
+Now, each player can purchase products from your 
+Purchasable Products using their minion and/or boss parts, 
+gaining that card. The exception to this is Shop Product #8, 
+which is your persistent Delving Academy donation option.
+At any time, you may convert a Boss part into minion parts 
+at the rate of 3 minion parts per level of the Boss part.
+DELVING ACADEMY 
+FUNDRAISING REQUEST
+VISIT THE SHOPS
+PARTS DONATED ARLEN’S REACTION
+AFTER PURCHASING PRODUCTS AND 
+CHOOSING HOW MUCH TO DONATE, 
+CONTINUE FROM NEXT PAGE.
+33
+
+
+======== PAGE 22 ========
+
+Depending on the number of creature parts 
+you donated on the previous page, resolve the 
+corresponding result below:
+Town Center — Resolution
+0-2
+3-5
+6-9
+10+
+No modifications.
+One player: write “+1 OS Rank”
+to an Equipment Slot of your choice 
+(Suit Condition sheet)
+Other player: write “+1 Battery 
+Rank” to an Equipment Slot of your 
+choice (Suit Condition sheet)
+One player: write “+2 OS Rank”
+to an Equipment Slot of your choice 
+(Suit Condition sheet)
+Other player: write “+2 Battery 
+Rank” to an Equipment Slot of your 
+choice (Suit Condition sheet)
+Each player: write “+2 Rank” of 
+your choice of equipment to an 
+Equipment Slot of your choice (Suit 
+Condition sheet)
+PARTS DONATED RESULT
+Fundraising Results
+34
+
+
+======== PAGE 23 ========
+
+Father Flores’ Office
+Before finishing your work for the day, you stop by Father 
+Flores’s office to drop off the surveillance device. 
+“Gaia’s blessing upon you. What with all of the chaos from 
+the fire, I confess that I’d forgotten about it completely.”
+ Discard Key Item #1.
+A day later, you’re resting at home when your comms device 
+lights up. It’s Master Bram. 
+“Delvers, I regret to inform you that Father Flores did not 
+find any new relevant information from the surveillance 
+device. However, one of our other delvers uncovered tracks 
+near the tower leading into the Tide. They appear to match 
+Vera Brass’s delversuit.”
+ Add Quest #05 - “The Rogue Delver” - to your Open 
+Quests. 
+ If you’ve already discovered Quest #05, gain a Memory 
+Chip Token instead (Campaign Sheet).
+On your Campaign Sheet, check off that you’ve completed 
+Chapter 2’s Town Visit. Delversuit
+Tracks
+END OF CHAPTER 2
+35
+
+
+======== PAGE 24 ========
+
+

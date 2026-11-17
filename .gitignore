@@ -1,0 +1,23 @@
+# Dependencies and build output
+node_modules/
+dist/
+dist-single/
+release/
+.vite/
+*.log
+qa-reports/
+__pycache__/
+
+# Android build output and the web build copied in by `npx cap sync`
+android/app/src/main/assets/public/
+android/.gradle/
+android/build/
+
+# Source documents (design PDFs, storybook .docx) live outside the repo
+Game Materials/
+Rising Tide Booklet*/
+*.docx
+
+# Local Claude Code state
+.claude/settings.local.json
+.claude/worktrees/

@@ -1,0 +1,116 @@
+[
+  {
+    "number": 1,
+    "image": "spawn-card-01.png",
+    "bosses":          [{ "x": 1, "y": 1 }],
+    "minions":         [{ "x": 3, "y": 0 }, { "x": 4, "y": 0 }, { "x": 0, "y": 2 }, { "x": 1, "y": 3 }, { "x": 4, "y": 3 }, { "x": 1, "y": 4 }, { "x": 2, "y": 4 }],
+    "delverSpawns":    [{ "x": 2, "y": 1 }, { "x": 0, "y": 3 }],
+    "memoryFragments": [{ "x": 0, "y": 0 }]
+  },
+  {
+    "number": 2,
+    "image": "spawn-card-02.png",
+    "bosses":          [{ "x": 0, "y": 0 }],
+    "minions":         [{ "x": 1, "y": 0 }, { "x": 2, "y": 2 }, { "x": 4, "y": 2 }, { "x": 0, "y": 3 }, { "x": 2, "y": 3 }, { "x": 3, "y": 3 }, { "x": 3, "y": 4 }],
+    "delverSpawns":    [{ "x": 1, "y": 2 }, { "x": 3, "y": 2 }],
+    "memoryFragments": []
+  },
+  {
+    "number": 3,
+    "image": "spawn-card-03.png",
+    "bosses":          [{ "x": 4, "y": 1 }],
+    "minions":         [{ "x": 2, "y": 0 }, { "x": 1, "y": 1 }, { "x": 1, "y": 2 }, { "x": 4, "y": 3 }, { "x": 1, "y": 4 }, { "x": 2, "y": 4 }, { "x": 4, "y": 4 }],
+    "delverSpawns":    [{ "x": 1, "y": 0 }, { "x": 3, "y": 3 }],
+    "memoryFragments": [{ "x": 3, "y": 0 }]
+  },
+  {
+    "number": 4,
+    "image": "spawn-card-04.png",
+    "bosses":          [{ "x": 2, "y": 0 }],
+    "minions":         [{ "x": 4, "y": 0 }, { "x": 0, "y": 1 }, { "x": 4, "y": 1 }, { "x": 0, "y": 2 }, { "x": 4, "y": 2 }, { "x": 1, "y": 3 }, { "x": 0, "y": 4 }],
+    "delverSpawns":    [{ "x": 1, "y": 2 }, { "x": 2, "y": 3 }],
+    "memoryFragments": []
+  },
+  {
+    "number": 5,
+    "image": "spawn-card-05.png",
+    "bosses":          [{ "x": 0, "y": 4 }],
+    "minions":         [{ "x": 2, "y": 0 }, { "x": 2, "y": 1 }, { "x": 0, "y": 2 }, { "x": 0, "y": 3 }, { "x": 2, "y": 3 }, { "x": 3, "y": 3 }, { "x": 4, "y": 3 }],
+    "delverSpawns":    [{ "x": 4, "y": 1 }, { "x": 1, "y": 4 }],
+    "memoryFragments": []
+  },
+  {
+    "number": 6,
+    "image": "spawn-card-06.png",
+    "bosses":          [{ "x": 2, "y": 4 }],
+    "minions":         [{ "x": 1, "y": 0 }, { "x": 4, "y": 0 }, { "x": 0, "y": 1 }, { "x": 4, "y": 1 }, { "x": 0, "y": 2 }, { "x": 3, "y": 2 }, { "x": 4, "y": 2 }],
+    "delverSpawns":    [{ "x": 3, "y": 0 }, { "x": 0, "y": 3 }],
+    "memoryFragments": [{ "x": 4, "y": 3 }]
+  },
+  {
+    "number": 7,
+    "image": "spawn-card-07.png",
+    "bosses":          [{ "x": 3, "y": 4 }],
+    "minions":         [{ "x": 3, "y": 0 }, { "x": 1, "y": 1 }, { "x": 3, "y": 1 }, { "x": 4, "y": 2 }, { "x": 1, "y": 3 }, { "x": 0, "y": 4 }, { "x": 2, "y": 4 }],
+    "delverSpawns":    [{ "x": 1, "y": 2 }, { "x": 3, "y": 3 }],
+    "memoryFragments": [{ "x": 2, "y": 1 }]
+  },
+  {
+    "number": 8,
+    "image": "spawn-card-08.png",
+    "bosses":          [{ "x": 4, "y": 0 }],
+    "minions":         [{ "x": 0, "y": 0 }, { "x": 0, "y": 1 }, { "x": 2, "y": 1 }, { "x": 0, "y": 2 }, { "x": 4, "y": 2 }, { "x": 1, "y": 3 }, { "x": 4, "y": 3 }],
+    "delverSpawns":    [{ "x": 0, "y": 3 }, { "x": 3, "y": 4 }],
+    "memoryFragments": [{ "x": 3, "y": 0 }]
+  },
+  {
+    "number": 9,
+    "image": "spawn-card-09.png",
+    "bosses":          [{ "x": 3, "y": 1 }],
+    "minions":         [{ "x": 0, "y": 0 }, { "x": 1, "y": 2 }, { "x": 2, "y": 2 }, { "x": 3, "y": 2 }, { "x": 2, "y": 3 }, { "x": 0, "y": 4 }, { "x": 4, "y": 4 }],
+    "delverSpawns":    [{ "x": 2, "y": 0 }, { "x": 3, "y": 4 }],
+    "memoryFragments": []
+  },
+  {
+    "number": 10,
+    "image": "spawn-card-10.png",
+    "bosses":          [{ "x": 4, "y": 2 }],
+    "minions":         [{ "x": 1, "y": 0 }, { "x": 2, "y": 0 }, { "x": 4, "y": 1 }, { "x": 1, "y": 2 }, { "x": 2, "y": 3 }, { "x": 4, "y": 3 }, { "x": 1, "y": 4 }],
+    "delverSpawns":    [{ "x": 1, "y": 3 }, { "x": 4, "y": 4 }],
+    "memoryFragments": [{ "x": 0, "y": 1 }]
+  },
+  {
+    "number": 11,
+    "image": "spawn-card-11.png",
+    "bosses":          [{ "x": 2, "y": 2 }],
+    "minions":         [{ "x": 0, "y": 0 }, { "x": 4, "y": 0 }, { "x": 1, "y": 1 }, { "x": 2, "y": 1 }, { "x": 3, "y": 1 }, { "x": 1, "y": 4 }, { "x": 3, "y": 4 }],
+    "delverSpawns":    [{ "x": 1, "y": 0 }, { "x": 2, "y": 4 }],
+    "memoryFragments": []
+  },
+  {
+    "number": 12,
+    "image": "spawn-card-12.png",
+    "bosses":          [{ "x": 3, "y": 0 }],
+    "minions":         [{ "x": 0, "y": 0 }, { "x": 1, "y": 0 }, { "x": 4, "y": 0 }, { "x": 4, "y": 2 }, { "x": 3, "y": 3 }, { "x": 4, "y": 3 }, { "x": 4, "y": 4 }],
+    "delverSpawns":    [{ "x": 1, "y": 1 }, { "x": 2, "y": 3 }],
+    "memoryFragments": []
+  },
+  {
+    "number": 13,
+    "image": "spawn-card-13.png",
+    "bosses":          [{ "x": 4, "y": 3 }],
+    "minions":         [{ "x": 1, "y": 0 }, { "x": 4, "y": 0 }, { "x": 0, "y": 1 }, { "x": 4, "y": 1 }, { "x": 0, "y": 2 }, { "x": 1, "y": 2 }, { "x": 4, "y": 4 }],
+    "delverSpawns":    [{ "x": 3, "y": 3 }, { "x": 0, "y": 4 }],
+    "memoryFragments": [{ "x": 0, "y": 0 }],
+    "friendlyEncounters": [{ "x": 0, "y": 3 }]
+  },
+  {
+    "number": 14,
+    "image": "spawn-card-14.png",
+    "bosses":          [{ "x": 1, "y": 0 }],
+    "minions":         [{ "x": 0, "y": 0 }, { "x": 0, "y": 2 }, { "x": 1, "y": 2 }, { "x": 3, "y": 3 }, { "x": 2, "y": 4 }, { "x": 3, "y": 4 }, { "x": 4, "y": 4 }],
+    "delverSpawns":    [{ "x": 1, "y": 1 }, { "x": 2, "y": 3 }],
+    "memoryFragments": [],
+    "friendlyEncounters": [{ "x": 4, "y": 2 }]
+  }
+]

@@ -1,0 +1,228 @@
+{
+  "id": "quest7",
+  "name": "Further Afield",
+  "goal": "Reach the ruins of High Nest (Wave 3)",
+  "primaryGoalWaveNumber": 3,
+  "intro": [],
+  "waves": [
+    {
+      "number": 1,
+      "goal": "Reach the ruins of High Nest (Wave 3).",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "spike-129",
+      "minionEnemyIds": [
+        "emberwing-113",
+        "emberwing-114",
+        "emberwing-115",
+        "emberwing-116",
+        "emberwing-117",
+        "emberwing-118",
+        "emberwing-119"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q7_w1_end",
+        "anyDie": "q7_w1_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q7_w1_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Go to the mound: add a Friendly Spawn card to the Spawn deck, and gain a LEVEL UP card",
+            "pageId": "q7_w1_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-friendly-spawn-card"
+              },
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Skip the mound and scavenge the vehicles: gain 2 LEVEL UP cards",
+            "pageId": "q7_w1_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Follow Elias's signal notes: add Shop Product #35 Ion Battery to your Purchasable Products, and gain a LEVEL UP card",
+            "pageId": "q7_w1_notes",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  35
+                ],
+                "chipFallback": 1
+              }
+            ],
+            "requireKeyItem": 22
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q7_w1_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "goal": "Reach the ruins of High Nest (Wave 3).",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "anna-130",
+      "minionEnemyIds": [
+        "ophidian-015",
+        "ophidian-016",
+        "ophidian-017",
+        "ophidian-018",
+        "ophidian-019",
+        "ophidian-020",
+        "ophidian-021"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q7_w2_end",
+        "anyDie": "q7_w2_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q7_w2_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Ask her to stick to giving directions: gain a LEVEL UP card, and both delvers heal 3 HP",
+            "pageId": "q7_w2_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Let her continue: increase Samantha's opinion, and both delvers heal 3 HP",
+            "pageId": "q7_w2_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "shift-favour-by-scenario",
+                "characterId": "samantha",
+                "characterName": "Samantha",
+                "delta": 1
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q7_w2_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "goal": "Survive to the end of Wave 3.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "winona-131",
+      "minionEnemyIds": [
+        "tidegazer-048",
+        "tidegazer-049",
+        "tidegazer-050",
+        "tidegazer-051",
+        "tidegazer-052",
+        "tidegazer-053",
+        "tidegazer-054"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q7_w3_end",
+        "anyDie": "q7_w3_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q7_w3_defeat"
+        },
+        "victory": [
+          {
+            "label": "Enter the ruins",
+            "pageId": "q7_w3_ridge",
+            "then": "end-quest",
+            "rewards": [
+              {
+                "kind": "record-decision",
+                "key": "quest.7.reached-high-nest"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "pages": {
+    "wave1_intro": "You follow the signal west through the mist, towards the ruins of High Nest.",
+    "wave1_intro_ability_name": "Invulnerable, Evasive",
+    "wave1_intro_ability_rules": "Invulnerable (Boss): Starts without a monster token. After being damaged by an attack, place a monster token on it. While it has the token, the next delver attack deals no damage - then remove the token.\n\nEvasive (Boss and Minions): These enemies suffer half damage, rounding up, unless both delvers are adjacent to it.",
+    "q7_w1_end": "The last Emberwing gutters out in the mist.",
+    "q7_w1_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q7_w1_continue": "The road to High Nest is wide and full of potholes, with many lanes littered with long-abandoned vehicles. You scavenge some material that could come in handy.\n\nDelvers gain a Level card.",
+    "q7_w1_retreat": "The Emberwings leave you scorched and staggering, each step heavier than the last. The path ahead flickers with danger you can't withstand. You turn back, letting the ruins fade into the mist.\n\nYour Quest is ended.",
+    "q7_w2_end": "Anna the Snake lies still among the wrecks.",
+    "q7_w2_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q7_w2_continue": "As you begin ascending again, you think back on your history lessons. High Nest was the largest of the seven nests established after the Great Calamity, and the first to fall. Back then it was called First Nest, but almost no one uses that name anymore.\n\nDelvers heal up to 3 HP.",
+    "q7_w2_retreat": "The Snatchers' bites leave you bleeding and unsteady, your strength slipping away. Knowing the path ahead offers only more teeth in the dark, you choose survival.\n\nYour Quest is ended.",
+    "q7_w3_end": "Winona the Oak crashes down across the road.",
+    "q7_w3_defeat": "The swarm crashes over you, and the world fades to black. When you come to, Witness is carrying you. Whatever awaits you in the ruins will wait a little longer.\n\nYour Quest is ended.",
+    "q7_w3_ridge": "The entrance to the ruin begins at the apex of a high ridge. Back in Bird's Nest, read \"Quest #07 Conclusion\".",
+    "q7_w1_notes": "The road to High Nest is wide and full of potholes, with many lanes littered with long-abandoned vehicles.\n\nXavier is your co-pilot today. \"Do you see that mound off in the distance? A friend of mine lives there - you should pop in and say hello for me.\"\n\nElias's distress-signal notes list the frequencies he monitored - and a relay station along this very road. Inside, still wired to a dead transmitter, sits one of his ion cells, fully charged.\n\nYou scavenge some material that could come in handy.\n\nAdd Shop Product #35 Ion Battery to your Purchasable Products. Gain a LEVEL UP card.",
+    "q7_w1_continue_a": "The road to High Nest is wide and full of potholes, with many lanes littered with long-abandoned vehicles.\n\nXavier is your co-pilot today. \"Do you see that mound off in the distance? A friend of mine lives there - you should pop in and say hello for me.\"\n\nIt appears Xavier's friend is a massive creature of the Tide. Luckily, this one is friendly.\n\nYou scavenge some material that could come in handy.\n\nAdd a Friendly Spawn card to the Spawn deck. Gain a LEVEL UP card.",
+    "q7_w1_continue_b": "The road to High Nest is wide and full of potholes, with many lanes littered with long-abandoned vehicles.\n\nXavier is your co-pilot today. \"Do you see that mound off in the distance? A friend of mine lives there - you should pop in and say hello for me.\"\n\nYour search of the abandoned cars pays off.\n\nYou scavenge some material that could come in handy.\n\nGain 2 LEVEL UP cards.",
+    "q7_w2_continue_a": "As you begin ascending again, you think back on your history lessons. High Nest was the largest of the seven nests established after the Great Calamity, and the first to fall. Back then it was called First Nest, but almost no one uses that name anymore.\n\nSamantha is guiding you through the comms, but she's backseat driving. \"Careful with that suspension hook - always lift from the ventrical. And your flick capacitor is a bit overactive today, so easy on the release valve. Oh, and...\" It's constant.\n\nShe takes it well and focuses on offering useful advice.\n\nGain a LEVEL UP card. Both delvers heal 3 HP.",
+    "q7_w2_continue_b": "As you begin ascending again, you think back on your history lessons. High Nest was the largest of the seven nests established after the Great Calamity, and the first to fall. Back then it was called First Nest, but almost no one uses that name anymore.\n\nSamantha is guiding you through the comms, but she's backseat driving. \"Careful with that suspension hook - always lift from the ventrical. And your flick capacitor is a bit overactive today, so easy on the release valve. Oh, and...\" It's constant.\n\nHer advice is convoluted, but she's trying so hard. She promises to make it up to you.\n\nIncrease Samantha's opinion. Both delvers heal 3 HP."
+  }
+}

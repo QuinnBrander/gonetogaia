@@ -1,0 +1,484 @@
+{
+  "id": "quest3",
+  "name": "Xavier's Request",
+  "goal": "Collect a Tidebloom sample (Wave 2)",
+  "primaryGoalWaveNumber": 2,
+  "bonusGoal": "Bonus: survive Wave 4, then reach Gaia (Wave 5)",
+  "intro": [],
+  "waves": [
+    {
+      "number": 1,
+      "goal": "Reach the end of Wave 1.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "cerberus-031",
+      "minionEnemyIds": [
+        "fleetfoot-032",
+        "fleetfoot-033",
+        "fleetfoot-034",
+        "fleetfoot-035",
+        "fleetfoot-036",
+        "fleetfoot-037",
+        "fleetfoot-038"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q3_w1_end",
+        "anyDie": "q3_w1_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q3_w1_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Capture some of the liquid in a vial: one delver gains 1 BLOCK COUNTERATTACK token, and both delvers gain 2 ELEMENTS of their choice",
+            "pageId": "q3_w1_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-consumable-token-one-delver",
+                "tokenKind": "prevent-counterattack",
+                "amount": 1
+              },
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Step carefully between the plants: one delver gains 1 AP token, and both delvers gain 2 ELEMENTS of their choice",
+            "pageId": "q3_w1_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-ap-one-delver",
+                "amount": 1
+              },
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Compare the syringe to the bloom: add Shop Product #33 Living Armor to your Purchasable Products, and both delvers gain 2 ELEMENTS of their choice",
+            "pageId": "q3_w1_syringe",
+            "requireKeyItem": 2,
+            "carryEffects": [
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              }
+            ],
+            "then": "next-wave",
+            "rewards": [
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  33
+                ],
+                "chipFallback": 1
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q3_w1_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "goal": "Slay the Carnatia.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "carnatia-039",
+      "minionEnemyIds": [
+        "colibrius-040",
+        "colibrius-041",
+        "colibrius-042",
+        "colibrius-043",
+        "colibrius-044",
+        "colibrius-045",
+        "colibrius-046"
+      ],
+      "onBossSlain": {
+        "pageId": "q3_carnatia_slain",
+        "rewards": [
+          {
+            "kind": "complete-quest",
+            "number": 3,
+            "name": "Xavier's Request"
+          },
+          {
+            "kind": "grant-boss-parts",
+            "level": 2,
+            "amount": 1,
+            "to": "all-delvers"
+          },
+          {
+            "kind": "gain-key-item",
+            "number": 12,
+            "name": "Dahlia is Free"
+          },
+          {
+            "kind": "shift-favour",
+            "characterId": "xavier",
+            "characterName": "Xavier",
+            "delta": 1
+          }
+        ]
+      },
+      "endOfWave": {
+        "bothSurvive": "q3_w2_end",
+        "anyDie": "q3_w2_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q3_w2_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Lower your weapons: both delvers heal 4 HP, and increase Dahlia's opinion",
+            "pageId": "q3_w2_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "heal-both-delvers",
+                "amount": 4
+              },
+              {
+                "kind": "shift-favour-by-scenario",
+                "characterId": "dahlia",
+                "characterName": "Dahlia",
+                "delta": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Offer a creature part as a gift: add a Friendly Spawn card to the Spawn deck, and both delvers heal 2 HP",
+            "pageId": "q3_w2_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-friendly-spawn-card"
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q3_w2_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "goal": "Survive to the end of Wave 3.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "empressash-047",
+      "minionEnemyIds": [
+        "tidegazer-048",
+        "tidegazer-049",
+        "tidegazer-050",
+        "tidegazer-051",
+        "tidegazer-052",
+        "tidegazer-053",
+        "tidegazer-054"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q3_w3_end",
+        "anyDie": "q3_w3_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q3_w3_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Wait with him: both delvers heal 1 HP, both delvers gain 1 ELEMENT of their choice, and gain a LEVEL UP card",
+            "pageId": "q3_w3_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "heal-both-delvers",
+                "amount": 1
+              },
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 1
+              },
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Tap the side of his head: one delver gains +1 RANK of OS, and gain a LEVEL UP card",
+            "pageId": "q3_w3_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-equipment-rank-one-delver",
+                "equipmentType": "OS",
+                "amount": 1
+              },
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Keep moving: gain 2 XP, and gain a LEVEL UP card",
+            "pageId": "q3_w3_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "gain-xp",
+                "amount": 2
+              },
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Walk with Dahlia: add Quest #04 “A Hand Outstretched” to your Open Quests, and gain a LEVEL UP card",
+            "pageId": "q3_w3_dahlia",
+            "requireKeyItem": 12,
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ],
+            "then": "next-wave",
+            "rewards": [
+              {
+                "kind": "reveal-quest-or-grant-chip",
+                "number": 4,
+                "name": "A Hand Outstretched",
+                "chipFallback": 1
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q3_w3_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 4,
+      "goal": "Survive to the end of Wave 4.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "golem-055",
+      "minionEnemyIds": [
+        "orite-056",
+        "orite-057",
+        "orite-058",
+        "orite-059",
+        "orite-060",
+        "orite-061",
+        "orite-062"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q3_w4_end",
+        "anyDie": "q3_w4_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q3_w4_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Listen: both delvers heal 6 HP",
+            "pageId": "q3_w4_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "heal-both-delvers",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Plug your ears and push on: one delver gains 1 AP token, and both delvers heal 4 HP",
+            "pageId": "q3_w4_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-ap-one-delver",
+                "amount": 1
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Capture one for Dr Ira's research: one delver gains +1 RANK of HARVESTER, increase Dr Ira's opinion, and both delvers heal 4 HP",
+            "pageId": "q3_w4_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-equipment-rank-one-delver",
+                "equipmentType": "Harvester",
+                "amount": 1
+              },
+              {
+                "kind": "shift-favour-by-scenario",
+                "characterId": "ira",
+                "characterName": "Dr Ira",
+                "delta": 1
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q3_w4_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 5,
+      "goal": "Survive this Wave to reach Gaia.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "timberfiend-071",
+      "minionEnemyIds": [
+        "sapling-072",
+        "sapling-073",
+        "sapling-074",
+        "sapling-075",
+        "sapling-076",
+        "sapling-077",
+        "sapling-078"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q3_w5_end",
+        "anyDie": "q3_w5_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q3_w5_defeat"
+        },
+        "victory": [
+          {
+            "label": "Reach Gaia",
+            "pageId": "q3_w5_gaia",
+            "pickShopProducts": {
+              "from": [
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45
+              ],
+              "count": 2
+            },
+            "then": "end-quest"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": {
+    "wave1_intro": "You head into the mist. Something fast circles you in the fog - a pack of lean creatures, led by a three-headed hound.",
+    "wave1_intro_ability_name": "Flees",
+    "wave1_intro_ability_rules": "After attempting to counterattack, if the enemy isn't dead, they move 2 tiles away from the attacking delver if possible. (The prototype moves each one to the free tile farthest from the attacker.)",
+    "q3_w1_end": "The pack scatters into the mist. Xavier's coordinates are close now.",
+    "q3_w1_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q3_w1_continue": "You hear Xavier's voice through your comms. \"You're approaching the location now, just over this ridge. My assistant will help you collect the sample. She is... altered. But don't let that alarm you.\"\n\nYou crest the ridge. Below, the land is overtaken by a dense growth of roiling ivy - and in one section, purple vines with bright orange flowers. \"What do you mean Dahlia isn't there?\" Xavier says, panic rising in his voice.\n\nThe darker vines are taut, packed as if to contain something - and you realize they are not vines but tentacles. At their center a humanoid creature is trapped, a bright crimson bloom sprouting where her nose and eyes should be. She lies motionless, but her chest rises and falls. You fire your beam at the creature's glassy, gray eye, and the mass comes alive, tentacles thrashing furiously.\n\nDelvers gain 2 elements (your choice). New goal: slay the Carnatia!",
+    "q3_w1_retreat": "The source lies ahead, but your exhausted bodies resist you. Your movements prove imprecise, clumsy - best to withdraw.\n\nYour Quest is ended.",
+    "q3_carnatia_slain": "As you strike your final blow, the tentacles lash out one last time before dropping lifelessly. The surrounding Colibrius falter and take flight. The humanoid figure at the center stirs awake.\n\nDahlia pulls free of the tentacles and stands to her full height. The crimson bloom masking her face withers away, revealing deep blue eyes that study you with a steady, searching gaze. She gives a deep bow. \"Thanks to you.\" Her voice sounds strangely musical, her language stilted. \"My life, owe to human.\"\n\nShe turns to the remains of the Carnatia, plucks a crimson bloom from its dead tendrils, and presses it into your hand - the sample Xavier wanted. \"Wrong,\" she says simply. \"Something wrong. Creature attack. Not normal. Xavier help. In cave, together talk.\"\n\nYour Quest is complete! Glancing around, you notice the Colibrius have rallied and are buzzing aggressively once more. Return to combat.",
+    "q3_w2_end": "The last Colibrius falls from the air. Dahlia has already slipped away into the mist.",
+    "q3_w2_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q3_w2_retreat": "You decide to call it quits and head home. Your Quest is ended.",
+    "q3_w2_continue": "You saved Dahlia, but your larger mission to reach Gaia still looms large in your mind. You risk a few stationary minutes to patch up your wounds before carrying onward.\n\nDelvers heal up to 2 HP.",
+    "q3_w3_end": "The Empress Ash collapses into drifting embers, and an uneasy silence settles over the Tide. The mist thickens, your instruments fail, and a heavy, unnatural presence presses against your mind. Gaia is close.",
+    "q3_w3_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q3_w3_retreat": "The Empress Ash's claws have left your systems sparking and unstable, every movement sluggish and delayed. Pressing forward now would be suicide - the Tide would finish what she started. You make the call to retreat, carrying your hard-earned survival back toward safety. From the treeline, Dahlia watched the whole fight.",
+    "q3_w3_continue": "The Empress Ash collapses into drifting embers, and an uneasy silence settles over the Tide. The mist thickens, your instruments fail, and a heavy, unnatural presence presses against your mind. Gaia is close. From the treeline, Dahlia watched the whole fight. Exhausted but resolute, you steel yourselves and push deeper into the unknown.\n\nDelvers gain a Level card.",
+    "q3_w4_end": "The Golem grinds to a halt amid the shattered Orites. Gaia lies just beyond the ridge.",
+    "q3_w4_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q3_w4_continue": "Gaia is within reach, but the legendary Timberfiend and its brood stand in your way. The air crackles with danger as you ready your weapons, knowing there's no turning back now. With one final surge of resolve, you charge forward into the fight.\n\nDelvers heal up to 4 HP.",
+    "q3_w4_retreat": "The Golem's relentless blows leave your systems failing and your resolve shaken. Gaia lies just beyond the ridge, but pushing forward now would mean certain death. You turn back, knowing survival is the only victory you can claim today.",
+    "q3_w5_end": "The Timber Fiend crashes down and its brood falls still. Gaia's glow spills over the ridge ahead.",
+    "q3_w5_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q3_w5_gaia": "You step into the glow of the massive hovering structure that is Gaia. Witness deposits a large heap of metal on the ground, then looks at you and mimes closing their eyes tightly - eventually you understand that you should do the same. Even with your eyes clamped shut, you're blinded by Gaia's consecration. Over several minutes, though, your sight gradually returns, and you are delighted to see that the metal glows with its own inner light.\n\nShop Products #32-45: choose any 2 products to add to your Purchasable Products.",
+    "q3_w3_dahlia": "The Empress Ash collapses into drifting embers, and an uneasy silence settles over the Tide. The mist thickens, your instruments fail, and a heavy, unnatural presence presses against your mind. Gaia is close. From the treeline, Dahlia watched the whole fight. Exhausted but resolute, you steel yourselves and push deeper into the unknown.\n\nA few steps on, Witness stops dead. His eyes flicker and project a blurry image - a cold room, a small bed. Then he whirs and carries on as if nothing happened.\n\nDahlia steps out of the mist, one slender hand held open toward you, and bows deeply. \"You. Saved me. Strong... and kind.\" Her petals dim. \"Tidekin... afraid. Kin taken,\" she says slowly. \"You... help? Come. Meet.\" Then she melts back into the mist.\n\nAdd Quest #04 “A Hand Outstretched” to your Open Quests. Gain a LEVEL UP card.",
+    "q3_w1_syringe": "You hear Xavier's voice through your comms. \"You're approaching the location now, just over this ridge. My assistant will help you collect the sample. She is... altered. But don't let that alarm you.\"\n\nOn the climb, your way is blocked by a field of turquoise plants. Their bulbous buds expand and contract as if breathing, a viscous liquid moving inside each one.\n\nAmong the buds drifts the corroded tree's purple mist - and the residue in the strangers' syringe matches it. You follow the blight to the remains of a humanoid, half coral and half human, Tidebloom dripping from every pore and still wearing a striking piece of armor.\n\nYou crest the ridge. Below, the land is overtaken by a dense growth of roiling ivy - and in one section, purple vines with bright orange flowers. \"What do you mean Dahlia isn't there?\" Xavier says, panic rising in his voice.\n\nThe darker vines are taut, packed as if to contain something - and you realize they are not vines but tentacles. At their center a humanoid creature is trapped, a bright crimson bloom sprouting where her nose and eyes should be. She lies motionless, but her chest rises and falls. You fire your beam at the creature's glassy, gray eye, and the mass comes alive, tentacles thrashing furiously.\n\nAdd Shop Product #33 Living Armor to your Purchasable Products. Both delvers gain 2 ELEMENTS of their choice. New goal: slay the Carnatia!",
+    "q3_w1_continue_a": "You hear Xavier's voice through your comms. \"You're approaching the location now, just over this ridge. My assistant will help you collect the sample. She is... altered. But don't let that alarm you.\"\n\nOn the climb, your way is blocked by a field of turquoise plants. Their bulbous buds expand and contract as if breathing, a viscous liquid moving inside each one.\n\nYou collect the sap in a vial, but not before spilling some on your gauntlet. It seeps through and paralyzes you briefly. This could come in handy.\n\nYou crest the ridge. Below, the land is overtaken by a dense growth of roiling ivy - and in one section, purple vines with bright orange flowers. \"What do you mean Dahlia isn't there?\" Xavier says, panic rising in his voice.\n\nThe darker vines are taut, packed as if to contain something - and you realize they are not vines but tentacles. At their center a humanoid creature is trapped, a bright crimson bloom sprouting where her nose and eyes should be. She lies motionless, but her chest rises and falls. You fire your beam at the creature's glassy, gray eye, and the mass comes alive, tentacles thrashing furiously.\n\nOne delver gains 1 BLOCK COUNTERATTACK token. Both delvers gain 2 ELEMENTS of their choice. New goal: slay the Carnatia!",
+    "q3_w1_continue_b": "You hear Xavier's voice through your comms. \"You're approaching the location now, just over this ridge. My assistant will help you collect the sample. She is... altered. But don't let that alarm you.\"\n\nOn the climb, your way is blocked by a field of turquoise plants. Their bulbous buds expand and contract as if breathing, a viscous liquid moving inside each one.\n\nThreading a careful path through the field sharpens your awareness of the here and now.\n\nYou crest the ridge. Below, the land is overtaken by a dense growth of roiling ivy - and in one section, purple vines with bright orange flowers. \"What do you mean Dahlia isn't there?\" Xavier says, panic rising in his voice.\n\nThe darker vines are taut, packed as if to contain something - and you realize they are not vines but tentacles. At their center a humanoid creature is trapped, a bright crimson bloom sprouting where her nose and eyes should be. She lies motionless, but her chest rises and falls. You fire your beam at the creature's glassy, gray eye, and the mass comes alive, tentacles thrashing furiously.\n\nOne delver gains 1 AP token. Both delvers gain 2 ELEMENTS of their choice. New goal: slay the Carnatia!",
+    "q3_w2_continue_a": "You saved Dahlia, but your larger mission to reach Gaia still looms large in your mind. You risk a few stationary minutes to patch up your wounds before carrying onward.\n\nAs you set off, branch-like fingers part the mist. A Tidekin elder blocks your path, watching you without a sound.\n\nThe elder touches your helmet and a vision floods your mind - a pipe pouring black sludge into the Tide. Then it is gone.\n\nBoth delvers heal 4 HP. Increase Dahlia's opinion.",
+    "q3_w2_continue_b": "You saved Dahlia, but your larger mission to reach Gaia still looms large in your mind. You risk a few stationary minutes to patch up your wounds before carrying onward.\n\nAs you set off, branch-like fingers part the mist. A Tidekin elder blocks your path, watching you without a sound.\n\nThe elder accepts it and vanishes. Later, you notice the creatures of the Tide give you a wider berth.\n\nAdd a Friendly Spawn card to the Spawn deck. Both delvers heal 2 HP.",
+    "q3_w3_continue_a": "The Empress Ash collapses into drifting embers, and an uneasy silence settles over the Tide. The mist thickens, your instruments fail, and a heavy, unnatural presence presses against your mind. Gaia is close. From the treeline, Dahlia watched the whole fight. Exhausted but resolute, you steel yourselves and push deeper into the unknown.\n\nA few steps on, Witness stops dead. His eyes flicker and project a blurry image - a cold room, a small bed. Then he whirs and carries on as if nothing happened.\n\nYou sit beside him until his lights steady.\n\nBoth delvers heal 1 HP. Both delvers gain 1 ELEMENT of their choice. Gain a LEVEL UP card.",
+    "q3_w3_continue_b": "The Empress Ash collapses into drifting embers, and an uneasy silence settles over the Tide. The mist thickens, your instruments fail, and a heavy, unnatural presence presses against your mind. Gaia is close. From the treeline, Dahlia watched the whole fight. Exhausted but resolute, you steel yourselves and push deeper into the unknown.\n\nA few steps on, Witness stops dead. His eyes flicker and project a blurry image - a cold room, a small bed. Then he whirs and carries on as if nothing happened.\n\nThe projection snaps off and a spare circuit board drops out.\n\nOne delver gains +1 RANK of OS. Gain a LEVEL UP card.",
+    "q3_w3_continue_c": "The Empress Ash collapses into drifting embers, and an uneasy silence settles over the Tide. The mist thickens, your instruments fail, and a heavy, unnatural presence presses against your mind. Gaia is close. From the treeline, Dahlia watched the whole fight. Exhausted but resolute, you steel yourselves and push deeper into the unknown.\n\nA few steps on, Witness stops dead. His eyes flicker and project a blurry image - a cold room, a small bed. Then he whirs and carries on as if nothing happened.\n\nWhatever that was, it can wait.\n\nGain 2 XP. Gain a LEVEL UP card.",
+    "q3_w4_continue_a": "Gaia is within reach, but the legendary Timberfiend and its brood stand in your way.\n\nA low, beautiful humming rolls through the mist. Through the kelp you see them - Sirens, swaying in a circle. Dr Ira's notes called them docile.\n\nIt's like being sung to sleep. Your wounds ache a little less.\n\nThe air crackles with danger as you ready your weapons, knowing there's no turning back now. With one final surge of resolve, you charge forward into the fight.\n\nBoth delvers heal 6 HP.",
+    "q3_w4_continue_b": "Gaia is within reach, but the legendary Timberfiend and its brood stand in your way.\n\nA low, beautiful humming rolls through the mist. Through the kelp you see them - Sirens, swaying in a circle. Dr Ira's notes called them docile.\n\nYou march past with grim focus.\n\nThe air crackles with danger as you ready your weapons, knowing there's no turning back now. With one final surge of resolve, you charge forward into the fight.\n\nOne delver gains 1 AP token. Both delvers heal 4 HP.",
+    "q3_w4_continue_c": "Gaia is within reach, but the legendary Timberfiend and its brood stand in your way.\n\nA low, beautiful humming rolls through the mist. Through the kelp you see them - Sirens, swaying in a circle. Dr Ira's notes called them docile.\n\nIt screams the whole way back to the path, but its song still hums in your suit.\n\nThe air crackles with danger as you ready your weapons, knowing there's no turning back now. With one final surge of resolve, you charge forward into the fight.\n\nOne delver gains +1 RANK of HARVESTER. Increase Dr Ira's opinion. Both delvers heal 4 HP."
+  }
+}

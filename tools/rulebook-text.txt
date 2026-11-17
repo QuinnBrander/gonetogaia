@@ -1,0 +1,2059 @@
+======== PAGE 1 ========
+Rulebook
+
+======== PAGE 2 ========
+PURCHASED SHOP ITEMS
+PURCHASED SHOP ITEMS
+Campaign Sheet
+Disciple of the Body
+Chapter 1
+Chapter 2
+Chapter 3
+PLAYER
+NAME
+PLAYER
+NAME
+CREATURE PARTS
+MINION:
+MINION:
+LVL 1 BOSS:
+LVL 2 BOSS:
+LVL 3 BOSS:
+LVL 4 BOSS:
+LVL 5 BOSS:
+CREATURE PARTS
+LVL 1 BOSS:
+LVL 2 BOSS:
+LVL 3 BOSS:
+LVL 4 BOSS:
+LVL 5 BOSS:
+MEMORY CHIP TOKENS
+FUNDRAISING DONATIONS
+Disciple of the MIND
+QUEST
+TOWN
+VISIT
+QUEST
+TOWN
+VISIT
+QUEST
+TOWN
+VISIT
+BONUS
+QUEST
+QUEST
+TOWN
+VISIT
+BONUS
+QUEST
+QUEST
+TOWN
+VISIT
+BONUS
+QUEST
+QUEST
+TOWN
+VISIT
+Chapter 4
+Chapter 5
+Chapter 6
+#1
+#2
+#3
+#4
+#5
+#6
+#7
+#8
+#9
+#10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+#11
+#12
+#13
+#14
+#15
+#16
+#17
+#18
+#19
+#20
+#21
+#22
+#23
+#24
+#25
+#26
+#27
+#28
+#29
+#30
+#31
+#32
+#33
+#34
+#35
+#36
+#37
+#38
+#39
+#40
+#41
+#42
+#43
+#44
+#45
+#46
+#47
+#48
+#49
+#50
+#51
+#52
+#53
+#54
+#1
+#2
+#3
+#4
+#5
+#6
+#7
+#8
+#9
+#10
+#11
+#12
+#13
+#14
+#15
+#16
+#17
+#18
+#19
+#20
+#21
+#22
+#23
+#24
+#25
+#26
+#27
+#28
+#29
+#30
+#31
+#32
+#33
+#34
+#35
+#36
+#37
+#38
+#39
+#40
+#41
+#42
+#43
+#44
+#45
+#46
+#47
+#48
+#49
+#50
+#51
+#52
+#53
+#54
+AVAILABLE EQUIPMENT RANKS
+LOADOUT 1
+LOADOUT 2
+LOADOUT 3
+Left Arm
+Suit Condition Sheet
+SCARS:
+EQUIPMENT TYPE:
+RANK
+Starting Equipment Slots
+Legs
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+HARVESTER
+RANK
+SHOCKWAVE
+RANK
+BOOTS
+RANK
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+Body
+RANK
+ARMOR
+RANK
+SUPERCHARGER
+RANK
+BATTERY
+Helmet
+Right Arm
+RANK
+ADEPT OS
+RANK
+FOCUS BEAM
+RANK
+SWORD
+RANK
+MACE
+RANK
+SHIELD
+RANK
+GAUNTLET
+RANK
+HAMMER
+RANK
+TRIDENT
+COMPONENTS
+2 card trays
+1 unlockables box
+1 discovery box
+2 dials
+2 delver minis
+1 game board
+1 birds nest display
+2 delversuit boards
+2 pencils
+1 witness standee
+1 bookmark
+1 solo mode xp per
+level board
+1 6-sided die
+1 rising tide book
+1 rulebook
+1 campaign sheet pad
+2 suit condition sheet pads
+2
+
+======== PAGE 3 ========
+10 memory chip cards
+6 friendly
+monster cards
+40 level cards
+20 monster ability tokens
+20 memory chip tokens
+70 damage tokens
+(30 x1, 10 x3, 10 x5, 10 x10, 10 x50)
+13 hero cards
+1 friendly monster token
+72 creature part tokens
+(20 boss parts, 50 minion parts, 6 ‘ten
+denomination’ minion parts)
+40 scenario cards
+24 element tokens
+2 player aid cards
+6 townsfolk tokens
+64 consumable tokens
+(16 ap, 8 reroll, 8 2xl, 8 2xm, 8 2xh, 8 universal 2x damage,
+6 prevent counter, X ignore ability)
+34 key item cards
+1 level token
+1 xp token
+182 enemy cards
+(126 minions, 46 bosses, 10 lieutenants)
+210 equipment cards
+24 spawn cards
+55 shop cards
+12 quest cards
+32 opinion cards
+2 current health tokens
+16 labelled bags
+10 story tokens
+1 solo mode player aid
+1 witness
+reference card
+Level UP
+Level UP
+QUEST #01
+QUEST #01
+DIFFICULTY:
+REACH THE BUOY
+REACH THE BUOY
+Gain the Witness miniature.
+Gain the Witness miniature.
+During Wave Setup, place
+During Wave Setup, place
+Witness on the same tile as
+Witness on the same tile as
+one or both Delvers.
+one or both Delvers.
+Players gain the following
+Players gain the following
+Action during their turn:
+Action during their turn:
+■Move Witness up to 2 tiles,
+Move Witness up to 2 tiles,
+collecting any Minion Parts
+collecting any Minion Parts
+on those tiles. Players must
+on those tiles. Players must
+still place a Weapon Card
+still place a Weapon Card
+into an available Weapon
+into an available Weapon
+Slot to take this Action.
+Slot to take this Action.
+1
+2
+3
+WITNESS THE ROBOT
+MEMORY #01
+MEMORY #01
+Delvers take turns. Players decide who goes
+Delvers take turns. Players decide who goes
+first. You may spend consumable tokens
+first. You may spend consumable tokens
+anytime during your turn.
+anytime during your turn.
+To take an action, exhaust a Weapon Card.
+To take an action, exhaust a Weapon Card.
+You may move before or after using the
+You may move before or after using the
+Weapon card.
+Weapon card.
+■You can use a Weapon Card for its ability,
+You can use a Weapon Card for its ability,
+or you can use the ability on the Weapon
+or you can use the ability on the Weapon
+slot you exhaust it onto.
+slot you exhaust it onto.
+Afterwards, roll for enemy counterattacks:
+Afterwards, roll for enemy counterattacks:
+■On a
+On a 1, they don’t counterattack.
+, they don’t counterattack.
+■On a
+On a 2-5
+2-5, ,  WHITE
+WHITE arrows counterattack.
+arrows counterattack.
+■On a
+On a 6, ,  BLACK
+BLACK arrows counterattack.
+arrows counterattack.
+If you can’t take an action, your Delver prepares
+If you can’t take an action, your Delver prepares
+to run. Once both Delvers have prepared to run,
+to run. Once both Delvers have prepared to run,
+continue to the Enemy Parting Shots.
+continue to the Enemy Parting Shots.
+WAVE STRUCTURE
+WAVE STRUCTURE
+1
+2
+1. HERO PHASE
+1. HERO PHASE
+1. HERO PHASE
+1. HERO PHASE
+2. PARTING SHOTS PHASE
+2. PARTING SHOTS PHASE
+3. INTERLUDE PHASE
+3. INTERLUDE PHASE
+4. END OF WAVE PHASE
+4. END OF WAVE PHASE
+3
+
+======== PAGE 4 ========
+Overview
+Welcome to the world of Gone to Gaia, an epic campaign-
+style board game that you can play cooperatively as 2
+players, or experience on your own in a dedicated solo
+mode. In this game you will take on the role of delvers,
+trained explorers, that can navigate the perilous world
+under the mist known as the Tide.
+Each game session will alternate between going on a quest
+and returning to town. When on a quest you will explore
+the Tide and solve combat-focused puzzles in order to
+complete your goals. Whether or not your delvers survive
+the quest, the story will return you to the town of Birds Nest,
+where you will get to know its citizens and help solve the
+unfolding mysteries that threaten their existence.
+Your overall goal is to complete a variety of quests that will
+help progress the story to its conclusion.
+Play Area Setup
+To begin a session of Gone to Gaia, start by completing the
+basic setup used for every session.
+A
+Place the Tide board in the center of the play area.
+B
+Shuffle all available Spawn cards to form the Spawn
+deck and then place the Spawn deck within reach of
+all players.
+C
+Shuffle all available the Level Up cards together to
+form the Level Up deck and then place the Level Up
+deck within reach of players.
+D
+Organize the Scenario Cards in numerical order to
+form the Scenario Deck, then place it within reach of
+all players. This deck is not used during Chapter 1.
+E
+Give each player a delver board, a corresponding
+suit condition sheet, and their matching delver
+miniature. (note: If you have a multiple delver
+miniatures in various poses of the same suit, you
+may select one of your choice.)
+F
+Give each player 3 AP tokens to place on the
+available section of their delver board.
+G
+Give each player a Max HP (hit point) marker and a
+cube to mark their current
+HP and place each at
+6 on their delver board.
+H
+Give each player 3 cubes to mark their damage
+levels, and place them at the lowest numbered
+slots for Light, Medium, and Heavy damage on their
+delver boards.
+I
+Give each player 1 cube to mark their movement
+level and place it at 1.
+J
+Give each player their matching equipment
+trays. Each tray should have the equipment
+cards organized in them. (See page xx for proper
+equipment tray organization.)
+K
+Assemble Birds Nest (see page xx for
+assembly instructions).
+L
+Place 1 cube on level 0 on the level track and 1 cube
+on the 0 of the XP track.
+M
+Give each player 1 player aid card.
+N
+Have each player choose 1 hero among the available
+heroes that can pilot their suit. If this is your first
+session, only hero #1 is available for Disciple of the
+Mind (blue suit) and only hero #2 is available for
+Disciple of the Body.
+O
+Choose a quest among your available quests and
+start the game. If this is your first session, you will
+only have Quest #1 available to you.
+Game Setup
+4
+
+======== PAGE 5 ========
+Setup Render
+5
+
+======== PAGE 6 ========
+Unlockables Box
+Equipment Tray Organization
+Each Delver has a set of 70 Equipment Cards, divided
+among 14 different Equipment types. Each Equipment type
+forms its own 5-card deck. Store these 14 decks in one of
+the two provided card trays, which contains 14 slots. At
+the start of each Quest, arrange every Equipment deck in
+ascending rank order from 1 to 5. During a Quest, players
+will often gain upgraded cards from these decks, placing
+previous upgrades at the back of the appropriate deck. Be
+sure to reset the Equipment trays before the start of the
+next Quest whenever this occurs.
+Note: During the campaign, players may be instructed to
+replace an Equipment deck with an upgraded version.
+When this happens, return the old Equipment deck of that
+type to the box, then place the new cards in ascending rank
+order from 1 to 5 in the matching slot of the tray. These new
+cards remain there for the rest of the campaign.
+Birds Nest Assembly
+A
+Step 1
+B
+Step 2
+C
+Step 3
+D
+Step 4
+Unlockables Box
+The Unlockables box contains all the new cards,
+tokens, and other surprises that await players in
+Gone to Gaia’s campaign. Players should never look
+through the Unlockables Box unless directed to in
+the Rising Tide Book.
+Insert a visual example of each
+card set fanned out ranked 1-5 and
+then have an arrow pointing to
+their corresponding section of the
+equipment tray. Do this for both
+delvers.
+Insert a visual example of the Birds
+Nest board being assembled.
+6
+
+======== PAGE 7 ========
+NAME:
+FINAL WORDS:
+NAME:
+FINAL WORDS:
+NAME:
+FINAL WORDS:
+NAME:
+FINAL WORDS:
+NAME:
+FINAL WORDS:
+NAME:
+FINAL WORDS:
+NAME:
+FINAL WORDS:
+NAME:
+FINAL WORDS:
+NAME:
+FINAL WORDS:
+The Graveyard
+Samantha the Machinist
+Xavier the Anthropologist
+ENDING:
+Character Opinions
+NEUTRAL
+ALLY
+CONFIDANT
+DETRACTOR
+NEMESIS
+Father Flores
+Nurse Elayne
+Rodrigo the Librarian
+Doctor Ira
+Headmistress Arlen
+Vera Brass
+NEUTRAL
+ALLY
+CONFIDANT
+DETRACTOR
+NEMESIS
+NEUTRAL
+ALLY
+CONFIDANT
+DETRACTOR
+NEMESIS
+NEUTRAL
+ALLY
+CONFIDANT
+DETRACTOR
+NEMESIS
+NEUTRAL
+ALLY
+CONFIDANT
+DETRACTOR
+NEMESIS
+NEUTRAL
+ALLY
+CONFIDANT
+DETRACTOR
+NEMESIS
+NEUTRAL
+ALLY
+CONFIDANT
+DETRACTOR
+NEMESIS
+NEUTRAL
+ALLY
+CONFIDANT
+DETRACTOR
+NEMESIS
+NEUTRAL
+ALLY
+CONFIDANT
+DETRACTOR
+NEMESIS
+NEUTRAL
+ALLY
+CONFIDANT
+DETRACTOR
+NEMESIS
+PURCHASED SHOP ITEMS
+PURCHASED SHOP ITEMS
+Campaign Sheet
+Disciple of the Body
+Chapter 1
+Chapter 2
+Chapter 3
+PLAYER
+NAME
+PLAYER
+NAME
+CREATURE PARTS
+MINION:
+MINION:
+LVL 1 BOSS:
+LVL 2 BOSS:
+LVL 3 BOSS:
+LVL 4 BOSS:
+LVL 5 BOSS:
+CREATURE PARTS
+LVL 1 BOSS:
+LVL 2 BOSS:
+LVL 3 BOSS:
+LVL 4 BOSS:
+LVL 5 BOSS:
+MEMORY CHIP TOKENS
+FUNDRAISING DONATIONS
+Disciple of the MIND
+QUEST
+TOWN
+VISIT
+QUEST
+TOWN
+VISIT
+QUEST
+TOWN
+VISIT
+BONUS
+QUEST
+QUEST
+TOWN
+VISIT
+BONUS
+QUEST
+QUEST
+TOWN
+VISIT
+BONUS
+QUEST
+QUEST
+TOWN
+VISIT
+Chapter 4
+Chapter 5
+Chapter 6
+#1
+#2
+#3
+#4
+#5
+#6
+#7
+#8
+#9
+#10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+#11
+#12
+#13
+#14
+#15
+#16
+#17
+#18
+#19
+#20
+#21
+#22
+#23
+#24
+#25
+#26
+#27
+#28
+#29
+#30
+#31
+#32
+#33
+#34
+#35
+#36
+#37
+#38
+#39
+#40
+#41
+#42
+#43
+#44
+#45
+#46
+#47
+#48
+#49
+#50
+#51
+#52
+#53
+#54
+#1
+#2
+#3
+#4
+#5
+#6
+#7
+#8
+#9
+#10
+#11
+#12
+#13
+#14
+#15
+#16
+#17
+#18
+#19
+#20
+#21
+#22
+#23
+#24
+#25
+#26
+#27
+#28
+#29
+#30
+#31
+#32
+#33
+#34
+#35
+#36
+#37
+#38
+#39
+#40
+#41
+#42
+#43
+#44
+#45
+#46
+#47
+#48
+#49
+#50
+#51
+#52
+#53
+#54
+Campaign Sheet Front & Back
+Campaign Sheet
+The Campaign Sheet is double-sided and is the primary
+way players track progress throughout a campaign. Players
+should also use their bookmark to mark their current place
+in The Rising Tide Book and place cards into their Discovery
+Box at the end of each session.
+Use the Campaign Sheet to record the following:
+A
+Which Quests have been completed.
+B
+Whether a Chapter’s Town Visit has been completed.
+C
+How Many Minion and Boss Parts each player
+currently has.
+D
+How many Memory Chip Tokens have
+been collected.
+E
+The total number of Minion Parts donated
+to Fundraising.
+F
+The current opinions of various townsfolk.
+G
+Which Delvers have died in the line of duty, along
+with their final words.
+H
+The campaign’s ending
+A
+B
+C
+D
+F
+G
+H
+E
+7
+
+======== PAGE 8 ========
+Quest Card Front & Back
+QUEST #01
+QUEST #01
+GOAL
+GOAL
+Survive to the end of Wave 1.
+Survive to the end of Wave 1.
+KNOWN REWARDS FOR COMPLETING
+KNOWN REWARDS FOR COMPLETING
+Creature parts.
+Creature parts.
+START
+START  P.1
+P.1
+DIFFICULTY:
+It’s graduation day at the Delver Academy
+It’s graduation day at the Delver Academy
+and one final test stands between you
+and one final test stands between you
+and your place among the other Delvers.
+and your place among the other Delvers.
+REACH
+REACH
+THE BUOY
+THE BUOY
+Once game setup is complete, players must choose a quest
+from among the Quest Cards they have unlocked. If this is
+the first game of the campaign, players begin with Quest #1,
+the only Quest Card available at that time.
+Quest Cards
+Each quest card is broken up into 2 parts, the front and the
+back. It will display:
+A
+The Quest #
+B
+The Quest Name
+C
+The Quest Difficulty
+D
+What page to start on in the Rising Tide Book
+E
+A clue as to what the quest will be about
+F
+A summary of the quest that you will read more
+about in the Rising Tide Book
+Quest Difficulty Rating
+Quest are categorised into 3 levels of difficulty:
+Balanced
+A standard puzzle that most players should be able to
+survive through.
+Advanced
+A more challenging combat puzzle that can put players in
+more dire situations if they do not approach things carefully.
+Expert
+The most difficult quest available, it is likely that a hero or
+two will not survive your first attempts.
+Once you have chosen a Quest you can now follow the
+instructions on the front of the quest card and open the
+Rising Tide Book to the page it directs you to.
+Choosing a quest
+QUEST #01
+QUEST #01
+DIFFICULTY:
+REACH THE BUOY
+REACH THE BUOY
+A
+B
+C
+D
+F
+E
+8
+
+======== PAGE 9 ========
+Example Wave Page
+The Rising Tide Book
+The Rising Tide Book holds a majority of the game’s story
+and instructions on how to proceed through each quest.
+Throughout the game the Quest Card will guide you to a
+specific page of the Rising Tide Booklet. The start of each
+quest in the booklet will start with the Quest Introduction.
+Waves
+Each quest will take you into the Tide. A Quest is broken
+up into Waves that you will be guided through in the Tide
+Booklet. The Tide Booklet will give you a quick overview of
+the wave, your wave goal, any wave setup instructions, and
+what to do when you end a wave.
+A
+Wave Intro
+B
+Wave Setup
+C
+Wave Goal
+D
+Enemy Abilities (not present in Quest #1)
+E
+End of Wave Instructions
+Wave Intro
+At the start of each Wave, players may encounter a short
+story entry that provides the setting or context for that
+wave. Players may also be instructed to resolve a specific
+Scenario Card. To do so, find the matching card in the
+Scenario Deck, read it aloud, and discuss the available
+options. After choosing an option, flip the card over, read
+and resolve the matching resolution, then discard the card.
+Wave Goal
+Each Quest will start on Wave 1. To move onto the following
+waves, you must complete the Wave Goal. Each wave goal
+can vary. Most Wave Goals will require you just to survive,
+however some may require you to defeat specific creatures,
+pick up specific items, or complete something that is
+relevant to the story. Once you have completed the Wave
+Goal, you can move onto the End of Wave instructions.
+Starting a quest
+A
+C
+B
+D
+E
+9
+
+======== PAGE 10 ========
+Wave Setup
+Each Wave will require you to setup the Tide board. To do
+this you will follow the instructions of the The Wave Setup.
+Often this will require you to search for creatures in the
+Creature deck and spawn them. Before spawning creatures,
+make sure to follow any additional instructions listed here.
+Searching the Creature Deck
+When searching the Creature Deck for the creatures listed
+in the Wave Setup, make sure to search for the cards that
+have a matching name. Sometimes there will be fewer
+cards required for setup than what you find in the Creature
+Deck. If this happens, simply randomly select the number
+that you need and place them to the side to prepare to be
+spawned. The remaining cards can stay in the creature deck.
+Once all necessary creature cards are selected and placed
+to the side, you are now ready to spawn creatures.
+Spawning Creatures
+Once you have selected the listed creature cards from the
+Creature Deck, it’s time to place them on the tide board.
+Often the Wave Setup will instruct you to draw a spawn card
+to determine how they spawn. However sometimes, like in
+your first encounter, it will simply have a setup for you in
+the book. Whether it be through a spawn card or the book,
+understanding how to spawn creatures will be the same.
+Spawn Layout
+To spawn creatures, simply place the creature cards, your
+delver miniatures, and any other objects on the Tide Board
+as pictured in the spawn layout.
+North symbol. Both the Tide Board and the Spawn
+Layout are marked with the north symbol, this lets
+players know the orientation that cards should be
+laid out on the board.
+Boss creatures. Place the boss for the wave on the
+space of the Tide board with a
+. If there is more
+than one boss card selected from the Creature Deck,
+shuffle them together and then randomly place 1 of
+each on the spaces of the Tide Board marked with
+a
+.
+Minion creatures. Shuffle all minion cards that you
+have selected from the Creature Deck together and
+then randomly place 1 of each on the spaces of the
+Tide Board marked with a
+.
+Delvers. Players may choose which Delver is placed
+on each marked space. Both Delvers may instead be
+placed on the same spawn space.
+Commanders. These are special events that
+may spawn in addition to what may be listed in
+your Wave Setup. If you see these symbols on
+your spawn card, randomly select a number of
+Commander cards equal to the Commander symbols
+on your spawn card. Shuffle them together, and then
+place 1 Commander card on each space with a
+.
+Friendly creatures. These are special events that
+spawn in addition to what may be listed in your
+Wave Setup. If you see these symbols on your
+spawn card, randomly select a number of Friendly
+cards you have unlocked equal to the Friendly
+symbols on your spawn card. Shuffle them together,
+and then place 1 Friendly creature card on each
+space with a
+.
+Memory Chips, which may appear on the Spawn
+Layout on special occasions. If this appears, simply
+place a Memory Chip token on the matching space
+of the Tide Board. (To find out more about Memory
+Chips see page xx.)
+Wave Setup
+Spawn Diagram
+Spawn Card
+10
+
+======== PAGE 11 ========
+Now that you understand your Wave Goal, and have
+completed the Wave Setup, you can now Start the Wave.
+Unless instructed differently, waves start with players
+performing the Hero Phase.
+WAVE STRUCTURE
+1
+Hero Phase
+2
+Parting Shots Phase
+3
+Interlude Phase
+4
+End of Wave Phase
+Fighting Waves
+1. Hero phase
+Each Wave starts with the Hero Phase. The Hero Phase
+allows players to take turns. A player’s turn is broken up
+into 2 steps, Movement and Action, that they can execute
+with their chosen Delver. These steps can be done in any
+order, but once a player has completed both steps their turn
+is over, and the next player’s turn begins.
+A Delver’s Tools
+To understand how to execute your turn, you must first have
+an understanding of the tools a delver has at their disposal.
+When controlling their Delver players can use their suit
+and hero abilities, equipment cards, element tokens, and
+consumable tokens to help them reach their goals.
+Suit & Hero Abilities
+When you start your first game you will choose a Delver
+Suit and Hero. The Delver suit comes with a Suit Condition
+Sheet that you will utilize for your entire campaign. During
+the first game you only have one hero, but as you progress
+through the campaign you will earn other Heroes to choose
+from quest to quest. Whenever you begin a new quest you
+can choose 1 hero among the available heroes you have
+unlocked throughout the campaign to start a quest with.
+11
+
+======== PAGE 12 ========
+Hero Card
+Suit Condition Sheet
+Hero Cards
+Hero cards represent the human that is piloting your delver
+suit. Each hero is unique and offers the player a new way to
+approach each quest.
+A
+Starting Equipment
+B
+Hero Abilities
+Starting Equipment
+Hero cards provide players with a specific set of equipment
+cards to start a quest with. At the beginning of each quest
+players will select the listed equipment cards on the hero
+card they have chosen. Place any passive equipment cards
+into play next to your delver board. Place any weapon
+equipment cards into your hand.
+Hero Abilities
+In addition to providing you with your starting equipment
+cards, some hero cards that are acquired later in the
+campaign can sometimes have passive abilities of their own
+that will be written on the cards. These abilities function
+exactly like a passive equipment cards (see page xx for
+more info on passive equipment abilities) and are in effect
+as long as that hero is in play.
+Suit Condition Sheet
+Your Suit Condition Sheet is a very important part of Gone
+to Gaia’s gameplay. It tracks the permanent effects that a
+delver earns throughout the campaign and offers you ways
+to use these effects to your advantage. The Suit Condition
+Sheet is broken up into 3 main parts, Starting Equipment,
+Equipment Upgrades, and Scars.
+A
+Equipment upgrades
+B
+Starting Equipment
+C
+Scars
+AVAILABLE EQUIPMENT RANKS
+LOADOUT 1
+LOADOUT 2
+LOADOUT 3
+Left Arm
+Suit Condition Sheet
+SCARS:
+EQUIPMENT TYPE:
+RANK
+Starting Equipment Slots
+Legs
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+HARVESTER
+RANK
+SHOCKWAVE
+RANK
+BOOTS
+RANK
+EQUIPMENT TYPE:
+RANK
+EQUIPMENT TYPE:
+RANK
+Body
+RANK
+GAUNTLET
+RANK
+HAMMER
+RANK
+TRIDENT
+RANK
+ARMOR
+RANK
+SUPERCHARGER
+RANK
+BATTERY
+Helmet
+Right Arm
+RANK
+SWORD
+RANK
+MACE
+RANK
+SHIELD
+RANK
+ADEPT OS
+RANK
+FOCUS BEAM
+A
+B
+B
+A
+C
+12
+
+======== PAGE 13 ========
+Delver Board
+Starting Equipment
+Like Hero Cards, your suit condition sheet can also provide
+you with additional equipment cards to start the quest
+with. However when you are playing your first game, these
+will not be present and are instead earned throughout
+the campaign as permanent upgrades that you can
+choose from. When game effects instruct you to mark an
+equipment type on your Suit Condition Sheet, you can do
+so in any column of your choosing. When you start a quest,
+you will only be able to choose 1 column to gain equipment
+from. Combining a chosen column on your sheet with
+the Hero you choose at the beginning of a quest provides
+interesting strategies to start a quest with.
+Delver Board
+Equipment Upgrades
+Your suit condition sheet also tracks equipment unlocks.
+Normally a player can only level up their equipment to
+level 3, but as you progress in the game you will unlock
+ways to take your equipment to higher levels as you delve
+deeper into the Tide. More information on leveling up your
+equipment can be found on page xx of the rulebook.
+Scars
+In addition to equipment, suits can retain Scars, permanent
+keywords that can correlate to a multitude of positive and
+negative effects. Scars are gained during specific events
+that can be triggered in the game. When a player gains
+a scar, simply write the keyword in the scar section of
+the Suit Condition Sheet (note: that a player can gain an
+unlimited amount of scars.). Scar effects will become clear
+throughout the campaign and often come into play during
+story moments or equipment effects.
+Delver Board
+At the beginning of the game players will also receive a
+Delver Board. The Delver Board tracks your delver’s
+HP, Movement Value, Damage Output, Consumable
+tokens, Element Tokens, and Weapon Slots.
+A
+Delver
+HP
+B
+Movement Value
+C
+Damage Values
+D
+Consumable Tokens
+E
+Element Tokens
+F
+Weapon Slots
+A
+B
+C
+D
+E
+F
+13
+
+======== PAGE 14 ========
+Tracking HP
+Players are given two tokens to track their
+HP at the
+beginning of the game.
+The Current HP Token tracks a player current
+HP. This is
+reduced when a delver takes damage and is increased when
+they heal. If a delvers current
+HP falls to 0 or below, that
+delver has been died and can no longer take any actions.
+If this happens a wave immediately ends and refer to the
+“End of Wave” section of the current wave in the Rising Tide
+Booklet (see End of Wave on page xx for more information).
+If a delver is healed, their
+HP cannot rise above their
+Max HP Token. The players Max HP token tracks the
+maximum amount of
+HP a player can have. Different
+equipment, upgrades, and abilities can provide a player with
+ways to increase their Max HP Token. While rare, a player’s
+Max HP Token can also be lowered.
+Movement Value
+The Delversuit Board also tracks how far a delver can move
+on their turn. A delver can only move up to this value on
+their turn. As players progress through each quest there
+are various ways to increase a delver’s movement. See
+Movement on page xx for further info.
+Damage Values
+When attacking, delvers will perform attacks that deal
+either Light, Medium, or Heavy damage. The value of that
+damage is tracked here. When calculating how much
+damage an attack does, make sure to refer to these values.
+See Dealing Damage on page xx for further info.
+Consumable Tokens
+In Gone to Gaia there are many different consumable tokens
+that you can acquire that have various different effects.
+These tokens stay with a delver throughout their quest and
+are kept on your Delver Suit Board and are either Available
+or Spent to use during a wave. All consumable tokens start
+in the Available section of your Delver Board, and will move
+to spent when a player uses them during your turn.
+Spot art? Examples?
+14
+
+======== PAGE 15 ========
+Double Damage Tokens
+Double Damage Tokens can be spent during a player’s turn
+to double the damage of an attack they are performing.
+Double Damage tokens come in 4 different types, Light,
+Medium, Heavy, and Universal. No matter the type of double
+damage token you use, you can only use 1 double damage
+token per turn.
+Light Double Damage Token: Doubles the
+damage output of a Light Damage attack.
+Medium Double Damage Token: Doubles the
+damage output of a Medium Damage attack.
+Heavy Double Damage Token: Doubles the
+damage output of a Heavy Damage attack.
+Universal Double Damage Token: Doubles the
+damage output of any type of damage attack.
+Consumable Token Types
+AP Tokens
+AP Tokens are the most important type of
+consumable tokens. They offer a player versatile
+ways to utilize their Delver. Spending a specific
+amount of AP can allow a player to do the following during
+their turn.
+1 AP: Spending 1 AP token allows a player to
+double their movement value during their turn. (for
+example: if a delver has a movement value of 3, if
+they spend 1 AP token they can now move up to 6
+spaces instead of just 3).
+2 AP: Spending 2 AP allows a player to refresh 1
+Weapon Card (see Refreshing a Weapon Card on
+page xx of the rulebook for more info.)
+5 AP: Spending 5 AP allows a player to refresh all
+Weapon Cards (see Refreshing Weapon Cards on
+page xx of the rulebook for more info.)
+AP can also be spent by equipment effects and other
+abilities to boost their impact. Managing your AP tokens
+well can often be the reason you survive a wave, so make
+sure to use them wisely.
+Reroll Token
+Throughout the game players will roll dice to
+determine the results of abilities during combat.
+Players may spend a Reroll Token to reroll a
+die anytime after it has been rolled before its effects are
+resolved. A player may spend a Reroll token at anytime,
+even if it isn’t their turn, and even if the player was not the
+person that rolled the die.
+Double Damage Token Example
+Benito would like to use Rank 2 Overload Shockwave to
+attack some creatures on the board. Overload Shockwave
+does 2 x light damage to all creatures within the affected
+area around his delver. He decides to spend a Light Double
+Damage token to double the damage value of the attack.
+This makes the attack do 4 x light damage instead. Because
+his light damage marker is set to 2, this attack now does 8
+damage to all creatures within the affected area.
+Example Render
+15
+
+======== PAGE 16 ========
+Prevent Counter Tokens
+After a player attacks an enemy, the enemy
+will counterattack (see page xx for more info
+on counterattacks). When you spend a Prevent
+Counter Token, you prevent that counterattack from being
+performed. When you prevent a counterattack you prevent
+all targets from taking damage or and any accompanying
+effects of that attack as if that counterattack did not take
+place. A player may spend a Prevent Counter token at any
+time, even if it isn’t their turn, or if the player was not the
+cause of the counterattack.
+Ignore Ability Token
+Throughout the game players will encounter
+many creatures with unique abilities. The Ignore
+Ability token allows a player to cancel out
+creature abilities that may be causing them issues. To do
+this a player can spend a Ignore Ability Token to remove the
+effects of one ability for the remainder of a turn. A player
+can do this even if it is not their turn.
+Prevent Counter Token Example
+Rosalia performed an attack with her delver that caused
+the Goldmonger to counterattack. The Goldmonter will deal
+2 damage to both Rosalia and Benito’s delvers. To stop this
+from taking place, Benito decides to spend 1 of his Prevent
+Counter Tokens. This prevents the Goldmonger from
+performing its counterattack.
+Ignore Ability Token Example
+Rosalia would like to attack the Death Cap with one of her
+weapons. However she does not have a (wind symbol) or
+(water symbol) weapon slot available to place her weapon.
+The Death Cap’s Primordial ability prevents her from
+placing a weapon in another slot, so in order to ignore the
+effects of this ability, Rosalia decides to spend one her
+Ignore Ability Token. This removes the Primordial ability
+from the Death Cap for the remainder of the turn so that
+Rosalia can now place her weapon on any weapon slot to
+damage the Death Cap.
+Example Render
+Example Render
+16
+
+======== PAGE 17 ========
+Weapon Slots
+The last section of the delver board that players need to be
+aware of are the weapon slots. Weapon slots are composed
+of 6 distinct sections that can contain 2 element tokens
+and a weapon card. When starting your first quest these
+sections will be empty, however they will begin to fill up as
+you start the wave.
+Each weapon slot has a unique ability that can be used in
+place of utilizing a weapon card’s ability. Most of the time
+you will choose to use your weapon, however these unique
+effects can come in handy when needed. (see page page xx
+for more info on weapon slot abilities.)
+In addition weapon slots can house 2 Element Tokens of a
+specific type.
+Element Tokens
+Element Tokens are very useful tools for Delvers. You
+can use them to activate equipment abilities and refresh
+weapon cards (see refreshing weapon cards on page xx for
+more info). There are 6 different types of Element Tokens.
+Equipment Cards
+Equipment cards are the primary way delvers wield their
+power. Equipment cards are broken up into 2 categories,
+Weapons and Passives.
+Weapon Equipment Cards
+Weapons are used to take actions during a players turn. To
+take an action a player must exhaust a Weapon card. (See
+more about how to use Weapon cards on page XX).
+Passive Equipment Cards
+Passive Equipment cards offer players abilities that they
+can utilize throughout the quest. Some Passive Equipment
+Cards give players a boost in stats when they obtain them.
+Others give them specific abilities that only trigger when a
+condition is met. No matter the type of passive, these cards
+are never added to a player’s hand and are instead placed to
+the side of the player’s Delverboard.
+Earth
+Wind
+Fire
+When a player gains an element token, they must place
+it on their Delver Board in a Weapon Slot that matches
+the element tokens symbol. Players can only hold 2 of
+each element token, so any earned beyond that cannot
+be gained. When a player spends an element token, they
+simply place it back in the community supply.
+Water
+Void
+Radiance
+Weapon
+7 Weapons
+Passive
+7 Passives
+There are 14 different distinct types of equipment cards:
+Gauntlet Hammer
+Beam
+Boots
+Shield
+OS
+Trident
+Sword
+Mace
+Armor Harvester Battery
+Shockwave
+Supercharger
+17
+
+======== PAGE 18 ========
+Equipment Card Front
+Equipment Card Back
+Equipment Cards are double sided, and are organized in a
+tray at the beginning of the game according to their type
+and in order from rank 1 to 5.
+Equipment Card Front
+The front of an equipment card is what players will
+primarily use when they have the card equipped. These
+cards will either go into their hand or delver board if
+they are weapons, or to the side of their play area if they
+are passives.
+A
+Rank: this is the equipment cards rank, to upgrade
+a card to a higher rank you must first have the lower
+rank card equipped. See leveling up on page xx for
+more information.
+B
+Name: this is the full name and type of your
+equipment card
+C
+Ability: this is the ability that you can utilize when
+using the weapon as an action. See Taking Actions
+one page xx for more info.
+D
+Suit Icon: this labels what delver this card
+belongs to.
+E
+Category: This will let a player know if it is a
+weapon or passive equipment card.
+F
+Equipment #: Sometimes a specific card may need
+to be searched for or referred to by number. If you
+are instructed to search for a card by number, this is
+the number the book is referring to.
+Equipment Card Back
+The back of an equipment card is used to organize them
+clearly in the equipment card tray.
+A
+Type: the type of equipment card
+B
+Rank: this is the equipment cards rank, to upgrade
+a card to a higher rank you must first have the lower
+rank card equipped. See leveling up on page xx for
+more information.
+C
+Image: visual of the equipment
+D
+Rarity: this will let a player know if the card is a
+base equipment that you started with or if it is an
+upgraded equipment card.
+E
+Category: This will let a player know if it is a
+weapon or passive equipment card.
+B
+A
+A
+B
+C
+C
+D
+D
+E
+E
+F
+18
+
+======== PAGE 19 ========
+Taking a turn
+Now that you have an understanding of what tools a Delver
+can use, let’s explain how to use them to take your turn.
+During the Hero Phase, players take alternating turns. Each
+turn consists of a Movement step and an Action step, which
+may be resolved in either order. Turns continue alternating
+until both players have Prepared to Run (see Preparing
+to Run on pg. XX), meaning each player will typically take
+multiple turns during a single Hero Phase.
+Movement
+Movement allows Delvers to reposition around the Tide
+board to enter attack range and avoid counterattacks. A
+Delver may move a number of spaces up to the value shown
+on its Delver Board. Movement may be made orthogonally
+or diagonally, but a Delver may never move through or end
+its movement on a space occupied by an Enemy.
+Action
+Actions allow players to activate the ability of a Weapon
+card or activate the ability of a Weapon slot.
+On each turn, a player must take an Action by playing a
+Weapon card from their hand into an open Weapon slot on
+their Delver Board. After playing the card, they may choose
+one of the following:
+�Activate the ability on the played Weapon card
+�Activate the ability of the chosen Weapon slot
+If a player cannot play a Weapon card from their hand
+during their turn, they must Prepare to Run instead (see
+Preparing to Run, pg. XX).
+Insert a visual example of a delver
+moving, with green check marks
+on where they could move and red
+Xs on where they couldn’t. Use an
+enemy and the other delver for
+the example.
+Whenever a player moves onto a space containing an
+item, such as a Minion Part or Memory Chip, they may
+immediately collect it. Players may only collect their own
+Minion and Boss Parts.
+Spot art? Examples?
+19
+
+======== PAGE 20 ========
+Using a Weapon Card Ability
+The primary way to deal damage to enemies is by using a
+Weapon card’s ability. Each Weapon card ability includes
+the following elements:
+A
+Damage: This shows the type of damage dealt when
+the weapon is used. The amount of damage each
+Damage Type deals can be found on the player’s
+Delver Board (see Damage Values, pg. XX).
+B
+Range: Each Weapon card has a range that shows
+which spaces are hit when that weapon is used. This
+is most often represented by a pattern of triangles.
+The empty space at the center of the pattern shows
+the space the attack originates from, which is
+the space occupied by the attacking Delver. Each
+triangle adjacent to the origin represents a space hit
+by the attack. If multiple triangles appear in a row
+or diagonal line, count outward from the origin that
+many spaces; each of those spaces is hit. A weapon
+always deals its damage to every space it hits.
+C
+Additional Effects: Some Weapon cards have
+additional effects that occur either before or after
+damage is dealt. Effects that occur before damage
+is dealt appear above the weapon’s range. Effects
+that occur after damage is dealt appear below the
+weapon’s range.
+When using a Weapon Card ability, first determine the
+attack’s strength and range. Then apply its damage to all
+affected enemy spaces, resolving any additional effects
+before or after damage is dealt, as indicated on the card.
+A
+B
+C
+Example of Using a Weapon Card
+(insert visual example of the body
+Delver with a Crystanid on both the
+left and right spaces and the Shift
+Trident card.):
+Sean uses his Shift Trident’s Weapon ability to attack some
+adjacent Crystanids. First, he resolves the Shift Trident’s
+effect by moving the Crystanid from the space to his right
+to the space below him. Then he deals medium damage
+(2) to both Crystanids since both are now in the Shift
+Trident’s range.
+20
+
+======== PAGE 21 ========
+Lauren plays Ion Cannon Beam from her hand into the
+fourth Weapon Slot on her Delver Suit Board. Instead of
+using the Weapon Card’s ability, she resolves the slot ability
+and refreshes 1 AP.
+Using a Weapon Slot Ability
+Weapon Slot Abilities allow players to gain elemental or
+consumable tokens, move, or make attacks (for a reminder
+on how Elemental and Consumable tokens work see pg.XX).
+To use a Weapon Slot Ability, a player places a Weapon
+Card from their hand into an open Weapon Slot. They then
+resolve the ability printed at the bottom of that slot instead
+of resolving the played Weapon Card’s ability.
+Examples of a Weapon Slot (insert
+a visual example of the Mind
+Delverboard with the the Ion
+Cannon Beam being placed on the
+4th spot. Then show her gaining
+one AP. She should already have 1
+AP in her available space )
+Spot art? Examples?
+21
+
+======== PAGE 22 ========
+Enemy Card
+Understanding Enemies
+An important part of knowing how to effectively use
+Weapon cards and slots is understanding how enemy
+cards work.
+A
+Health
+B
+Attack Power
+C
+Name
+D
+Ability
+E
+Parting Shot Ability
+F
+On Death Reward
+G
+Enemy Type
+H
+Enemy Number
+I
+Uncommon Counterattack
+J
+Common Counterattack
+K
+Family
+Bosses and Minions
+Enemies come in two types: Bosses and Minions. Bosses
+are stronger than their Minion counterparts and often have
+additional abilities and Counterstrikes. Otherwise, they
+follow the same rules as Minions. Each Quest specifies
+which Bosses and Minions are used in that Wave(see
+Quests, pg. XX).
+*Some Bosses have special abilities that require tracking.
+Use Monster Ability Tokens to mark their progress.
+Damaging or Killing an Enemy
+Whenever an enemy is damaged by a Weapon or Ability,
+place damage tokens on that enemy’s card equal to the
+amount of damage dealt. If the number of damage tokens
+on an enemy’s card ever equals its listed Health, that enemy
+is killed. Each time an enemy is damaged, it immediately
+makes a Counter Attack, even if the damage dealt is enough
+to kill it.
+C
+A
+B
+D
+E
+F
+J
+I
+G
+H
+K
+22
+
+======== PAGE 23 ========
+Counter Attacks
+Enemies have two Counter Attack ranges: Common and
+Uncommon. Common range is shown with white arrows on
+a purple background. Uncommon range is shown with black
+arrows on a green background.
+Gaining XP and Monster Parts
+Whenever an enemy is killed, after its Counter Attack has
+been resolved, both players immediately gain the amount of
+XP listed on that enemy’s card (see XP, pg. XX). Then resolve
+any On Death Rewards shown on the card. Rewards labeled
+Gain are immediately gained by both players. Rewards
+labeled Drop are placed on the enemy’s space and must be
+collected later. When placing dropped rewards, place one
+of each listed reward for each player. Finally, remove the
+enemy’s card from play.
+Common Counter
+Attack Range
+Uncommon Counter
+Attack Range
+To resolve a Counter Attack, roll a D6:
+2-5
+2-5
+6
+1
+MISS
+MISS
+HIT ALL SPACES IN COMMON
+HIT ALL SPACES IN COMMON
+COUNTER ATTACK RANGE
+COUNTER ATTACK RANGE
+HIT ALL SPACES IN UNCOMMON
+HIT ALL SPACES IN UNCOMMON
+COUNTER ATTACK RANGE
+COUNTER ATTACK RANGE
+Example: Lauren kills an Ophidian with her Ion Cannon
+attack. After resolving the Ophidian’s Counter Attack,
+both Sean and Lauren gain 1 XP. Then 1 Blue Minion Part
+token and 1 Orange Minion Part token are placed on the
+Ophidian’s space for each player. Finally, Lauren removes
+the Ophidian card from play and discards it.
+Like Weapon Range, each arrow shows a space hit by the
+attack. If multiple arrows appear in one direction, each
+consecutive space in that direction is hit. Any Delver in a
+hit space takes damage equal to the enemy’s attack. This
+means a Delver can be hit by an enemy’s Counter Attack
+even when it is not their turn. Enemies never deal damage
+to other enemies.
+If multiple enemies are damaged by the same Weapon
+Ability, resolve each enemy completely before moving to the
+next. This includes its Counter Attack, any damage dealt,
+and any effects caused by its death.
+23
+
+======== PAGE 24 ========
+Leveling Up
+Resolving Multiple Dead Enemies
+Sometimes multiple enemies are killed by a single attack. If
+this happens, resolve them in the following order: .
+�Roll and resolve each enemy’s Counter Attack.
+�Resolve all On Death Rewards one card at a time.
+�Place Minion Part tokens on the spaces occupied by
+the defeated enemies.
+�Check whether players have enough XP to level up one
+or more times. Resolve each Level Up one at a time,
+spending XP on hand each time until players no longer
+have enough XP to level up.
+As players gain XP during battle, they will eventually Level
+Up. Players can track their current XP and Level using
+the XP Track and Level Track on the Birds Nest Display.
+The Level Track shows how much XP is needed to reach
+each level.
+Whenever players gain XP, they should check to see
+whether they have reached the next level. If they have
+enough XP to level up, immediately follow these steps:
+�Subtract the required amount of XP from the XP Track
+�Move the Level marker up 1 space
+�Each player draws a Level Up Card and chooses
+1 reward
+If players gain enough XP to level up multiple times,
+fully resolve each level up one at a time before resolving
+the next.
+Level Up Card
+Preparing to Run
+If a player cannot play a Weapon Card from their hand
+during their turn, they must Prepare to Run. Once a player
+has Prepared to Run, they may not take any more turns
+during that Hero Phase. The other player continues taking
+turns until they also Prepare to Run. Once both players have
+Prepared to Run, the Hero Phase ends and play proceeds to
+the Parting Shots Phase.
+24
+
+======== PAGE 25 ========
+Delver Turn Example
+Sean and Lauren are facing a group of Crystanids led by a
+Soulhunter. Sean begins his turn by playing Shift Trident
+onto his Delver Board. He uses the Shift Trident’s ability
+to move one of the Crystanids 1 space, placing it within
+range of the weapon. He then deals Medium Damage (2) to
+both Crystanids.
+Sean resolves the two enemies one at a time. For the
+first Crystanid, he rolls for its Counter Attack and gets a 2.
+Because both Sean and Lauren are within the Crystanid’s
+Common Counter Attack Range, they each take 1 damage.
+The Crystanid has 2 Health, so it is killed. After resolving
+its Counter Attack, Sean and Lauren each gain 1 XP, and
+Sean places 1 Minion Part for each player on the space the
+Crystanid occupied.
+Sean then resolves the second Crystanid and rolls a 6 for
+its Counter Attack. Because neither Delver is within that
+Crystanid’s Uncommon Counter Attack Range, no one takes
+damage. The second Crystanid is also killed, so Sean and
+Lauren each gain 1 Wind Element and 1 Void Element, and
+Sean places 1 Minion Part for each player on its space.
+Sean then uses his Movement step to move 1 space and
+collect his Minion Part.
+25
+
+======== PAGE 26 ========
+Example Parting Shot Ability
+After both players have Prepared to Run, all enemies still on
+the board have a chance to attack. This is called the Parting
+Shots Phase. Resolve each enemy’s Parting Shot Ability one
+at a time.
+Unless an ability states otherwise, a Parting Shot Ability
+affects both Delvers regardless of their position on the
+board. For example, if a Parting Shot Ability says “2 damage
+to Delvers,” both Delvers suffer 2 damage no matter where
+they are located.
+After all Parting Shot Abilities have been resolved, discard
+all enemies and any uncollected items remaining on
+the board.
+2. Parting Shots Phase
+3. Interlude Phase
+4. End of Wave Phase
+After the Parting Shots Phase ends, players perform the
+Interlude Phase. During this phase, both players refresh any
+spent Consumables and return all exhausted Weapon Cards
+to their hand.
+After the Interlude Phase, players proceed to the End of
+Wave Phase. Refer to the End of Wave instructions for the
+current quest in the Rising Tide Book and resolve them
+in order.
+Delver Death
+A Delver is killed if the damage they receive reduces their
+current Health to 0. Whenever a Delver is killed, the current
+Phase immediately ends and both players proceed directly
+to the End of Wave Phase.
+Graveyard Box
+The Graveyard Box holds the cards of the Heroes who have
+died in the pursuit of Gaia.
+26
+
+======== PAGE 27 ========
+Whether players are defeated or victorious, they will
+eventually return to town. These moments are called Town
+Visits, and much of Gone to Gaia’s story takes place during
+them. While in town, players can visit locations, speak with
+residents, and shop for items that may help them on their
+next dive into the Tide. Town Visits usually occur in the End
+of Wave Phase after players complete a quest, are defeated,
+or choose to abandon a quest and attempt it again later,
+but they may also occur at other times as directed by the
+Quest Instructions.
+Decisions and Resolutions
+During a Town Visit, players will often be given options for
+how to respond to an event or conversation. Players should
+discuss the available choices and agree on one before
+proceeding. They then turn the page to the corresponding
+resolution and follow its instructions. These Resolutions
+often reward players in different ways and may also change
+the opinions of the people they speak with.
+Some Decisions may include keywords that hint at the kinds
+of outcomes players might receive from that choice.
+�Affects Opinion: May result in a positive or
+negative change in opinion from a townsfolk.
+�Grants Wisdom: May lead to a combat advantage.
+�Grants Knowledge — May lead to new items
+or quests.
+�Grants Power: May lead to new shop items or a
+hero upgrade.
+�Grants Equipment: May lead to new equipment
+upgrades or shop items.
+�Grants Resources: May provide Minion or
+Boss Parts.
+Town Visits
+Opinions Cards
+As players make decisions during Town Visits, the opinions
+of the residents may change. The people of Birds Nest each
+have their own goals and motivations, so player choices will
+affect each resident differently.
+Whenever players are instructed to change a character’s
+opinion, record the new opinion on the Campaign Sheet
+and take the corresponding Opinion Card. If players are
+instructed to increase or decrease a character’s opinion,
+adjust that opinion by one space on the Campaign Sheet.
+If players already have an Opinion Card for that character,
+return the previous card to the box.
+Each Opinion Card has either a Penalty or a Reward.
+Penalties cause players to begin quests with specific
+disadvantages, while Rewards provide benefits during
+a Quest.
+Dating
+Whenever a player gains a character’s Confident
+Opinion Card, they may choose to go on a date
+with that character. Going on a date requires the
+Dating Sim Expansion
+and unlocks additional
+story content and
+gameplay benefits.
+Opinion Cards
+27
+
+======== PAGE 28 ========
+Visit the Shops
+During a Town Visit, players may visit shops to purchase
+items using the Minion Parts and Boss Parts they collected
+during battles in the Tide. Players may spend their parts
+individually or combine them to afford more expensive
+purchases. However, unless the purchased item is a Quest,
+only one player may take and use it.
+A
+Name or Type
+B
+Cost
+C
+Ability
+D
+Location
+E
+Shop Product Number
+There are several types of items available in shops:
+�Quest Bonuses: Provide a bonus at the start of
+each Quest.
+�Wave Bonuses: Provide a bonus at the start of
+each Wave.
+�Equipment: Add new cards to, or upgrade, a player’s
+Equipment Decks.
+�Quests: Unlock new Quest Cards that are added to the
+pool of available quests.
+As the story progresses, new items will become available
+in the shop. Whenever players are instructed to add a
+Shop Product, they should find the corresponding Shop
+Card using its Shop Product Number and place it in the
+Shops Box.
+Fundraising
+Resources are scarce in Bird’s Nest, and it seems someone
+is always asking for donations to support projects around
+town. Fundraising events may occur during Town Visits.
+When this happens, players should discuss how many
+Minion Parts, if any, they want to donate as a group. Players
+then discard the chosen total and record the amount
+donated in the designated area of the Campaign Sheet.
+The outcome of the donation is not revealed until after the
+players have committed to it.
+Discovery Box
+As players purchase new Shop Items, unlock new Heroes,
+and gain other cards throughout the campaign, they should
+store those cards in their Discovery Box.
+A
+B
+C
+D
+E
+Shop Card
+Discovery Box
+28
+
+======== PAGE 29 ========
+Special Rules
+As the story progresses, players will discover additional
+Actions, Monsters, and Unique Items. Beyond this point
+are references to those rules. To avoid spoiling surprises in
+the story, we recommend not reading further until some of
+these elements have been unlocked.
+Witness
+Witness is an important ally to the Delvers whenever they
+journey into the Tide. As an Action on their turn, players may
+move Witness up to 2 spaces. Note this still requires playing
+a Weapon card from their hand into an open Weapon slot
+on their Delver Board. As Witness is upgraded through the
+purchase of Memory Cards, the options available through
+this action will expand.
+During setup, if Witness is in play, players may place him
+on any delver space (marked with a
+) on the spawn
+setup card/diagram.
+Memory Chips
+Memory Chips are rare resources that can be found during
+delves into the Tide. They may appear during spawn setup
+and can be collected by Delvers or Witness during battle. In
+town, players can trade in Memory Chip tokens to purchase
+Memory Cards when visiting the shops.
+Memory Cards
+Memory Cards represent Witness’s restored memory files.
+As more of Witness’s memories are restored, Witness will
+gain additional actions that can be used during combat.
+To purchase Memory Cards, visit the Machinist during a
+Town Visit and trade in any collected Memory Chips. *The
+Memory Card deck is kept in a fixed order and should never
+be shuffled or drawn out of order.
+MEMORY #01
+MEMORY #01
+Memory Chip Token
+Memory Card
+29
+
+======== PAGE 30 ========
+Friendly Monsters
+Need rules...
+30
+
+======== PAGE 31 ========
+Solo Mode
+31
+
+======== PAGE 32 ========
+New Game+
+32
+
+======== PAGE 33 ========
+Index
+33

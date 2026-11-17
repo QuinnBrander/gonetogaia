@@ -1,0 +1,257 @@
+{
+  "id": "quest5",
+  "name": "The Rogue Delver",
+  "goal": "Follow the footprints (Wave 3)",
+  "primaryGoalWaveNumber": 3,
+  "intro": [],
+  "waves": [
+    {
+      "number": 1,
+      "goal": "Reach the end of Wave 1.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "bob-079",
+      "minionEnemyIds": [
+        "diamonid-080",
+        "diamonid-081",
+        "diamonid-082",
+        "diamonid-083",
+        "diamonid-084",
+        "diamonid-085",
+        "diamonid-086"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q5_w1_end",
+        "anyDie": "q5_w1_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q5_w1_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Track the prints a while: one delver gains 1 UNIVERSAL 2X DAMAGE token, and gain a LEVEL UP card",
+            "pageId": "q5_w1_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-consumable-token-one-delver",
+                "tokenKind": "damage-2x-universal",
+                "amount": 1
+              },
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Take a cast of the print for Xavier: increase Xavier's opinion, and gain a LEVEL UP card",
+            "pageId": "q5_w1_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "shift-favour-by-scenario",
+                "characterId": "xavier",
+                "characterName": "Xavier",
+                "delta": 1
+              },
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Compare the trail to the femur: add Shop Product #34 Cyclone Boots to your Purchasable Products, and gain a LEVEL UP card",
+            "pageId": "q5_w1_femur",
+            "requireKeyItem": 4,
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ],
+            "then": "next-wave",
+            "rewards": [
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  34
+                ],
+                "chipFallback": 1
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q5_w1_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "goal": "Reach the end of Wave 2.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "mindslayer-087",
+      "minionEnemyIds": [
+        "squiddy-088",
+        "squiddy-089",
+        "squiddy-090",
+        "squiddy-091",
+        "squiddy-092",
+        "squiddy-093",
+        "squiddy-094"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q5_w2_end",
+        "anyDie": "q5_w2_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q5_w2_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Follow them: add a Friendly Spawn card to the Spawn deck, and both delvers heal 3 HP",
+            "pageId": "q5_w2_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-friendly-spawn-card"
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Brush them away so no one else can follow: increase Elias Brass's opinion, and both delvers heal 3 HP",
+            "pageId": "q5_w2_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "shift-favour-by-scenario",
+                "characterId": "elias",
+                "characterName": "Elias Brass",
+                "delta": 1
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Mark them on your map: gain a LEVEL UP card, and both delvers heal 3 HP",
+            "pageId": "q5_w2_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q5_w2_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "goal": "Survive to the end of Wave 3.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "oblivionwing-095",
+      "minionEnemyIds": [
+        "nightswiper-097",
+        "nightswiper-098",
+        "nightswiper-099",
+        "nightswiper-100",
+        "nightswiper-101",
+        "nightswiper-102",
+        "nightswiper-103"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q5_w3_end",
+        "anyDie": "q5_w3_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q5_w3_defeat"
+        },
+        "victory": [
+          {
+            "label": "Enter the skyscraper",
+            "pageId": "q5_w3_janus",
+            "rewards": [
+              {
+                "kind": "gain-key-item",
+                "number": 11,
+                "name": "Baby Janus"
+              },
+              {
+                "kind": "complete-quest",
+                "number": 5,
+                "name": "The Rogue Delver"
+              }
+            ],
+            "then": "end-quest"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": {
+    "wave1_intro": "You follow the footprints into the mist. Something waits ahead - a great spider, its brood of Diamonids glinting around it.",
+    "wave1_intro_ability_name": "Vicious",
+    "wave1_intro_ability_rules": "Vicious (Boss and Minions): On spawn, starts with a monster token on its tile. Whenever an adjacent delver suffers damage, remove the monster token. While it has a monster token, attacks deal a maximum of 1 damage to it.",
+    "q5_w1_end": "The spider and its brood lie still. The tracks lead on, west through the mist.",
+    "q5_w1_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q5_w1_continue": "The tracks wind west through the mist, streaked with fresh blood - proof you're close. Whatever left them is hurt... and dangerous. A few steps ahead you stumble across a journal. Could Vera Brass have dropped this, or left it purposely? You rifle through the pages, finding many mundane musings from the days before the fire at the watchtower.\n\nThe last entry is scrawled in black charcoal. \"I don't care if you're a friend wanting to help or a foe coming to take me back. I won't go. There is something rotten in Bird's Nest. Trust no one. Do not pursue.\"\n\nYou press on, following the trail into the unknown.\n\nDelvers gain a Level card.",
+    "q5_w1_retreat": "The blood-streaked tracks lead deeper into the Tide, but your wounds burn and your muscles ache with every step. You know you're close, but you won't survive what comes next. Reluctantly, you turn back, leaving the trail to fade into the mist.",
+    "q5_w2_end": "The Mindslayer sinks into the mist and the Squiddies scatter. The trail goes on.",
+    "q5_w2_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q5_w2_continue": "As you travel west, every now and again, Witness' sharp sensors detect a drop of blood on the ground which tells you that you're on the right track. After an hour, you see the outline of an ancient skyscraper appear in view. The ruins of High Nest, the \"city that fell from the sky\".\n\nWhoever you're pursuing must be inside.\n\nDelvers heal up to 3 HP.",
+    "q5_w2_retreat": "Faint drops of blood mark the path ahead, but your injuries make every step a risk. The trail disappears into the mist, promising danger you're not ready to face. You turn back, leaving the mystery unresolved for now.",
+    "q5_w3_end": "The Oblivionwing crashes down among the ruins of High Nest.",
+    "q5_w3_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q5_w3_janus": "High Nest was once a technologically advanced metropolis. Perhaps it was their proximity to Gaia, or the plateau it was built on, that offered them extra protection. This allowed them to thrive, innovating new ways to use Gaia's blessed metals. They built the city high, reaching impossible heights, until they became known as \"the city in the sky\". But their hubris, their greed, led to their fall. Their machinery grew heavy, waste and pollution eroded the environment of the plateau until it could bear the weight no more. The entire city came crumbling down years ago. Now only ruins remain.\n\nThe tracks lead into the shell of an ancient skyscraper. As you near the entrance, you notice the telltale signs of a fierce battle. Huge rents mar the concrete and blast marks streak the walls. They're still smoking slightly. The sound of your footsteps echo in the emptiness of what appears to be an office building.\n\nNear the center of the tumult, you find the battered body of a delver. The suit is stark white, standing out against the grime of the ruins. The body stirs, alive! You gently remove the helmet and the delver does not protest, too weak or injured. You recognize the woman immediately. You've seen her portrait hanging at the Delver Academy and her resemblance to Elayna is obvious. You've found Margaret Woo!\n\nMargaret searches your eyes weakly, trying to determine if you mean her harm. She looks down at your delver suit, then opens her mouth to speak but manages only to cough up blood. There's a desperation in her eyes as her gaze moves past you, towards a door in the distance. She grips your hand suddenly, gasping for air. She nods to the door, eyes pleading as she takes one final breath, and dies.\n\nYou close Margaret's eyes shut, then place your hand on your chest in the symbol of Gaia, a sign of honor for a fallen delver. You move quickly to the door, tense at what you'll find inside. In the darkened room, you stumble around until you find a capsule, stark white like Margaret's suit. A green button is flashing. When you press it, a soft hiss fills the room as the capsule opens.\n\nInside is a baby, sleeping soundly, ignorant still of the chaos he was born into. His dark hair immediately reminds you of Margaret Woo and you briefly wonder if this is her child. His name is hand-stitched in crude fibers - \"Janus\".\n\nYou suddenly realize the baby is being exposed to the Tide. You scramble to shut the capsule again, but pause. Janus stirs slightly but continues to sleep peacefully. A warm glow is emanating from him, casting light around the dark room where there is no mist to be seen. Could this child be repelling the Tide? So many unanswered questions.\n\nYou send a comm to Master Bram, informing him of your findings. Without hesitation, he orders you to deliver Janus to him. If someone was willing to kill Margaret Woo, they may also be after the child. For now, you vow to keep this a secret.\n\nAdd Key Item #11 to your Key Items. Your Quest is complete!",
+    "q5_w1_femur": "The tracks wind west through the mist, streaked with fresh blood - proof you're close. Whatever left them is hurt... and dangerous. A few steps ahead you stumble across a journal. Could Vera Brass have dropped this, or left it purposely? You rifle through the pages, finding many mundane musings from the days before the fire at the watchtower.\n\nThe last entry is scrawled in black charcoal. \"I don't care if you're a friend wanting to help or a foe coming to take me back. I won't go. There is something rotten in Bird's Nest. Trust no one. Do not pursue.\"\n\nBeside Vera's tracks run huge, fresh prints - each with a deep gouge where a single claw drags. Bioluminescent residue glows in every one.\n\nYou think of the femur from the watchtower rubble. If that body was never Vera's, she's alive - and under a rock you find a stash she left behind: delver boots humming with wind, wrapped in her old cloak.\n\nYou press on, following the trail into the unknown.\n\nAdd Shop Product #34 Cyclone Boots to your Purchasable Products. Gain a LEVEL UP card.",
+    "q5_w1_continue_a": "The tracks wind west through the mist, streaked with fresh blood - proof you're close. Whatever left them is hurt... and dangerous. A few steps ahead you stumble across a journal. Could Vera Brass have dropped this, or left it purposely? You rifle through the pages, finding many mundane musings from the days before the fire at the watchtower.\n\nThe last entry is scrawled in black charcoal. \"I don't care if you're a friend wanting to help or a foe coming to take me back. I won't go. There is something rotten in Bird's Nest. Trust no one. Do not pursue.\"\n\nBeside Vera's tracks run huge, fresh prints - each with a deep gouge where a single claw drags. Bioluminescent residue glows in every one.\n\nYou catch the creature sleeping in a hollow and slip past, learning exactly where to strike next time.\n\nYou press on, following the trail into the unknown.\n\nOne delver gains 1 UNIVERSAL 2X DAMAGE token. Gain a LEVEL UP card.",
+    "q5_w1_continue_b": "The tracks wind west through the mist, streaked with fresh blood - proof you're close. Whatever left them is hurt... and dangerous. A few steps ahead you stumble across a journal. Could Vera Brass have dropped this, or left it purposely? You rifle through the pages, finding many mundane musings from the days before the fire at the watchtower.\n\nThe last entry is scrawled in black charcoal. \"I don't care if you're a friend wanting to help or a foe coming to take me back. I won't go. There is something rotten in Bird's Nest. Trust no one. Do not pursue.\"\n\nBeside Vera's tracks run huge, fresh prints - each with a deep gouge where a single claw drags. Bioluminescent residue glows in every one.\n\n\"This is extraordinary,\" Xavier crackles over the comms.\n\nYou press on, following the trail into the unknown.\n\nIncrease Xavier's opinion. Gain a LEVEL UP card.",
+    "q5_w2_continue_a": "As you travel west, every now and again, Witness' sharp sensors detect a drop of blood on the ground which tells you that you're on the right track. After an hour, you see the outline of an ancient skyscraper appear in view. The ruins of High Nest, the \"city that fell from the sky\".\n\nNear the base of the skyscraper, tiny bare footprints cross the mud. The mist curls away from each one, as if repelled.\n\nThey end at an empty camp. A child's toy has been left behind, and the creatures nearby are strangely gentle.\n\nWhoever you're pursuing must be inside.\n\nAdd a Friendly Spawn card to the Spawn deck. Both delvers heal 3 HP.",
+    "q5_w2_continue_b": "As you travel west, every now and again, Witness' sharp sensors detect a drop of blood on the ground which tells you that you're on the right track. After an hour, you see the outline of an ancient skyscraper appear in view. The ruins of High Nest, the \"city that fell from the sky\".\n\nNear the base of the skyscraper, tiny bare footprints cross the mud. The mist curls away from each one, as if repelled.\n\nWhoever they belong to, they deserve a head start.\n\nWhoever you're pursuing must be inside.\n\nIncrease Elias Brass's opinion. Both delvers heal 3 HP.",
+    "q5_w2_continue_c": "As you travel west, every now and again, Witness' sharp sensors detect a drop of blood on the ground which tells you that you're on the right track. After an hour, you see the outline of an ancient skyscraper appear in view. The ruins of High Nest, the \"city that fell from the sky\".\n\nNear the base of the skyscraper, tiny bare footprints cross the mud. The mist curls away from each one, as if repelled.\n\nSomeone at the Academy will want to see this.\n\nWhoever you're pursuing must be inside.\n\nGain a LEVEL UP card. Both delvers heal 3 HP."
+  }
+}

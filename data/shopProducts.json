@@ -1,0 +1,464 @@
+[
+  {
+    "number": 1,
+    "name": "Trident",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 7, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Trident.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Trident", "amount": 1 }
+    ]
+  },
+  {
+    "number": 2,
+    "name": "Supercharger",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 6, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Supercharger.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Supercharger", "amount": 1 }
+    ]
+  },
+  {
+    "number": 3,
+    "name": "Boots",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 6, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Boots.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Boots", "amount": 1 }
+    ]
+  },
+  {
+    "number": 4,
+    "name": "Reroll Tokens (x2)",
+    "location": "General Store",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 5, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with 2 x Reroll Tokens. (Consumable.)",
+    "grants": [
+      { "kind": "consumable-tokens", "scope": "quest", "tokenKind": "reroll", "amount": 2 }
+    ]
+  },
+  {
+    "number": 5,
+    "name": "+1 LIGHT Damage",
+    "location": "General Store",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 12, "bossLvl1": 1, "bossLvl2": 0 },
+    "effectText": "Start the Quest with +1 LIGHT damage.",
+    "grants": [
+      { "kind": "damage-bonus", "scope": "quest", "damageType": "light", "amount": 1 }
+    ]
+  },
+  {
+    "number": 6,
+    "name": "+1 Fire Element Token",
+    "location": "General Store",
+    "category": "Wave Bonus",
+    "cost": { "minionParts": 4, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start each Wave with +1 Fire Element Token.",
+    "grants": [
+      { "kind": "element-tokens", "scope": "wave", "element": "fire", "amount": 1 }
+    ]
+  },
+  {
+    "number": 7,
+    "name": "+1 Earth Element Token",
+    "location": "General Store",
+    "category": "Wave Bonus",
+    "cost": { "minionParts": 4, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start each Wave with +1 Earth Element Token.",
+    "grants": [
+      { "kind": "element-tokens", "scope": "wave", "element": "earth", "amount": 1 }
+    ]
+  },
+  {
+    "number": 8,
+    "name": "Donate to the Delving Academy",
+    "location": "Delving Academy",
+    "category": "Delving Academy",
+    "cost": { "minionParts": 0, "bossLvl1": 0, "bossLvl2": 0, "variableMinionParts": true },
+    "effectText": "Donate any number of MINION PARTS to the Delving Academy. Record your donation on your Campaign Sheet.",
+    "grants": [
+      { "kind": "donation", "scope": "quest" }
+    ]
+  },
+  {
+    "number": 9,
+    "name": "+2 MEDIUM Damage",
+    "location": "General Store",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 15, "bossLvl1": 0, "bossLvl2": 1 },
+    "effectText": "Start the Quest with +2 MEDIUM damage.",
+    "grants": [
+      { "kind": "damage-bonus", "scope": "quest", "damageType": "medium", "amount": 2 }
+    ]
+  },
+  {
+    "number": 10,
+    "name": "Block Counterattack Token",
+    "location": "General Store",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 4, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with 1 x Block Counterattack token.",
+    "grants": [
+      { "kind": "consumable-tokens", "scope": "quest", "tokenKind": "prevent-counterattack", "amount": 1 }
+    ]
+  },
+  {
+    "number": 11,
+    "name": "+1 Light & +1 Dark Element Tokens",
+    "location": "General Store",
+    "category": "Wave Bonus",
+    "cost": { "minionParts": 14, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start each Wave with +1 Light & +1 Dark Element Token.",
+    "grants": [
+      { "kind": "element-tokens", "scope": "wave", "element": "radiance", "amount": 1 },
+      { "kind": "element-tokens", "scope": "wave", "element": "void", "amount": 1 }
+    ]
+  },
+  {
+    "number": 12,
+    "name": "Shockwave",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 7, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Shockwave.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Shockwave", "amount": 1 }
+    ]
+  },
+  {
+    "number": 13,
+    "name": "+4 HEAVY Damage",
+    "location": "General Store",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 18, "bossLvl1": 0, "bossLvl2": 1 },
+    "effectText": "Start the Quest with +4 HEAVY damage.",
+    "grants": [
+      { "kind": "damage-bonus", "scope": "quest", "damageType": "heavy", "amount": 4 }
+    ]
+  },
+  {
+    "number": 14,
+    "name": "Mace",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 7, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Mace.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Mace", "amount": 1 }
+    ]
+  },
+  {
+    "number": 15,
+    "name": "Harvester",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 6, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Harvester.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Harvester", "amount": 1 }
+    ]
+  },
+  {
+    "number": 16,
+    "name": "Armor",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 6, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Armor.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Armor", "amount": 1 }
+    ]
+  },
+  {
+    "number": 17,
+    "name": "OS",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 6, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in OS.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "OS", "amount": 1 }
+    ]
+  },
+  {
+    "number": 18,
+    "name": "Sword",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 7, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Sword.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Sword", "amount": 1 }
+    ]
+  },
+  {
+    "number": 19,
+    "name": "Beam",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 7, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Beam.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Beam", "amount": 1 }
+    ]
+  },
+  {
+    "number": 20,
+    "name": "Element Overflow",
+    "location": "General Store",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 10, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Ongoing: Whenever you would gain an element but both element slots of that type are filled, instead you may gain an element of your choice. (Placeholder: this ongoing rule isn't automated yet - apply it at the table.)",
+    "grants": []
+  },
+  {
+    "number": 21,
+    "name": "Gauntlet & Battery",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 20, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Gauntlet and in Battery.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Gauntlet", "amount": 1 },
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Battery", "amount": 1 }
+    ]
+  },
+  {
+    "number": 22,
+    "name": "Hammer & Shield",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 20, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Hammer and in Shield.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Hammer", "amount": 1 },
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Shield", "amount": 1 }
+    ]
+  },
+  {
+    "number": 23,
+    "name": "Shimmering Delversuit",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 16, "bossLvl1": 0, "bossLvl2": 1 },
+    "effectText": "Upgrades current Delversuit (flip board). Only the Mind delver can purchase. Doesn't count toward shop product limit. (The flipped Delversuit board isn't in the digital prototype yet - apply it at the table.)",
+    "grants": [],
+    "onlySuit": "mind"
+  },
+  {
+    "number": 24,
+    "name": "Volcanic Delversuit",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 16, "bossLvl1": 0, "bossLvl2": 1 },
+    "effectText": "Upgrades current Delversuit (flip board). Only the Body delver can purchase. Doesn't count toward shop product limit. (The flipped Delversuit board isn't in the digital prototype yet - apply it at the table.)",
+    "grants": [],
+    "onlySuit": "body"
+  },
+  {
+    "number": 25,
+    "name": "Shockwave & Supercharger",
+    "location": "Equipment Market",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 20, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with Rank 1 or +1 Rank in Shockwave and in Supercharger.",
+    "grants": [
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Shockwave", "amount": 1 },
+      { "kind": "equipment-rank-bump", "scope": "quest", "equipmentType": "Supercharger", "amount": 1 }
+    ]
+  },
+  {
+    "number": 26,
+    "name": "Universal 2x Damage Token",
+    "location": "General Store",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 8, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start the Quest with one Universal 2x Damage consumable token.",
+    "grants": [
+      { "kind": "consumable-tokens", "scope": "quest", "tokenKind": "damage-2x-universal", "amount": 1 }
+    ]
+  },
+  {
+    "number": 32,
+    "name": "Earth's Embrace Shield",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 0, "bossLvl1": 1, "bossLvl2": 0 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Shield Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Shield", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 33,
+    "name": "Living Armor",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 0, "bossLvl1": 1, "bossLvl2": 0 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Armor Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Armor", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 34,
+    "name": "Cyclone Boots",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 0, "bossLvl1": 0, "bossLvl2": 1 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Boots Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Boots", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 35,
+    "name": "Ion Battery",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 0, "bossLvl1": 0, "bossLvl2": 0, "bossLvl3": 1 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Battery Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Battery", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 36,
+    "name": "New Harvester",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 0, "bossLvl1": 0, "bossLvl2": 1 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Harvester Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Harvester", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 37,
+    "name": "Ancient OS",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 0, "bossLvl1": 0, "bossLvl2": 0, "bossLvl3": 1 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current OS Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "OS", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 38,
+    "name": "Overcharger",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 0, "bossLvl1": 0, "bossLvl2": 0, "bossLvl4": 1 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Supercharger Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Supercharger", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 39,
+    "name": "Engulfing Beam",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 10, "bossLvl1": 1, "bossLvl2": 0 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Beam Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Beam", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 40,
+    "name": "Precise Grenade",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 15, "bossLvl1": 0, "bossLvl2": 1 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Shockwave Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Shockwave", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 41,
+    "name": "Shock Gauntlet",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 10, "bossLvl1": 1, "bossLvl2": 0 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Gauntlet Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Gauntlet", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 42,
+    "name": "Fabled Hammer",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 20, "bossLvl1": 0, "bossLvl2": 0, "bossLvl3": 1 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Hammer Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Hammer", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 43,
+    "name": "Sword of Ruin",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 20, "bossLvl1": 0, "bossLvl2": 0, "bossLvl3": 1 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Sword Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Sword", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 44,
+    "name": "War Mace",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 20, "bossLvl1": 0, "bossLvl2": 0, "bossLvl3": 1 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Mace Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Mace", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 45,
+    "name": "Lunar Trident",
+    "location": "Machinist",
+    "category": "Equipment Upgrade",
+    "cost": { "minionParts": 25, "bossLvl1": 0, "bossLvl2": 0, "bossLvl4": 1 },
+    "effectText": "Find the 5 matching Equipment cards in the Equipment Upgrade Deck. These will replace your current Trident Equipment.",
+    "grants": [
+      { "kind": "equipment-upgrade", "scope": "quest", "equipmentType": "Trident", "bonusRanks": 2 }
+    ]
+  },
+  {
+    "number": 46,
+    "name": "Universal 2x Damage Token (Creature Archives)",
+    "location": "Library",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 0, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start Quests with one Universal 2x Damage consumable token.",
+    "grants": [
+      { "kind": "consumable-tokens", "scope": "quest", "tokenKind": "damage-2x-universal", "amount": 1 }
+    ]
+  },
+  {
+    "number": 47,
+    "name": "Universal 2x Damage Token (Creature Archives)",
+    "location": "Library",
+    "category": "Quest Bonus",
+    "cost": { "minionParts": 0, "bossLvl1": 0, "bossLvl2": 0 },
+    "effectText": "Start Quests with one Universal 2x Damage consumable token.",
+    "grants": [
+      { "kind": "consumable-tokens", "scope": "quest", "tokenKind": "damage-2x-universal", "amount": 1 }
+    ]
+  }
+]

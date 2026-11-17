@@ -1,0 +1,441 @@
+{
+  "id": "ch2",
+  "name": "Town Visit",
+  "startPageId": "page22-entry",
+  "pages": {
+    "page22-entry": {
+      "title": "CHAPTER 2 - TOWN VISIT",
+      "subtitle": "Nurse Elayna",
+      "image": "/story/ch2/nurse-elayna.png",
+      "text": "Remember to record the creature parts you earned on your Campaign Sheet. Then read the entry that matches what just happened in the Tide.",
+      "choices": [
+        { "label": "Both delvers survived", "decisionKey": "ch2.entry.both-survived", "next": "page22-both-survived", "requireQuestDeaths": "none" },
+        { "label": "One or both delvers died", "decisionKey": "ch2.entry.died", "next": "page22-died", "requireQuestDeaths": "any" }
+      ]
+    },
+    "page22-both-survived": {
+      "title": "CHAPTER 2 - TOWN VISIT",
+      "subtitle": "Nurse Elayna's Triage",
+      "image": "/story/ch2/nurse-elayna.png",
+      "text": "As you step up onto the docks, you nearly stumble from fatigue but Nurse Elayna catches your arm.\n\n\"Thank Gaia you're alive!\" Elayna exclaims, fumbling with her first aid kit. \"I'm here to patch you up.\" You wonder where Dr Ira is, but seeing the strained look on Elayna's face, you decide not to mention it. As if reading your mind, she says \"sorry, you'll have to make do with me this time. Now, stay still. Oh no... I did it again!\"\n\nWhile enduring Elayna's subpar treatment, you notice smoke rising behind a collection of rickety shacks.\n\nSuddenly, a cry rings out in the early morning air. A startled Nurse Elayna drops her supplies, and you look into the distance. The Delver's Watchtower is completely engulfed in flames. Without another thought, you rush toward the fire as screams fill the air.",
+      "onEnter": [
+        { "kind": "record-decision", "key": "ch2.entry.both-survived" }
+      ],
+      "next": "page23-new-recruits"
+    },
+    "page22-died": {
+      "title": "CHAPTER 2 - TOWN VISIT",
+      "subtitle": "A Comm from Master Bram",
+      "image": "/story/ch2/master-bram.png",
+      "text": "It's early morning when you are awakened by a comm from Master Bram.\n\n\"Delvers, I have some unfortunate news - less than an hour ago, some of your colleagues perished in the Tide. Their delversuits and mantle are now yours to bear - you'll need to clean and collect them from the docks ASAP. Witness the robot has been reassigned to you - he has a surveillance device in his possession that you're expected to deliver to Father Flores later today. That's all for now - Bram out.\"\n\nWhen you arrive at the docks to start cleaning your new suits, you notice smoke rising behind a collection of rickety shacks. The Delver's Watchtower is completely engulfed in flames. Without another thought, you rush toward the fire as screams fill the air.",
+      "footnote": "Each fallen delver's blood-soaked Delversuit grants +1 Equipment Rank of your choice on its Suit Condition sheet.",
+      "onEnter": [
+        { "kind": "record-decision", "key": "ch2.entry.died" }
+      ],
+      "choices": [
+        { "label": "Only the Mind delver died", "decisionKey": "ch2.entry.died.mind", "next": "page22-died-mind", "requireQuestDeaths": "mind-only" },
+        { "label": "Only the Body delver died", "decisionKey": "ch2.entry.died.body", "next": "page22-died-body", "requireQuestDeaths": "body-only" },
+        { "label": "Both delvers died", "decisionKey": "ch2.entry.died.both", "next": "page22-died-both", "requireQuestDeaths": "both" }
+      ]
+    },
+    "page22-died-mind": {
+      "title": "CHAPTER 2 - TOWN VISIT",
+      "subtitle": "Mind Delver's Blood-Soaked Suit",
+      "image": "/story/ch2/master-bram.png",
+      "text": "You carry your fallen Mind delver's suit back to the docks. Blood seeps into the crevices of the Delversuit, filling it with new power.",
+      "footnote": "Add Rank 1 of any one Equipment to an Equipment Slot of your choice on the Mind Delver's Suit Condition sheet.",
+      "onEnter": [
+        {
+          "kind": "enqueue-suit-condition-rank-picks",
+          "source": "ch2.entry.died.mind",
+          "picks": [
+            { "delta": 1, "pinnedHeroId": "hero-01" }
+          ]
+        },
+        { "kind": "record-decision", "key": "ch2.entry.died.mind.suit-condition-pick-enqueued" }
+      ],
+      "next": "page23-new-recruits"
+    },
+    "page22-died-body": {
+      "title": "CHAPTER 2 - TOWN VISIT",
+      "subtitle": "Body Delver's Blood-Soaked Suit",
+      "image": "/story/ch2/master-bram.png",
+      "text": "You carry your fallen Body delver's suit back to the docks. Blood seeps into the crevices of the Delversuit, filling it with new power.",
+      "footnote": "Add Rank 1 of any one Equipment to an Equipment Slot of your choice on the Body Delver's Suit Condition sheet.",
+      "onEnter": [
+        {
+          "kind": "enqueue-suit-condition-rank-picks",
+          "source": "ch2.entry.died.body",
+          "picks": [
+            { "delta": 1, "pinnedHeroId": "hero-02" }
+          ]
+        },
+        { "kind": "record-decision", "key": "ch2.entry.died.body.suit-condition-pick-enqueued" }
+      ],
+      "next": "page23-new-recruits"
+    },
+    "page22-died-both": {
+      "title": "CHAPTER 2 - TOWN VISIT",
+      "subtitle": "Both Delversuits Run Red",
+      "image": "/story/ch2/master-bram.png",
+      "text": "You carry both fallen delvers' suits back to the docks. Blood seeps into the crevices of each Delversuit, filling them with new power.",
+      "footnote": "Add Rank 1 of any one Equipment to an Equipment Slot of your choice on EACH delver's Suit Condition sheet.",
+      "onEnter": [
+        {
+          "kind": "enqueue-suit-condition-rank-picks",
+          "source": "ch2.entry.died.both",
+          "picks": [
+            { "delta": 1, "pinnedHeroId": "hero-01" },
+            { "delta": 1, "pinnedHeroId": "hero-02" }
+          ]
+        },
+        { "kind": "record-decision", "key": "ch2.entry.died.both.suit-condition-picks-enqueued" }
+      ],
+      "next": "page23-new-recruits"
+    },
+    "page23-new-recruits": {
+      "title": "CHAPTER 2 - TOWN VISIT",
+      "subtitle": "Meet the New Recruits",
+      "image": "/story/ch2/new-recruits.png",
+      "text": "As you hurry towards the Delver's Watchtower, you pass a couple of fresh recruits on their way to breakfast.",
+      "onEnter": [
+        { "kind": "unlock-hero-cards", "cardNumbers": [5, 6] },
+        { "kind": "record-decision", "key": "ch2.new-recruits.heroes-5-6-unlocked" }
+      ],
+      "next": "page24-burned-watchtower"
+    },
+    "page24-burned-watchtower": {
+      "title": "CHAPTER 2 - TOWN VISIT",
+      "subtitle": "The Burned Watchtower",
+      "image": "/story/ch2/bram-watchtower.png",
+      "text": "As you approach the crowd that has grown around the watchtower, intense flames burst out and the old structure begins to crumble into itself. It is clear the fire had started burning inside the tower long before the alarms were set off. The crowd scatters and watches solemnly as the tower comes down, pieces flying off the cliff and disappearing into the mist. You quickly join the townsfolk in putting out the fire. Hours later, you spot Master Bram surveying the damage and join him.\n\n\"Thank Gaia that Dr Ira was awake to sound the alarm. This could have been so much worse. Only two people are unaccounted for - the Brass siblings. Vera was on guard duty, and we assume her brother Elias was up late doing research. I have to believe they're still alive. Here is a photo of them. If you manage to find anything - any clues as to what may have caused this, I'd appreciate the help.\" He hands you the photo.",
+      "footnote": "Add Key Item #6 to your Key Items.",
+      "onEnter": [
+        { "kind": "gain-key-item", "number": 6, "name": "Photo of the Brass Siblings" },
+        { "kind": "record-decision", "key": "ch2.watchtower.intro" }
+      ],
+      "next": "page24b-fathers-blessing"
+    },
+    "page24b-fathers-blessing": {
+      "title": "CHAPTER 2 - TOWN VISIT",
+      "subtitle": "Father Flores's Blessing",
+      "image": "/story/ch2/bram-watchtower.png",
+      "text": "You begin to survey the area. Nearby, you watch as Dr Ira and her attendants set up triage for the injured. Not far off, you notice Father Flores surrounded by his followers, heads bowed in prayer. Concerned townsfolk approach him to receive his blessings. He attends each one before approaching you with a pained smile.\n\n\"What a grim way to start your journey, delvers. Yet you must remain strong in moments like this. The people of Bird's Nest depend on the delvers in more ways than you can imagine.\"\n\nYou tell Father Flores that you've been tasked with finding any clues on what caused the fire. At this, he frowns slightly, but quickly replaces it with a kind smile. \"But of course, my child. I fear the fire may have consumed everything, but I have full faith that if there's anything to be found, you will do so.\"\n\nYou begin your search of the watchtower ruins, still warm from the heat of the fire.",
+      "next": "page25-watchtower-investigate"
+    },
+    "page25-watchtower-investigate": {
+      "title": "THE BURNED WATCHTOWER",
+      "subtitle": "Investigate the Ruins",
+      "image": "/story/ch2/watchtower-hill.png",
+      "text": "The smouldering rubble of the watchtower stretches out before you. Choose where to begin.",
+      "choices": [
+        { "label": "Investigate the rubble strewn about the perimeter", "decisionKey": "ch2.watchtower.A.perimeter", "hint": "Grants Wisdom", "next": "page26-watchtower-A" },
+        { "label": "Identify the acrid smell at the base of the tower",  "decisionKey": "ch2.watchtower.B.base",      "hint": "Grants Knowledge", "next": "page26-watchtower-B" },
+        { "label": "Talk to Dr Ira",                                     "decisionKey": "ch2.watchtower.C.dr-ira",    "hint": "Grants Knowledge", "next": "page26-watchtower-C" }
+      ]
+    },
+    "page26-watchtower-A": {
+      "title": "THE BURNED WATCHTOWER",
+      "subtitle": "Perimeter Sweep",
+      "image": "/story/ch2/watchtower-hill.png",
+      "text": "The collapsing tower blew rock and material in all directions. A scan of the outer perimeter reveals a delversuit maintenance kit, which you pocket.",
+      "footnote": "Shuffle 2 Ultra Level Cards into the Level Deck.",
+      "onEnter": [
+        { "kind": "grant-ultra-level-cards", "amount": 2 },
+        { "kind": "record-decision", "key": "ch2.watchtower.A.perimeter.ultra-cards" }
+      ],
+      "next": "page26-watchtower-resolution"
+    },
+    "page26-watchtower-B": {
+      "title": "THE BURNED WATCHTOWER",
+      "subtitle": "The Acrid Smell",
+      "image": "/story/ch2/watchtower-hill.png",
+      "text": "Using a shovel, you dig through the hot rubble until you find what looks to be a mostly intact human femur. There's something off about it...",
+      "footnote": "Add Key Item #4 to your Key Items.",
+      "onEnter": [
+        { "kind": "gain-key-item", "number": 4, "name": "Charred Femur" },
+        { "kind": "record-decision", "key": "ch2.watchtower.B.base.key-item-4" }
+      ],
+      "next": "page26-watchtower-resolution"
+    },
+    "page26-watchtower-C": {
+      "title": "THE BURNED WATCHTOWER",
+      "subtitle": "Speaking with Dr Ira",
+      "image": "/story/ch2/watchtower-hill.png",
+      "text": "Dr Ira is applying a bandage to a burned arm when you approach her. Her hair is disheveled and her clothing is ripped in various places. When she sees you, she runs a hand through her matted hair as if trying to make herself more presentable.\n\nYou thank her for being the first to sound the alarm and ask her why she was awake at such a late hour.\n\n\"I... I normally wouldn't have been,\" she replies. \"I had made some late night comms, and I decided to take a walk. I heard a scream near the tower, and two figures were running towards the shore. I--\" she trails off, perhaps still shaken up. She takes a deep breath and continues. \"I wanted to follow them, but then I saw the smoke billowing out and decided to raise the alarm instead.\"",
+      "footnote": "Add Key Item #5 to your Key Items.",
+      "onEnter": [
+        { "kind": "gain-key-item", "number": 5, "name": "Dr Ira's Account" },
+        { "kind": "record-decision", "key": "ch2.watchtower.C.dr-ira.key-item-5" }
+      ],
+      "next": "page26-watchtower-resolution"
+    },
+    "page26-watchtower-resolution": {
+      "title": "THE BURNED WATCHTOWER",
+      "subtitle": "Tour the Town",
+      "image": "/story/ch2/town-aerial.png",
+      "text": "Exhausted, you take the rest of the day off to recover. The following morning, you decide to take a tour around town.\n\nCollectively gain 2 Story tokens - these represent the total number of locations you can visit this Chapter. The book will tell you when to spend them.",
+      "onEnter": [
+        { "kind": "grant-story-tokens", "amount": 2 },
+        { "kind": "record-decision", "key": "ch2.watchtower.resolution.story-tokens-granted" }
+      ],
+      "next": "page26-location-hub"
+    },
+    "page26-location-hub": {
+      "title": "TOUR THE TOWN",
+      "subtitle": "Spend a Story Token",
+      "image": "/story/ch2/bird-nest.png",
+      "text": "Choose a location to visit. Each visit spends 1 Story Token. Once both are spent, head to the Town Center.",
+      "choices": [
+        { "label": "Visit the Academy",   "decisionKey": "ch2.hub.A.academy",   "hint": "Grants Knowledge or Wisdom", "next": "page27-academy",  "hideIfDecisionMade": "ch2.location.academy.visited",  "requireStoryTokens": "positive" },
+        { "label": "Check out the Library", "decisionKey": "ch2.hub.B.library", "hint": "Affects Favor and more",    "next": "page29-library",   "hideIfDecisionMade": "ch2.location.library.visited",  "requireStoryTokens": "positive" },
+        { "label": "Head to the Machinist", "decisionKey": "ch2.hub.C.machinist", "hint": "Grants Equipment",        "next": "page31-machinist", "hideIfDecisionMade": "ch2.location.machinist.visited", "requireStoryTokens": "positive" },
+        { "label": "Continue to the Town Center", "decisionKey": "ch2.hub.D.town-center", "next": "page33-town-center", "requireStoryTokens": "zero" }
+      ]
+    },
+
+    "page27-academy": {
+      "title": "ACADEMY CAMPUS",
+      "subtitle": "Headmistress Arlen",
+      "image": "/story/ch2/academy-arlen-xavier.png",
+      "text": "The Delving Academy stands resolutely against the shoreline. As you enter the stone hall, the bustle and chatter of students greets you. As you review the bulletin board displaying today's lectures, a voice calls out to you.\n\n\"Delvers, this is a surprise! Surely you don't miss your academy days that much. What brings you to our hallowed grounds?\" Headmistress Arlen's arms are crossed but there's a slight smile on her lips.\n\nYou explain that you're searching for an explanation for the recent increase in tidal creature aggression.\n\n\"Hm, I see. Yes, you may be able to glean some knowledge from these old books and the minds of our instructors.\"\n\nShe leans in close and whispers \"Bram told me about the downed surveillance device. The robot is carrying it for you, right? I could help you review the footage directly, if you like.\"\n\nYou explain that Father Flores is expecting the device but she waves that away. \"What he doesn't know can't hurt him. Besides, as a delver, you ought to have access to unfiltered information if you mean to succeed in your investigations.\"",
+      "onEnter": [
+        { "kind": "spend-story-token" },
+        { "kind": "record-decision", "key": "ch2.location.academy.visited" }
+      ],
+      "choices": [
+        { "label": "Hand over the surveillance device to Arlen",                 "decisionKey": "ch2.academy.A.handover", "hint": "Grants Knowledge", "next": "page28-academy-A" },
+        { "label": "Politely decline and attend Xavier's lecture \"The Evolving Tide\"", "decisionKey": "ch2.academy.B.xavier",   "hint": "Grants Wisdom; bonus if you own Key Item #2", "next": "page28-academy-B" }
+      ]
+    },
+    "page28-academy-A": {
+      "title": "ACADEMY CAMPUS",
+      "subtitle": "Headmistress Arlen Reviews the Footage",
+      "image": "/story/ch2/academy-arlen.png",
+      "text": "You hand over the surveillance device to Headmistress Arlen and she motions for you to follow her to the research wing. Without a word, she delicately attempts to extract and copy the footage, her slender fingers clacking away at the keyboard.\n\n\"That should do it! Come, delvers, and see the fruits of your labor.\"\n\nThe footage shows Vera Brass's colorful delversuit stumbling through the mist in a state of panic. A group of small creatures resembling koalas are in hot pursuit. The delver trips in their haste to escape before leaving the frame.\n\n\"Strange, tidehuggers are quite docile. You take one out, and the rest scatter. Vera is our best delver... she would know that. Regardless, this is certainly pertinent to your investigation.\"\n\nHeadmistress Arlen returns the surveillance device.",
+      "footnote": "Add Quest #05 \"The Rogue Delver\" to your Open Quests. Increase Headmistress Arlen's opinion - gain the Arlen Ally opinion card.",
+      "onEnter": [
+        { "kind": "reveal-quest", "number": 5, "name": "The Rogue Delver" },
+        { "kind": "shift-favour", "characterId": "arlen", "characterName": "Headmistress Arlen", "delta": 1 },
+        { "kind": "record-decision", "key": "ch2.academy.A.handover.quest-5-revealed" },
+        { "kind": "record-decision", "key": "ch2.academy.A.handover.arlen-ally" }
+      ],
+      "next": "page26-location-hub"
+    },
+    "page28-academy-B": {
+      "title": "ACADEMY CAMPUS",
+      "subtitle": "Xavier's Lecture",
+      "image": "/story/ch2/academy-xavier.png",
+      "text": "Arlen looks disappointed. \"Hm. Fine, you try to have a little fun around here...\"\n\nShe walks away, muttering. Xavier, the young instructor, is in the middle of his lecture when you enter the hall.\n\n\"As future delvers, you are sure to encounter flora and fauna that have been transformed by the Tide. The creatures down there have all adapted, and many in miraculous ways. Fauna that were once on the brink of extinction are flourishing. Nature, as always, has carved a path, as a river carves the earth. It begs the question: if the lamb and the lion have adapted, why not humans? What is the missing piece?\"\n\nA murmur ripples through the lecture hall. You contemplate this question and listen intently to the rest of Xavier's lesson.\n\nIf you collected Key Item #2 (the Abandoned Syringe), you also pull Xavier aside after the lecture: \"You're right, that was me. My assistant and I have been studying a troubling disease spreading through the Tide for months. I call it the Tidebloom - I've been trying to alert the town, but it seems no one is concerned. I think I've found the source of the corruption, but the infected creatures there are dangerous - will you help me collect a sample?\"",
+      "footnote": "Add a Friendly Spawn Card to the Spawn Deck. If you own Key Item #2, also reveal Quest #03 \"Xavier's Request\".",
+      "onEnter": [
+        { "kind": "grant-friendly-spawn-card" },
+        { "kind": "record-decision", "key": "ch2.academy.B.xavier.friendly-spawn-card" },
+        { "kind": "reveal-quest", "number": 3, "name": "Xavier's Request" },
+        { "kind": "record-decision", "key": "ch2.academy.B.xavier.quest-3-revealed-if-key-item-2" }
+      ],
+      "next": "page26-location-hub"
+    },
+
+    "page29-library": {
+      "title": "THE LIBRARY",
+      "subtitle": "Rodrigo and Dr Ira",
+      "image": "/story/ch2/library-duo.png",
+      "text": "As you enter, you find Dr Ira and the librarian Rodrigo in conversation. Not wanting to interrupt, you hang back. \"And the painkillers - are they helping your father?\" Dr Ira asks. \"It's helping him manage the pain\" he responds. \"Thank Gaia you were there to treat him.\"\n\nDr Ira grimaces and shakes her head. \"He always was one to throw caution to the wind.\"\n\n\"That's my pops - always first on the scene. As soon as he heard the sirens, he was out the door. Oh - before I forget, here are the books you asked for.\" It's then he notices you. \"Welcome, delvers - I'll be right with you.\"\n\nYou catch a glimpse of the titles: Hidden Helix: The Secrets in our DNA and Ancient Eugenics. Dr Ira observes your glance. \"I heard your search through the rubble proved fruitful. Any lead on the cause of the fire, or the whereabouts of the Brass siblings?\" When you shake your head in response, Dr Ira sighs. \"Occum's razor would suggest it was an accident caused by the Brass siblings, who then fled the scene.\"\n\nRodrigo adds, his voice catching. \"I heard there were bones found in the rubble. I hope Elias made it out ok.\"\n\nDr Ira puts a hand on his shoulder. \"A plan beats hope any day. Let's hope Elias had one.\" She bids goodbye.\n\nRodrigo turns to you and asks \"So, how can I help you?\"",
+      "onEnter": [
+        { "kind": "spend-story-token" },
+        { "kind": "record-decision", "key": "ch2.location.library.visited" }
+      ],
+      "choices": [
+        { "label": "Ask about Elias Brass",            "decisionKey": "ch2.library.A.elias",   "hint": "Grants Knowledge", "next": "page30-library-A" },
+        { "label": "Ask about the books Dr Ira borrowed", "decisionKey": "ch2.library.B.books", "hint": "Affects Favor",  "next": "page30-library-B" },
+        { "label": "Ask about Rodrigo's father",       "decisionKey": "ch2.library.C.father",  "hint": "Grants Knowledge", "next": "page30-library-C" }
+      ]
+    },
+    "page30-library-A": {
+      "title": "THE LIBRARY",
+      "subtitle": "About Elias Brass",
+      "image": "/story/ch2/library-rodrigo.png",
+      "text": "You ask Rodrigo if he knew Elias Brass.\n\n\"Course I do, he's one of my best friends. Spends most of his time holed up in the watchtower, searching through the Tide with telescopes and tinkering with his radios. Lately, he's been especially obsessed with this delver named Margaret Woo that disappeared 20 years ago. He claims to have received a distress signal from her - he told Woo's sister Elayna about it... it made her pretty angry.\"",
+      "footnote": "Add Key Item #22 to your Key Items.",
+      "onEnter": [
+        { "kind": "gain-key-item", "number": 22, "name": "Elias's Distress Signal Notes" },
+        { "kind": "record-decision", "key": "ch2.library.A.elias.key-item-22" }
+      ],
+      "next": "page26-location-hub"
+    },
+    "page30-library-B": {
+      "title": "THE LIBRARY",
+      "subtitle": "Dr Ira's Books",
+      "image": "/story/ch2/library-open-book.png",
+      "text": "You ask Rodrigo about the books he gave to Dr Ira. \"It's all I could find on DNA with such short notice. Her interests are geared towards experimental research - mutation, genetic engineering, that kind of thing. Oh, shoot, I forgot to give her this one! Would you do me a big favor and deliver it to her? I really shouldn't leave my post.\" He thanks you profusely and hands over Nature's Mutations and Where to Find Them.\n\nYou catch up to Dr Ira and hand over the book. \"Thank you, delvers - I've been searching all over for this title. Knowledge is power, after all.\"",
+      "footnote": "Increase Rodrigo's opinion - gain the Rodrigo Ally opinion card.",
+      "onEnter": [
+        { "kind": "shift-favour", "characterId": "rodrigo", "characterName": "Rodrigo", "delta": 1 },
+        { "kind": "record-decision", "key": "ch2.library.B.books.rodrigo-ally" }
+      ],
+      "next": "page26-location-hub"
+    },
+    "page30-library-C": {
+      "title": "THE LIBRARY",
+      "subtitle": "Rodrigo's Father",
+      "image": "/story/ch2/library-rodrigo.png",
+      "text": "You ask Rodrigo how his dad is doing. \"He was injured pretty badly by the watchtower when it collapsed - Dr Ira had to amputate an arm and leg. Even if he pulls through, he won't be able to return to delving after this.\" He's quiet for a while.\n\n\"My pops is pretty amazing - half the town's best artifacts were found by him, you know. Actually, maybe you should take this since he won't need it anymore - it's his map to Second Nest. According to him, the ruin is still loaded with loot.\"",
+      "footnote": "Add Quest #06 \"The Forgotten Vault\" to your Open Quests.",
+      "onEnter": [
+        { "kind": "reveal-quest", "number": 6, "name": "The Forgotten Vault" },
+        { "kind": "record-decision", "key": "ch2.library.C.father.quest-6-revealed" }
+      ],
+      "next": "page26-location-hub"
+    },
+
+    "page31-machinist": {
+      "title": "MACHINIST",
+      "subtitle": "Samantha Rodriguez",
+      "image": "/story/ch2/machinist-samantha-witness.png",
+      "text": "As you enter the ramshackle workshop, you hear an unbroken string of expletives but can't see who is producing them. The plaque on the desk reads Samantha Rodriguez, Machinist. You call out \"Samantha?\" and a greasy woman pokes her head out from under a large whirring machine.\n\n\"Hey\" she says with barely a glance. She seems to have her hands full, brow furrowed as she works on the large machine that is now steaming ominously. \"Bram rang - I'm trying to put something together for your delversuits, but this DAMN RUST BUCKET won't turn off!\" She gives the machine a solid kick and it stops vibrating. \"Huh. Didn't think that would work.\"",
+      "onEnter": [
+        { "kind": "spend-story-token" },
+        { "kind": "record-decision", "key": "ch2.location.machinist.visited" }
+      ],
+      "next": "page31b-machinist-deal"
+    },
+    "page31b-machinist-deal": {
+      "title": "MACHINIST",
+      "subtitle": "Samantha's Deal",
+      "image": "/story/ch2/machinist-samantha-witness.png",
+      "text": "Her toned arms crossed, Samantha's eyes dart past you and zone in on Witness as he glides around the workshop. \"You brought Witness... I've seen that robot around Bird's Nest for as long as I can remember. Always around to help the delvers. He's extraordinarily lifelike, don't you think?\" She looks at you with a glint in her brown eyes.\n\n\"Let's make a deal - I'll help improve your delversuit, if you help me uncover the engineering that animates that amazing machine.\" Beside you, Witness lets out a concerned beep, looking from you to Samantha. \"Don't worry, little guy, I won't hurt you much.\" Not one to miss out on better gear, you accept her deal.\n\n\"Right on!\" she says triumphantly. She leans on one of the workshop tables and asks, \"So... how can we make your delversuit better?\"",
+      "choices": [
+        { "label": "I want to smash things!",  "decisionKey": "ch2.machinist.A.smash",   "hint": "Grants Equipment", "next": "page32-machinist-A" },
+        { "label": "Give me something with finesse",  "decisionKey": "ch2.machinist.B.finesse", "hint": "Grants Equipment", "next": "page32-machinist-B" },
+        { "label": "I like not dying",         "decisionKey": "ch2.machinist.C.shield",  "hint": "Grants Equipment", "next": "page32-machinist-C" }
+      ]
+    },
+    "page32-machinist-A": {
+      "title": "MACHINIST",
+      "subtitle": "Shock Gauntlets",
+      "image": "/story/ch2/machinist-samantha-witness.png",
+      "text": "Samantha crafts a remarkable pair of Gauntlets.",
+      "footnote": "Add Shop Product #41 \"Shock Gauntlet\" to your Purchasable Products.",
+      "onEnter": [
+        { "kind": "add-shop-products", "products": [41], "questLabel": "Samantha's Workshop" },
+        { "kind": "record-decision", "key": "ch2.machinist.A.smash.shop-41-added" }
+      ],
+      "next": "page32-machinist-A-witness"
+    },
+    "page32-machinist-A-witness": {
+      "title": "MACHINIST",
+      "subtitle": "Witness Records a Memory",
+      "image": "/story/ch2/machinist-witness-projecting.png",
+      "text": "Witness's eyes blaze with light, projecting an image on the wall. \"Whoa, what the heck is that?\" Samantha exclaims. Thinking quickly, you snap a photo.",
+      "onEnter": [
+        { "kind": "convert-memory-chips-to-cards" },
+        { "kind": "record-decision", "key": "ch2.machinist.A.smash.witness-memory" }
+      ],
+      "next": "page26-location-hub"
+    },
+    "page32-machinist-B": {
+      "title": "MACHINIST",
+      "subtitle": "Cyclone Boots",
+      "image": "/story/ch2/machinist-samantha-witness.png",
+      "text": "Samantha crafts an elegant set of Boots.",
+      "footnote": "Add Shop Product #34 \"Cyclone Boots\" to your Purchasable Products.",
+      "onEnter": [
+        { "kind": "add-shop-products", "products": [34], "questLabel": "Samantha's Workshop" },
+        { "kind": "record-decision", "key": "ch2.machinist.B.finesse.shop-34-added" }
+      ],
+      "next": "page32-machinist-B-witness"
+    },
+    "page32-machinist-B-witness": {
+      "title": "MACHINIST",
+      "subtitle": "Witness Records a Memory",
+      "image": "/story/ch2/machinist-witness-projecting.png",
+      "text": "Witness's eyes blaze with light, projecting an image on the wall. \"Whoa, what the heck is that?\" Samantha exclaims. Thinking quickly, you snap a photo.",
+      "onEnter": [
+        { "kind": "convert-memory-chips-to-cards" },
+        { "kind": "record-decision", "key": "ch2.machinist.B.finesse.witness-memory" }
+      ],
+      "next": "page26-location-hub"
+    },
+    "page32-machinist-C": {
+      "title": "MACHINIST",
+      "subtitle": "Earth's Embrace Shield",
+      "image": "/story/ch2/machinist-samantha-witness.png",
+      "text": "Samantha crafts an ingenious Shield.",
+      "footnote": "Add Shop Product #32 \"Earth's Embrace Shield\" to your Purchasable Products.",
+      "onEnter": [
+        { "kind": "add-shop-products", "products": [32], "questLabel": "Samantha's Workshop" },
+        { "kind": "record-decision", "key": "ch2.machinist.C.shield.shop-32-added" }
+      ],
+      "next": "page32-machinist-C-witness"
+    },
+    "page32-machinist-C-witness": {
+      "title": "MACHINIST",
+      "subtitle": "Witness Records a Memory",
+      "image": "/story/ch2/machinist-witness-projecting.png",
+      "text": "Witness's eyes blaze with light, projecting an image on the wall. \"Whoa, what the heck is that?\" Samantha exclaims. Thinking quickly, you snap a photo.",
+      "onEnter": [
+        { "kind": "convert-memory-chips-to-cards" },
+        { "kind": "record-decision", "key": "ch2.machinist.C.shield.witness-memory" }
+      ],
+      "next": "page26-location-hub"
+    },
+
+    "page33-town-center": {
+      "title": "TOWN CENTER",
+      "subtitle": "Headmistress Arlen's Fundraising Request",
+      "image": "/story/ch2/town-center-arlen.png",
+      "text": "\"Delvers, we have two promising students graduating, but due to a funding shortfall, we can't afford to get them the training and equipment they need to reach their full potential. Can I count on you to give the next generation of delvers the leg up they deserve, like Vera Brass once did for you?\"\n\nBefore deciding how many minion parts to donate to the Delving Academy, continue to the Visit the Shops section to consider the other ways you can spend your minion parts. The donation product (#8) is your persistent Delving Academy donation option - the more you donate, the better the equipment Arlen can buy for her new recruits.",
+      "onEnter": [
+        { "kind": "grant-minion-parts-floor", "floor": 10, "to": "all-delvers" },
+        { "kind": "add-shop-products", "products": [8, 9, 10, 11, 12] },
+        { "kind": "add-shop-products-if-key-items-min", "minKeyItems": 2, "products": [13] },
+        { "kind": "add-shop-products-if-key-items-min", "minKeyItems": 4, "products": [14] },
+        { "kind": "record-decision", "key": "ch2.town-center.shops-opened" }
+      ],
+      "next": "page33-shop"
+    },
+    "page33-shop": {
+      "title": "TOWN CENTER",
+      "subtitle": "Visit the Shops",
+      "image": "/story/ch2/arlen-donation-tiers.png",
+      "text": "When everyone is done shopping, click Continue.",
+      "footnote": "Tip: the resolution rewards more when you give more. See the Delving Academy donation reaction table above.",
+      "kind": "shop",
+      "next": "page34-town-center-resolution"
+    },
+    "page34-town-center-resolution": {
+      "title": "TOWN CENTER",
+      "subtitle": "Fundraising Results",
+      "image": "/story/ch2/town-center-arlen.png",
+      "text": "__arlen-donation-reaction__",
+      "onEnter": [
+        { "kind": "resolve-academy-donation" },
+        { "kind": "record-decision", "key": "ch2.town-center.resolution.suit-condition-bonus-recorded" }
+      ],
+      "next": "page35-father-flores"
+    },
+
+    "page35-father-flores": {
+      "title": "FATHER FLORES'S OFFICE",
+      "subtitle": "Handing Over the Surveillance Device",
+      "image": "/story/ch2/flores.png",
+      "text": "Before finishing your work for the day, you stop by Father Flores's office to drop off the surveillance device.\n\n\"Gaia's blessing upon you. What with all of the chaos from the fire, I confess that I'd forgotten about it completely.\"",
+      "next": "page35b-master-bram",
+      "onEnter": [
+        { "kind": "discard-key-item", "number": 1 },
+        { "kind": "record-decision", "key": "ch2.father-flores.surveillance-handed-over" }
+      ]
+    },
+    "page35b-master-bram": {
+      "title": "MASTER BRAM",
+      "image": "/story/ch2/master-bram.png",
+      "text": "A day later, you're resting at home when your comms device lights up. It's Master Bram.\n\n\"Delvers, I regret to inform you that Father Flores did not find any new relevant information from the surveillance device. However, one of our other delvers uncovered tracks near the tower leading into the Tide. They appear to match Vera Brass's delversuit.\"",
+      "kind": "end-town-visit",
+      "onEnter": [
+        { "kind": "reveal-quest-or-grant-chip", "number": 5, "name": "The Rogue Delver", "chipFallback": 1 },
+        { "kind": "record-decision", "key": "ch2.completed" }
+      ]
+    }
+  }
+}

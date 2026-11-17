@@ -1,0 +1,2031 @@
+{
+  "id": "ch4",
+  "name": "The Passing of the Torch",
+  "startPageId": "ch4-story-so-far",
+  "pages": {
+    "ch4-story-so-far": {
+      "title": "CHAPTER 4 - THE PASSING OF THE TORCH",
+      "subtitle": "The Story So Far",
+      "text": "After returning from a Quest, you partook in the town's annual Memorial Festival. In the midst of the festivities, the power suddenly went out. You discovered the cause of the blackout was a damaged generator, and the culprit a giant creature of unknown origins. Dr Ira believes the attack was caused by creatures known as the Tidekin, an assertion that drew mixed responses.\n\nThe following week, you explored the town, progressing some of your ongoing investigations. Xavier, meanwhile, has posted a standing request for any delver willing to help with his Tidebloom research.",
+      "image": "/story/dr-ira.png",
+      "footnote": "Add Quest #03 to your Open Quests. If already owned or completed, instead gain a Memory Chip token.",
+      "onEnter": [
+        {
+          "kind": "reveal-quest-or-grant-chip",
+          "number": 3,
+          "name": "Xavier's Request",
+          "chipFallback": 1
+        }
+      ],
+      "next": "ch4-quest-report-intro"
+    },
+    "ch4-quest-report-intro": {
+      "title": "CHAPTER 4 - THE PASSING OF THE TORCH",
+      "subtitle": "Into the Tide",
+      "text": "It is once again time for you to venture into the Tide. You can complete up to 2 Quests from your Open Quests before continuing the story in the Chapter 4 Town Visit.\n\nIf you fail a Quest, you can spend your creature parts at the shops and try again, or continue onto the Town Visit. Uncompleted Quests remain in your Open Quests.\n\nChoose the Quest you will attempt first. You must attempt at least one Quest before the Town Visit.",
+      "footnote": "Collectively gain 2 Story tokens - one per Quest you can complete before this Town Visit.",
+      "onEnter": [
+        {
+          "kind": "grant-story-tokens",
+          "amount": 2
+        }
+      ],
+      "choices": [
+        {
+          "label": "Play Quest #03 - Xavier's Request",
+          "decisionKey": "ch4.report.q3.play",
+          "next": "ch4-q3-play",
+          "image": "/quests/quest-03.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 3,
+          "hideIfDecisionMade": "quest.3.completed"
+        },
+        {
+          "label": "Play Quest #04 - A Hand Outstretched",
+          "decisionKey": "ch4.report.q4.play",
+          "next": "ch4-q4-play",
+          "image": "/quests/quest-04.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 4,
+          "hideIfDecisionMade": "quest.4.completed"
+        },
+        {
+          "label": "Play Quest #05 - The Rogue Delver",
+          "decisionKey": "ch4.report.q5.play",
+          "next": "ch4-q5-play",
+          "image": "/quests/quest-05.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 5,
+          "hideIfDecisionMade": "quest.5.completed"
+        },
+        {
+          "label": "Play Quest #06 - The Forgotten Vault",
+          "decisionKey": "ch4.report.q6.play",
+          "next": "ch4-q6-play",
+          "image": "/quests/quest-06.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 6,
+          "hideIfDecisionMade": "quest.6.completed"
+        },
+        {
+          "label": "Play Quest #07 - Further Afield",
+          "decisionKey": "ch4.report.q7.play",
+          "next": "ch4-q7-play",
+          "image": "/quests/quest-07.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 7,
+          "hideIfDecisionMade": "quest.7.completed"
+        },
+        {
+          "label": "Play Quest #13 - Underneath the Watchtower",
+          "decisionKey": "ch4.report.q13.play",
+          "next": "ch4-q13-play",
+          "image": "/quests/quest-13.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 13,
+          "hideIfDecisionMade": "quest.13.completed"
+        }
+      ]
+    },
+    "ch4-quest-report": {
+      "title": "CHAPTER 4 - THE PASSING OF THE TORCH",
+      "subtitle": "Quest Report",
+      "text": "Attempt another Quest, or continue to the Town Visit. Each Quest you play spends a Story token.",
+      "choices": [
+        {
+          "label": "Play Quest #03 - Xavier's Request",
+          "decisionKey": "ch4.report.q3.play",
+          "next": "ch4-q3-play",
+          "image": "/quests/quest-03.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 3,
+          "hideIfDecisionMade": "quest.3.completed"
+        },
+        {
+          "label": "Play Quest #04 - A Hand Outstretched",
+          "decisionKey": "ch4.report.q4.play",
+          "next": "ch4-q4-play",
+          "image": "/quests/quest-04.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 4,
+          "hideIfDecisionMade": "quest.4.completed"
+        },
+        {
+          "label": "Play Quest #05 - The Rogue Delver",
+          "decisionKey": "ch4.report.q5.play",
+          "next": "ch4-q5-play",
+          "image": "/quests/quest-05.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 5,
+          "hideIfDecisionMade": "quest.5.completed"
+        },
+        {
+          "label": "Play Quest #06 - The Forgotten Vault",
+          "decisionKey": "ch4.report.q6.play",
+          "next": "ch4-q6-play",
+          "image": "/quests/quest-06.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 6,
+          "hideIfDecisionMade": "quest.6.completed"
+        },
+        {
+          "label": "Play Quest #07 - Further Afield",
+          "decisionKey": "ch4.report.q7.play",
+          "next": "ch4-q7-play",
+          "image": "/quests/quest-07.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 7,
+          "hideIfDecisionMade": "quest.7.completed"
+        },
+        {
+          "label": "Play Quest #13 - Underneath the Watchtower",
+          "decisionKey": "ch4.report.q13.play",
+          "next": "ch4-q13-play",
+          "image": "/quests/quest-13.jpg",
+          "requireStoryTokens": "positive",
+          "requireQuestRevealed": 13,
+          "hideIfDecisionMade": "quest.13.completed"
+        },
+        {
+          "label": "Continue to the Town Visit",
+          "decisionKey": "ch4.report.done",
+          "next": "ch4-arrival"
+        }
+      ]
+    },
+    "ch4-q3-play": {
+      "title": "QUEST #03: XAVIER'S REQUEST",
+      "subtitle": "Into the Tide",
+      "text": "Xavier needs a Tidebloom sample taken from the infected creatures of the Tide. His assistant will meet you out there. Witness hums beside you, ready to go.",
+      "image": "/story/ch2/academy-xavier.png",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "startQuest": "quest3",
+      "next": "ch4-quest-report"
+    },
+    "ch4-q4-play": {
+      "title": "QUEST #04: A HAND OUTSTRETCHED",
+      "subtitle": "Into the Tide",
+      "text": "Dahlia waits at the edge of the Mistwood, petals glowing faintly, ready to lead you to her kin. Witness hums beside you, ready to go.",
+      "image": "/quests/quest-04.jpg",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "startQuest": "quest4",
+      "next": "ch4-quest-report"
+    },
+    "ch4-q5-play": {
+      "title": "QUEST #05: THE ROGUE DELVER",
+      "subtitle": "Into the Tide",
+      "text": "The tracks matching Vera Brass' delversuit head west, deeper into the Tide. Witness hums beside you, ready to go.",
+      "image": "/story/ch2/master-bram.png",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "startQuest": "quest5",
+      "next": "ch4-quest-report"
+    },
+    "ch4-q6-play": {
+      "title": "QUEST #06: THE FORGOTTEN VAULT",
+      "subtitle": "Into the Tide",
+      "text": "Mr. Aguilar's map is a tangle of scribbles and crosses leading into the ruins of Second Nest. Witness hums beside you, ready to go.",
+      "image": "/story/ch2/library-rodrigo.png",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "startQuest": "quest6",
+      "next": "ch4-quest-report"
+    },
+    "ch4-q7-play": {
+      "title": "QUEST #07: FURTHER AFIELD",
+      "subtitle": "Into the Tide",
+      "text": "The signal from Vera Brass' delversuit points west, to the ruins of High Nest. Witness hums beside you, ready to go.",
+      "image": "/quests/quest-07.jpg",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "startQuest": "quest7",
+      "next": "ch4-q7-return"
+    },
+    "ch4-q13-play": {
+      "title": "QUEST #13: UNDERNEATH THE WATCHTOWER",
+      "subtitle": "Into the Tide",
+      "text": "A green hatch lies hidden beneath the burned watchtower. Witness hums beside you, ready to go.",
+      "image": "/quests/quest-13.jpg",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "startQuest": "quest13",
+      "next": "ch4-quest-report"
+    },
+    "ch4-q7-return": {
+      "title": "CHAPTER 4 - THE PASSING OF THE TORCH",
+      "subtitle": "Back from the Tide",
+      "text": "You make your way back to Bird's Nest.",
+      "choices": [
+        {
+          "label": "Read the Quest #07 Conclusion",
+          "decisionKey": "q7.conclusion.read",
+          "next": "ch4-q7-conclusion",
+          "showIfDecision": "quest.7.reached-high-nest",
+          "hideIfDecisionMade": "quest.7.completed"
+        },
+        {
+          "label": "Return to the Quest Report",
+          "decisionKey": "q7.return.report",
+          "next": "ch4-quest-report",
+          "hideIfDecisionMade": "quest.7.reached-high-nest"
+        }
+      ]
+    },
+    "ch4-q7-conclusion": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Further Afield",
+      "text": "You pass through the silent, mighty ruins of High Nest, the city that fell from the sky. Your tracking signal points straight through a reinforced metal door. \"Hello? Is anyone in here? We mean no harm.\"\n\nA machine powers up and a red glow lights the room. A large robot is aiming a laser gun straight at you. \"YOU ARE NOT WELCOME HERE. YOU HAVE 10 SECONDS TO EVACUATE. TEN. NINE...\" Witness moves fearlessly towards it; several beeps and whirrs pass between them, and the robot lowers its weapon and steps away from the door.\n\n\"Damn it all! I knew I couldn't trust that bloody robot!\" A bespectacled man hides behind a desk, aiming a shaking weapon at you. \"Elias? You're Elias Brass, right?\" \"No, I'm not! Just leave and pretend you never saw me!\"\n\n\"Mr. Elias? I'm scared...\" Two children peek out from behind the desk, a girl of about 4 and a boy of around 9. You assure him you're here to help, and tell him about Margaret Woo and Baby Janus. He slowly lowers his weapon. \"So she didn't make it... Wait! Baby Janus! I left him with Margaret.\" You tell him Janus is in the care of Master Bram, and his eyes narrow. \"Can we really trust Bram, or anyone from Bird's Nest?\"\n\nYou have so many questions and not a lot of time. Better make it count.",
+      "image": "/quests/quest-07.jpg",
+      "footnote": "One player converses with Elias. A hidden dial (starting at 0) tracks how much he opens up.",
+      "onEnter": [
+        {
+          "kind": "set-story-counter",
+          "key": "q7.elias-dial",
+          "value": 0
+        }
+      ],
+      "choices": [
+        {
+          "label": "\"I know you've been through a lot, but I need answers. What happened at the watchtower exactly?\"",
+          "decisionKey": "q7.talk.start.A",
+          "next": "ch4-q7-talk-1"
+        },
+        {
+          "label": "\"You need to start explaining some things. What did Vera tell you when you found her?\"",
+          "decisionKey": "q7.talk.start.B",
+          "next": "ch4-q7-talk-2"
+        }
+      ]
+    },
+    "ch4-q7-talk-1": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Elias Brass",
+      "text": "Elias sighs deeply. \"Margaret Woo was trying to contact the delvers. She got me instead. I tried to alert Vera, but we were attacked by some monster and I couldn't do anything except run. I left my sister behind...\"",
+      "image": "/quests/quest-07.jpg",
+      "onEnter": [
+        {
+          "kind": "adjust-story-counter",
+          "key": "q7.elias-dial",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "label": "\"You're not a delver. It would've been foolish to stay. You mentioned a monster... What did it look like?\"",
+          "decisionKey": "q7.talk.1.A",
+          "next": "ch4-q7-talk-4"
+        },
+        {
+          "label": "\"Your sister was trying to save your life. She wanted you to escape. Did you see anything else?\"",
+          "decisionKey": "q7.talk.1.B",
+          "next": "ch4-q7-talk-5"
+        }
+      ]
+    },
+    "ch4-q7-talk-2": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Elias Brass",
+      "text": "\"She wasn't making a lot of sense. She said 20 years ago when she made it to Gaia, she was taken to another place. Eden, she called it. But she said it wasn't what was promised, and that's why she escaped.\"",
+      "image": "/quests/quest-07.jpg",
+      "onEnter": [
+        {
+          "kind": "adjust-story-counter",
+          "key": "q7.elias-dial",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "label": "\"And the children? Where did they come from? Did she take them from Eden?\"",
+          "decisionKey": "q7.talk.2.A",
+          "next": "ch4-q7-talk-6"
+        },
+        {
+          "label": "\"What was wrong with Eden? Why did Margaret want to escape?\"",
+          "decisionKey": "q7.talk.2.B",
+          "next": "ch4-q7-talk-7"
+        }
+      ]
+    },
+    "ch4-q7-talk-3": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Elias Brass",
+      "text": "Elias takes a deep breath, relieved. \"Look, I'm not trying to be difficult. After all that's happened, my head's all scrambled. I don't know who to trust.\"",
+      "image": "/quests/quest-07.jpg",
+      "choices": [
+        {
+          "label": "\"It's alright, I understand. Can you at least tell me about what happened at the watchtower?\"",
+          "decisionKey": "q7.talk.3.A",
+          "next": "ch4-q7-talk-1"
+        },
+        {
+          "label": "\"Listen, I'll do whatever I can to help you. I swear I only want to help.\"",
+          "decisionKey": "q7.talk.3.B",
+          "next": "ch4-q7-talk-9"
+        }
+      ]
+    },
+    "ch4-q7-talk-4": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Elias Brass",
+      "text": "Elias frowns slightly. \"I didn't see much through the smoke. It was huge though, with a giant clawed arm. Vera was fighting it and I swear I saw someone---\" He trails off, falling silent.",
+      "image": "/quests/quest-07.jpg",
+      "onEnter": [
+        {
+          "kind": "adjust-story-counter",
+          "key": "q7.elias-dial",
+          "delta": -2
+        }
+      ],
+      "choices": [
+        {
+          "label": "\"Saw who?! Spit it out!\"",
+          "decisionKey": "q7.talk.4.A",
+          "next": "ch4-q7-talk-8"
+        },
+        {
+          "label": "\"What else did you see? Please, anything you remember could help us.\"",
+          "decisionKey": "q7.talk.4.B",
+          "next": "ch4-q7-talk-5"
+        }
+      ]
+    },
+    "ch4-q7-talk-5": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Elias Brass",
+      "text": "\"Someone in a lab coat. I couldn't see their face through the smoke. I think this person is the one that let that creature loose, the one who set fire to the watchtower.\" He looks around like he's suddenly afraid. \"Look, whoever killed Margaret Woo must still be looking for the children. Can you help us?\"",
+      "image": "/quests/quest-07.jpg",
+      "onEnter": [
+        {
+          "kind": "adjust-story-counter",
+          "key": "q7.elias-dial",
+          "delta": 2
+        },
+        {
+          "kind": "shift-favour",
+          "characterId": "elias",
+          "characterName": "Elias Brass",
+          "delta": 1
+        }
+      ],
+      "footnote": "Increase Elias Brass's opinion and gain the Elias Ally opinion card.",
+      "choices": [
+        {
+          "label": "\"I'll help in any way we can.\"",
+          "decisionKey": "q7.talk.5.A",
+          "next": "ch4-q7-talk-9"
+        },
+        {
+          "label": "\"I wish I could, but I have other responsibilities I cannot abandon. Bird's Nest is counting on me.\"",
+          "decisionKey": "q7.talk.5.B",
+          "next": "ch4-q7-talk-10"
+        }
+      ]
+    },
+    "ch4-q7-talk-6": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Elias Brass",
+      "text": "Suspicion flashes across Elias's features. \"I don't know. And even if I did, I wouldn't tell you.\" He fears for the children's safety and doesn't fully trust you yet.",
+      "image": "/quests/quest-07.jpg",
+      "onEnter": [
+        {
+          "kind": "adjust-story-counter",
+          "key": "q7.elias-dial",
+          "delta": -1
+        }
+      ],
+      "choices": [
+        {
+          "label": "\"These children may have been kidnapped for all we know. Now tell me where they came from!\"",
+          "decisionKey": "q7.talk.6.A",
+          "next": "ch4-q7-talk-8"
+        },
+        {
+          "label": "\"Fine. I won't press you if you're not ready to talk about that.\"",
+          "decisionKey": "q7.talk.6.B",
+          "next": "ch4-q7-talk-3"
+        }
+      ]
+    },
+    "ch4-q7-talk-7": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Elias Brass",
+      "text": "\"I don't know, but she referred to Eden as a prison a few times. I think that robot out there was some kind of guard that Margaret reprogrammed to protect them. Whoever was chasing us was willing to kill her to keep her silent.\" He looks around like he's suddenly afraid. \"Look, whoever killed Margaret Woo must still be looking for the children. Can you help us?\"",
+      "image": "/quests/quest-07.jpg",
+      "onEnter": [
+        {
+          "kind": "adjust-story-counter",
+          "key": "q7.elias-dial",
+          "delta": 1
+        }
+      ],
+      "choices": [
+        {
+          "label": "\"Of course. I'll help in any way we can.\"",
+          "decisionKey": "q7.talk.7.A",
+          "next": "ch4-q7-talk-9"
+        },
+        {
+          "label": "\"I wish I could, but I have other responsibilities I cannot abandon. Bird's Nest is counting on me.\"",
+          "decisionKey": "q7.talk.7.B",
+          "next": "ch4-q7-talk-10"
+        }
+      ]
+    },
+    "ch4-q7-talk-8": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Elias Brass",
+      "text": "Elias glares at you. \"I don't know, ok?! Whatever answers you're looking for, I don't have them.\" He puts his arms around the two children. \"Right now all I care about is taking care of Oscar and Savannah. I can't protect baby Janus anymore, but I'm not letting anyone from Bird's Nest near these two.\"",
+      "image": "/quests/quest-07.jpg",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "elias",
+          "characterName": "Elias Brass",
+          "delta": -1
+        }
+      ],
+      "footnote": "Decrease Elias Brass's opinion and gain the Elias Detractor opinion card.",
+      "next": "ch4-q7-resolution"
+    },
+    "ch4-q7-talk-9": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Elias Brass",
+      "text": "\"Thank you.\" Elias's words come out in a long exhale. \"When I saw you were a delver, I allowed myself to hope... I hoped you'd be a friend, not a foe.\"",
+      "image": "/quests/quest-07.jpg",
+      "onEnter": [
+        {
+          "kind": "adjust-story-counter",
+          "key": "q7.elias-dial",
+          "delta": 2
+        }
+      ],
+      "next": "ch4-q7-resolution"
+    },
+    "ch4-q7-talk-10": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Elias Brass",
+      "text": "Elias's shoulders slump. \"I understand. We'll manage... somehow.\"",
+      "image": "/quests/quest-07.jpg",
+      "onEnter": [
+        {
+          "kind": "adjust-story-counter",
+          "key": "q7.elias-dial",
+          "delta": -1
+        }
+      ],
+      "next": "ch4-q7-resolution"
+    },
+    "ch4-q7-resolution": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Resolution",
+      "text": "Your Quest is complete!",
+      "footnote": "Add Key Item #7.",
+      "onEnter": [
+        {
+          "kind": "complete-quest",
+          "number": 7,
+          "name": "Further Afield"
+        },
+        {
+          "kind": "gain-key-item",
+          "number": 7,
+          "name": "You Found Elias Brass"
+        },
+        {
+          "kind": "if",
+          "cond": {
+            "kind": "story-counter-at-least",
+            "key": "q7.elias-dial",
+            "min": 4
+          },
+          "then": [
+            {
+              "kind": "record-decision",
+              "key": "q7.elias.trusts"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "label": "Continue",
+          "decisionKey": "q7.resolution.trusted",
+          "next": "ch4-q7-trusted",
+          "showIfDecision": "q7.elias.trusts"
+        },
+        {
+          "label": "Continue",
+          "decisionKey": "q7.resolution.cold",
+          "next": "ch4-q7-cold",
+          "hideIfDecisionMade": "q7.elias.trusts"
+        }
+      ]
+    },
+    "ch4-q7-trusted": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "A Safe Cave",
+      "text": "\"When the coast is clear, we're gonna head into the Tide,\" Elias says, looking out into the darkness. \"On my way here, I found a cave that should be safe for us to hide in.\" He looks at Oscar and Savannah. \"I don't know how to explain it, but these children... they can repel the Tide somehow.\" You explain that baby Janus had the same ability, and he nods.\n\nHe turns back to you with a steely gaze. \"You better make sure baby Janus is taken care of. Master Bram was always good to me and Vera. I'm going to choose to believe he'll do the right thing.\"",
+      "footnote": "Continue from a Secret Town Visit.",
+      "next": "ch4-q7-hideout-1"
+    },
+    "ch4-q7-cold": {
+      "title": "QUEST #07 CONCLUSION",
+      "subtitle": "Good Luck",
+      "text": "Elias gives you a cold look and starts responding to your questions with shrugs. Whatever he knows, he doesn't trust you enough to tell you.\n\nWhen you tell him you need to head out, he nods curtly. \"Good luck. We'll wait til the coast is clear and then head into the Tide. I ran across a cave that should be safe for us to hide in. Go, we'll be fine. That robot will protect us.\" You bid them good luck and depart.",
+      "next": "ch4-quest-report"
+    },
+    "ch4-q7-hideout-1": {
+      "title": "SECRET TOWN VISIT - IN THE RUINS OF HIGH NEST",
+      "subtitle": "Elias' Secret Hideout: Part 1",
+      "text": "The ruins of High Nest - First Nest, they called it once - are an endless mess of broken stone and twisted beams, covered with moss, grass and flowers. Elias has set up camp in what was once a grocery store. Savannah hums a nursery rhyme while Oscar runs around with a toy airplane, going \"BRUMMMMMMMM\".\n\n\"I'm famished, aren't you? Could you help me gather supplies for dinner?\" You nod and scour the shelves.",
+      "choices": [
+        {
+          "label": "A bag of dried lentils, half full but sealed",
+          "decisionKey": "q7.hideout.A",
+          "next": "ch4-q7-hideout-1a",
+          "hint": "???"
+        },
+        {
+          "label": "A tin of mystery stew with a rust-spotted lid",
+          "decisionKey": "q7.hideout.B",
+          "next": "ch4-q7-hideout-1b",
+          "hint": "???"
+        },
+        {
+          "label": "A box of powdered milk, damp around the corners",
+          "decisionKey": "q7.hideout.C",
+          "next": "ch4-q7-hideout-1c",
+          "hint": "???"
+        }
+      ]
+    },
+    "ch4-q7-hideout-1a": {
+      "title": "SECRET TOWN VISIT - IN THE RUINS OF HIGH NEST",
+      "subtitle": "Lentils",
+      "text": "After simmering, the lentils soften into a rich, filling base. You top it off with scavenged seaweed and Tidegazer meat. It's the best meal you've had in days - warm, nourishing, and most of all, safe.",
+      "footnote": "Each player gains +1 Rank of an Equipment Slot of their choice.",
+      "onEnter": [
+        {
+          "kind": "enqueue-suit-condition-rank-picks",
+          "source": "q7.hideout.A",
+          "picks": [
+            {
+              "delta": 1,
+              "pinnedHeroId": "hero-01"
+            },
+            {
+              "delta": 1,
+              "pinnedHeroId": "hero-02"
+            }
+          ]
+        }
+      ],
+      "next": "ch4-q7-hideout-2"
+    },
+    "ch4-q7-hideout-1b": {
+      "title": "SECRET TOWN VISIT - IN THE RUINS OF HIGH NEST",
+      "subtitle": "Mystery Stew",
+      "text": "The mystery stew is edible but bland. It fills your bellies, but no one is excited for seconds.",
+      "footnote": "Choose a player to gain +1 Rank of an Equipment Slot of their choice.",
+      "onEnter": [
+        {
+          "kind": "enqueue-suit-condition-rank-picks",
+          "source": "q7.hideout.B",
+          "picks": [
+            {
+              "delta": 1
+            }
+          ]
+        }
+      ],
+      "next": "ch4-q7-hideout-2"
+    },
+    "ch4-q7-hideout-1c": {
+      "title": "SECRET TOWN VISIT - IN THE RUINS OF HIGH NEST",
+      "subtitle": "Powdered Milk",
+      "text": "Within an hour, stomachs cramp and nausea spreads through the group. The milk had long since spoiled. Only after 48 hours of suffering do you begin to feel human again.",
+      "footnote": "Both delvers lose 3 minion parts.",
+      "onEnter": [
+        {
+          "kind": "lose-minion-parts",
+          "amount": 3,
+          "to": "all-delvers"
+        }
+      ],
+      "next": "ch4-q7-hideout-2"
+    },
+    "ch4-q7-hideout-2": {
+      "title": "SECRET TOWN VISIT - IN THE RUINS OF HIGH NEST",
+      "subtitle": "Elias' Secret Hideout: Part 2",
+      "text": "After spending some quality time with Elias and the toddlers, he begins to loosen up. You wait until the kids are napping, crack open a couple of bottles of water, and ask him the question that's been on your mind.",
+      "choices": [
+        {
+          "label": "Press for more information about the children",
+          "decisionKey": "q7.hideout2.A",
+          "next": "ch4-q7-hideout-2a",
+          "hint": "Grants Knowledge"
+        },
+        {
+          "label": "Press for more information about why Elias is so adamant on becoming Janus' guardian",
+          "decisionKey": "q7.hideout2.B",
+          "next": "ch4-q7-hideout-2b",
+          "hint": "Grants Knowledge"
+        }
+      ]
+    },
+    "ch4-q7-hideout-2a": {
+      "title": "SECRET TOWN VISIT - IN THE RUINS OF HIGH NEST",
+      "subtitle": "Where She Crossed Over",
+      "text": "\"Alright, I'll tell you. I used to spend most of my free time at my post at the watchtower. One day, I received a radio transmission from Margaret Woo - the famous delver that reached Gaia 20 years ago and disappeared. She claimed she was on the run with some kids, that she'd been abducted all this time but found a way to escape, some wild accusations about Father Flores - then the transmission cut out. I told people about it, but no one believed me. Except for my sister Vera.\n\nSo I went to find Margaret Woo. And I did find her, but I must have been followed, because Father Flores was hot on my trail. Margaret said he was a Warden. I don't know what she meant by that, but she asked me to take the kids while she dealt with Flores. And again, like the coward I am, I let her die while I ran away. I even left a kid behind in my rush for the exit. And that's why we're here.\"\n\n\"As for your question, I don't know where the children came from exactly, but Woo showed me where she crossed over - she said we should meet there if she survived.\"",
+      "footnote": "Add Quest #08 \"The Bridge\" (a Memory Chip if already owned or completed). Add Key Item #13.",
+      "onEnter": [
+        {
+          "kind": "reveal-quest-or-grant-chip",
+          "number": 8,
+          "name": "The Bridge",
+          "chipFallback": 1
+        },
+        {
+          "kind": "gain-key-item",
+          "number": 13,
+          "name": "Many Revelations"
+        }
+      ],
+      "next": "ch4-q7-scavenge"
+    },
+    "ch4-q7-hideout-2b": {
+      "title": "SECRET TOWN VISIT - IN THE RUINS OF HIGH NEST",
+      "subtitle": "Not Human",
+      "text": "\"Alright, I'll tell you. I used to spend most of my free time at my post at the watchtower. One day, I received a radio transmission from Margaret Woo - the famous delver that reached Gaia 20 years ago and disappeared. She claimed she was on the run with some kids, that she'd been abducted all this time but found a way to escape, some wild accusations about Father Flores - then the transmission cut out. I told people about it, but no one believed me. Except for my sister Vera.\n\nSo I went to find Margaret Woo. And I did find her, but I must have been followed, because Father Flores was hot on my trail. Margaret said he was a Warden. I don't know what she meant by that, but she asked me to take the kids while she dealt with Flores. And again, like the coward I am, I let her die while I ran away. I even left a kid behind in my rush for the exit. And that's why we're here.\"\n\n\"As for your question, if Father Flores realizes Janus is at Bird's Nest, he'll kill him. For a brief moment I saw Flores' true face as he was slaughtering Margaret. Whatever he is, he's not human.\"",
+      "footnote": "Add Quest #09 \"Sins of the Father\" (a Memory Chip if already owned or completed). Add Key Item #13.",
+      "onEnter": [
+        {
+          "kind": "reveal-quest-or-grant-chip",
+          "number": 9,
+          "name": "Sins of the Father",
+          "chipFallback": 1
+        },
+        {
+          "kind": "gain-key-item",
+          "number": 13,
+          "name": "Many Revelations"
+        }
+      ],
+      "next": "ch4-q7-scavenge"
+    },
+    "ch4-q7-scavenge": {
+      "title": "SECRET TOWN VISIT - IN THE RUINS OF HIGH NEST",
+      "subtitle": "Elias' Scavenge Shop",
+      "text": "Shop Products #32-45 that nobody owns and that aren't already in your Purchasable Products are for sale during this Secret Town Visit only. There is only one of each product. You may convert a Boss part into minion parts at 3 minion parts per level of the Boss part.",
+      "postRewardsText": "When everyone is done shopping, click Continue. Unbought scavenge products go back to the box.",
+      "onEnter": [
+        {
+          "kind": "open-scavenge-shop",
+          "products": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ]
+        }
+      ],
+      "kind": "shop",
+      "next": "ch4-q7-scavenge-close"
+    },
+    "ch4-q7-scavenge-close": {
+      "title": "SECRET TOWN VISIT - IN THE RUINS OF HIGH NEST",
+      "subtitle": "End of Secret Town Visit",
+      "text": "You bid Elias, Oscar and Savannah farewell. When you're ready, choose any Open Quest to attempt.",
+      "footnote": "This Town Visit isn't marked on your Campaign Sheet.",
+      "onEnter": [
+        {
+          "kind": "close-scavenge-shop"
+        }
+      ],
+      "next": "ch4-quest-report"
+    },
+    "ch4-arrival": {
+      "title": "CHAPTER 4 - TOWN VISIT",
+      "subtitle": "Clawprints",
+      "text": "As you carefully retrace your steps through the mist, a hulking creature dashes past, using clawed hands to run faster, heedless of your presence. Its warped body is covered in patches of pulsing bioluminescent tissue. Wherever its clawed feet have touched the ground, you find fragments of glowing residue. You reach out an armoured hand to inspect it and instantly it starts eating through the metal. A minute after you wipe it on a nearby kelp, the kelp has withered to nothing.\n\nThen you realize the significance of the creature's trajectory - it's headed straight for Bird's Nest. Your comm to Bram is dead; the town's satellite must be down. You launch into a sprint.\n\nWhen you breach the shore twenty minutes later, it's worse than you thought. Not one, but several pairs of telltale clawprints infect the shoreline. Screams and the smell of burning urge you onward.",
+      "choices": [
+        {
+          "label": "Both delvers survived",
+          "decisionKey": "ch4.arrival.both-survived",
+          "next": "ch4-new-recruits",
+          "requireQuestDeaths": "none"
+        },
+        {
+          "label": "One or both delvers died",
+          "decisionKey": "ch4.arrival.died",
+          "next": "ch4-died",
+          "requireQuestDeaths": "any"
+        }
+      ]
+    },
+    "ch4-died": {
+      "title": "CHAPTER 4 - TOWN VISIT",
+      "subtitle": "The Fallen",
+      "text": "You bring your fallen delvers home to Bird's Nest. Their final words are already recorded in the Graveyard on your Campaign Sheet.",
+      "footnote": "If the delver that died is your last remaining Hero card, don't discard them.",
+      "choices": [
+        {
+          "label": "Only the Mind delver died",
+          "decisionKey": "ch4.arrival.died.mind",
+          "next": "ch4-died-mind",
+          "requireQuestDeaths": "mind-only"
+        },
+        {
+          "label": "Only the Body delver died",
+          "decisionKey": "ch4.arrival.died.body",
+          "next": "ch4-died-body",
+          "requireQuestDeaths": "body-only"
+        },
+        {
+          "label": "Both delvers died",
+          "decisionKey": "ch4.arrival.died.both",
+          "next": "ch4-died-both",
+          "requireQuestDeaths": "both"
+        }
+      ]
+    },
+    "ch4-died-mind": {
+      "title": "CHAPTER 4 - TOWN VISIT",
+      "subtitle": "Mind Delver's Blood-Soaked Suit",
+      "text": "Blood seeps into the crevices of the Delversuit, filling it with new power.",
+      "footnote": "Add Rank 1 of any one Equipment to an Equipment Slot of your choice on the Suit Condition sheet.",
+      "onEnter": [
+        {
+          "kind": "enqueue-suit-condition-rank-picks",
+          "source": "ch4.arrival.died.mind",
+          "picks": [
+            {
+              "delta": 1,
+              "pinnedHeroId": "hero-01"
+            }
+          ]
+        }
+      ],
+      "next": "ch4-new-recruits"
+    },
+    "ch4-died-body": {
+      "title": "CHAPTER 4 - TOWN VISIT",
+      "subtitle": "Body Delver's Blood-Soaked Suit",
+      "text": "Blood seeps into the crevices of the Delversuit, filling it with new power.",
+      "footnote": "Add Rank 1 of any one Equipment to an Equipment Slot of your choice on the Suit Condition sheet.",
+      "onEnter": [
+        {
+          "kind": "enqueue-suit-condition-rank-picks",
+          "source": "ch4.arrival.died.body",
+          "picks": [
+            {
+              "delta": 1,
+              "pinnedHeroId": "hero-02"
+            }
+          ]
+        }
+      ],
+      "next": "ch4-new-recruits"
+    },
+    "ch4-died-both": {
+      "title": "CHAPTER 4 - TOWN VISIT",
+      "subtitle": "Both Delvers' Blood-Soaked Suit",
+      "text": "Blood seeps into the crevices of the Delversuit, filling it with new power.",
+      "footnote": "Add Rank 1 of any one Equipment to an Equipment Slot of your choice on the Suit Condition sheet.",
+      "onEnter": [
+        {
+          "kind": "enqueue-suit-condition-rank-picks",
+          "source": "ch4.arrival.died.both",
+          "picks": [
+            {
+              "delta": 1,
+              "pinnedHeroId": "hero-01"
+            },
+            {
+              "delta": 1,
+              "pinnedHeroId": "hero-02"
+            }
+          ]
+        }
+      ],
+      "next": "ch4-new-recruits"
+    },
+    "ch4-new-recruits": {
+      "title": "CHAPTER 4 - TOWN VISIT",
+      "subtitle": "Meet the New Recruits",
+      "text": "Two fresh graduates catch up with you on the shore, weapons drawn, faces pale. There's no time for introductions.",
+      "image": "/story/ch2/new-recruits.png",
+      "footnote": "Disciple of the Mind player gains Hero #9. Disciple of the Body player gains Hero #10.",
+      "onEnter": [
+        {
+          "kind": "unlock-hero-cards",
+          "cardNumbers": [
+            9,
+            10
+          ]
+        }
+      ],
+      "next": "ch4-town-square"
+    },
+    "ch4-town-square": {
+      "title": "TOWN SQUARE",
+      "subtitle": "Unfolding Disasters",
+      "text": "Bird's Nest is a whirlwind of chaos. The screams of fleeing townsfolk and smoke from the fires are all you can focus on. You find Master Bram standing amidst it all, stricken, as if he is unable to move. You try to snap him out of it, with little success. The people of Bird's Nest need you, and with Bram unable to react, it's up to you to take the reins.\n\nYou call loudly over the din, organizing Sam, Xavier and some of the others to action. If you hope to make it out alive, you all must band together. Bram finally seems to be emerging from his state, just as you begin directing everyone to push back against the creatures.",
+      "image": "/story/ch2/master-bram.png",
+      "next": "ch4-townsfolk"
+    },
+    "ch4-townsfolk": {
+      "title": "TOWN SQUARE",
+      "subtitle": "Assign the Townsfolk",
+      "text": "Assign each uninjured townsfolk to an action. Townsfolk who assist with combat give one delver a reward for the coming fight.",
+      "kind": "townsfolk-assignment",
+      "next": "ch4-assault-intro"
+    },
+    "ch4-assault-intro": {
+      "title": "STORY QUEST: ASSAULT ON BIRD'S NEST",
+      "subtitle": "Defeat All Enemies",
+      "text": "The Mistspawn and its Infestation tear through the square. Bram draws his greatsword beside you.\n\nEnemy abilities: Omen - when an enemy with Omen damages a delver, that delver gains a monster token, and takes 1 extra damage per token every time they take damage for the rest of the wave. Rebirth - when the enemy dies, its tile gets 3 monster tokens; after each hero turn where no enemy died, remove 1 from every tile; when a tile's last token is removed, one of the enemies that died there respawns with 50% health.",
+      "footnote": "Your townsfolk rewards are given out at the start of the fight, for this combat only.",
+      "startQuest": "assault",
+      "next": "ch4-assault-result"
+    },
+    "ch4-assault-result": {
+      "title": "STORY QUEST: ASSAULT ON BIRD'S NEST",
+      "subtitle": "The Dust Settles",
+      "text": "The fighting is over.",
+      "choices": [
+        {
+          "label": "Continue",
+          "decisionKey": "ch4.assault.x1",
+          "next": "ch4-x1",
+          "hideIfDecisionMade": "ch4.assault.lost"
+        },
+        {
+          "label": "Continue",
+          "decisionKey": "ch4.assault.x2",
+          "next": "ch4-x2",
+          "hideIfDecisionMade": "ch4.assault.won"
+        }
+      ]
+    },
+    "ch4-x1": {
+      "title": "STORY QUEST: ASSAULT ON BIRD'S NEST",
+      "subtitle": "Hard Fought",
+      "text": "With the final swing of his greatsword, Bram cleaves the last standing creature in two. It collapses in a heap with a gasping growl. Smoke is rising from the put-out fires. In the distance you can hear cries of pain from the injured, but at least for now the danger has passed. Across the square, Sam is kneeling over a fallen delver - her cousin Carlos.\n\nMaster Bram claps you on the shoulder. \"Hard fought, delvers. Thank you for what you did back there. It's been a long time since I've felt that way... I couldn't move. I just kept hearing the screams, the fire. It was just like what happened in Storm's Nest years ago.\" He shakes his head, trying to clear it. \"There's no telling if the threat is truly gone. You should get some rest just in case.\"\n\nYou drag yourself to your quarters and fall into a deep and dreamless sleep. It's late in the afternoon when you come to. You're sorer than you can remember, but you hobble towards the town to help out with the cleanup.",
+      "image": "/story/ch2/master-bram.png",
+      "footnote": "Collectively gain 4 Story tokens - these represent the total number of locations you can visit this Chapter.",
+      "onEnter": [
+        {
+          "kind": "grant-story-tokens",
+          "amount": 4
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-x2": {
+      "title": "STORY QUEST: ASSAULT ON BIRD'S NEST",
+      "subtitle": "Clinically Dead",
+      "text": "You stumble, fatigued and injured. One of the mistspawn runs at you on all fours with frightening speed. You swing your weapon in an arc, but you're too slow. Another creature emerges from the burning smoke and before you can react, they swarm you. Everything goes black.\n\nYou awake moments later in intense pain with Elayna's concerned face hovering over you. \"It worked!\" She drops the defibrillator and injects a needle into you. \"I'm not losing you, delver. Hang in there...\" Your vision fades again.\n\nIt's bright when you come to in the Academy infirmary. Arlen is sitting at a nearby desk. \"Welcome back to the world of the living. You were clinically dead for nearly a minute, so count your lucky stars that Elayna is a better nurse than she lets on. And don't worry yourself about those monsters, Bram finished them off. We lost good people, though - Sam's cousin Carlos among them.\"\n\nThe minute Arlen is out of sight, you drag yourself out of bed and hobble towards the town to help out with the cleanup.",
+      "image": "/story/ch2/academy-arlen.png",
+      "footnote": "Collectively gain 4 Story tokens - these represent the total number of locations you can visit this Chapter.",
+      "onEnter": [
+        {
+          "kind": "grant-story-tokens",
+          "amount": 4
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-hub": {
+      "title": "CHAPTER 4 - TOWN VISIT",
+      "subtitle": "Explore the Town",
+      "text": "Choose a location to visit. Each visit spends 1 Story token. Once they're spent, head to the Town Center.",
+      "choices": [
+        {
+          "label": "Enter the Temple of Gaia",
+          "decisionKey": "ch4.hub.temple",
+          "next": "ch4-temple",
+          "requireStoryTokens": "positive",
+          "hideIfDecisionMade": "ch4.hub.temple"
+        },
+        {
+          "label": "Visit the Misty Eagle",
+          "decisionKey": "ch4.hub.pub",
+          "next": "ch4-pub",
+          "requireStoryTokens": "positive",
+          "hideIfDecisionMade": "ch4.hub.pub"
+        },
+        {
+          "label": "Visit the Machinist",
+          "decisionKey": "ch4.hub.machinist",
+          "next": "ch4-machinist",
+          "requireStoryTokens": "positive",
+          "hideIfDecisionMade": "ch4.hub.machinist"
+        },
+        {
+          "label": "Visit the Library",
+          "decisionKey": "ch4.hub.library",
+          "next": "ch4-library",
+          "requireStoryTokens": "positive",
+          "hideIfDecisionMade": "ch4.hub.library"
+        },
+        {
+          "label": "Return to the Town Square",
+          "decisionKey": "ch4.hub.square",
+          "next": "ch4-square",
+          "requireStoryTokens": "positive",
+          "hideIfDecisionMade": "ch4.hub.square"
+        },
+        {
+          "label": "Visit Dahlia's Cave",
+          "decisionKey": "ch4.hub.dahlia",
+          "next": "ch4-dahlia",
+          "hint": "Requires Quest #03 completed",
+          "requireStoryTokens": "positive",
+          "hideIfDecisionMade": "ch4.hub.dahlia",
+          "requireDecision": "quest.3.completed"
+        },
+        {
+          "label": "Continue to the Town Center",
+          "decisionKey": "ch4.hub.done",
+          "next": "ch4-town-center",
+          "requireStoryTokens": "zero"
+        }
+      ]
+    },
+    "ch4-temple": {
+      "title": "TEMPLE OF GAIA",
+      "subtitle": "Demanding Answers",
+      "text": "The area around the Temple of Gaia lies in ruins, but the building itself stands miraculously undamaged. Much of the town has packed itself inside, asking for Father Flores and demanding answers for all that has happened over the past month. The Children of Gaia are up on the platform trying to reassure the crowd.\n\nDown the hall leading to the orphanage, you spot Nurse Elayna in her lab coat assessing some of the children who have undoubtedly lost their parents in the attack.",
+      "image": "/story/father-flores.png",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "choices": [
+        {
+          "label": "Attempt to calm the agitated crowd",
+          "decisionKey": "ch4.temple.A",
+          "next": "ch4-temple-a",
+          "hint": "Grants Resources"
+        },
+        {
+          "label": "Question the Children of Gaia",
+          "decisionKey": "ch4.temple.B",
+          "next": "ch4-temple-b",
+          "hint": "Grants Knowledge"
+        },
+        {
+          "label": "Check on Nurse Elayna",
+          "decisionKey": "ch4.temple.C",
+          "next": "ch4-temple-c",
+          "hint": "Grants Wisdom"
+        }
+      ]
+    },
+    "ch4-temple-a": {
+      "title": "TEMPLE OF GAIA",
+      "subtitle": "The Platform",
+      "text": "You climb onto the platform and raise your hands for quiet.",
+      "dieRoll": [
+        {
+          "min": 1,
+          "max": 1,
+          "label": "1: Simple platitudes",
+          "next": "ch4-temple-a-1"
+        },
+        {
+          "min": 2,
+          "max": 5,
+          "label": "2-5: Gaia watches over us",
+          "next": "ch4-temple-a-2"
+        },
+        {
+          "min": 6,
+          "max": 6,
+          "label": "6: Together we will rise",
+          "next": "ch4-temple-a-6"
+        }
+      ]
+    },
+    "ch4-temple-a-1": {
+      "title": "TEMPLE OF GAIA",
+      "subtitle": "Forced Off",
+      "text": "\"E-Everyone, please listen. I know things look bad. Father Flores is missing, the monsters ravaged the town, and we've lost many. But we can't give up.\" The crowd argues back. It's clear this time simple platitudes are not enough. The crowd yells at you until you're forced off the platform.",
+      "next": "ch4-hub"
+    },
+    "ch4-temple-a-2": {
+      "title": "TEMPLE OF GAIA",
+      "subtitle": "A Little Comfort",
+      "text": "\"Even now, in our darkest hour, Gaia watches over us. This is just another test that I know we can withstand. You saw how hard we all fought. The delvers will do everything in our power to protect the people of Bird's Nest!\"\n\nThe crowd is slightly comforted by your words. The Children of Gaia are grateful for your help and gift you some resources.",
+      "footnote": "Both delvers gain 2 creature parts.",
+      "onEnter": [
+        {
+          "kind": "grant-minion-parts",
+          "amount": 2,
+          "to": "all-delvers"
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-temple-a-6": {
+      "title": "TEMPLE OF GAIA",
+      "subtitle": "We Endure",
+      "text": "\"I see your pain. I feel it too. We've lost so much, but these losses cannot break us. Look around you - every face here is proof that we endure. We must go on to honor those who have fallen. Together we will rise again.\"\n\nThe crowd is comforted by your powerful words. The Children of Gaia are grateful for your help and gift you some resources.",
+      "footnote": "Both delvers gain 4 creature parts.",
+      "onEnter": [
+        {
+          "kind": "grant-minion-parts",
+          "amount": 4,
+          "to": "all-delvers"
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-temple-b": {
+      "title": "TEMPLE OF GAIA",
+      "subtitle": "The Pilgrimage",
+      "text": "\"You're telling me with everything that is happening, Father Flores thought it was a good idea to go on a pilgrimage?!\" While the attendants are distracted by the crowd, you pull one aside. \"Father Flores is not on a pilgrimage. Where is he really?\"\n\nThe rattled attendant sighs. \"The truth is Father Flores is on a mission to locate the Brass siblings. Using the footage from the surveillance device, he has worked tirelessly to follow the tracks to the ruins of High Nest.\"\n\nIt's not much to go on, but at least now you have a clue.",
+      "footnote": "If you've completed Quest #05, add Quest #07 (a Memory Chip if already owned). Otherwise add Quest #05 (a Memory Chip if already owned).",
+      "onEnter": [
+        {
+          "kind": "if",
+          "cond": {
+            "kind": "quest-completed",
+            "number": 5
+          },
+          "then": [
+            {
+              "kind": "reveal-quest-or-grant-chip",
+              "number": 7,
+              "name": "Further Afield",
+              "chipFallback": 1
+            }
+          ],
+          "otherwise": [
+            {
+              "kind": "reveal-quest-or-grant-chip",
+              "number": 5,
+              "name": "The Rogue Delver",
+              "chipFallback": 1
+            }
+          ]
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-temple-c": {
+      "title": "TEMPLE OF GAIA",
+      "subtitle": "The Orphanage",
+      "text": "You make your way down the hall towards Nurse Elayna.",
+      "choices": [
+        {
+          "label": "Continue",
+          "decisionKey": "ch4.temple.C.children",
+          "next": "ch4-temple-c-children",
+          "hideIfDecisionMade": "quest.5.completed"
+        },
+        {
+          "label": "Continue",
+          "decisionKey": "ch4.temple.C.janus",
+          "next": "ch4-temple-c-janus",
+          "showIfDecision": "quest.5.completed"
+        }
+      ]
+    },
+    "ch4-temple-c-children": {
+      "title": "TEMPLE OF GAIA",
+      "subtitle": "Frightened Children",
+      "text": "\"She's just a little scared after everything that happened, but physically she's completely normal.\" Nurse Elayna hands a toddler over to the attendant with a smile and notices you. \"You should be resting,\" she admonishes, but gives you a smile.\n\n\"The orphanage was not harmed, but the children were frightened. A dozen more were brought here after the attack.\" You offer to spend some time with the older kids to keep them entertained. \"That's a great idea!\"",
+      "image": "/story/ch2/nurse-elayna.png",
+      "footnote": "Increase Elayna's opinion. Unless Elayna's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "elayne",
+          "characterName": "Elayna",
+          "delta": 1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-temple-c-janus": {
+      "title": "TEMPLE OF GAIA",
+      "subtitle": "Baby Janus",
+      "text": "Nurse Elayna is gently setting a sleeping baby into a crib. Your heart skips a beat when you realize it's baby Janus, the child you found in the ruins of High Nest. \"He's in perfectly good health,\" Elayna tells the attendant.\n\nElayna looks down at the crib and strokes his head. \"This little guy's only been here a short while and he's already alone. I'm sure we'll find a home for him... in time.\" You wish you could tell her that baby Janus is her nephew, but you remember your promise to Master Bram. He said the safest place to hide a child is among other children.\n\nInstead you offer to keep the older kids entertained. Elayna quickly brightens. \"Great idea, delvers!\"",
+      "image": "/story/ch2/nurse-elayna.png",
+      "footnote": "Increase Elayna's opinion. Unless Elayna's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "elayne",
+          "characterName": "Elayna",
+          "delta": 1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-pub": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Us or Them",
+      "text": "The pub is thick with pipe smoke, lantern glow and the smell of spilt ale. The battered townsfolk crowd shoulder-to-shoulder, their voices hoarse with anger. A bearded fisherman slams his mug against the wood: \"S'the Tidekin did this! They've always hated us! It's us or them, mark my words!\"\n\nHeadmistress Arlen interrupts. \"Nonsense. I've studied the Tide for decades and the tide-born creatures cannot breathe air. Something about this doesn't add up. They've either evolved at an accelerated pace... or we are being deceived.\"\n\nXavier rises shakily. \"We don't know those were Tidekin, and besides, the Tidekin are not our enemies.\" The fisherman chucks a bottle at him, then notices you. \"Yer those delvers fought off the scum, ain't ya! Promise us you'll find 'em in the mist and give 'em hell!\"",
+      "image": "/story/misty-eagle.png",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "choices": [
+        {
+          "label": "Swear to get revenge on the Tidekin",
+          "decisionKey": "ch4.pub.A",
+          "next": "ch4-pub-a",
+          "hint": "Grants Resources"
+        },
+        {
+          "label": "Stand with Headmistress Arlen",
+          "decisionKey": "ch4.pub.B",
+          "next": "ch4-pub-b",
+          "hint": "Affects Favor"
+        },
+        {
+          "label": "Defend Xavier and the Tidekin",
+          "decisionKey": "ch4.pub.C",
+          "next": "ch4-pub-c",
+          "hint": "???"
+        }
+      ]
+    },
+    "ch4-pub-a": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Fire and Blood",
+      "text": "\"The Tidekin dared to attack our homes, our families! We must answer with fire and blood, or we will never be safe again!\" Many shout their approval and shower you in resources.",
+      "footnote": "Both delvers gain 4 minion parts. Decrease Xavier's opinion. Unless Xavier's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "grant-minion-parts",
+          "amount": 4,
+          "to": "all-delvers"
+        },
+        {
+          "kind": "shift-favour",
+          "characterId": "xavier",
+          "characterName": "Xavier",
+          "delta": -1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-pub-b": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Something Doesn't Add Up",
+      "text": "\"Think! These creatures die on land, yet they lived long enough to raze half our town. We need to investigate before jumping to conclusions. If we charge blindly against the Tidekin, we may strike the wrong enemy - and doom ourselves.\"",
+      "image": "/story/ch2/academy-arlen.png",
+      "footnote": "Increase Arlen's opinion. Unless Arlen's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "arlen",
+          "characterName": "Headmistress Arlen",
+          "delta": 1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-pub-c": {
+      "title": "THE MISTY EAGLE",
+      "subtitle": "Whispers",
+      "text": "You place a hand on Xavier's trembling frame. \"Xavier is wise. Everything we know about the Tidekin shows that they're peaceful, and we have no evidence that those monsters were Tidekin. Would you condemn an entire people based on whispers?\"",
+      "image": "/story/ch2/academy-xavier.png",
+      "footnote": "Increase Xavier's opinion. Add Quest #03 \"Xavier's Request\" (a Memory Chip if already owned or completed).",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "xavier",
+          "characterName": "Xavier",
+          "delta": 1
+        },
+        {
+          "kind": "reveal-quest-or-grant-chip",
+          "number": 3,
+          "name": "Xavier's Request",
+          "chipFallback": 1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-machinist": {
+      "title": "THE MACHINIST",
+      "subtitle": "Metal Scraps",
+      "text": "Half-finished blades clatter onto the ground, their edges dull where Samantha's steady hand once would have perfected them. Witness reaches a tentative hand towards her, but she pulls away. \"I told you to leave me alone! My cousin is dead! Not like you could understand what I'm feeling! You're just a robot... just metal scraps stuck together!\"\n\nWitness's hand drops. He glides into the corner and shuts down all his lights. Sam sits back down, the fight going out of her. \"Maybe if I hadn't encouraged Carlos to become a delver... Maybe if my weapons were better, none of this would be happening...\"",
+      "image": "/story/ch2/machinist-samantha-witness.png",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "choices": [
+        {
+          "label": "Promise justice for the fallen",
+          "decisionKey": "ch4.machinist.A",
+          "next": "ch4-machinist-a",
+          "hint": "Grants Equipment"
+        },
+        {
+          "label": "Help her process her grief",
+          "decisionKey": "ch4.machinist.B",
+          "next": "ch4-machinist-b",
+          "hint": "Affects Favor"
+        },
+        {
+          "label": "Give her space and check on Witness",
+          "decisionKey": "ch4.machinist.C",
+          "next": "ch4-machinist-c",
+          "hint": "???"
+        }
+      ]
+    },
+    "ch4-machinist-a": {
+      "title": "THE MACHINIST",
+      "subtitle": "Justice",
+      "text": "\"Sam, I'm so sorry for your loss. Carlos's death will not be in vain. We will get to the bottom of this. When you feel ready, we could use your help in this fight.\" Sam takes a deep breath and nods. \"Deep down, I know that's what Carlos would want me to do.\"",
+      "image": "/story/ch2/machinist-samantha.png",
+      "footnote": "Add Shop Product #45 to your Purchasable Products.",
+      "onEnter": [
+        {
+          "kind": "add-shop-products",
+          "products": [
+            45
+          ],
+          "questLabel": "Samantha's Workshop"
+        }
+      ],
+      "next": "ch4-machinist-witness"
+    },
+    "ch4-machinist-b": {
+      "title": "THE MACHINIST",
+      "subtitle": "Not Your Fault",
+      "text": "\"How can I face my aunt and cousins now? They must all hate me.\" You grasp her hand. \"Sam, what happened is not your fault. Carlos wanted to be a delver to protect his family.\" She collapses into your arms, and some time passes before her sobs ease. She isn't ready to work yet, but you can feel the bond between you strengthen.",
+      "image": "/story/ch2/machinist-samantha.png",
+      "footnote": "Increase Samantha's opinion. Unless Samantha's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "samantha",
+          "characterName": "Samantha",
+          "delta": 1
+        }
+      ],
+      "next": "ch4-machinist-witness"
+    },
+    "ch4-machinist-c": {
+      "title": "THE MACHINIST",
+      "subtitle": "A Strange Device",
+      "text": "You ask Witness how he's doing. He gives a sad beep. \"Sam didn't mean what she said. When people grieve, they lose all control.\" Witness gives you a long, knowing look and nods, then digs around in some boxes at the back. He holds a strange device to his chest briefly, looks deep into your eyes, and hands it to you.",
+      "image": "/story/witness.png",
+      "footnote": "Gain a Memory Chip token.",
+      "onEnter": [
+        {
+          "kind": "grant-memory-chip",
+          "amount": 1
+        }
+      ],
+      "next": "ch4-machinist-witness"
+    },
+    "ch4-machinist-witness": {
+      "title": "THE MACHINIST",
+      "subtitle": "I'm Sorry",
+      "text": "After some time, Samantha kneels down beside Witness. \"I'm sorry,\" she says quietly. Witness beeps and shakes his head. Sam smiles weakly, then pops open a compartment in his chest.\n\nIf you carry any Memory Chips, Witness' eyes blaze with light, projecting an image on the wall. You quickly snap a picture of it.",
+      "image": "/story/ch2/machinist-witness-projecting.png",
+      "footnote": "Spend your Memory Chip tokens and draw that many Memory Fragment cards.",
+      "onEnter": [
+        {
+          "kind": "convert-memory-chips-to-cards"
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-library": {
+      "title": "LIBRARY",
+      "subtitle": "Rodrigo's Comm",
+      "text": "The library is quiet today. Dust motes drift lazily across the dimly lit bookshelves. Rodrigo barely notices you enter. He's staring at his communication device in silence, eyebrows furrowed with worry.",
+      "image": "/story/ch2/library-rodrigo.png",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "choices": [
+        {
+          "label": "Search an area you haven't had a chance to yet",
+          "decisionKey": "ch4.library.A",
+          "next": "ch4-library-a",
+          "hint": "???"
+        },
+        {
+          "label": "Ask Rodrigo what he's doing",
+          "decisionKey": "ch4.library.B",
+          "next": "ch4-library-b",
+          "hint": "Affects Favor"
+        },
+        {
+          "label": "Piece together what you've learned",
+          "decisionKey": "ch4.library.C",
+          "next": "ch4-library-c",
+          "hint": "Grants Knowledge"
+        }
+      ]
+    },
+    "ch4-library-a": {
+      "title": "LIBRARY",
+      "subtitle": "The Stacks",
+      "text": "You walk through the stacks, pondering which section could provide useful information.",
+      "choices": [
+        {
+          "label": "Creature Archives",
+          "decisionKey": "ch4.library.A.creature",
+          "next": "ch4-library-a-creature"
+        },
+        {
+          "label": "Delver Archives",
+          "decisionKey": "ch4.library.A.delver",
+          "next": "ch4-library-a-delver"
+        },
+        {
+          "label": "Atlas Archives",
+          "decisionKey": "ch4.library.A.atlas",
+          "next": "ch4-library-a-atlas"
+        }
+      ]
+    },
+    "ch4-library-a-creature": {
+      "title": "LIBRARY",
+      "subtitle": "Creature Archives",
+      "text": "A dog-eared bestiary falls open at a page on mist-borne predators, its margins full of a former delver's notes.",
+      "footnote": "Disciple of the Mind player gains Shop Product #46. Disciple of the Body player gains Shop Product #47.",
+      "onEnter": [
+        {
+          "kind": "grant-shop-product",
+          "product": 46,
+          "to": "hero-01"
+        },
+        {
+          "kind": "grant-shop-product",
+          "product": 47,
+          "to": "hero-02"
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-library-a-delver": {
+      "title": "LIBRARY",
+      "subtitle": "Delver Archives",
+      "text": "Among the delver logs, you find a diary bound in faded leather.",
+      "footnote": "Add Key Item #3. If already owned, instead gain a Memory Chip token.",
+      "onEnter": [
+        {
+          "kind": "if",
+          "cond": {
+            "kind": "owns-key-item",
+            "number": 3
+          },
+          "then": [
+            {
+              "kind": "grant-memory-chip",
+              "amount": 1
+            }
+          ],
+          "otherwise": [
+            {
+              "kind": "gain-key-item",
+              "number": 3,
+              "name": "Woo's Diary"
+            }
+          ]
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-library-a-atlas": {
+      "title": "LIBRARY",
+      "subtitle": "Atlas Archives",
+      "text": "An old atlas marks a sheltered route through the Tide, and the friendly creatures said to dwell along it.",
+      "footnote": "Add a Friendly Spawn Card to the top of the Spawn Deck.",
+      "onEnter": [
+        {
+          "kind": "grant-friendly-spawn-card"
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-library-b": {
+      "title": "LIBRARY",
+      "subtitle": "Elias",
+      "text": "\"Oh, sorry, I didn't see you come in,\" Rodrigo says without looking up. \"I know you delvers have a lot on your plate, so I understand why finding Elias isn't a priority. But I can't just forget about him.\" There's an edge to his voice that wasn't there before his father passed.",
+      "choices": [
+        {
+          "label": "\"You're right. We do have a lot on our plate right now.\"",
+          "decisionKey": "ch4.library.B.1",
+          "next": "ch4-library-b-1"
+        },
+        {
+          "label": "\"We do, but I haven't forgotten about Elias.\"",
+          "decisionKey": "ch4.library.B.2",
+          "next": "ch4-library-b-2"
+        }
+      ]
+    },
+    "ch4-library-b-1": {
+      "title": "LIBRARY",
+      "subtitle": "Help Yourself",
+      "text": "\"I get it,\" he says promptly. \"I was there. I fought beside you. But after losing dad and Vera... I can't bear the thought that Elias might be--\" He trails off, hand gripping his comm tightly. \"I'm going to keep looking. Help yourself to whatever you need.\" Without another word, he walks away.",
+      "image": "/story/ch2/library-rodrigo.png",
+      "footnote": "Decrease Rodrigo's opinion. Unless Rodrigo's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "rodrigo",
+          "characterName": "Rodrigo",
+          "delta": -1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-library-b-2": {
+      "title": "LIBRARY",
+      "subtitle": "A Signal",
+      "text": "Rodrigo grins. \"I've been sending Elias messages every day since he disappeared. Never get a response, but the other day I swear his comm was active. Almost like he was typing out a response. He's alive, I just know it!\"\n\nHe shows you coordinates on his device. \"Headmistress Arlen triangulated Elias's comm signal to this location. Next time you're out in the Tide, would you mind checking it out?\" There's such hope in his eyes that you can't help but agree.",
+      "image": "/story/ch2/library-rodrigo.png",
+      "footnote": "Increase Rodrigo's opinion. Add Quest #05 (if already owned or completed, Quest #07; if both, a Memory Chip).",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "rodrigo",
+          "characterName": "Rodrigo",
+          "delta": 1
+        },
+        {
+          "kind": "reveal-first-unowned-quest",
+          "chipFallback": 1,
+          "quests": [
+            {
+              "number": 5,
+              "name": "The Rogue Delver"
+            },
+            {
+              "number": 7,
+              "name": "Further Afield"
+            }
+          ]
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-library-c": {
+      "title": "LIBRARY",
+      "subtitle": "Piecing It Together",
+      "text": "You spread your notes across a reading table and look for the threads that connect them.",
+      "footnote": "With 4+ clue icons on your Key Items: add Quest #03 (or #07, or #13 - the first you don't own; a Memory Chip if you own them all). With 0-3: gain a Memory Chip token.",
+      "onEnter": [
+        {
+          "kind": "if",
+          "cond": {
+            "kind": "clues-at-least",
+            "min": 4
+          },
+          "then": [
+            {
+              "kind": "reveal-first-unowned-quest",
+              "chipFallback": 1,
+              "quests": [
+                {
+                  "number": 3,
+                  "name": "Xavier's Request"
+                },
+                {
+                  "number": 7,
+                  "name": "Further Afield"
+                },
+                {
+                  "number": 13,
+                  "name": "Underneath the Watchtower"
+                }
+              ]
+            }
+          ],
+          "otherwise": [
+            {
+              "kind": "grant-memory-chip",
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-square": {
+      "title": "TOWN SQUARE",
+      "subtitle": "Dr Ira's Rally",
+      "text": "A score of people are gathered around a makeshift platform where Dr Ira is speaking and gesturing angrily. Beside her, Master Bram is trying to reason with her. \"Ira, please, stop this.\" She wrenches free of his hand. \"No, Bram! I've kept my silence too long. They deserve to know the threat that YOU have let breach our shores!\"\n\n\"First the watchtower is set ablaze, then our memorial festival is attacked by a rabid Tidekin, and now this?! Do you know how many civilians I could not save last night? The Tidekin will destroy everything we have built, unless we stop them!\" She turns to the crowd. \"Soon every soul in Bird's Nest must make a choice - unite against the Tidekin, or let them take what little we have left.\"\n\nBram seems to teeter on the verge of responding as dead silence hangs in the air.",
+      "image": "/story/dr-ira.png",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "choices": [
+        {
+          "label": "Agree with Dr Ira",
+          "decisionKey": "ch4.square.A",
+          "next": "ch4-square-a",
+          "hint": "Affects Favor"
+        },
+        {
+          "label": "Disagree with Dr Ira",
+          "decisionKey": "ch4.square.B",
+          "next": "ch4-square-b",
+          "hint": "Affects Favor"
+        },
+        {
+          "label": "Encourage Master Bram to speak",
+          "decisionKey": "ch4.square.C",
+          "next": "ch4-square-c",
+          "hint": "Affects Favor"
+        }
+      ]
+    },
+    "ch4-square-a": {
+      "title": "TOWN SQUARE",
+      "subtitle": "We Must Act",
+      "text": "\"I have fought many creatures in the Tide. The ones we faced last night were unlike anything else out there. If these truly are the Tidekin, we must act.\" The mob's anger grows. Dr Ira nods at you, grateful for your support, as Master Bram walks away.",
+      "image": "/story/dr-ira.png",
+      "footnote": "Increase Dr Ira's opinion. Decrease Master Bram's opinion. Unless Dr Ira's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "ira",
+          "characterName": "Dr Ira",
+          "delta": 1
+        },
+        {
+          "kind": "shift-favour",
+          "characterId": "bram",
+          "characterName": "Master Bram",
+          "delta": -1,
+          "trackOnly": true
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-square-b": {
+      "title": "TOWN SQUARE",
+      "subtitle": "Where Is Your Proof?",
+      "text": "You step up to challenge Dr Ira.",
+      "choices": [
+        {
+          "label": "Continue",
+          "decisionKey": "ch4.square.B.proof",
+          "next": "ch4-square-b-proof",
+          "hideIfDecisionMade": "quest.4.completed"
+        },
+        {
+          "label": "Continue",
+          "decisionKey": "ch4.square.B.met",
+          "next": "ch4-square-b-met",
+          "showIfDecision": "quest.4.completed"
+        }
+      ]
+    },
+    "ch4-square-b-proof": {
+      "title": "TOWN SQUARE",
+      "subtitle": "Where Is Your Proof?",
+      "text": "\"The creatures we fought last night are different from what I've seen in the Tide. Dr Ira, you say these are the Tidekin. Where is your proof?\"\n\nShe stumbles over her words, caught off guard, but recovers quickly. \"What more proof do you need? This is the second attack by the same creatures. But this time there were more - a whole troop of them. Mark my words, they will strike again!\"\n\nThe confrontation fills you with vigor.",
+      "image": "/story/dr-ira.png",
+      "footnote": "Each player gains +1 Rank of an Equipment Slot of their choice. Decrease Dr Ira's opinion. Unless Dr Ira's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "enqueue-suit-condition-rank-picks",
+          "source": "ch4.square.B",
+          "picks": [
+            {
+              "delta": 1,
+              "pinnedHeroId": "hero-01"
+            },
+            {
+              "delta": 1,
+              "pinnedHeroId": "hero-02"
+            }
+          ]
+        },
+        {
+          "kind": "shift-favour",
+          "characterId": "ira",
+          "characterName": "Dr Ira",
+          "delta": -1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-square-b-met": {
+      "title": "TOWN SQUARE",
+      "subtitle": "I Have Met the Tidekin",
+      "text": "\"I have fought many creatures of the Tide. And I have also met the Tidekin. I've spoken to them. They do not look like the creatures we fought last night, or show the same aggression. I do not believe the Tidekin mean us harm.\"\n\nThe crowd murmurs. You hear many words of doubt, but not the same fervor as before. \"You'll see,\" Dr Ira promises calmly. \"And I hope you'll remember who was trying to protect you, and who led you astray.\"\n\nThe confrontation fills you with vigor.",
+      "image": "/story/dr-ira.png",
+      "footnote": "Each player gains +1 Rank of an Equipment Slot of their choice. Decrease Dr Ira's opinion. Unless Dr Ira's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "enqueue-suit-condition-rank-picks",
+          "source": "ch4.square.B",
+          "picks": [
+            {
+              "delta": 1,
+              "pinnedHeroId": "hero-01"
+            },
+            {
+              "delta": 1,
+              "pinnedHeroId": "hero-02"
+            }
+          ]
+        },
+        {
+          "kind": "shift-favour",
+          "characterId": "ira",
+          "characterName": "Dr Ira",
+          "delta": -1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-square-c": {
+      "title": "TOWN SQUARE",
+      "subtitle": "The Delve Master",
+      "text": "You make eye contact with Master Bram and give him a firm nod.\n\n\"Dr Ira, I've let you rile these people long enough. I am the Delve Master. I was elected by these people to protect all of Bird's Nest. The delvers are doing everything in their power to learn what these creatures are.\" Bram does not falter. \"People of Bird's Nest, trust in the delvers and do not let fear guide your hand.\"\n\nA ripple goes through the crowd. They still seem agitated, but Bram's words have calmed at least some of them.",
+      "image": "/story/ch2/master-bram.png",
+      "footnote": "Choose a delver to gain a Level 3 Boss part from Bram as thanks. Decrease Dr Ira's opinion. Unless Dr Ira's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "grant-boss-parts",
+          "level": 3,
+          "amount": 1,
+          "to": "active-delver"
+        },
+        {
+          "kind": "shift-favour",
+          "characterId": "ira",
+          "characterName": "Dr Ira",
+          "delta": -1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-dahlia": {
+      "title": "DAHLIA'S CAVE",
+      "subtitle": "Humans. Tidekin. Unite.",
+      "text": "The cave glows faintly with strands of kelp-like moss. Dahlia rises from her tidal pool as you approach with Xavier, and listens intently as you describe the monsters that ravaged Bird's Nest, her petal-hair trembling like antennae.\n\n\"The people of Bird's Nest are growing angrier each day without answers,\" Xavier murmurs. \"Mother, I'm worried they will come after you and the Tidekin.\"\n\n\"Humans. Tidekin. Unite,\" Dahlia says after a long pause. \"Help them.\" Haltingly, she explains that the Tidekin's settlement is being poisoned by runoff from pipes that drain Bird's Nest into the Tide. \"Stop pipes... elders listen. Elders know truth.\"",
+      "image": "/story/ch2/academy-xavier.png",
+      "onEnter": [
+        {
+          "kind": "spend-story-token"
+        }
+      ],
+      "choices": [
+        {
+          "label": "Commit to seeking diplomacy with the Tidekin",
+          "decisionKey": "ch4.dahlia.A",
+          "next": "ch4-dahlia-a",
+          "hint": "???"
+        },
+        {
+          "label": "Press Dahlia for more detail",
+          "decisionKey": "ch4.dahlia.B",
+          "next": "ch4-dahlia-b",
+          "hint": "Grants Knowledge"
+        },
+        {
+          "label": "Admire her willingness to trust in you",
+          "decisionKey": "ch4.dahlia.C",
+          "next": "ch4-dahlia-c",
+          "hint": "Affects Favor"
+        }
+      ]
+    },
+    "ch4-dahlia-a": {
+      "title": "DAHLIA'S CAVE",
+      "subtitle": "Diplomacy",
+      "text": "\"If your elders hold the truth, then Bird's Nest must hear it. Let us walk openly together - your people and mine - and find the true source of this.\" Dahlia beams with hope, petals blooming faintly.",
+      "footnote": "Add Quest #04 \"A Hand Outstretched\" (a Memory Chip if already owned or completed).",
+      "onEnter": [
+        {
+          "kind": "reveal-quest-or-grant-chip",
+          "number": 4,
+          "name": "A Hand Outstretched",
+          "chipFallback": 1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-dahlia-b": {
+      "title": "DAHLIA'S CAVE",
+      "subtitle": "Made, Not Born",
+      "text": "\"You've seen this corruption before - how could these tissues appear in both the Carnatia and these monsters, and why?\"\n\nDahlia frowns, plucking a glowing strand of moss between her fingers. \"Not certain... Tissue made. Not born.\" She searches for the words. \"Make puppets... of living. Puppets take my kin.\" She looks away. \"Only guess.\"",
+      "footnote": "Add Key Item #21.",
+      "onEnter": [
+        {
+          "kind": "gain-key-item",
+          "number": 21,
+          "name": "Bioluminescence"
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-dahlia-c": {
+      "title": "DAHLIA'S CAVE",
+      "subtitle": "The Example You Set",
+      "text": "\"You amaze me, Dahlia, in your willingness to trust a near stranger, despite everything you've been through. There is danger on all sides, but I do it gladly - to live up to the example you set.\"\n\nDahlia's orchid-petals flush with a faint shimmer. She holds your gaze a heartbeat too long before turning away with a small, knowing smile.",
+      "footnote": "Increase Dahlia's opinion. Unless Dahlia's opinion is now neutral, gain the matching opinion card.",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "dahlia",
+          "characterName": "Dahlia",
+          "delta": 1
+        }
+      ],
+      "next": "ch4-hub"
+    },
+    "ch4-town-center": {
+      "title": "DELVING ACADEMY",
+      "subtitle": "Materials Request",
+      "text": "Headmistress Arlen and Rodrigo approach you excitedly. \"Delvers! Rodrigo had a startling insight - I'll let him explain.\"\n\n\"I've been reading old delving journals in the restricted section, and I finally figured out why delvers are so intent on reaching Gaia! You know that metal cart Witness drags around? When delvers reach Gaia, Witness presents the cart to her, and she performs some kind of alchemical process on it and it starts to glow. It's this very material that all delversuits are made of!\"\n\n\"I'm going to have a heart to heart with Bram after this,\" Arlen says. \"But could you spare another batch of creature parts? We're so close to understanding.\"\n\nDonations count towards your RUNNING total across the campaign. Arlen's reaction hints: about 5 - \"You hide your ungratefulness well.\" About 16 - \"You could have spared a few more creature parts, but I suppose beggars can't be choosers.\" About 28 - \"That is very giving of you.\" About 38 - \"You continue to surpass my highest expectations.\"",
+      "image": "/story/ch2/town-center-arlen.png",
+      "footnote": "Shop Products #19-24 are now available. With 2+ clue icons on your Key Items, also #25; with 5+, also #26.",
+      "onEnter": [
+        {
+          "kind": "add-shop-products",
+          "products": [
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        {
+          "kind": "add-shop-products-if-key-items-min",
+          "minKeyItems": 2,
+          "products": [
+            25
+          ]
+        },
+        {
+          "kind": "add-shop-products-if-key-items-min",
+          "minKeyItems": 5,
+          "products": [
+            26
+          ]
+        }
+      ],
+      "next": "ch4-shop"
+    },
+    "ch4-shop": {
+      "title": "TOWN CENTER",
+      "subtitle": "Visit the Shops",
+      "text": "Each player may purchase products using their minion and/or boss parts. You may convert a Boss part into minion parts at 3 minion parts per level of the Boss part. Check your Opinion cards for discounts or markups.",
+      "postRewardsText": "When everyone is done shopping, click Continue.",
+      "kind": "shop",
+      "next": "ch4-donation-results"
+    },
+    "ch4-donation-results": {
+      "title": "DELVING ACADEMY",
+      "subtitle": "Experimental Division Results",
+      "text": "__arlen-donation-reaction-ch4__",
+      "image": "/story/ch2/town-center-arlen.png",
+      "footnote": "Running total 11-20: one player +1 Armor, other +1 Boots. 21-34: +2 Armor / +2 Boots. 35+: each player +2 Rank of any equipment.",
+      "onEnter": [
+        {
+          "kind": "resolve-academy-donation",
+          "schedule": "ch4"
+        }
+      ],
+      "next": "ch4-jobs"
+    },
+    "ch4-jobs": {
+      "title": "TOWN CENTER",
+      "subtitle": "View the Jobs Board",
+      "text": "The Jobs Board outside the Academy is crowded with requests. Delvers with Open Quests are paid a retainer for each one they're pursuing.",
+      "choices": [
+        {
+          "label": "Collect your retainer",
+          "decisionKey": "ch4.jobs.retainer",
+          "next": "ch4-jobs-retainer",
+          "requireOpenQuests": "positive"
+        },
+        {
+          "label": "Face the board empty-handed",
+          "decisionKey": "ch4.jobs.none",
+          "next": "ch4-jobs-roll",
+          "requireOpenQuests": "zero"
+        }
+      ]
+    },
+    "ch4-jobs-retainer": {
+      "title": "TOWN CENTER",
+      "subtitle": "Retainer",
+      "text": "The Academy clerk tallies up your Open Quests and counts out your pay.",
+      "footnote": "Both delvers gain 1 minion part per Open Quest.",
+      "onEnter": [
+        {
+          "kind": "grant-minion-parts-per-open-quest",
+          "perQuest": 1,
+          "to": "all-delvers"
+        }
+      ],
+      "next": "ch4-jobs-choice"
+    },
+    "ch4-jobs-roll": {
+      "title": "TOWN CENTER",
+      "subtitle": "No Open Quests",
+      "text": "You have no Open Quests to show for yourselves. Headmistress Arlen, pinning up a notice of her own, raises an eyebrow.",
+      "dieRoll": [
+        {
+          "min": 1,
+          "max": 4,
+          "label": "1-4: Arlen is unimpressed",
+          "next": "ch4-jobs-unimpressed"
+        },
+        {
+          "min": 5,
+          "max": 6,
+          "label": "5-6: Arlen shrugs it off",
+          "next": "ch4-jobs-choice"
+        }
+      ]
+    },
+    "ch4-jobs-unimpressed": {
+      "title": "TOWN CENTER",
+      "subtitle": "Unimpressed",
+      "text": "\"A lacklustre investigation, delvers. Bird's Nest deserves better.\"",
+      "image": "/story/ch2/academy-arlen.png",
+      "footnote": "Decrease Arlen's opinion.",
+      "onEnter": [
+        {
+          "kind": "shift-favour",
+          "characterId": "arlen",
+          "characterName": "Headmistress Arlen",
+          "delta": -1
+        }
+      ],
+      "next": "ch4-jobs-choice"
+    },
+    "ch4-jobs-choice": {
+      "title": "TOWN CENTER",
+      "subtitle": "Take a Job",
+      "text": "Three requests catch your eye.\n\nXavier is soliciting help from a delver. He's been researching a corruption called the Tidebloom that has been spreading, and requests help to collect a sample.\n\nA Shadow District street urchin is selling a copy of a map - \"Old Aguilar drew it for his delving partner, back before the Tide took her. Leads to a vault in Second Nest.\"\n\nElayna found a door leading to a basement underneath the burned watchtower that gave her the heebie jeebies - she's put in a request for a delver to check it out.",
+      "choices": [
+        {
+          "label": "Xavier needs help collecting a Tidebloom sample",
+          "decisionKey": "ch4.jobs.A.xavier",
+          "next": "ch4-jobs-a"
+        },
+        {
+          "label": "Buy a street urchin's copy of a map to Second Nest (5 minion parts)",
+          "decisionKey": "ch4.jobs.B.fence",
+          "next": "ch4-jobs-b",
+          "prePay": {
+            "kind": "minion-parts",
+            "amount": 5
+          }
+        },
+        {
+          "label": "Elayna wants a delver to check the watchtower basement",
+          "decisionKey": "ch4.jobs.C.elayna",
+          "next": "ch4-jobs-c"
+        }
+      ]
+    },
+    "ch4-jobs-a": {
+      "title": "TOWN CENTER",
+      "subtitle": "Xavier's Request",
+      "text": "You put your name down on Xavier's request.",
+      "footnote": "Add Quest #03. If already owned or completed, instead gain a Memory Chip token.",
+      "onEnter": [
+        {
+          "kind": "reveal-quest-or-grant-chip",
+          "number": 3,
+          "name": "Xavier's Request",
+          "chipFallback": 1
+        }
+      ],
+      "next": "ch4-before-chapter-5"
+    },
+    "ch4-jobs-b": {
+      "title": "TOWN CENTER",
+      "subtitle": "The Forgotten Vault",
+      "text": "You count out the minion parts. The urchin presses the folded map into your hand and vanishes into the crowd.",
+      "footnote": "The paying delver loses 5 minion parts. Add Quest #06. If already owned or completed, instead gain a Memory Chip token.",
+      "onEnter": [
+        {
+          "kind": "lose-minion-parts",
+          "amount": 5,
+          "to": "active-delver"
+        },
+        {
+          "kind": "reveal-quest-or-grant-chip",
+          "number": 6,
+          "name": "The Forgotten Vault",
+          "chipFallback": 1
+        }
+      ],
+      "next": "ch4-before-chapter-5"
+    },
+    "ch4-jobs-c": {
+      "title": "TOWN CENTER",
+      "subtitle": "Underneath the Watchtower",
+      "text": "You put your name down on Elayna's request.",
+      "footnote": "Add Quest #13. If already owned or completed, instead gain a Memory Chip token.",
+      "onEnter": [
+        {
+          "kind": "reveal-quest-or-grant-chip",
+          "number": 13,
+          "name": "Underneath the Watchtower",
+          "chipFallback": 1
+        }
+      ],
+      "next": "ch4-before-chapter-5"
+    },
+    "ch4-before-chapter-5": {
+      "title": "END OF CHAPTER 4",
+      "subtitle": "Before Chapter 5",
+      "text": "Before the next chapter begins, Xavier's request must be settled - whatever became of his assistant in the Tide, you need to see it through.",
+      "footnote": "Quest #03 must be completed before Chapter 5. If it isn't, play it now (no Story token needed) and repeat until it's complete.",
+      "choices": [
+        {
+          "label": "Play Quest #03 - Xavier's Request",
+          "decisionKey": "ch4.before5.q3",
+          "next": "ch4-q3-required",
+          "image": "/quests/quest-03.jpg",
+          "hideIfDecisionMade": "quest.3.completed"
+        },
+        {
+          "label": "Continue to Chapter 5",
+          "decisionKey": "ch4.before5.done",
+          "next": "ch4-end",
+          "requireDecision": "quest.3.completed"
+        }
+      ]
+    },
+    "ch4-q3-required": {
+      "title": "QUEST #03: XAVIER'S REQUEST",
+      "subtitle": "Into the Tide",
+      "text": "Xavier needs a Tidebloom sample taken from the infected creatures of the Tide. His assistant will meet you out there. Witness hums beside you, ready to go.",
+      "image": "/story/ch2/academy-xavier.png",
+      "startQuest": "quest3",
+      "next": "ch4-before-chapter-5"
+    },
+    "ch4-end": {
+      "title": "END OF CHAPTER 4",
+      "subtitle": "The Passing of the Torch",
+      "text": "Smoke still drifts over the rebuilt barricades. Bird's Nest survived the night, but everyone saw Bram freeze - and everyone saw who took the reins.",
+      "kind": "end-town-visit",
+      "onEnter": [
+        {
+          "kind": "record-decision",
+          "key": "ch4.completed"
+        }
+      ]
+    }
+  }
+}

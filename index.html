@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Gone to Gaia - Quest #1 Playtest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!--
+      Fixed-aspect layout. The game is designed against a
+      3538×2211 px stage (16:10 aspect). `#viewport-shell`
+      fills the actual viewport and letterboxes with solid
+      black; `#app-stage` is the design-sized canvas that
+      `src/layout/stageScale.ts` uniformly scales via CSS
+      `transform: scale(--stage-scale)` so every screen looks
+      visually identical regardless of window size. `#app`
+      remains the existing screen-renderer mount and lives
+      inside the stage with its own internal scroll for any
+      content taller than 2211px (campaign sheet, story, etc.).
+    -->
+    <div id="viewport-shell">
+      <div id="app-stage">
+        <div id="app"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

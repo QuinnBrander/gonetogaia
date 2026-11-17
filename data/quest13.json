@@ -1,0 +1,324 @@
+{
+  "id": "quest13",
+  "name": "Underneath the Watchtower",
+  "goal": "Explore the hidden basement (Wave 4)",
+  "primaryGoalWaveNumber": 4,
+  "intro": [],
+  "waves": [
+    {
+      "number": 1,
+      "goal": "Explore the hidden basement (Wave 4).",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "billy-132",
+      "minionEnemyIds": [
+        "venena-008",
+        "venena-009",
+        "venena-010",
+        "venena-011",
+        "venena-012",
+        "venena-013",
+        "venena-014"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q13_w1_end",
+        "anyDie": "q13_w1_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q13_w1_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Seal it: add a Friendly Spawn card to the Spawn deck, and both delvers gain 2 ELEMENTS of their choice",
+            "pageId": "q13_w1_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-friendly-spawn-card"
+              },
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Follow the pipe: gain a LEVEL UP card, and both delvers gain 2 ELEMENTS of their choice",
+            "pageId": "q13_w1_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              },
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Leave it: both delvers gain 3 ELEMENTS of their choice",
+            "pageId": "q13_w1_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Match the green paint chips: add Shop Product #41 Shock Gauntlet to your Purchasable Products, and both delvers gain 2 ELEMENTS of their choice",
+            "pageId": "q13_w1_paint",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  41
+                ],
+                "chipFallback": 1
+              }
+            ],
+            "requireKeyItem": 9
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q13_w1_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "goal": "Explore the hidden basement (Wave 4).",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "laura-133",
+      "minionEnemyIds": [
+        "colibrius-040",
+        "colibrius-041",
+        "colibrius-042",
+        "colibrius-043",
+        "colibrius-044",
+        "colibrius-045",
+        "colibrius-046"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q13_w2_end",
+        "anyDie": "q13_w2_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q13_w2_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Enter the storeroom: add Shop Product #37 Ancient OS to your Purchasable Products, and both delvers heal 3 HP",
+            "pageId": "q13_w2_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "heal-both-delvers",
+                "amount": 3
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  37
+                ],
+                "chipFallback": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Collect a sample and move on: both delvers heal 4 HP",
+            "pageId": "q13_w2_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "heal-both-delvers",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q13_w2_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "goal": "Explore the hidden basement (Wave 4).",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "george-134",
+      "minionEnemyIds": [
+        "blackguard-064",
+        "blackguard-065",
+        "blackguard-066",
+        "blackguard-067",
+        "blackguard-068",
+        "blackguard-069",
+        "blackguard-070"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q13_w3_end",
+        "anyDie": "q13_w3_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q13_w3_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Pocket the syringes: one delver gains 1 BLOCK COUNTERATTACK token, and gain a LEVEL UP card",
+            "pageId": "q13_w3_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-consumable-token-one-delver",
+                "tokenKind": "prevent-counterattack",
+                "amount": 1
+              },
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Read the ledger: gain 2 XP, and gain a LEVEL UP card",
+            "pageId": "q13_w3_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "gain-xp",
+                "amount": 2
+              },
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q13_w3_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 4,
+      "goal": "Survive to the end of Wave 4.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "revenant-135",
+      "minionEnemyIds": [
+        "experiment-136",
+        "experiment-137",
+        "experiment-138",
+        "experiment-139",
+        "experiment-140",
+        "experiment-141",
+        "experiment-142"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q13_w4_end",
+        "anyDie": "q13_w4_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q13_w4_defeat"
+        },
+        "victory": [
+          {
+            "label": "Return to Bird's Nest",
+            "pageId": "q13_w4_gone",
+            "then": "end-quest",
+            "rewards": [
+              {
+                "kind": "complete-quest",
+                "number": 13,
+                "name": "Underneath the Watchtower"
+              },
+              {
+                "kind": "gain-key-item",
+                "number": 20,
+                "name": "The Secret Lab is Gone"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "pages": {
+    "wave1_intro": "You climb down through the green hatch. The air below is stale and still. What's inside, you wonder?",
+    "wave1_intro_ability_name": "Double Edged, Fatal Flaw",
+    "wave1_intro_ability_rules": "Double Edged (Boss): This boss deals and suffers double damage when its black arrow is targeting a delver.\n\nFatal Flaw (Boss and Minions): These enemies can only be killed in the order specified next to this ability. Enemies with sequential numbers can be killed at the same time. They can still suffer damage in any order - only the final point of damage remains.",
+    "q13_w1_end": "Billy the Bear slumps against the scorched wall.",
+    "q13_w1_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q13_w1_continue": "You knew the hatch was there, but no one imagined what lay beneath it - a basement that survived the blaze, crawling with creatures that shouldn't be able to exist in open air. The walls are scorched but intact, the air thick and wrong, carrying a faint chemical sting beneath the smoke. These things aren't wild.\n\nYou tighten your grip on your weapon and push deeper into the dark. Whatever happened here wasn't an accident - and you're about to find out why.\n\nDelvers gain 2 elements (your choice).",
+    "q13_w1_retreat": "You never imagined the Watchtower's basement had survived the blaze, let alone that it was full of monsters. Well, that's enough life endangerment for today.\n\nYour Quest is ended.",
+    "q13_w2_end": "Laura the Flytrap folds in on itself.",
+    "q13_w2_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q13_w2_continue": "The flytrap's movements linger in your mind - it didn't thrash or lash out blindly, but struck with precision, almost... trained. Even now, you can't shake the feeling that it was following some unseen command. Creatures of the Tide don't behave like that. You press onward, unease settling deep in your chest.\n\nDelvers heal up to 3 HP.",
+    "q13_w2_retreat": "The deeper you look, the less any of this feels natural, and that realization unsettles you more than the creatures themselves. Whatever purpose these creatures serve, they're beyond what you can handle.\n\nYour Quest is ended.",
+    "q13_w3_end": "George the Ape crashes to the floor.",
+    "q13_w3_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q13_w3_continue": "That Ape had needles falling out of its flesh when it first came running towards you. Someone's been running experiments, but to what end?\n\nGain a Level card.\n\nAs you reach the lowest floor, you gaze on rows upon rows of creatures immersed in pods filled with yellow liquid, neat handwritten labels beneath each. In the center of the room is the corpse of a human suspended in the air, monster parts forcibly grafted in - the metal connections clearly visible. You retch involuntarily. The corpse opens its eyes and glares at you. It reaches a clawed hand to sever the connections holding it to the ceiling, and scuttles toward you.",
+    "q13_w3_retreat": "The deeper you go, the more wrong everything feels - needles, containment, tamed monsters. The goosebumps on your arm tell you the worst is just around the corner, so you turn back, leaving the nightmare beneath the Watchtower undisturbed.\n\nYour Quest is ended.",
+    "q13_w4_end": "The Incomplete Revenant twitches and goes still.",
+    "q13_w4_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q13_w4_gone": "Many of the creatures in the submerged pods are beginning to wake up. You flee for your lives and slam the door behind you.\n\nYou run back to the town square and collapse, exhausted. When you come to, the first light of a new day is peeking out. You head straight to Master Bram's office and report what you found. He doesn't believe you, but agrees to follow you to the entrance. When you open the door, however, all of the creatures and pods are gone.\n\nBram laughs. \"That was a good prank! I have to hand it to you, you had me a little scared for a moment. I do have to go though, much to do.\" He leaves.\n\nYour Quest is complete! Add Key Item #20.",
+    "q13_w1_paint": "You knew the hatch was there, but no one imagined what lay beneath it - a basement that survived the blaze, crawling with creatures that shouldn't be able to exist in open air. The walls are scorched but intact, the air thick and wrong, carrying a faint chemical sting beneath the smoke. These things aren't wild.\n\nA rusted pipe juts from the scorched wall, spilling black sludge into a drain. The pipe runs up through the ceiling - toward Bird's Nest.\n\nAt the hatch frame, flaking green paint catches your eye - the same shade as the chips torn from the festival generator. Whoever attacked the generator came from down here. Behind the frame sits their supply crate, and in it a gauntlet wired with prods that still spark.\n\nYou tighten your grip on your weapon and push deeper into the dark. Whatever happened here wasn't an accident - and you're about to find out why.\n\nAdd Shop Product #41 Shock Gauntlet to your Purchasable Products. Both delvers gain 2 ELEMENTS of their choice.",
+    "q13_w1_continue_a": "You knew the hatch was there, but no one imagined what lay beneath it - a basement that survived the blaze, crawling with creatures that shouldn't be able to exist in open air. The walls are scorched but intact, the air thick and wrong, carrying a faint chemical sting beneath the smoke. These things aren't wild.\n\nA rusted pipe juts from the scorched wall, spilling black sludge into a drain. The pipe runs up through the ceiling - toward Bird's Nest.\n\nYou hammer the pipe shut. The creatures nearby seem calmer already.\n\nYou tighten your grip on your weapon and push deeper into the dark. Whatever happened here wasn't an accident - and you're about to find out why.\n\nAdd a Friendly Spawn card to the Spawn deck. Both delvers gain 2 ELEMENTS of their choice.",
+    "q13_w1_continue_b": "You knew the hatch was there, but no one imagined what lay beneath it - a basement that survived the blaze, crawling with creatures that shouldn't be able to exist in open air. The walls are scorched but intact, the air thick and wrong, carrying a faint chemical sting beneath the smoke. These things aren't wild.\n\nA rusted pipe juts from the scorched wall, spilling black sludge into a drain. The pipe runs up through the ceiling - toward Bird's Nest.\n\nIt ends at a sealed grate. Someone left tools behind.\n\nYou tighten your grip on your weapon and push deeper into the dark. Whatever happened here wasn't an accident - and you're about to find out why.\n\nGain a LEVEL UP card. Both delvers gain 2 ELEMENTS of their choice.",
+    "q13_w1_continue_c": "You knew the hatch was there, but no one imagined what lay beneath it - a basement that survived the blaze, crawling with creatures that shouldn't be able to exist in open air. The walls are scorched but intact, the air thick and wrong, carrying a faint chemical sting beneath the smoke. These things aren't wild.\n\nA rusted pipe juts from the scorched wall, spilling black sludge into a drain. The pipe runs up through the ceiling - toward Bird's Nest.\n\nIt isn't your mission - not today.\n\nYou tighten your grip on your weapon and push deeper into the dark. Whatever happened here wasn't an accident - and you're about to find out why.\n\nBoth delvers gain 3 ELEMENTS of their choice.",
+    "q13_w2_continue_a": "The flytrap's movements linger in your mind - it didn't thrash or lash out blindly, but struck with precision, almost... trained. Even now, you can't shake the feeling that it was following some unseen command. Creatures of the Tide don't behave like that. You press onward, unease settling deep in your chest.\n\nMoss creeps out from under a side door, bright with the telltale signs of Tidebloom. The door opens onto a narrow storeroom.\n\nInside, under a tarp crusted with bloom, sits an old operating system - still wired for a delversuit.\n\nAdd Shop Product #37 Ancient OS to your Purchasable Products. Both delvers heal 3 HP.",
+    "q13_w2_continue_b": "The flytrap's movements linger in your mind - it didn't thrash or lash out blindly, but struck with precision, almost... trained. Even now, you can't shake the feeling that it was following some unseen command. Creatures of the Tide don't behave like that. You press onward, unease settling deep in your chest.\n\nMoss creeps out from under a side door, bright with the telltale signs of Tidebloom. The door opens onto a narrow storeroom.\n\nCollecting the sample gives you a needed moment of respite.\n\nBoth delvers heal 4 HP.",
+    "q13_w3_continue_a": "That Ape had needles falling out of its flesh when it first came running towards you. Someone's been running experiments, but to what end?\n\nOn a steel bench lie a dozen loaded syringes beside a ledger of neat handwritten notes.\n\nThe liquid inside is a paralytic. It could come in handy.\n\nAs you reach the lowest floor, you gaze on rows upon rows of creatures immersed in pods filled with yellow liquid, neat handwritten labels beneath each. In the center of the room is the corpse of a human suspended in the air, monster parts forcibly grafted in - the metal connections clearly visible. You retch involuntarily. The corpse opens its eyes and glares at you. It reaches a clawed hand to sever the connections holding it to the ceiling, and scuttles toward you.\n\nOne delver gains 1 BLOCK COUNTERATTACK token. Gain a LEVEL UP card.",
+    "q13_w3_continue_b": "That Ape had needles falling out of its flesh when it first came running towards you. Someone's been running experiments, but to what end?\n\nOn a steel bench lie a dozen loaded syringes beside a ledger of neat handwritten notes.\n\nDates, doses, creature numbers. Whoever wrote this has done it many times before.\n\nAs you reach the lowest floor, you gaze on rows upon rows of creatures immersed in pods filled with yellow liquid, neat handwritten labels beneath each. In the center of the room is the corpse of a human suspended in the air, monster parts forcibly grafted in - the metal connections clearly visible. You retch involuntarily. The corpse opens its eyes and glares at you. It reaches a clawed hand to sever the connections holding it to the ceiling, and scuttles toward you.\n\nGain 2 XP. Gain a LEVEL UP card."
+  }
+}

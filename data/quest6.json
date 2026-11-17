@@ -1,0 +1,455 @@
+{
+  "id": "quest6",
+  "name": "The Forgotten Vault",
+  "goal": "Search for artifacts in the ruins (Wave 2)",
+  "primaryGoalWaveNumber": 2,
+  "intro": [],
+  "waves": [
+    {
+      "number": 1,
+      "goal": "Reach the end of Wave 1.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "joyce-029",
+      "minionEnemyIds": [
+        "venena-008",
+        "venena-009",
+        "venena-010",
+        "venena-011",
+        "venena-012",
+        "venena-013",
+        "venena-014"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q6_w1_end",
+        "anyDie": "q6_w1_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q6_w1_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Follow it: gain a LEVEL UP card, and both delvers gain 2 ELEMENTS of their choice",
+            "pageId": "q6_w1_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              },
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Let it drift and say the name aloud: both delvers heal 2 HP, and both delvers gain 2 ELEMENTS of their choice",
+            "pageId": "q6_w1_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "heal-both-delvers",
+                "amount": 2
+              },
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Salvage the candle: one delver gains +1 RANK of BATTERY, and both delvers gain 2 ELEMENTS of their choice",
+            "pageId": "q6_w1_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-equipment-rank-one-delver",
+                "equipmentType": "Battery",
+                "amount": 1
+              },
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q6_w1_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "goal": "Survive to the end of Wave 2.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "gerald-030",
+      "minionEnemyIds": [
+        "ophidian-015",
+        "ophidian-016",
+        "ophidian-017",
+        "ophidian-018",
+        "ophidian-019",
+        "ophidian-020",
+        "ophidian-021"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q6_w2_end",
+        "anyDie": "q6_w2_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q6_w2_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Take something: add Shop Product #43 Sword of Ruin to your Purchasable Products, and gain 2 LEVEL UP cards",
+            "pageId": "q6_w2_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 2
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "complete-quest",
+                "number": 6,
+                "name": "The Forgotten Vault"
+              },
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  43
+                ],
+                "questLabel": "The Forgotten Vault"
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Leave something: add Shop Product #43 Sword of Ruin to your Purchasable Products, both delvers heal 3 HP, and gain a LEVEL UP card",
+            "pageId": "q6_w2_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "heal-both-delvers",
+                "amount": 3
+              },
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "complete-quest",
+                "number": 6,
+                "name": "The Forgotten Vault"
+              },
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  43
+                ],
+                "questLabel": "The Forgotten Vault"
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat (Quest complete)",
+            "pageId": "q6_w2_retreat",
+            "rewards": [
+              {
+                "kind": "complete-quest",
+                "number": 6,
+                "name": "The Forgotten Vault"
+              },
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  43
+                ],
+                "questLabel": "The Forgotten Vault"
+              }
+            ],
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "goal": "Survive to the end of Wave 3.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "abomination-063",
+      "minionEnemyIds": [
+        "blackguard-064",
+        "blackguard-065",
+        "blackguard-066",
+        "blackguard-067",
+        "blackguard-068",
+        "blackguard-069",
+        "blackguard-070"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q6_w3_end",
+        "anyDie": "q6_w3_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q6_w3_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Take the safer path: both delvers gain 2 ELEMENTS of their choice, and gain a LEVEL UP card",
+            "pageId": "q6_w3_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              },
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Tread the more dangerous road: add Shop Product #42 Fabled Hammer to your Purchasable Products, and gain a LEVEL UP card",
+            "pageId": "q6_w3_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  42
+                ],
+                "chipFallback": 1
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q6_w3_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 4,
+      "goal": "Survive to the end of Wave 4.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "golem-055",
+      "minionEnemyIds": [
+        "orite-056",
+        "orite-057",
+        "orite-058",
+        "orite-059",
+        "orite-060",
+        "orite-061",
+        "orite-062"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q6_w4_end",
+        "anyDie": "q6_w4_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q6_w4_defeat"
+        },
+        "victory": [
+          {
+            "label": "A - Continue: Go, and give what you find to Arlen: increase Arlen's opinion, and both delvers heal 4 HP",
+            "pageId": "q6_w4_continue_a",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "shift-favour-by-scenario",
+                "characterId": "arlen",
+                "characterName": "Arlen",
+                "delta": 1
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Decline and stay on your mission: both delvers gain 2 ELEMENTS of their choice, and both delvers heal 4 HP",
+            "pageId": "q6_w4_continue_b",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-element-choice-each",
+                "amount": 2
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Follow Woo's notes: add Shop Product #44 War Mace to your Purchasable Products, and both delvers heal 4 HP",
+            "pageId": "q6_w4_woo",
+            "requireKeyItem": 3,
+            "carryEffects": [
+              {
+                "kind": "heal-both-delvers",
+                "amount": 4
+              }
+            ],
+            "then": "next-wave",
+            "rewards": [
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  44
+                ],
+                "chipFallback": 1
+              }
+            ]
+          },
+          {
+            "label": "B - Retreat",
+            "pageId": "q6_w4_retreat",
+            "then": "end-quest"
+          }
+        ]
+      }
+    },
+    {
+      "number": 5,
+      "goal": "Survive this Wave to reach Gaia.",
+      "spawn": {
+        "kind": "spawn-deck",
+        "boardSize": {
+          "w": 5,
+          "h": 5
+        },
+        "deck": "base"
+      },
+      "bossEnemyId": "timberfiend-071",
+      "minionEnemyIds": [
+        "sapling-072",
+        "sapling-073",
+        "sapling-074",
+        "sapling-075",
+        "sapling-076",
+        "sapling-077",
+        "sapling-078"
+      ],
+      "endOfWave": {
+        "bothSurvive": "q6_w5_end",
+        "anyDie": "q6_w5_defeat"
+      },
+      "eow": {
+        "defeat": {
+          "pageId": "q6_w5_defeat"
+        },
+        "victory": [
+          {
+            "label": "Reach Gaia",
+            "pageId": "q6_w5_gaia",
+            "pickShopProducts": {
+              "from": [
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45
+              ],
+              "count": 2
+            },
+            "then": "end-quest"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": {
+    "wave1_intro": "Mr. Aguilar's map leads you into the mist. Before long, the air fills with a furious buzzing - a great bear lumbers out of the fog, a nest of Venena fused to its back.",
+    "wave1_intro_ability_name": "Strength · Fatal Flaw",
+    "wave1_intro_ability_rules": "Strength: each time the enemy counterattacks, afterwards add a monster token to its tile. Add its count of monster tokens to its damage. Fatal Flaw: these enemies can only be killed in the order specified next to this ability - enemies labelled \"Fatal Flaw: 1\" must die first, then \"Fatal Flaw: 2\", and so on. They can still suffer damage in any order; only the final point of damage is gated.",
+    "q6_w1_end": "The last of the Venena falls silent. Do you press on through the mist, or turn back?",
+    "q6_w1_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q6_w1_continue": "You spot the ruins of Second Nest, where a deluge beats down on the area. The hidden cache is said to be at the edge of town, though rumors say the area is infested with creatures. To make matters worse, the heavy rain hampers your visibility and movement. You ready yourselves and move in.\n\nDelvers gain 2 elements (your choice).",
+    "q6_w1_retreat": "The marked building is just ahead, but pain slows every step and your strength is fading fast. Pushing forward now would be reckless. You turn back, leaving the ruins and their secrets for another attempt.\n\nYour Quest is ended.",
+    "q6_w2_end": "The last Snatcher goes still in the rain. The marked building stands before you.",
+    "q6_w2_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q6_w2_retreat": "After slaying the last of the Snatchers, you enter the building. It appears to have been an armory at one time or other. Most of it is picked over, but after a thorough search, you find a deadly looking blade behind a false wall.\n\nAdd Shop Product #43 to your Purchasable Products. Your Quest is complete!",
+    "q6_w2_continue": "After slaying the last of the Snatchers, you enter the building. It appears to have been an armory at one time or other. Most of it is picked over, but after a thorough search, you find a deadly looking blade behind a false wall. That's when your eyes spot a small campsite in the corner of the hidden wall. Someone tried to make the area comfortable with two sleeping bags, a firepit dug into the dirt, and several containers of dried food.\n\nA note with a single message was left on top of the container: \"Take something, leave something.\"\n\nYou decide to rest for a bit, lighting the fire for warmth against the icy chill of the storm blowing outside. With the glow of the fire, your eyes glimpse something on the wall. Names, hundreds of them, along with the date they were each written. You recognize some of the names, including Jonah Stone and Margaret Woo. They must have stopped here on their way to Gaia decades ago.\n\nYou stand and add your name to the list, a symbol that you were here; that you were aided by those that came before you and left something behind for whoever comes after. Looking at the hundreds of names, you suddenly don't feel so alone.\n\nAdd Shop Product #43 to your Purchasable Products. Your Quest is complete!\n\nYou're determined to carry on. This time you'll reach Gaia. Delvers gain a Level card.",
+    "q6_w3_end": "The Abomination topples and the Blackguards fall silent among the ruins.",
+    "q6_w3_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q6_w3_continue": "You press on through the ruins, determination overriding exhaustion - this time, you will reach Gaia. The path ahead is brutal, but you refuse to falter.\n\nDelvers gain a Level card.",
+    "q6_w3_retreat": "The Blackguards leave you battered and drained, every delver suit system on the brink of failure. The path forward promises only more of the same and you've reached your limit.",
+    "q6_w4_end": "The Golem grinds to a halt amid the shattered Orites.",
+    "q6_w4_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q6_w4_continue": "As you press on through the wreckage with weakening will, Witness suddenly bobs ahead and dramatically \"points\" toward Gaia, then trips over a loose chunk of debris. You can't help but snort as he rights himself and carries on as if nothing happened. If this goof can carry on, so can you.\n\nDelvers heal 4 HP.",
+    "q6_w4_retreat": "The Golem's blows leave you reeling, systems failing faster than you can recover. Witness hovers beside you, lets out a long, disappointed beeeep, then slowly turns and drifts back, pausing just long enough to make sure you're following. You sigh and fall in behind him, retreating before the Tide claims you both.",
+    "q6_w5_end": "The Timber Fiend crashes down and its brood falls still. Gaia's glow spills over the ridge ahead.",
+    "q6_w5_defeat": "The creatures swarm you and you black out. Your Quest is ended.",
+    "q6_w5_gaia": "You step into the glow of the massive hovering structure that is Gaia. Witness deposits a large heap of metal on the ground, then looks at you and mimes closing their eyes tightly - eventually you understand that you should do the same. Even with your eyes clamped shut, you're blinded by Gaia's consecration. Over several minutes, though, your sight gradually returns, and you are delighted to see that the metal glows with its own inner light.\n\nShop Products #32-45: choose any 2 products to add to your Purchasable Products.",
+    "q6_w4_woo": "As you press on through the wreckage with weakening will, Witness suddenly bobs ahead and dramatically \"points\" toward Gaia, then trips over a loose chunk of debris. You can't help but snort as he rights himself and carries on as if nothing happened. If this goof can carry on, so can you.\n\nHeadmistress Arlen's voice comes through your comms. \"Delvers, would you mind a small detour? There's a cache of equipment hidden nearby that my students would benefit from greatly.\"\n\nMargaret Woo's diary describes this last stretch: \"a ridge of broken towers, then the light.\" Her notes mark a cache wedged beneath a fallen beam, still sealed after twenty years. Inside lies a war mace of the old world, its haft etched with the names of delvers long gone.\n\nAdd Shop Product #44 War Mace to your Purchasable Products. Both delvers heal 4 HP.",
+    "q6_w1_continue_a": "You spot the ruins of Second Nest, where a deluge beats down on the area. The hidden cache is said to be at the edge of town, though rumors say the area is infested with creatures. To make matters worse, the heavy rain hampers your visibility and movement.\n\nThrough the downpour drifts a paper festival lantern, its candle sheltered under the folds. A name is written on its side - someone set it loose for the Memorial.\n\nIt leads you to a sheltered doorway and a previous delver's cache.\n\nYou ready yourselves and move in.\n\nGain a LEVEL UP card. Both delvers gain 2 ELEMENTS of their choice.",
+    "q6_w1_continue_b": "You spot the ruins of Second Nest, where a deluge beats down on the area. The hidden cache is said to be at the edge of town, though rumors say the area is infested with creatures. To make matters worse, the heavy rain hampers your visibility and movement.\n\nThrough the downpour drifts a paper festival lantern, its candle sheltered under the folds. A name is written on its side - someone set it loose for the Memorial.\n\nYou watch it go until the rain swallows its glow. A moment of peace.\n\nYou ready yourselves and move in.\n\nBoth delvers heal 2 HP. Both delvers gain 2 ELEMENTS of their choice.",
+    "q6_w1_continue_c": "You spot the ruins of Second Nest, where a deluge beats down on the area. The hidden cache is said to be at the edge of town, though rumors say the area is infested with creatures. To make matters worse, the heavy rain hampers your visibility and movement.\n\nThrough the downpour drifts a paper festival lantern, its candle sheltered under the folds. A name is written on its side - someone set it loose for the Memorial.\n\nThe wax is laced with creature oil - it still holds a charge.\n\nYou ready yourselves and move in.\n\nOne delver gains +1 RANK of BATTERY. Both delvers gain 2 ELEMENTS of their choice.",
+    "q6_w2_continue_a": "After slaying the last of the Snatchers, you enter the building. It appears to have been an armory at one time or other. Most of it is picked over, but after a thorough search, you find a deadly looking blade behind a false wall. That's when your eyes spot a small campsite in the corner of the hidden wall. Someone tried to make the area comfortable with two sleeping bags, a firepit dug into the dirt, and several containers of dried food.\n\nA note with a single message was left on top of the container: \"Take something, leave something.\"\n\nInside the container is a well-kept tool kit. You feel a twinge of guilt leaving nothing behind.\n\nYou decide to rest for a bit, lighting the fire for warmth against the icy chill of the storm blowing outside. With the glow of the fire, your eyes glimpse something on the wall. Names, hundreds of them, along with the date they were each written. You recognize some of the names, including Jonah Stone and Margaret Woo. They must have stopped here on their way to Gaia decades ago.\n\nYou stand and add your name to the list, a symbol that you were here; that you were aided by those that came before you and left something behind for whoever comes after. Looking at the hundreds of names, you suddenly don't feel so alone.\n\nYou're determined to carry on. This time you'll reach Gaia.\n\nAdd Shop Product #43 Sword of Ruin to your Purchasable Products. Gain 2 LEVEL UP cards. Your Quest is complete!",
+    "q6_w2_continue_b": "After slaying the last of the Snatchers, you enter the building. It appears to have been an armory at one time or other. Most of it is picked over, but after a thorough search, you find a deadly looking blade behind a false wall. That's when your eyes spot a small campsite in the corner of the hidden wall. Someone tried to make the area comfortable with two sleeping bags, a firepit dug into the dirt, and several containers of dried food.\n\nA note with a single message was left on top of the container: \"Take something, leave something.\"\n\nYou leave a ration and a note for whoever comes next.\n\nYou decide to rest for a bit, lighting the fire for warmth against the icy chill of the storm blowing outside. With the glow of the fire, your eyes glimpse something on the wall. Names, hundreds of them, along with the date they were each written. You recognize some of the names, including Jonah Stone and Margaret Woo. They must have stopped here on their way to Gaia decades ago.\n\nYou stand and add your name to the list, a symbol that you were here; that you were aided by those that came before you and left something behind for whoever comes after. Looking at the hundreds of names, you suddenly don't feel so alone.\n\nYou're determined to carry on. This time you'll reach Gaia.\n\nAdd Shop Product #43 Sword of Ruin to your Purchasable Products. Both delvers heal 3 HP. Gain a LEVEL UP card. Your Quest is complete!",
+    "q6_w3_continue_a": "You press on through the ruins, determination overriding exhaustion - this time, you will reach Gaia. The path ahead is brutal, but you refuse to falter.\n\nYour path diverges. One trail climbs steeply; the other delves ever deeper into the ruins. At the Academy you were taught that higher paths are safer - but less trodden paths sometimes reward bold delvers.\n\nThe ruins are dangerous enough without making it worse.\n\nBoth delvers gain 2 ELEMENTS of their choice. Gain a LEVEL UP card.",
+    "q6_w3_continue_b": "You press on through the ruins, determination overriding exhaustion - this time, you will reach Gaia. The path ahead is brutal, but you refuse to falter.\n\nYour path diverges. One trail climbs steeply; the other delves ever deeper into the ruins. At the Academy you were taught that higher paths are safer - but less trodden paths sometimes reward bold delvers.\n\nIn the dark you hear ferocious monsters, but just as you're about to turn back you catch the glint of a rusted warhammer in the rubble.\n\nAdd Shop Product #42 Fabled Hammer to your Purchasable Products. Gain a LEVEL UP card.",
+    "q6_w4_continue_a": "As you press on through the wreckage with weakening will, Witness suddenly bobs ahead and dramatically \"points\" toward Gaia, then trips over a loose chunk of debris. You can't help but snort as he rights himself and carries on as if nothing happened. If this goof can carry on, so can you.\n\nHeadmistress Arlen's voice comes through your comms. \"Delvers, would you mind a small detour? There's a cache of equipment hidden nearby that my students would benefit from greatly.\"\n\nYou find the cache and dutifully hand it to Witness for delivery to Arlen.\n\nIncrease Arlen's opinion. Both delvers heal 4 HP.",
+    "q6_w4_continue_b": "As you press on through the wreckage with weakening will, Witness suddenly bobs ahead and dramatically \"points\" toward Gaia, then trips over a loose chunk of debris. You can't help but snort as he rights himself and carries on as if nothing happened. If this goof can carry on, so can you.\n\nHeadmistress Arlen's voice comes through your comms. \"Delvers, would you mind a small detour? There's a cache of equipment hidden nearby that my students would benefit from greatly.\"\n\nArlen grudgingly accepts. The focus does you good.\n\nBoth delvers gain 2 ELEMENTS of their choice. Both delvers heal 4 HP."
+  },
+  "bonusGoal": "Bonus: survive Waves 3-4, then reach Gaia (Wave 5)"
+}

@@ -1,0 +1,8 @@
+[
+  { "id": "earth",    "name": "Earth",    "iconHint": "stone / pebble",            "image": "earth.webp" },
+  { "id": "wind",     "name": "Wind",     "iconHint": "spiral",                    "image": "wind.webp" },
+  { "id": "fire",     "name": "Fire",     "iconHint": "flame",                     "image": "fire.webp" },
+  { "id": "water",    "name": "Water",    "iconHint": "teardrop",                  "image": "water.webp" },
+  { "id": "void",     "name": "Void",     "iconHint": "crescent moon",             "image": "void.webp" },
+  { "id": "radiance", "name": "Radiance", "iconHint": "jagged crystal / star",     "image": "radiance.webp" }
+]

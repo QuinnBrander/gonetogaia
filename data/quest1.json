@@ -1,0 +1,50 @@
+{
+  "id": "quest1",
+  "name": "Reach the Buoy",
+  "goal": "Survive to the end of Wave 1.",
+  "primaryGoalWaveNumber": 1,
+  "intro": [
+    "The hour is late when you arrive. Not looking to draw attention, you quietly take a seat in the grass amongst your fellow graduates. At the cliff\u2019s edge stands Master Bram - a formidable professor at the Delving Academy. You watch as he contemplates the vast expanse of mist spilling out in all directions. At last, he speaks.\n\n\u201cLong ago, mankind ruled the earth. We built cities that scraped the sky, forged machines that silenced nature, and used weapons to dominate everything, even each other. It is little wonder that the earth rebelled and released the Tide upon us. The mist consumed our land, melding earth\u2019s creatures into beings far greater than anything our ancestors could contend with. We were cast down by the world we thought we controlled.\u201d",
+
+    "\u201cA thousand years have passed, and she has yet to forgive us. Bit by bit, the Tide continues to rise, and to this day we do not know how to stop it. On this lonely mountain, we are the last to cling to life. Why do we choose to carry on in the face of this impending doom? For the simple reason that all lives are precious.\n\nBy graduating from the Delving Academy, you accept this sacred calling: to venture forth into the Tide, protect the citizens of Bird\u2019s Nest, and to reach Gaia, our last bastion of hope. To aid you in your duties, we grant you the use of our most priceless objects: delversuits.\u201d\n\nMaster Bram draws your attention to the delversuit behind him - an armor-reinforced diving suit that glows with a strange, colorful aura.\n\n\u201cNo more training suits for you, cadets. It\u2019s time for the real thing. But first, let\u2019s go over your final exam.\u201d",
+
+    "Bram turns your attention to an area beyond the cliffside.\n\n\u201cDo you see that buoy bobbing above the purple haze? Your mission is to retrieve your delver tags hanging from it. Simple, right? Well, don\u2019t get careless - the latest reports have informed us of Crystanids infesting the area.\u201d\n\nThe crowd turns uneasy. Sensing the nervous energy, Master Bram breaks out into a warm smile.\n\n\u201cYou\u2019re ready for this, just think of this as one more test. Keep your cool and you should be able to make short work of them.\u201d",
+
+    "You put on the assigned delversuits and notice they\u2019re lighter than you expected. The power emanating from them is infectious, coursing through every part of you. As you prepare to make your descent, Bram addresses you one last time.\n\n\u201cYou know what we lost, and what little remains. The Tide doesn\u2019t sleep. It doesn\u2019t bargain. It doesn\u2019t care who you were before you put on that suit. But we care. The people clinging to this mountainside - they\u2019re why you step into the mist.\n\nNot for glory, or vengeance, but for the ones too old, too young, or too broken to go themselves. This is not just your last exam - it\u2019s your beginning. So stay sharp. Trust your training. Trust each other. May Gaia guide you, delvers.\u201d"
+  ],
+  "waves": [
+    {
+      "number": 1,
+      "goal": "Survive to the end of Wave 1.",
+      "spawn": {
+        "kind": "hand-authored",
+        "boardSize": { "w": 5, "h": 5 },
+        "delverStart": { "x": 2, "y": 2 },
+        "boss": { "x": 3, "y": 3 },
+        "minions": [
+          { "x": 3, "y": 0 },
+          { "x": 1, "y": 1 },
+          { "x": 2, "y": 1 },
+          { "x": 4, "y": 1 },
+          { "x": 0, "y": 3 },
+          { "x": 1, "y": 4 },
+          { "x": 3, "y": 4 }
+        ]
+      },
+      "bossEnemyId": "soulhunter-001",
+      "minionEnemyIds": [
+        "crystanid-001", "crystanid-002", "crystanid-003", "crystanid-004",
+        "crystanid-005", "crystanid-006", "crystanid-007"
+      ],
+      "endOfWave": {
+        "bothSurvive": "page1_1",
+        "anyDie": "page1_2"
+      }
+    }
+  ],
+  "pages": {
+    "wave1_intro": "As you descend into the Tide, visibility is immediately obscured. The buoy is so close, but the air around you is filled with the clicking of Crystanids. You climb a large rock to escape the nest, only to find that it wasn't a rock at all. It was a Soulhunter.",
+    "page1_1": "After a perilous fight, you locate the buoy. Hanging from ropes dangle many algae-covered delver tags. You grab two and give each other a high five.\n\nYour Quest is complete!",
+    "page1_2": "The creatures swarm you and everything goes black.\n\nReset the Quest and try again from the start of the Wave - you've got this!"
+  }
+}
