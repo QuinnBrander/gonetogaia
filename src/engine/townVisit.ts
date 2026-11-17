@@ -36,6 +36,7 @@ import { logEvent } from "../debug/sessionLog";
 import { resolveAcademyDonation } from "./academyDonation";
 import { enqueueSuitConditionRankPicks } from "./suitConditionGrants";
 import { grantFriendlySpawnCard } from "./friendlyEncounter";
+import { grantLieutenantChallenge } from "./lieutenants";
 import { isShopProductBlockedBySamanthaDetractor } from "./opinionPenalty";
 import { floresPaysBossPartsInMinion, gainMemoryChips, heldPositiveCardCount, holdsOpinionCard, isShopProductBlockedBySamanthaNemesis, opinionLevelForValue, opinionShopMinionAdjust, positiveCardLimit } from "./opinionEffects";
 import { shuffle } from "../util/random";
@@ -775,6 +776,9 @@ function runAction(state: CampaignState, action: TownVisitAction): RewardEvent[]
       // owned cards (silent no-op when both #13 + #14 are in
       // `state.friendlySpawnDeck`).
       return grantFriendlySpawnCard(state);
+    }
+    case "lieutenant-challenge": {
+      return grantLieutenantChallenge(state);
     }
     case "if": {
       const holds = evaluateTownVisitCondition(state, action.cond);

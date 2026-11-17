@@ -174,6 +174,40 @@
             ]
           },
           {
+            "label": "A - Continue: Challenge the Lieutenant: add Shop Product #43 Sword of Ruin to your Purchasable Products, put the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign), each delver gains a Level 3 boss part, and gain 2 LEVEL UP cards",
+            "pageId": "q6_w2_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 2
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "complete-quest",
+                "number": 6,
+                "name": "The Forgotten Vault"
+              },
+              {
+                "kind": "add-shop-products",
+                "products": [
+                  43
+                ],
+                "questLabel": "The Forgotten Vault"
+              },
+              {
+                "kind": "lieutenant-challenge"
+              },
+              {
+                "kind": "grant-boss-parts",
+                "level": 3,
+                "amount": 1,
+                "to": "all-delvers"
+              }
+            ]
+          },
+          {
             "label": "B - Retreat (Quest complete)",
             "pageId": "q6_w2_retreat",
             "rewards": [
@@ -261,6 +295,28 @@
             ]
           },
           {
+            "label": "A - Continue: Challenge the Lieutenant: put the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign), each delver gains a Level 4 boss part, and gain 2 LEVEL UP cards",
+            "pageId": "q6_w3_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 2
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "lieutenant-challenge"
+              },
+              {
+                "kind": "grant-boss-parts",
+                "level": 4,
+                "amount": 1,
+                "to": "all-delvers"
+              }
+            ]
+          },
+          {
             "label": "B - Retreat",
             "pageId": "q6_w3_retreat",
             "then": "end-quest"
@@ -327,6 +383,32 @@
               {
                 "kind": "heal-both-delvers",
                 "amount": 4
+              }
+            ]
+          },
+          {
+            "label": "A - Continue: Challenge the Lieutenant: put the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign), each delver gains a Level 5 boss part, gain a LEVEL UP card, and both delvers heal 4 HP",
+            "pageId": "q6_w4_continue_c",
+            "then": "next-wave",
+            "carryEffects": [
+              {
+                "kind": "grant-level-up-card",
+                "amount": 1
+              },
+              {
+                "kind": "heal-both-delvers",
+                "amount": 4
+              }
+            ],
+            "rewards": [
+              {
+                "kind": "lieutenant-challenge"
+              },
+              {
+                "kind": "grant-boss-parts",
+                "level": 5,
+                "amount": 1,
+                "to": "all-delvers"
               }
             ]
           },
@@ -449,7 +531,10 @@
     "q6_w3_continue_a": "You press on through the ruins, determination overriding exhaustion - this time, you will reach Gaia. The path ahead is brutal, but you refuse to falter.\n\nYour path diverges. One trail climbs steeply; the other delves ever deeper into the ruins. At the Academy you were taught that higher paths are safer - but less trodden paths sometimes reward bold delvers.\n\nThe ruins are dangerous enough without making it worse.\n\nBoth delvers gain 2 ELEMENTS of their choice. Gain a LEVEL UP card.",
     "q6_w3_continue_b": "You press on through the ruins, determination overriding exhaustion - this time, you will reach Gaia. The path ahead is brutal, but you refuse to falter.\n\nYour path diverges. One trail climbs steeply; the other delves ever deeper into the ruins. At the Academy you were taught that higher paths are safer - but less trodden paths sometimes reward bold delvers.\n\nIn the dark you hear ferocious monsters, but just as you're about to turn back you catch the glint of a rusted warhammer in the rubble.\n\nAdd Shop Product #42 Fabled Hammer to your Purchasable Products. Gain a LEVEL UP card.",
     "q6_w4_continue_a": "As you press on through the wreckage with weakening will, Witness suddenly bobs ahead and dramatically \"points\" toward Gaia, then trips over a loose chunk of debris. You can't help but snort as he rights himself and carries on as if nothing happened. If this goof can carry on, so can you.\n\nHeadmistress Arlen's voice comes through your comms. \"Delvers, would you mind a small detour? There's a cache of equipment hidden nearby that my students would benefit from greatly.\"\n\nYou find the cache and dutifully hand it to Witness for delivery to Arlen.\n\nIncrease Arlen's opinion. Both delvers heal 4 HP.",
-    "q6_w4_continue_b": "As you press on through the wreckage with weakening will, Witness suddenly bobs ahead and dramatically \"points\" toward Gaia, then trips over a loose chunk of debris. You can't help but snort as he rights himself and carries on as if nothing happened. If this goof can carry on, so can you.\n\nHeadmistress Arlen's voice comes through your comms. \"Delvers, would you mind a small detour? There's a cache of equipment hidden nearby that my students would benefit from greatly.\"\n\nArlen grudgingly accepts. The focus does you good.\n\nBoth delvers gain 2 ELEMENTS of their choice. Both delvers heal 4 HP."
+    "q6_w4_continue_b": "As you press on through the wreckage with weakening will, Witness suddenly bobs ahead and dramatically \"points\" toward Gaia, then trips over a loose chunk of debris. You can't help but snort as he rights himself and carries on as if nothing happened. If this goof can carry on, so can you.\n\nHeadmistress Arlen's voice comes through your comms. \"Delvers, would you mind a small detour? There's a cache of equipment hidden nearby that my students would benefit from greatly.\"\n\nArlen grudgingly accepts. The focus does you good.\n\nBoth delvers gain 2 ELEMENTS of their choice. Both delvers heal 4 HP.",
+    "q6_w2_continue_c": "After slaying the last of the Snatchers, you enter the building. It appears to have been an armory at one time or other. Most of it is picked over, but after a thorough search, you find a deadly looking blade behind a false wall. That's when your eyes spot a small campsite in the corner of the hidden wall. Someone tried to make the area comfortable with two sleeping bags, a firepit dug into the dirt, and several containers of dried food.\n\nA note with a single message was left on top of the container: \"Take something, leave something.\"\n\nWord of your victories has spread. A Lieutenant steps out of the mist and raises its weapon in challenge. You accept.\n\nYou decide to rest for a bit, lighting the fire for warmth against the icy chill of the storm blowing outside. With the glow of the fire, your eyes glimpse something on the wall. Names, hundreds of them, along with the date they were each written. You recognize some of the names, including Jonah Stone and Margaret Woo. They must have stopped here on their way to Gaia decades ago.\n\nYou stand and add your name to the list, a symbol that you were here; that you were aided by those that came before you and left something behind for whoever comes after. Looking at the hundreds of names, you suddenly don't feel so alone.\n\nYou're determined to carry on. This time you'll reach Gaia.\n\nAdd Shop Product #43 Sword of Ruin to your Purchasable Products. Put the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign). Each delver gains a Level 3 boss part. Gain 2 LEVEL UP cards. Your Quest is complete!",
+    "q6_w3_continue_c": "You press on through the ruins, determination overriding exhaustion - this time, you will reach Gaia. The path ahead is brutal, but you refuse to falter.\n\nYour path diverges. One trail climbs steeply; the other delves ever deeper into the ruins. At the Academy you were taught that higher paths are safer - but less trodden paths sometimes reward bold delvers.\n\nWord of your victories has spread. A Lieutenant steps out of the mist and raises its weapon in challenge. You accept.\n\nPut the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign). Each delver gains a Level 4 boss part. Gain 2 LEVEL UP cards.",
+    "q6_w4_continue_c": "As you press on through the wreckage with weakening will, Witness suddenly bobs ahead and dramatically \"points\" toward Gaia, then trips over a loose chunk of debris. You can't help but snort as he rights himself and carries on as if nothing happened. If this goof can carry on, so can you.\n\nHeadmistress Arlen's voice comes through your comms. \"Delvers, would you mind a small detour? There's a cache of equipment hidden nearby that my students would benefit from greatly.\"\n\nWord of your victories has spread. A Lieutenant steps out of the mist and raises its weapon in challenge. You accept.\n\nPut the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign). Each delver gains a Level 5 boss part. Gain a LEVEL UP card. Both delvers heal 4 HP."
   },
   "bonusGoal": "Bonus: survive Waves 3-4, then reach Gaia (Wave 5)"
 }

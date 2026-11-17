@@ -14159,5 +14159,869 @@
       ],
       "gainXp": 3
     }
+  },
+  {
+    "id": "lieutenant-l1a",
+    "kind": "lieutenant",
+    "family": "Lieutenant - Lvl 1",
+    "cardNumber": 143,
+    "name": "Lieutenant - Lvl 1",
+    "hp": 6,
+    "attack": 2,
+    "image": "enemy_lieutenant_143.jpg",
+    "abilityText": "Aggressive (see card back)",
+    "partingShotText": "3 Damage to nearest Delver.",
+    "partingShot": {
+      "kind": "nearest-delver",
+      "damage": 3
+    },
+    "abilities": [
+      {
+        "kind": "aggressive"
+      }
+    ],
+    "counterCommon": [
+      {
+        "dx": -2,
+        "dy": -2
+      },
+      {
+        "dx": 0,
+        "dy": -2
+      },
+      {
+        "dx": 2,
+        "dy": -2
+      },
+      {
+        "dx": -1,
+        "dy": -1
+      },
+      {
+        "dx": 0,
+        "dy": -1
+      },
+      {
+        "dx": 1,
+        "dy": -1
+      },
+      {
+        "dx": -2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 0
+      },
+      {
+        "dx": 1,
+        "dy": 0
+      },
+      {
+        "dx": 2,
+        "dy": 0
+      },
+      {
+        "dx": 0,
+        "dy": 1
+      },
+      {
+        "dx": 0,
+        "dy": 2
+      }
+    ],
+    "counterUncommon": [
+      {
+        "dx": -1,
+        "dy": 1
+      },
+      {
+        "dx": 1,
+        "dy": 1
+      },
+      {
+        "dx": -2,
+        "dy": 2
+      },
+      {
+        "dx": 2,
+        "dy": 2
+      }
+    ],
+    "onDeath": {
+      "drops": [
+        "minion-part",
+        "minion-part"
+      ],
+      "gainXpDice": 1
+    }
+  },
+  {
+    "id": "lieutenant-l1b",
+    "kind": "lieutenant",
+    "family": "Lieutenant - Lvl 1",
+    "cardNumber": 144,
+    "name": "Lieutenant - Lvl 1",
+    "hp": 6,
+    "attack": 2,
+    "image": "enemy_lieutenant_144.jpg",
+    "abilityText": "Aggressive (see card back)",
+    "partingShotText": "2 Damage.",
+    "partingShot": {
+      "kind": "all-delvers",
+      "damage": 2
+    },
+    "abilities": [
+      {
+        "kind": "aggressive"
+      }
+    ],
+    "counterCommon": [
+      {
+        "dx": 0,
+        "dy": -2
+      },
+      {
+        "dx": 2,
+        "dy": -2
+      },
+      {
+        "dx": 0,
+        "dy": -1
+      },
+      {
+        "dx": 1,
+        "dy": -1
+      },
+      {
+        "dx": -2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 0
+      },
+      {
+        "dx": 1,
+        "dy": 0
+      },
+      {
+        "dx": 2,
+        "dy": 0
+      },
+      {
+        "dx": 0,
+        "dy": 1
+      },
+      {
+        "dx": 1,
+        "dy": 1
+      },
+      {
+        "dx": 0,
+        "dy": 2
+      },
+      {
+        "dx": 2,
+        "dy": 2
+      }
+    ],
+    "counterUncommon": [
+      {
+        "dx": -2,
+        "dy": -2
+      },
+      {
+        "dx": -1,
+        "dy": -1
+      },
+      {
+        "dx": -1,
+        "dy": 1
+      },
+      {
+        "dx": -2,
+        "dy": 2
+      }
+    ],
+    "onDeath": {
+      "drops": [
+        "minion-part",
+        "minion-part"
+      ],
+      "gainElementChoice": 3
+    }
+  },
+  {
+    "id": "lieutenant-l2a",
+    "kind": "lieutenant",
+    "family": "Lieutenant - Lvl 2",
+    "cardNumber": 145,
+    "name": "Lieutenant - Lvl 2",
+    "hp": 18,
+    "attack": 3,
+    "image": "enemy_lieutenant_145.jpg",
+    "abilityText": "Aggressive (see card back)",
+    "partingShotText": "4 Damage to nearest Delver.",
+    "partingShot": {
+      "kind": "nearest-delver",
+      "damage": 4
+    },
+    "abilities": [
+      {
+        "kind": "aggressive"
+      }
+    ],
+    "counterCommon": [
+      {
+        "dx": -2,
+        "dy": -2
+      },
+      {
+        "dx": 0,
+        "dy": -2
+      },
+      {
+        "dx": 2,
+        "dy": -2
+      },
+      {
+        "dx": -1,
+        "dy": -1
+      },
+      {
+        "dx": 0,
+        "dy": -1
+      },
+      {
+        "dx": 1,
+        "dy": -1
+      },
+      {
+        "dx": -1,
+        "dy": 1
+      },
+      {
+        "dx": 1,
+        "dy": 1
+      },
+      {
+        "dx": -2,
+        "dy": 2
+      },
+      {
+        "dx": 2,
+        "dy": 2
+      }
+    ],
+    "counterUncommon": [
+      {
+        "dx": -2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 0
+      },
+      {
+        "dx": 1,
+        "dy": 0
+      },
+      {
+        "dx": 2,
+        "dy": 0
+      },
+      {
+        "dx": 0,
+        "dy": 1
+      },
+      {
+        "dx": 0,
+        "dy": 2
+      }
+    ],
+    "onDeath": {
+      "drops": [
+        "minion-part",
+        "minion-part"
+      ],
+      "gainXp": 4
+    }
+  },
+  {
+    "id": "lieutenant-l2b",
+    "kind": "lieutenant",
+    "family": "Lieutenant - Lvl 2",
+    "cardNumber": 146,
+    "name": "Lieutenant - Lvl 2",
+    "hp": 18,
+    "attack": 3,
+    "image": "enemy_lieutenant_146.jpg",
+    "abilityText": "Aggressive (see card back)",
+    "partingShotText": "3 Damage.",
+    "partingShot": {
+      "kind": "all-delvers",
+      "damage": 3
+    },
+    "abilities": [
+      {
+        "kind": "aggressive"
+      }
+    ],
+    "counterCommon": [
+      {
+        "dx": 2,
+        "dy": -2
+      },
+      {
+        "dx": 1,
+        "dy": -1
+      },
+      {
+        "dx": -2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 0
+      },
+      {
+        "dx": 1,
+        "dy": 0
+      },
+      {
+        "dx": 2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 1
+      },
+      {
+        "dx": 0,
+        "dy": 1
+      },
+      {
+        "dx": 1,
+        "dy": 1
+      },
+      {
+        "dx": -2,
+        "dy": 2
+      },
+      {
+        "dx": 0,
+        "dy": 2
+      },
+      {
+        "dx": 2,
+        "dy": 2
+      }
+    ],
+    "counterUncommon": [
+      {
+        "dx": -2,
+        "dy": -2
+      },
+      {
+        "dx": 0,
+        "dy": -2
+      },
+      {
+        "dx": -1,
+        "dy": -1
+      },
+      {
+        "dx": 0,
+        "dy": -1
+      }
+    ],
+    "onDeath": {
+      "drops": [
+        "minion-part",
+        "minion-part"
+      ],
+      "gainElementChoice": 3
+    }
+  },
+  {
+    "id": "lieutenant-l3a",
+    "kind": "lieutenant",
+    "family": "Lieutenant - Lvl 3",
+    "cardNumber": 147,
+    "name": "Lieutenant - Lvl 3",
+    "hp": 36,
+    "attack": 4,
+    "image": "enemy_lieutenant_147.jpg",
+    "abilityText": "Aggressive (see card back)",
+    "partingShotText": "5 Damage to nearest Delver.",
+    "partingShot": {
+      "kind": "nearest-delver",
+      "damage": 5
+    },
+    "abilities": [
+      {
+        "kind": "aggressive"
+      }
+    ],
+    "counterCommon": [
+      {
+        "dx": -2,
+        "dy": -2
+      },
+      {
+        "dx": -1,
+        "dy": -1
+      },
+      {
+        "dx": -2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 0
+      },
+      {
+        "dx": 1,
+        "dy": 0
+      },
+      {
+        "dx": 2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 1
+      },
+      {
+        "dx": 0,
+        "dy": 1
+      },
+      {
+        "dx": 1,
+        "dy": 1
+      },
+      {
+        "dx": -2,
+        "dy": 2
+      },
+      {
+        "dx": 0,
+        "dy": 2
+      },
+      {
+        "dx": 2,
+        "dy": 2
+      }
+    ],
+    "counterUncommon": [
+      {
+        "dx": 0,
+        "dy": -2
+      },
+      {
+        "dx": 2,
+        "dy": -2
+      },
+      {
+        "dx": 0,
+        "dy": -1
+      },
+      {
+        "dx": 1,
+        "dy": -1
+      }
+    ],
+    "onDeath": {
+      "drops": [
+        "minion-part",
+        "minion-part"
+      ],
+      "gainXp": 6
+    }
+  },
+  {
+    "id": "lieutenant-l3b",
+    "kind": "lieutenant",
+    "family": "Lieutenant - Lvl 3",
+    "cardNumber": 148,
+    "name": "Lieutenant - Lvl 3",
+    "hp": 36,
+    "attack": 4,
+    "image": "enemy_lieutenant_148.jpg",
+    "abilityText": "Aggressive (see card back)",
+    "partingShotText": "4 Damage.",
+    "partingShot": {
+      "kind": "all-delvers",
+      "damage": 4
+    },
+    "abilities": [
+      {
+        "kind": "aggressive"
+      }
+    ],
+    "counterCommon": [
+      {
+        "dx": -2,
+        "dy": -2
+      },
+      {
+        "dx": 0,
+        "dy": -2
+      },
+      {
+        "dx": 2,
+        "dy": -2
+      },
+      {
+        "dx": -1,
+        "dy": -1
+      },
+      {
+        "dx": 0,
+        "dy": -1
+      },
+      {
+        "dx": 1,
+        "dy": -1
+      },
+      {
+        "dx": -2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 1
+      },
+      {
+        "dx": 0,
+        "dy": 1
+      },
+      {
+        "dx": -2,
+        "dy": 2
+      },
+      {
+        "dx": 0,
+        "dy": 2
+      }
+    ],
+    "counterUncommon": [
+      {
+        "dx": 1,
+        "dy": 0
+      },
+      {
+        "dx": 2,
+        "dy": 0
+      },
+      {
+        "dx": 1,
+        "dy": 1
+      },
+      {
+        "dx": 2,
+        "dy": 2
+      }
+    ],
+    "onDeath": {
+      "drops": [
+        "minion-part",
+        "minion-part"
+      ],
+      "gainElementChoice": 3
+    }
+  },
+  {
+    "id": "lieutenant-l4a",
+    "kind": "lieutenant",
+    "family": "Lieutenant - Lvl 4",
+    "cardNumber": 149,
+    "name": "Lieutenant - Lvl 4",
+    "hp": 60,
+    "attack": 5,
+    "image": "enemy_lieutenant_149.jpg",
+    "abilityText": "Aggressive (see card back)",
+    "partingShotText": "6 Damage to nearest Delver.",
+    "partingShot": {
+      "kind": "nearest-delver",
+      "damage": 6
+    },
+    "abilities": [
+      {
+        "kind": "aggressive"
+      }
+    ],
+    "counterCommon": [
+      {
+        "dx": -2,
+        "dy": -2
+      },
+      {
+        "dx": 0,
+        "dy": -2
+      },
+      {
+        "dx": 2,
+        "dy": -2
+      },
+      {
+        "dx": -1,
+        "dy": -1
+      },
+      {
+        "dx": 0,
+        "dy": -1
+      },
+      {
+        "dx": 1,
+        "dy": -1
+      },
+      {
+        "dx": -2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 0
+      },
+      {
+        "dx": 0,
+        "dy": 1
+      },
+      {
+        "dx": 1,
+        "dy": 1
+      },
+      {
+        "dx": 0,
+        "dy": 2
+      },
+      {
+        "dx": 2,
+        "dy": 2
+      }
+    ],
+    "counterUncommon": [
+      {
+        "dx": 1,
+        "dy": 0
+      },
+      {
+        "dx": 2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 1
+      },
+      {
+        "dx": -2,
+        "dy": 2
+      }
+    ],
+    "onDeath": {
+      "drops": [
+        "minion-part",
+        "minion-part"
+      ],
+      "gainXp": 8
+    }
+  },
+  {
+    "id": "lieutenant-l4b",
+    "kind": "lieutenant",
+    "family": "Lieutenant - Lvl 4",
+    "cardNumber": 150,
+    "name": "Lieutenant - Lvl 4",
+    "hp": 60,
+    "attack": 5,
+    "image": "enemy_lieutenant_150.jpg",
+    "abilityText": "Aggressive (see card back)",
+    "partingShotText": "5 Damage.",
+    "partingShot": {
+      "kind": "all-delvers",
+      "damage": 5
+    },
+    "abilities": [
+      {
+        "kind": "aggressive"
+      }
+    ],
+    "counterCommon": [
+      {
+        "dx": -2,
+        "dy": -2
+      },
+      {
+        "dx": 0,
+        "dy": -2
+      },
+      {
+        "dx": -1,
+        "dy": -1
+      },
+      {
+        "dx": 0,
+        "dy": -1
+      },
+      {
+        "dx": 1,
+        "dy": 0
+      },
+      {
+        "dx": 2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 1
+      },
+      {
+        "dx": 0,
+        "dy": 1
+      },
+      {
+        "dx": 1,
+        "dy": 1
+      },
+      {
+        "dx": -2,
+        "dy": 2
+      },
+      {
+        "dx": 0,
+        "dy": 2
+      },
+      {
+        "dx": 2,
+        "dy": 2
+      }
+    ],
+    "counterUncommon": [
+      {
+        "dx": 2,
+        "dy": -2
+      },
+      {
+        "dx": 1,
+        "dy": -1
+      },
+      {
+        "dx": -2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 0
+      }
+    ],
+    "onDeath": {
+      "drops": [
+        "minion-part",
+        "minion-part"
+      ],
+      "gainElementChoice": 3
+    }
+  },
+  {
+    "id": "lieutenant-l5a",
+    "kind": "lieutenant",
+    "family": "Lieutenant - Lvl 5",
+    "cardNumber": 151,
+    "name": "Lieutenant - Lvl 5",
+    "hp": 100,
+    "attack": 6,
+    "image": "enemy_lieutenant_151.jpg",
+    "abilityText": "Aggressive (see card back)",
+    "partingShotText": "7 Damage to nearest Delver.",
+    "partingShot": {
+      "kind": "nearest-delver",
+      "damage": 7
+    },
+    "abilities": [
+      {
+        "kind": "aggressive"
+      }
+    ],
+    "counterCommon": [
+      {
+        "dx": -2,
+        "dy": -2
+      },
+      {
+        "dx": 0,
+        "dy": -2
+      },
+      {
+        "dx": 2,
+        "dy": -2
+      },
+      {
+        "dx": -1,
+        "dy": -1
+      },
+      {
+        "dx": 0,
+        "dy": -1
+      },
+      {
+        "dx": 1,
+        "dy": -1
+      },
+      {
+        "dx": -1,
+        "dy": 1
+      },
+      {
+        "dx": 1,
+        "dy": 1
+      },
+      {
+        "dx": -2,
+        "dy": 2
+      },
+      {
+        "dx": 2,
+        "dy": 2
+      }
+    ],
+    "counterUncommon": [
+      {
+        "dx": -2,
+        "dy": 0
+      },
+      {
+        "dx": -1,
+        "dy": 0
+      },
+      {
+        "dx": 1,
+        "dy": 0
+      },
+      {
+        "dx": 2,
+        "dy": 0
+      },
+      {
+        "dx": 0,
+        "dy": 1
+      },
+      {
+        "dx": 0,
+        "dy": 2
+      }
+    ],
+    "onDeath": {
+      "drops": [
+        "minion-part",
+        "minion-part"
+      ],
+      "gainXp": 10
+    }
   }
 ]

@@ -38,6 +38,26 @@ RANK = lambda t, n: {"kind": "grant-equipment-rank-one-delver", "equipmentType":
 FAV = lambda cid, name, d: {"kind": "shift-favour-by-scenario", "characterId": cid, "characterName": name, "delta": d}
 PRODUCT = lambda n: {"kind": "add-shop-products", "products": [n], "chipFallback": 1}
 
+# Lieutenant challenge (2026-11-17): every continue moment of Quest #4+ that
+# leads into Wave 3 or later gets one more option. It keeps the moment's
+# continue reward, adds a Level card and a boss part of the next wave's
+# level for each delver, and puts the next Lieutenants Spawn Card (#19-24)
+# on top of the Spawn Deck - it stays in the deck for the rest of the
+# campaign (engine/lieutenants.ts). Listed before the Key Item bonus.
+LIEUTENANT_LABEL = "Challenge the Lieutenant"
+LIEUTENANT_RES = ("Word of your victories has spread. A Lieutenant steps out of the mist and raises its "
+                  "weapon in challenge. You accept.")
+LT_CHALLENGE = {"kind": "lieutenant-challenge"}
+BOSS_PARTS = lambda level: {"kind": "grant-boss-parts", "level": level, "amount": 1, "to": "all-delvers"}
+
+def lieutenant_eligible(m):
+    return m["quest"] >= 4 and m["wave"] >= 2
+
+def lieutenant_option(level):
+    """`level`: the next wave's boss level (game quests), or None in the
+    booklet-only quests (the text then says "of the next wave's level")."""
+    return (LIEUTENANT_LABEL, LIEUTENANT_RES, [LEVEL], [LT_CHALLENGE, BOSS_PARTS(level)])
+
 PRODUCT_NAMES = {32: "Earth's Embrace Shield", 33: "Living Armor", 34: "Cyclone Boots", 35: "Ion Battery",
                  37: "Ancient OS", 38: "Overcharger", 41: "Shock Gauntlet", 42: "Fabled Hammer",
                  43: "Sword of Ruin", 44: "War Mace"}
@@ -333,6 +353,11 @@ def reward_text(r):
         return "your Quest is complete"
     if r["kind"] == "reveal-quest-or-grant-chip":
         return f"add Quest #{r['number']:02d} “{r['name']}” to your Open Quests"
+    if r["kind"] == "lieutenant-challenge":
+        return "put the next Lieutenants Spawn Card on top of the Spawn Deck (it stays in the deck for the campaign)"
+    if r["kind"] == "grant-boss-parts":
+        lvl = f"a Level {r['level']} boss part" if r["level"] else "a boss part of the next wave's level"
+        return f"each delver gains {lvl}"
     raise ValueError(r["kind"])
 
 def merged(keep, extra):
@@ -348,7 +373,8 @@ def merged(keep, extra):
             out.append(dict(e))
     return out
 
-SHOWN_REWARDS = ("add-shop-products", "reveal-quest-or-grant-chip")
+SHOWN_REWARDS = ("add-shop-products", "reveal-quest-or-grant-chip", "lieutenant-challenge", "grant-boss-parts")
+LABEL_REWARDS = ("add-shop-products", "lieutenant-challenge", "grant-boss-parts")
 
 def result_phrase(effects, rewards):
     parts = [reward_text(r) for r in rewards if r["kind"] in SHOWN_REWARDS] + [effect_text(e) for e in effects]
@@ -375,10 +401,14 @@ def story_parts(m, base_text):
         after = (after + "\n\n" + m["after_extra"]).strip()
     return before, after
 
-def option_list(m):
-    """[(label, resolution, effects, rewards)] with the kept reward folded in."""
+def option_list(m, lieutenant_level=None):
+    """[(label, resolution, effects, rewards)] with the kept reward folded in.
+    Eligible moments end with the Lieutenant challenge."""
+    opts = list(m["options"])
+    if lieutenant_eligible(m):
+        opts.append(lieutenant_option(lieutenant_level))
     return [(label, res, merged(m["keep"], extra), list(m.get("rewards", [])) + list(rew))
-            for label, res, extra, rew in m["options"]]
+            for label, res, extra, rew in opts]
 
 def reward_lines(effects, rewards, goal=None):
     lines = [sentence(reward_text(r)) for r in rewards if r["kind"] in SHOWN_REWARDS]
@@ -389,12 +419,12 @@ def reward_lines(effects, rewards, goal=None):
         lines.append(goal)
     return lines
 
-def game_choices(m, pages):
+def game_choices(m, pages, lieutenant_level=None):
     """Victory choices + new pages for one moment (game). Returns the list of
     continue choices; the caller keeps Retreat and the Key Item bonus."""
     before, after = story_parts(m, pages[m["base"]])
     out = []
-    for i, (label, res, effects, rewards) in enumerate(option_list(m)):
+    for i, (label, res, effects, rewards) in enumerate(option_list(m, lieutenant_level)):
         pid = f"{m['base']}_{LETTERS[i].lower()}"
         body = [before]
         if m["scene"]:
@@ -404,12 +434,22 @@ def game_choices(m, pages):
             body.append(after)
         body.append(" ".join(reward_lines(effects, rewards, m.get("goal"))))
         pages[pid] = "\n\n".join(body)
-        c = {"label": f"A - Continue: {label}: {result_phrase(effects, [r for r in rewards if r['kind'] == 'add-shop-products'])}",
+        c = {"label": f"A - Continue: {label}: {result_phrase(effects, [r for r in rewards if r['kind'] in LABEL_REWARDS])}",
              "pageId": pid, "then": "next-wave", "carryEffects": effects}
         if rewards:
             c["rewards"] = rewards
         out.append(c)
     return out
+
+def next_wave_boss_level(q, wave):
+    """Printed level of the boss of the wave after `wave` (boss-lvl-N)."""
+    import json
+    from pathlib import Path
+    enemies = json.loads((Path(__file__).resolve().parents[1] / "data" / "enemies.json").read_text(encoding="utf8"))
+    nxt = next(w for w in q["waves"] if w["number"] == wave + 1)
+    kind = next(e["kind"] for e in enemies if e["id"] == nxt["bossEnemyId"])
+    assert kind.startswith("boss-lvl-"), (nxt["bossEnemyId"], kind)
+    return int(kind[-1])
 
 def apply_to_quest(q, number):
     """Rebuild every continue moment of quest `number` in quest dict `q`.
@@ -429,5 +469,6 @@ def apply_to_quest(q, number):
             body.append(" ".join(reward_lines(effects, rewards, m.get("goal"))))
             q["pages"][b["pageId"]] = "\n\n".join(body)
             b["label"] = f"A - Continue: {head}: {result_phrase(effects, rewards)}"
-        w["eow"]["victory"] = game_choices(m, q["pages"]) + bonus + retreat
+        level = next_wave_boss_level(q, m["wave"]) if lieutenant_eligible(m) else None
+        w["eow"]["victory"] = game_choices(m, q["pages"], level) + bonus + retreat
     return q

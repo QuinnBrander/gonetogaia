@@ -35,6 +35,7 @@ import {
   getSpawnCard,
   isFriendlySpawnCardNumber,
   LEVEL_DECK,
+  lieutenantEnemyIdFor,
   shuffleSpawnDeck,
   shuffleSpawnDeckWithFriendly,
   SCENARIO_CARDS,
@@ -46,6 +47,7 @@ import { applyOpinionGrantsForQuest } from "./opinionGrants";
 import { applyEquipmentRollsForQuest } from "./tokens";
 import { startScenarioCard } from "./scenarioCard";
 import { logEvent } from "../debug/sessionLog";
+import { holdsOpinionCard } from "./opinionEffects";
 
 /**
  * Strategy for picking which printed minion card ends up at each spawn
@@ -92,10 +94,24 @@ const defaultSpawnCardDraw: SpawnCardDrawFn = () => {
  */
 function makeStateSpawnCardDraw(state: CampaignState): SpawnCardDrawFn {
   return () => {
-    const pile = shuffleSpawnDeckWithFriendly(state.friendlySpawnDeck);
-    const { card } = drawSpawnCard(pile);
+    // A storybook Lieutenant challenge put a card on top: draw it.
+    if (state.lieutenantSpawnOnTop !== null) return state.lieutenantSpawnOnTop;
+    const withFriendly = shuffleSpawnDeckWithFriendly(state.friendlySpawnDeck);
+    // Owned friendly cards sit on top; Lieutenants Spawn Cards the campaign
+    // has added are shuffled in with the base cards.
+    const friendly = withFriendly.slice(0, state.friendlySpawnDeck.length);
+    const rest = shuffle([...withFriendly.slice(state.friendlySpawnDeck.length), ...state.lieutenantSpawnDeck]);
+    const { card } = drawSpawnCard([...friendly, ...rest]);
     return card.number;
   };
+}
+
+/** Clear the Lieutenant on-top slot once a wave has drawn that card. */
+function consumeLieutenantSpawnOnTop(state: CampaignState): void {
+  const onTop = state.lieutenantSpawnOnTop;
+  if (onTop === null || state.encounter?.spawnCardDrawn !== onTop) return;
+  state.lieutenantSpawnOnTop = null;
+  logEvent("engine.consumeLieutenantSpawnOnTop", { drawn: onTop });
 }
 
 /**
@@ -202,12 +218,13 @@ export function ensureEncounter(
     applyOpinionGrantsForQuest(state, quest.id);
     return existing;
   }
-  const fresh = buildEncounter(quest, Object.keys(state.loadouts), hooks, 1, state.ultraLevelCardsOwned);
+  const fresh = buildEncounter(quest, Object.keys(state.loadouts), hooks, 1, state.ultraLevelCardsOwned, dahliaMinLieutenants(state));
   state.encounter = fresh;
   // A quest starts: the once-per-quest Witness ability is available again.
   state.witnessAbilityUsed = false;
   beginQuestDeathRecord(state, quest.id);
   consumeDrawnFriendlySpawnCard(state);
+  consumeLieutenantSpawnOnTop(state);
   // Wave-Bonus shop grants fire at every fresh wave build. NOT
   // gated — wave bonuses re-trigger every wave per their printed
   // text ("Start EACH wave with +1 Fire Element Token"). The
@@ -238,8 +255,9 @@ export function resetEncounter(
   // Same shop-grant order as `ensureEncounter`: quest grants first
   // (idempotent), then build the fresh encounter, then wave grants.
   applyShopGrantsForQuest(state, quest.id);
-  state.encounter = buildEncounter(quest, Object.keys(state.loadouts), hooks, 1, state.ultraLevelCardsOwned);
+  state.encounter = buildEncounter(quest, Object.keys(state.loadouts), hooks, 1, state.ultraLevelCardsOwned, dahliaMinLieutenants(state));
   consumeDrawnFriendlySpawnCard(state);
+  consumeLieutenantSpawnOnTop(state);
   applyShopGrantsForWave(state);
   applyOpinionGrantsForQuest(state, quest.id);
   applyEquipmentRollsForQuest(state, quest.id);
@@ -272,8 +290,9 @@ export function bootstrapWaveAtNumber(
     typeof hooksOrAssign === "function" ? { assign: hooksOrAssign } : hooksOrAssign,
   );
   applyShopGrantsForQuest(state, quest.id);
-  state.encounter = buildEncounter(quest, Object.keys(state.loadouts), hooks, waveNumber, state.ultraLevelCardsOwned);
+  state.encounter = buildEncounter(quest, Object.keys(state.loadouts), hooks, waveNumber, state.ultraLevelCardsOwned, dahliaMinLieutenants(state));
   consumeDrawnFriendlySpawnCard(state);
+  consumeLieutenantSpawnOnTop(state);
   applyShopGrantsForWave(state);
   applyOpinionGrantsForQuest(state, quest.id);
   applyEquipmentRollsForQuest(state, quest.id);
@@ -473,6 +492,7 @@ function buildEncounter(
   hooks: EncounterBuildHooks,
   waveNumber: number = 1,
   ultraOwned: readonly number[] = [],
+  minLieutenants: number = 0,
 ): EncounterState {
   const wave = getQuestWave(quest, waveNumber);
   const assign = hooks.assign ?? defaultMinionAssignment;
@@ -490,6 +510,7 @@ function buildEncounter(
 
   const partCard = bossPartCardFor(wave.bossEnemyId);
   if (partCard) attachBossPart(resolved, partCard.id, wave.spawn.boardSize);
+  topUpLieutenants(resolved, wave.bossEnemyId, minLieutenants, wave.spawn.boardSize);
   const enemies: EnemyInstance[] = resolved.enemyPlacements.map((p) =>
     makeInstance(p.instanceId, p.cardId, p.x, p.y),
   );
@@ -655,6 +676,16 @@ function resolveSpawn(
         const cardId = minionPool[idx] ?? minionEnemyIds[idx]!;
         placements.push({ instanceId: `minion-${idx}`, cardId, x: pos.x, y: pos.y });
       });
+      // Lieutenants Spawn Cards: one Lieutenant per printed tile, at the
+      // level of the wave's boss.
+      (card.lieutenants ?? []).forEach((pos, idx) => {
+        placements.push({
+          instanceId: `lieutenant-${idx}`,
+          cardId: lieutenantEnemyIdFor(bossLevelOf(bossEnemyId), idx),
+          x: pos.x,
+          y: pos.y,
+        });
+      });
       // Memory Fragment tokens (if any) land on the printed
       // diamond tiles. Stored on the encounter so pickup wiring
       // (future slice) can drain them as delvers walk onto each
@@ -691,6 +722,68 @@ function resolveSpawn(
       };
     }
   }
+}
+
+/**
+ * Dahlia's Detractor / Nemesis cards: "Each wave of combat must contain at
+ * least 1 / 2 Lieutenants - if it wouldn't, add one to a tile of your
+ * choice, matching the level of the enemies." Returns the minimum for the
+ * held card (0 without one).
+ */
+export function dahliaMinLieutenants(state: CampaignState): number {
+  if (holdsOpinionCard(state, "dahlia", "nemesis")) return 2;
+  if (holdsOpinionCard(state, "dahlia", "detractor")) return 1;
+  return 0;
+}
+
+/** Instance-id prefix of the Lieutenants Dahlia's cards add. */
+const DAHLIA_LIEUTENANT_PREFIX = "dahlia-lieutenant-";
+
+/**
+ * Add Lieutenants until the wave has `min` of them. Players choose the tile
+ * at the table; the prototype takes the free tile nearest the boss (ties:
+ * board order), never a delver / Witness / spawn / token tile.
+ */
+function topUpLieutenants(resolved: ResolvedSpawn, bossEnemyId: string, min: number, board: { w: number; h: number }): void {
+  const have = resolved.enemyPlacements.filter((p) => getEnemy(p.cardId).kind === "lieutenant").length;
+  if (have >= min) return;
+  const boss = resolved.enemyPlacements.find((p) => p.instanceId === "boss")!;
+  const reserved = new Set<string>([
+    ...Object.values(resolved.delverPositions).map((p) => `${p.x},${p.y}`),
+    ...(resolved.witnessPosition ? [`${resolved.witnessPosition.x},${resolved.witnessPosition.y}`] : []),
+    ...resolved.memoryFragments.map((p) => `${p.x},${p.y}`),
+    ...resolved.friendlyEncounters.map((p) => `${p.x},${p.y}`),
+    ...(resolved.spawnCardDrawn != null ? getSpawnCard(resolved.spawnCardDrawn).delverSpawns.map((p) => `${p.x},${p.y}`) : []),
+  ]);
+  const level = bossLevelOf(bossEnemyId);
+  for (let slot = have; slot < min; slot++) {
+    const taken = new Set(resolved.enemyPlacements.map((p) => `${p.x},${p.y}`));
+    let best: { x: number; y: number; d: number } | null = null;
+    for (let y = 0; y < board.h; y++) {
+      for (let x = 0; x < board.w; x++) {
+        const k = `${x},${y}`;
+        if (taken.has(k) || reserved.has(k)) continue;
+        const d = Math.max(Math.abs(x - boss.x), Math.abs(y - boss.y));
+        if (!best || d < best.d) best = { x, y, d };
+      }
+    }
+    if (!best) throw new Error("topUpLieutenants: no free tile for a Lieutenant");
+    resolved.enemyPlacements.push({
+      instanceId: `${DAHLIA_LIEUTENANT_PREFIX}${slot}`,
+      cardId: lieutenantEnemyIdFor(level, slot),
+      x: best.x,
+      y: best.y,
+    });
+    logEvent("engine.dahliaLieutenant", { slot, level, x: best.x, y: best.y });
+  }
+}
+
+/** Printed level of a wave boss ("boss-lvl-N" -> N). */
+function bossLevelOf(bossEnemyId: string): number {
+  const kind = getEnemy(bossEnemyId).kind;
+  const m = /^boss-lvl-(\d)$/.exec(kind);
+  if (!m) throw new Error(`bossLevelOf: ${bossEnemyId} is not a boss (kind ${kind})`);
+  return Number(m[1]);
 }
 
 /**
@@ -1041,10 +1134,15 @@ function isConsistent(
   // Expected enemy count: hand-authored knows it from the JSON;
   // spawn-deck spawns are always 1 boss + 7 minions per the
   // SpawnCard invariants (enforced by spawnCards.test.ts).
+  let drawnLieutenants = 0;
+  if (wave.spawn.kind === "spawn-deck" && typeof encounter.spawnCardDrawn === "number") {
+    try { drawnLieutenants = getSpawnCard(encounter.spawnCardDrawn).lieutenants?.length ?? 0; } catch { return false; }
+  }
   const expectedEnemyCount =
     (wave.spawn.kind === "hand-authored"
       ? 1 + wave.spawn.minions.length
-      : 1 + 7) + (bossPartCardFor(wave.bossEnemyId) ? 1 : 0);
+      : 1 + 7 + drawnLieutenants) + (bossPartCardFor(wave.bossEnemyId) ? 1 : 0)
+    + encounter.enemies.filter((e) => e.instanceId.startsWith(DAHLIA_LIEUTENANT_PREFIX)).length;
   if (encounter.enemies.length !== expectedEnemyCount) return false;
   // Spawn-deck encounters MUST carry their drawn card number so a
   // refresh can re-render the picker / topbar without re-drawing.

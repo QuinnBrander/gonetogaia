@@ -1071,6 +1071,7 @@ function applyPostCounterPassives(state: CampaignState, phase: SharedCounterPhas
   applyAlertAbility(state, phase, attackerId);
   applyStrengthAbility(state, phase);
   applyFleesAbility(state, phase, attackerId);
+  applyAggressiveAbility(state, phase, attackerId);
   applyTeleportsAbility(state, phase);
   applyAccurateAbility(state, phase, attackerId);
   applyViciousLoss(state, phase);
@@ -1571,6 +1572,67 @@ function applyFleesAbility(state: CampaignState, phase: SharedCounterPhase, atta
     live.x = best.x;
     live.y = best.y;
     recordAbilityProc(live, "flees");
+  }
+}
+
+/**
+ * Aggressive (Lieutenants): after attempting to counterattack, a surviving
+ * Aggressive enemy moves one tile closer to the attacking delver. If it
+ * can't (blocked, or already adjacent), it turns so one of its blue
+ * (common) arrows targets that delver. Players decide ties at the table;
+ * the prototype takes the first tile in board order and the facing with
+ * the fewest quarter turns.
+ */
+function applyAggressiveAbility(state: CampaignState, phase: SharedCounterPhase, attackerId: string): void {
+  const enc = state.encounter;
+  if (!enc) return;
+  const attacker = enc.delverPositions[attackerId];
+  if (!attacker) return;
+  for (const ds of phase.damagedEnemies) {
+    if (ds.bonus) continue;
+    const live = enc.enemies.find((e) => e.instanceId === ds.instanceId);
+    if (!live || !live.alive) continue;
+    const card = getEnemy(live.cardId);
+    if (live.damageTaken >= card.hp || !hasAbility(card, "aggressive")) continue;
+    const board = getQuestData(enc.questId).waves.find((w) => w.number === enc.waveNumber)?.spawn.boardSize;
+    if (!board) throw new Error(`applyAggressiveAbility: no board size for ${enc.questId} wave ${enc.waveNumber}`);
+    const blocked = new Set<string>();
+    for (const e of enc.enemies) if (e.alive && e.instanceId !== live.instanceId) blocked.add(key(e.x, e.y));
+    for (const pos of Object.values(enc.delverPositions)) if (pos) blocked.add(key(pos.x, pos.y));
+    if (enc.witnessPosition) blocked.add(key(enc.witnessPosition.x, enc.witnessPosition.y));
+    const dist = (x: number, y: number) => Math.max(Math.abs(x - attacker.x), Math.abs(y - attacker.y));
+    const here = dist(live.x, live.y);
+    let step: { x: number; y: number } | null = null;
+    for (let y = live.y - 1; y <= live.y + 1 && !step; y++) {
+      for (let x = live.x - 1; x <= live.x + 1; x++) {
+        if ((x === live.x && y === live.y) || x < 0 || y < 0 || x >= board.w || y >= board.h) continue;
+        if (blocked.has(key(x, y)) || dist(x, y) >= here) continue;
+        step = { x, y };
+        break;
+      }
+    }
+    if (step) {
+      logEvent("combat.aggressiveAbility.move", { instanceId: live.instanceId, from: { x: live.x, y: live.y }, to: step });
+      live.x = step.x;
+      live.y = step.y;
+      recordAbilityProc(live, "aggressive");
+      continue;
+    }
+    const target = { dx: attacker.x - live.x, dy: attacker.y - live.y };
+    const blueHits = (f: EnemyFacing) =>
+      card.counterCommon.some((o) => {
+        const r = rotateOffset(o, f);
+        return r.dx === target.dx && r.dy === target.dy;
+      });
+    if (blueHits(live.facing)) continue;
+    const turns = (f: EnemyFacing) => Math.min((f - live.facing + 360) % 360, (live.facing - f + 360) % 360);
+    const facing = ([0, 90, 180, 270] as EnemyFacing[])
+      .filter(blueHits)
+      .sort((a, b) => turns(a) - turns(b))[0];
+    if (facing === undefined) continue;
+    logEvent("combat.aggressiveAbility.rotate", { instanceId: live.instanceId, from: live.facing, to: facing });
+    live.facing = facing;
+    recordAbilityProc(live, "aggressive");
   }
 }
 

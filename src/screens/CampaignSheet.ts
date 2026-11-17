@@ -689,8 +689,8 @@ function describeOpinionCardStatus(
     case "arlen-nemesis": return passive("You can't hold more than one Ally/Confidant card at a time.");
     case "dahlia-ally": return passive("Delvers start quests with 1 consumable token of their choice (pick in the Shop).");
     case "dahlia-confidant": return passive("Both delvers start quests with 1 Universal 2x Damage and 1 Block Counterattack token.");
-    case "dahlia-detractor": case "dahlia-nemesis":
-      return { label: "Not in the prototype yet", tone: "pending", tooltip: "Adds Lieutenants to every wave. Lieutenant enemies aren't in the digital prototype yet - apply this at the table." };
+    case "dahlia-detractor": return passive("Every wave has at least 1 Lieutenant: if the spawn has none, one is added next to the boss, matching its level.");
+    case "dahlia-nemesis": return passive("Every wave has at least 2 Lieutenants: missing ones are added next to the boss, matching its level.");
     case "elias-ally": case "elias-confidant":
       return ready("Shop", "Spend 3 minion parts to gain 1 Memory Chip token.");
     case "elias-detractor": return { label: "Resolved", tone: "spent", tooltip: "You lost 1 Memory Chip token on hand (if you had one)." };
